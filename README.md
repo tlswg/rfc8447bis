@@ -1,6 +1,6 @@
-# Clarifications for Ed25519, Ed448, X25519, and X448 Algorithm Identifiers
+# IANA Registry Updates for TLS and DTLS
 
-This is the working area for the LAMPS WG Internet-Draft, "Clarifications for Ed25519, Ed448, X25519, and X448 Algorithm Identifiers".
+This is the working area for the TLS WG Internet-Draft, "IANA Registry Updates for TLS and DTLS".
 
 * [Editor's Copy](https://tlswg.github.io/rfc8447bis/draft-ietf-tls-rfc8447bis.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-tls-rfc8447bis/)
