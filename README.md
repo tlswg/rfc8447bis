@@ -1,12 +1,17 @@
-# Internet-Draft Template Repository
+# Clarifications for Ed25519, Ed448, X25519, and X448 Algorithm Identifiers
 
-Use this repository as a template if you want to start working on
-[IETF](https://www.ietf.org/) documents.
+This is the working area for the LAMPS WG Internet-Draft, "Clarifications for Ed25519, Ed448, X25519, and X448 Algorithm Identifiers".
 
-[Read the
-instructions](https://github.com/martinthomson/i-d-template/blob/main/doc/TEMPLATE.md)
-for more information.
+* [Editor's Copy](https://tlswg.github.io/rfc8447bis/draft-ietf-tls-rfc8447bis.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-tls-rfc8447bis/)
+* [Working Group Draft](https://www.ietf.org/archive/id/draft-ietf-tls-rfc8447bis-00.html)
+* [Compare Editor's Copy to Working Group Draft](https://www.ietf.org/rfcdiff?url1=draft-ietf-tls-rfc8447bis&url2=https://tlswg.github.io/rfc8447bis/draft-ietf-tls-rfc8447bis.txt)
 
-Once you have created your own repository, start work by renaming the
-`draft-todo-yourname-protocol.md` file
-[here](../../edit/main/draft-todo-yourname-protocol.md).
+
+## Contributing
+
+See the
+[guidelines for contributions](https://github.com/tlswg/wg-materials/blob/master/CONTRIBUTING.md).
+
+Contributions can be made by creating pull requests.
+The GitHub interface supports creating pull requests using the Edit (✏) button.
