@@ -72,6 +72,11 @@ Types {{?RFC6961}} registries; the existing policies (Standards Action
 for the first three; IETF Review for the last), are appropriate for
 these one-byte code points because of their scarcity.
 
+# Differences from RFC 8447
+
+This document updates {{?RFC8447}} the values of "Recommended" column.
+This document refers to {{!I-D.ietf-tls-rfc8446bis}} instead of {{?RFC8446}}.
+
 # Terminology
 
 {::boilerplate bcp14-tagged}
@@ -344,7 +349,7 @@ TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256   | {0xCC,0xAC}
 TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 ~~~
 
-The TLS 1.3 cipher suites specified by [RFC8446] are not listed here;		
+The TLS 1.3 cipher suites specified by [RFC8446] are not listed here;
    that document provides for their "Recommended" status.
 
 Despite the following behavior being misguided, experience has shown
