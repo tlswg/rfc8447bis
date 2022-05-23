@@ -14,7 +14,7 @@ venue:
   group: "Transport Layer Security (TLS)"
   type: "Working Group"
   mail: "tls@ietf.org"
-  arch: "https://mailarchive.ietf.org/arch/browse/lamps/"
+  arch: "https://mailarchive.ietf.org/arch/browse/tls/"
   github: tlswg/rfc8447bis
 
 
