@@ -57,7 +57,7 @@ This document instructs IANA to make changes to a number of the IANA
 registries related to Transport
 Layer Security (TLS) and Datagram Transport Layer Security (DTLS).
 These changes were almost entirely motivated by the
-development of TLS 1.3 {{!I-D.ietf-tls-tls13}}.
+development of TLS 1.3 {{!I-D.ietf-tls-rfc8446bis}}.
 
 The changes introduced by this document range from simple, e.g., adding
 notes, to complex, e.g., changing a registry's registration policy.
@@ -66,8 +66,8 @@ introduction, each section provides rationale for the proposed
 change(s).
 
 This document proposes no changes to the registration policies for TLS
-Alerts {{!RFC8446}}, TLS ContentType {{!RFC8446}},
-TLS HandshakeType {{!RFC8446}}, and TLS Certificate Status
+Alerts {{!I-D.ietf-tls-rfc8446bis}}, TLS ContentType {{!I-D.ietf-tls-rfc8446bis}},
+TLS HandshakeType {{!I-D.ietf-tls-rfc8446bis}}, and TLS Certificate Status
 Types {{?RFC6961}} registries; the existing policies (Standards Action
 for the first three; IETF Review for the last), are appropriate for
 these one-byte code points because of their scarcity.
