@@ -17,7 +17,6 @@ venue:
   arch: "https://mailarchive.ietf.org/arch/browse/tls/"
   github: tlswg/rfc8447bis
 
-
 stand_alone: yes
 smart_quotes: no
 pi: [toc, sortrefs, symrefs]
@@ -46,7 +45,7 @@ the registration policy.  These changes were mostly motivated by WG
 review of the TLS- and DTLS-related registries undertaken as part of the
 TLS 1.3 development process.
 
-This document obsoletes RFC8447 and updates the following RFCs:
+This document obsoletes RFC 8447 and updates the following RFCs:
 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301.
 
 --- middle
@@ -54,10 +53,9 @@ This document obsoletes RFC8447 and updates the following RFCs:
 # Introduction
 
 This document instructs IANA to make changes to a number of the IANA
-registries related to Transport
-Layer Security (TLS) and Datagram Transport Layer Security (DTLS).
-These changes were almost entirely motivated by the
-development of TLS 1.3 {{!I-D.ietf-tls-rfc8446bis}}.
+registries related to Transport Layer Security (TLS) and Datagram
+Transport Layer Security (DTLS). These changes were almost entirely
+motivated by the development of TLS 1.3 {{!I-D.ietf-tls-rfc8446bis}}.
 
 The changes introduced by this document range from simple, e.g., adding
 notes, to complex, e.g., changing a registry's registration policy.
@@ -74,8 +72,9 @@ these one-byte code points because of their scarcity.
 
 # Differences from RFC 8447
 
-This document updates {{?RFC8447}} the values of "Recommended" column.
-This document refers to {{!I-D.ietf-tls-rfc8446bis}} instead of {{?RFC8446}}.
+This document obsoletes {{?RFC8447}} and revises the values of "Recommended"
+column. It also updates references to {{?RFC8446}} with {{!I-D.ietf-tls-rfc8446bis}}
+and {{?RFC8447}} with {{!I-D.ietf-tls-rfc8447bis}}.
 
 # Terminology
 
@@ -116,7 +115,7 @@ to also refer to this document.
 # Adding "Recommended" Column
 
 The instructions in this document update the Recommended column,
-originally added in {{!RFC8447}} to add a third value, "D",
+originally added in {{?RFC8447}} to add a third value, "D",
 indicating that a value is "Discouraged". The permitted values
 are:
 
@@ -168,15 +167,17 @@ consistently identified in the registry, IANA:
 Experience has shown that the IETF Review registry policy for TLS
 extensions was too strict.  Based on WG consensus, the decision was
 taken to change the registration policy to Specification Required
-{{!RFC8126}} while reserving a small part of the code space for
-private use.  Therefore, IANA [SHALL update/has
-updated] the TLS ExtensionType Values registry as follows:
+while reserving a small part of the code space for Private Use
+{{!RFC8126}}.  Therefore, IANA [SHALL update/has updated] the TLS
+ExtensionType Values registry as follows:
 
 - Changed the registry policy to:
 
+~~~
     Values with the first byte in the range 0-254 (decimal) are assigned
     via Specification Required [RFC8126].  Values with the first byte
     255 (decimal) are reserved for Private Use [RFC8126].
+~~~
 
 - Updated the "Reference" to also refer to this document.
 
@@ -228,13 +229,13 @@ update/has updated] the TLS ExtensionType Values registry as follows:
 IANA [SHALL update/has added] the following notes:
 
 Note:  
-: The role of the designated expert is described in {{!RFC8447}}
+: The role of the designated expert is described in {{!I-D.ietf-tls-rfc8447bis}}
 The designated expert {{!RFC8126}} ensures that the specification is
-publicly available.  It is sufficient to have an Internet-Draft (that is posted and never
-published as an RFC) or a document from another standards body, industry
-consortium, university site, etc.  The expert may provide
-more in-depth reviews, but their approval should not be taken as an
-endorsement of the extension.
+publicly available.  It is sufficient to have an Internet-Draft (that
+is posted and never published as an RFC) or a document from another
+standards body, industry consortium, university site, etc.  The expert
+may provide more in-depth reviews, but their approval should not be
+taken as an endorsement of the extension.
 
 Note:
 : As specified in {{!RFC8126}}, assignments made in the Private Use
@@ -243,35 +244,32 @@ the responsibility of those making use of the Private Use range to
 ensure that no conflicts occur (within the intended scope of use).
 For widespread experiments, temporary reservations are available.
 
-
 Note:
 : If an item is not marked as "Recommended", it does not necessarily mean
 that it is flawed; rather, it indicates that the item either has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
 
+The extensions added by {{!I-D.ietf-tls-rfc8446bis}} are omitted from the
+above table; additionally, token_binding is omitted, since {{?RFC8472}}
+specifies the value of the "Recommended" column as for this extension.
 
-The extensions added by {{!RFC8446}} are omitted from the above table;
-additionally, token_binding is omitted, since
-{{?I-D.ietf-tokbind-negotiation}} specifies the value of the "Recommended" column
-as for this extension.
-
-
-{{!RFC8446}} also uses the TLS ExtensionType Values registry originally
-created in {{?RFC4366}}. The following text is from [RFC8446] and is included
-here to ensure alignment between these specifications.
+{{!I-D.ietf-tls-rfc8446bis}} also uses the TLS ExtensionType Values
+registry originally created in {{?RFC4366}}. The following text is
+from {{!I-D.ietf-tls-rfc8446bis}} and is included here to ensure
+alignment between these specifications.
 
 -  IANA [SHALL update/has updated] this registry to include the
    "key_share", "pre_shared_key", "psk_key_exchange_modes",
    "early_data", "cookie", "supported_versions",
    "certificate_authorities", "oid_filters", "post_handshake_auth",
    and "signature_algorithms_cert", extensions with the values
-   defined in {{!RFC8446}} and the "Recommended" value of "Y".
+   defined in {{!I-D.ietf-tls-rfc8446bis}} and the "Recommended" value of "Y".
 
 -  IANA [SHALL update/has updated] this registry to include a "TLS
    1.3" column that lists the messages in which the extension may
    appear.  This column [SHALL be/has been] initially populated from
-   the table in Section 4.2 of {{!RFC8446}} with any
+   the table in Section 4.2 of {{!I-D.ietf-tls-rfc8446bis}} with any
    extension not listed there marked as "-" to indicate that it is not
    used by TLS 1.3.
 
@@ -280,14 +278,16 @@ here to ensure alignment between these specifications.
 Experience has shown that the IETF Consensus registry policy for TLS
 Cipher Suites was too strict.  Based on WG consensus, the decision was
 taken to change the TLS Cipher Suites registry's registration policy
-to Specification Required {{!RFC8126}} while reserving a small part of
-the code space for experimental and private use.  Therefore, IANA
+to Specification Required while reserving a small part of the code
+space for Experimental and Private Use {{!RFC8126}}.  Therefore, IANA
 [SHALL update/has updated] the TLS Cipher Suites registry's policy as
 follows:
 
+~~~
     Values with the first byte in the range 0-254 (decimal) are
-    assigned via Specification Required {{!RFC8126}} .  Values with the
-    first byte 255 (decimal) are reserved for Private Use {{!RFC8126}} .
+    assigned via Specification Required [RFC8126].  Values with the
+    first byte 255 (decimal) are reserved for Private Use [RFC8126].
+~~~
 
 See {{expert-pool}} for additional information about the designated
 expert pool.
@@ -349,8 +349,8 @@ TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256   | {0xCC,0xAC}
 TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
 ~~~
 
-The TLS 1.3 cipher suites specified by [RFC8446] are not listed here;
-   that document provides for their "Recommended" status.
+The TLS 1.3 cipher suites specified by {{!I-D.ietf-tls-rfc8446bis}} are
+not listed here; that document provides for their "Recommended" status.
 
 Despite the following behavior being misguided, experience has shown
 that some customers use the IANA registry as a checklist against which
@@ -365,19 +365,18 @@ advised.  Implementers and users need to check that the cryptographic
 algorithms listed continue to provide the expected level of security.
 
 IANA [SHALL add/has added] the following note to ensure that those that
-focus on IANA registries are aware that TLS 1.3 {{!RFC8446}}
+focus on IANA registries are aware that TLS 1.3 {{!I-D.ietf-tls-rfc8446bis}}
 uses the same registry but defines ciphers differently:
 
 Note:
 : Although TLS 1.3 uses the same cipher suite space as previous
 versions of TLS, TLS 1.3 cipher suites are defined differently, only
-specifying the symmetric ciphers and hash functions, and cannot be used for TLS 1.2.
-Similarly, TLS 1.2 and lower cipher suite values cannot be used with
-TLS 1.3.
+specifying the symmetric ciphers and hash functions, and cannot be
+used for TLS 1.2.  Similarly, TLS 1.2 and lower cipher suite values
+cannot be used with TLS 1.3.
 
 IANA [SHALL add/has added] the following notes to document the rules
 for populating the "Recommended" column:
-
 
 Note:
 : CCM_8 cipher suites are not marked as "Recommended".  These cipher
@@ -395,13 +394,13 @@ IANA [SHALL add/has added] the following notes for additional
 information:
 
 Note:
-: The role of the designated expert is described in [this-RFC].
+: The role of the designated expert is described in {{!I-D.ietf-tls-rfc8447bis}}.
 The designated expert {{!RFC8126}} ensures that the specification is
-publicly available.  It is sufficient to have an Internet-Draft (that is posted and never
-published as an RFC) or a document from another standards body, industry
-consortium, university site, etc.  The expert may provide
-more in-depth reviews, but their approval should not be taken as an
-endorsement of the cipher suite.
+publicly available.  It is sufficient to have an Internet-Draft (that
+is posted and never published as an RFC) or a document from another
+standards body, industry consortium, university site, etc.  The expert
+may provide more in-depth reviews, but their approval should not be
+taken as an endorsement of the cipher suite.
 
 Note:
 : As specified in {{!RFC8126}}, assignments made in the Private Use
@@ -419,12 +418,12 @@ Similar to cipher suites, supported groups have proliferated over time,
 and some use the registry to measure implementations.  Therefore, IANA
 [SHALL add/has added] a “Recommended” column with a "Y" for secp256r1,
 secp384r1, x25519, and x448, while all others are "N".  These "Y"
-groups are taken from Standards Track RFCs; {{?RFC8422}}
-elevates secp256r1 and secp384r1 to Standards Track.  Not all groups from
-{{?RFC8422}}, which is Standards Track, are marked as
-"Y"; these groups apply to TLS 1.3 {{!RFC8446}} and
-previous versions of TLS.  The "Recommended" column is assigned a value of "N"
-unless explicitly requested, and adding a value with a "Recommended" value of "Y"
+groups are taken from Standards Track RFCs; {{?RFC8422}} elevates
+secp256r1 and secp384r1 to Standards Track.  Not all groups from
+{{?RFC8422}}, which is Standards Track, are marked as "Y"; these groups
+apply to TLS 1.3 {{!I-D.ietf-tls-rfc8446bis}} and previous versions of
+TLS.  The "Recommended" column is assigned a value of "N" unless
+explicitly requested, and adding a value with a "Recommended" value of "Y"
 requires Standards Action {{!RFC8126}}.  IESG Approval is
 REQUIRED for a Y->N transition.
 
@@ -437,13 +436,13 @@ been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.
 
 Note:
-: The role of the designated expert is described in {{!RFC8447}} .
+: The role of the designated expert is described in {{!I-D.ietf-tls-rfc8447bis}}.
 The designated expert {{!RFC8126}} ensures that the specification is
-publicly available.  It is sufficient to have an Internet-Draft (that is posted and never
-published as an RFC) or a document from another standards body, industry
-consortium, university site, etc.  The expert may provide
-more in-depth reviews, but their approval should not be taken as an
-endorsement of the supported groups.
+publicly available.  It is sufficient to have an Internet-Draft (that
+is posted and never published as an RFC) or a document from another
+standards body, industry consortium, university site, etc.  The expert
+may provide more in-depth reviews, but their approval should not be
+taken as an endorsement of the supported groups.
 
 Despite the following behavior being misguided, experience has shown
 that some customers use the IANA registry as a checklist against which
@@ -465,17 +464,17 @@ The value 0 (0x0000) has been marked as reserved.
 # TLS ClientCertificateType Identifiers
 
 Experience has shown that the IETF Consensus registry policy for TLS
-ClientCertificateType Identifiers is too strict.   Based on WG
+ClientCertificateType Identifiers is too strict.  Based on WG
 consensus, the decision was taken to change the registration policy to
-Specification Required {{!RFC8126}} while reserving some of the code
-   space for Standards Track usage and a small part of the code space
-   for private use.  Therefore, IANA has updated the TLS
-   ClientCertificateType Identifiers registry's policy as follows:
+Specification Required while reserving some of the code
+space for Standards Track usage and a small part of the code space
+for Private Use {{!RFC8126}}.  Therefore, IANA has updated the TLS
+ClientCertificateType Identifiers registry's policy as follows:
    
 ~~~~
-      Values in the range 0-63 are assigned via Standards Action.
+      Values in the range 0-63 are assigned via Standards Action [RFC8126].
       Values 64-223 are assigned via Specification Required [RFC8126].
-      Values 224-255 are reserved for Private Use.
+      Values 224-255 are reserved for Private Use [RFC8126].
 ~~~~
 
 See {{expert-pool}} for additional information about the designated
@@ -488,9 +487,9 @@ Note:
 The designated expert {{!RFC8126}} ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft
 (that is posted and never published as an RFC) or a document from
- another standards body, industry consortium, university site, etc.
- The expert may provide more in-depth reviews, but their approval
- should not be taken as an endorsement of the identifier.
+another standards body, industry consortium, university site, etc.
+The expert may provide more in-depth reviews, but their approval
+should not be taken as an endorsement of the identifier.
 
 Note:
 : As specified in {{!RFC8126}}, assignments made in the Private Use
@@ -519,7 +518,7 @@ add/has added]:
 
 Note:
 : {{!RFC5705}} defines keying material exporters for TLS in terms of
-the TLS PRF.  {{!RFC8446}} replaced the PRF with HKDF, thus
+the TLS PRF.  {{!I-D.ietf-tls-rfc8446bis}} replaced the PRF with HKDF, thus
 requiring a new construction. The exporter interface remains the same;
 however, the value is computed differently.
 
@@ -527,8 +526,8 @@ however, the value is computed differently.
 table that follows has been generated by marking Standards Track
 RFCs as "Y" and all others as "N".  The "Recommended" column is
 assigned a value of "N" unless explicitly requested, and adding a
-value with a "Recommended" value of "Y" requires Standards Action {{!RFC8126}}.  IESG Approval is
-REQUIRED for a Y->N transition.
+value with a "Recommended" value of "Y" requires Standards Action {{!RFC8126}}.
+IESG Approval is REQUIRED for a Y->N transition.
 
 ~~~
 Exporter Value                  | Recommended |
@@ -549,7 +548,7 @@ To provide additional information for the designated experts, IANA
 [SHALL add/has added] the following notes:
 
 Note:
-: The role of the designated expert is described in {{!RFC8447}} .
+: The role of the designated expert is described in {{!I-D.ietf-tls-rfc8447bis}}.
 The designated expert {{!RFC8126}} ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft
 (that is posted and never published as an RFC) or a document from
@@ -563,9 +562,9 @@ For example, labels "key" or "master secretary" are forbidden.
 
 Note:
 : If an item is not marked as "Recommended", it does not
-      necessarily mean that it is flawed; rather, it indicates that the
-      item either has not been through the IETF consensus process, has
-      limited applicability, or is intended only for specific use cases.
+necessarily mean that it is flawed; rather, it indicates that the
+item either has not been through the IETF consensus process, has
+limited applicability, or is intended only for specific use cases.
 
 IANA [SHALL update/has updated] the reference for this registry to also
 refer to this document.
@@ -576,29 +575,33 @@ IANA [SHALL add/has added] the following entry to the TLS Alerts
 registry; the entry was omitted from the IANA instructions in
 {{!RFC7301}}:
 
-    120   no_application_protocol  Y  [RFC7301][RFC8447]
+~~~
+    120   no_application_protocol  Y  [RFC7301][This-document]
+~~~
 
 # TLS Certificate Types
 
 Experience has shown that the IETF Consensus registry policy for TLS
 Certificate Types is too strict.  Based on WG consensus, the decision
 was taken to change registration policy to Specification Required
-{{!RFC8126}} while reserving a small part of the code space for
-private use.  Therefore, IANA [SHALL change/has
-changed] the TLS Certificate Types registry as follows:
+while reserving a small part of the code space for Private Use {{!RFC8126}}.
+Therefore, IANA [SHALL change/has changed] the TLS Certificate Types
+registry as follows:
 
 - Changed the registry policy to:
 
+~~~
     Values in the range 0-223 (decimal) are assigned via Specification
-    Required  [RFC8126]. Values in the range 224-255 (decimal) are
+    Required [RFC8126]. Values in the range 224-255 (decimal) are
     reserved for Private Use [RFC8126].
+~~~
 
 - Added a "Recommended" column to the registry.  X.509 and Raw
-      Public Key are "Y".  All others are "N".  The "Recommended" column
-      is assigned a value of "N" unless explicitly requested, and adding
-      a value with a "Recommended" value of "Y" requires Standards
-      Action {{!RFC8126}}.  IESG Approval is REQUIRED for
-      a Y->N transition.
+  Public Key are "Y".  All others are "N".  The "Recommended" column
+  is assigned a value of "N" unless explicitly requested, and adding
+  a value with a "Recommended" value of "Y" requires Standards
+  Action {{!RFC8126}}.  IESG Approval is REQUIRED for
+  a Y->N transition.
 
 See {{expert-pool}} for additional information about the designated
 expert pool.
@@ -609,16 +612,16 @@ Note:
 : The role of the designated expert is described in [this-RFC].
 The designated expert {{!RFC8126}} ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft
-      (that is posted and never published as an RFC) or a document from
-      another standards body, industry consortium, university site, etc.
-      The expert may provide more in-depth reviews, but their approval
-      should not be taken as an endorsement of the certificate type.
+(that is posted and never published as an RFC) or a document from
+another standards body, industry consortium, university site, etc.
+The expert may provide more in-depth reviews, but their approval
+should not be taken as an endorsement of the certificate type.
 
 Note:
 : If an item is not marked as "Recommended", it does not
-      necessarily mean that it is flawed; rather, it indicates that the
-      item either has not been through the IETF consensus process, has
-      limited applicability, or is intended only for specific use cases.
+necessarily mean that it is flawed; rather, it indicates that the
+item either has not been through the IETF consensus process, has
+limited applicability, or is intended only for specific use cases.
 
 IANA [SHALL update/has updated] the reference for this registry to also
 refer this document.
@@ -630,14 +633,14 @@ they are only applicable to version of (D)TLS protocol versions prior
 to 1.3), IANA:
 
 - [SHALL add/has added] the following to the TLS Compression Method
-Identifiers registry {{!RFC3749}}:
+  Identifiers registry {{!RFC3749}}:
 
 Note:
 : Value 0 (NULL) is the only value in this registry applicable to (D)TLS
 protocol version 1.3 or later.
 
 - [SHALL add/has added] the following to the TLS HashAlgorithm
-{{!RFC5246}} and TLS SignatureAlgorithm registries {{RFC5246}}:
+- {{?RFC5246}} and TLS SignatureAlgorithm registries {{?RFC5246}}:
 
 Note:
 : The values in this registry are only applicable to (D)TLS protocol
@@ -645,25 +648,25 @@ versions prior to 1.3.  (D)TLS 1.3 and later versions' values are
 registered in the TLS SignatureScheme registry.
 
 - [SHALL update/has updated] the "Reference" field in the TLS
-Compression Method Identifiers, TLS HashAlgorithm and TLS
-SignatureAlgorithm registries to also refer to this document.
+  Compression Method Identifiers, TLS HashAlgorithm and TLS
+  SignatureAlgorithm registries to also refer to this document.
 
 - [SHALL update/has updated] the TLS HashAlgorithm registry to list
-values 7 and 9-223 as "Reserved" and the TLS SignatureAlgorithm
-registry to list values 4-6 and 9-223 as "Reserved".
+  values 7 and 9-223 as "Reserved" and the TLS SignatureAlgorithm
+  registry to list values 4-6 and 9-223 as "Reserved".
 
 - has added the following to the TLS ClientCertificateType
-      Identifiers registry {{?RFC5246}}:
+  Identifiers registry {{?RFC5246}}:
 
 Note: The values in this registry are only applicable to (D)TLS
-      protocol versions prior to 1.3.
+protocol versions prior to 1.3.
 
-   Despite the fact that the TLS HashAlgorithm and SignatureAlgorithm
-   registries are orphaned, it is still important to warn implementers
-   of pre-TLS1.3 implementations about the dangers of blindly
-   implementing cryptographic algorithms.  Therefore, IANA has added the
-   following warning to the TLS HashAlgorithm and SignatureAlgorithm
-   registries:
+Despite the fact that the TLS HashAlgorithm and SignatureAlgorithm
+registries are orphaned, it is still important to warn implementers
+of pre-TLS1.3 implementations about the dangers of blindly
+implementing cryptographic algorithms.  Therefore, IANA has added the
+following warning to the TLS HashAlgorithm and SignatureAlgorithm
+registries:
 
 WARNING:
 : Cryptographic algorithms and parameters will be broken or weakened
@@ -674,40 +677,40 @@ of security.
 
 # Additional Notes {#Notes}
 
-   IANA has added the following warning and note to the TLS
-   SignatureScheme registry:
+IANA has added the following warning and note to the TLS
+SignatureScheme registry:
 
-   WARNING:
-   : Cryptographic algorithms and parameters will be broken or
-   weakened over time.  Blindly implementing signature schemes listed
-   here is not advised.  Implementers and users need to check that
-   the cryptographic algorithms listed continue to provide the
-   expected level of security.
+WARNING:
+: Cryptographic algorithms and parameters will be broken or
+weakened over time.  Blindly implementing signature schemes listed
+here is not advised.  Implementers and users need to check that
+the cryptographic algorithms listed continue to provide the
+expected level of security.
 
-   Note:
-   : As specified in {{!RFC8126}}, assignments made in the Private Use
-   space are not generally useful for broad interoperability.  It is
-   the responsibility of those making use of the Private Use range to
-   ensure that no conflicts occur (within the intended scope of use).
-   For widespread experiments, temporary reservations are available.
+Note:
+: As specified in {{!RFC8126}}, assignments made in the Private Use
+space are not generally useful for broad interoperability.  It is
+the responsibility of those making use of the Private Use range to
+ensure that no conflicts occur (within the intended scope of use).
+For widespread experiments, temporary reservations are available.
 
-   IANA has added the following notes to the TLS PskKeyExchangeMode
-   registry:
+IANA has added the following notes to the TLS PskKeyExchangeMode
+registry:
 
-   Note:
-   : If an item is not marked as "Recommended", it does not
-   necessarily mean that it is flawed; rather, it indicates that the
-   item either has not been through the IETF consensus process, has
-   limited applicability, or is intended only for specific use cases.
+Note:
+: If an item is not marked as "Recommended", it does not
+necessarily mean that it is flawed; rather, it indicates that the
+item either has not been through the IETF consensus process, has
+limited applicability, or is intended only for specific use cases.
 
-   Note:
-   : The role of the designated expert is described in RFC 8447.
-   The designated expert {{!RFC8126}} ensures that the specification is
-   publicly available.  It is sufficient to have an Internet-Draft
-   (that is posted and never published as an RFC) or a document from
-   another standards body, industry consortium, university site, etc.
-   The expert may provide more in depth reviews, but their approval
-   should not be taken as an endorsement of the key exchange mode.
+Note:
+: The role of the designated expert is described in RFC 8447.
+The designated expert {{!RFC8126}} ensures that the specification is
+publicly available.  It is sufficient to have an Internet-Draft
+(that is posted and never published as an RFC) or a document from
+another standards body, industry consortium, university site, etc.
+The expert may provide more in depth reviews, but their approval
+should not be taken as an endorsement of the key exchange mode.
 
 # Designated Expert Pool {#expert-pool}
 
