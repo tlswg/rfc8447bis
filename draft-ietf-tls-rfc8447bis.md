@@ -7,15 +7,15 @@ obsoletes: 8447
 updates: 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301
 
 ipr: trust200902
-area: Security
-workgroup: TLS WG
+area: "Security"
+workgroup: "Transport Layer Security"
 keyword: Internet-Draft
 venue:
-  group: "Transport Layer Security (TLS)"
+  group: "Transport Layer Security"
   type: "Working Group"
   mail: "tls@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/tls/"
-  github: tlswg/rfc8447bis
+  github: "tlswg/rfc8447bis"
 
 
 stand_alone: yes
