@@ -7,15 +7,15 @@ obsoletes: 8447
 updates: 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301
 
 ipr: trust200902
-area: Security
-workgroup: TLS WG
+area: "Security"
+workgroup: "Transport Layer Security"
 keyword: Internet-Draft
 venue:
-  group: "Transport Layer Security (TLS)"
+  group: "Transport Layer Security"
   type: "Working Group"
   mail: "tls@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/tls/"
-  github: tlswg/rfc8447bis
+  github: "tlswg/rfc8447bis"
 
 stand_alone: yes
 smart_quotes: no
@@ -194,7 +194,7 @@ update/has updated] the TLS ExtensionType Values registry as follows:
   all others as "N". The "Recommended" column is assigned a
   value of "N" unless explicitly requested, and adding a value with
   a "Recommended" value of "Y" requires Standards Action {{!RFC8126}}.
-  IESG Approval is REQUIRED for a Y->N transition. 
+  IESG Approval is REQUIRED for a Y->N transition.
 
 | Extension                                | Recommended |
 |:-----------------------------------------|------------:|
@@ -230,6 +230,7 @@ IANA [SHALL update/has added] the following notes:
 
 Note:  
 : The role of the designated expert is described in {{!I-D.ietf-tls-rfc8447bis}}
+
 The designated expert {{!RFC8126}} ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft (that
 is posted and never published as an RFC) or a document from another
@@ -299,7 +300,7 @@ do so.  To better guide those not intimately involved in TLS, IANA
 [The following text needs to be update to reflect the new recommended policy]
 
 - Added a "Recommended" column to the TLS Cipher Suites registry.  The
-  cipher suites that follow in the two tables are marked as "Y". 
+  cipher suites that follow in the two tables are marked as "Y".
   All other cipher suites are marked as "N".  The "Recommended"
   column is assigned a value of "N" unless explicitly requested, and
   adding a value with a "Recommended" value of "Y" requires
@@ -330,7 +331,7 @@ TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAA}
 ~~~
 
   The cipher suites that follow are Standards Track ephemeral pre-shared
-  key cipher suites that are available in TLS 1.2.  
+  key cipher suites that are available in TLS 1.2.
 
 RFC EDITOR: The previous paragraph is for document reviewers and is not
 meant for the registry.
