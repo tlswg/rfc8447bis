@@ -640,7 +640,7 @@ Note:
 protocol version 1.3 or later.
 
 - [SHALL add/has added] the following to the TLS HashAlgorithm
-- {{?RFC5246}} and TLS SignatureAlgorithm registries {{?RFC5246}}:
+- {{!RFC5246}} and TLS SignatureAlgorithm registries {{?RFC5246}}:
 
 Note:
 : The values in this registry are only applicable to (D)TLS protocol
