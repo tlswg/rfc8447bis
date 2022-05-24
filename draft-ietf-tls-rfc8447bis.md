@@ -228,7 +228,7 @@ update/has updated] the TLS ExtensionType Values registry as follows:
 
 IANA [SHALL update/has added] the following notes:
 
-Note:  
+Note: 
 : The role of the designated expert is described in {{!I-D.ietf-tls-rfc8447bis}}
 
 The designated expert {{!RFC8126}} ensures that the specification is
