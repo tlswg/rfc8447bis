@@ -471,7 +471,6 @@ Specification Required while reserving some of the code
 space for Standards Track usage and a small part of the code space
 for Private Use {{!RFC8126}}.  Therefore, IANA has updated the TLS
 ClientCertificateType Identifiers registry's policy as follows:
-   
 ~~~~
       Values in the range 0-63 are assigned via Standards Action [RFC8126].
       Values 64-223 are assigned via Specification Required [RFC8126].
