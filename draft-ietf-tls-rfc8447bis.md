@@ -193,7 +193,7 @@ update/has updated] the TLS ExtensionType Values registry as follows:
   all others as "N". The "Recommended" column is assigned a
   value of "N" unless explicitly requested, and adding a value with
   a "Recommended" value of "Y" requires Standards Action {{!RFC8126}}.
-  IESG Approval is REQUIRED for a Y->N transition. 
+  IESG Approval is REQUIRED for a Y->N transition.
 
 | Extension                                | Recommended |
 |:-----------------------------------------|------------:|
@@ -227,7 +227,7 @@ update/has updated] the TLS ExtensionType Values registry as follows:
 
 IANA [SHALL update/has added] the following notes:
 
-Note:  
+Note:
 : The role of the designated expert is described in {{!RFC8447}}
 The designated expert {{!RFC8126}} ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft (that is posted and never
@@ -299,7 +299,7 @@ do so.  To better guide those not intimately involved in TLS, IANA
 [The following text needs to be update to reflect the new recommended policy]
 
 - Added a "Recommended" column to the TLS Cipher Suites registry.  The
-  cipher suites that follow in the two tables are marked as "Y". 
+  cipher suites that follow in the two tables are marked as "Y".
   All other cipher suites are marked as "N".  The "Recommended"
   column is assigned a value of "N" unless explicitly requested, and
   adding a value with a "Recommended" value of "Y" requires
@@ -330,7 +330,7 @@ TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAA}
 ~~~
 
   The cipher suites that follow are Standards Track ephemeral pre-shared
-  key cipher suites that are available in TLS 1.2.  
+  key cipher suites that are available in TLS 1.2.
 
 RFC EDITOR: The previous paragraph is for document reviewers and is not
 meant for the registry.
@@ -471,7 +471,7 @@ Specification Required {{!RFC8126}} while reserving some of the code
    space for Standards Track usage and a small part of the code space
    for private use.  Therefore, IANA has updated the TLS
    ClientCertificateType Identifiers registry's policy as follows:
-   
+
 ~~~~
       Values in the range 0-63 are assigned via Standards Action.
       Values 64-223 are assigned via Specification Required [RFC8126].
