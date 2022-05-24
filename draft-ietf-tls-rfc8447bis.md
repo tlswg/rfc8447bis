@@ -656,7 +656,7 @@ registered in the TLS SignatureScheme registry.
   registry to list values 4-6 and 9-223 as "Reserved".
 
 - has added the following to the TLS ClientCertificateType
-  Identifiers registry {{?RFC5246}}:
+  Identifiers registry {{!RFC5246}}:
 
 Note: The values in this registry are only applicable to (D)TLS
 protocol versions prior to 1.3.
