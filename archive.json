@@ -1,0 +1,334 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2022-05-26T01:38:18.327303+00:00",
+  "repo": "tlswg/rfc8447bis",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOHFJBYs44T1f2",
+      "title": "Correct mail repo",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/1",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Fixes a cut/paste error and now points to the TLS repo (and not the lamps repo).",
+      "createdAt": "2022-05-23T17:23:03Z",
+      "updatedAt": "2022-05-23T18:07:55Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "111943e37c4c05eb356663f0b9cc35ca5628bbc8",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-patch-1",
+      "headRefOid": "648045bf47fa47980663880aaf5bf27bbf322cf8",
+      "closedAt": "2022-05-23T18:07:55Z",
+      "mergedAt": "2022-05-23T18:07:55Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "b2250efc9ca44aaec70fd73f99483cf11860de5a"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOHFJBYs44T2hz",
+      "title": "Refer to draft-ietf-tls-rfc8446bis",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/2",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "8446bis is in the works, we should refer to it.",
+      "createdAt": "2022-05-23T17:27:50Z",
+      "updatedAt": "2022-05-23T18:08:45Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "111943e37c4c05eb356663f0b9cc35ca5628bbc8",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-patch-2",
+      "headRefOid": "1c4b21363baf29b5fa9e8ad2abfad84ed3aba445",
+      "closedAt": "2022-05-23T18:08:45Z",
+      "mergedAt": "2022-05-23T18:08:45Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "2ac317bdccd365f4f0e44fe0c385546bbf11c5a8"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOHFJBYs44T5_b",
+      "title": "Add Difference from RFC8447 Sections",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/3",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-05-23T17:43:43Z",
+      "updatedAt": "2022-05-23T18:09:21Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "111943e37c4c05eb356663f0b9cc35ca5628bbc8",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-patch-3-1",
+      "headRefOid": "fc85e81066cd870efda79c6c7da958c98c8f94f8",
+      "closedAt": "2022-05-23T18:09:21Z",
+      "mergedAt": "2022-05-23T18:09:21Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "0167edd8ffd4afcfc85dc18e2cc4cf84aa87bf6f"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 4,
+      "id": "PR_kwDOHFJBYs44UQfr",
+      "title": "Editor/Reference Updates",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/4",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "@jsalowey PTAL.",
+      "createdAt": "2022-05-23T19:35:54Z",
+      "updatedAt": "2022-05-24T17:34:00Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "6e8d3bd7540c2f8363682f4dc47fbd374022e3ef",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-patch-4",
+      "headRefOid": "e79074ae57c174841f3d48ec9fb409365f0ea199",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs46oLhZ",
+          "commit": {
+            "abbreviatedOid": "db03bb9"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:28:32Z",
+          "updatedAt": "2022-05-24T17:28:33Z",
+          "comments": [
+            {
+              "originalPosition": 79,
+              "body": "```suggestion\r\nNote: \r\n```",
+              "createdAt": "2022-05-24T17:28:33Z",
+              "updatedAt": "2022-05-24T17:28:33Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oLts",
+          "commit": {
+            "abbreviatedOid": "cd55b97"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:29:10Z",
+          "updatedAt": "2022-05-24T17:29:10Z",
+          "comments": [
+            {
+              "originalPosition": 79,
+              "body": "```suggestion\r\nNote:\r\n```",
+              "createdAt": "2022-05-24T17:29:10Z",
+              "updatedAt": "2022-05-24T17:29:11Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oL7c",
+          "commit": {
+            "abbreviatedOid": "476115e"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:29:54Z",
+          "updatedAt": "2022-05-24T17:29:54Z",
+          "comments": [
+            {
+              "originalPosition": 271,
+              "body": "```suggestion\r\n\r\n```",
+              "createdAt": "2022-05-24T17:29:54Z",
+              "updatedAt": "2022-05-24T17:29:54Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oL_7",
+          "commit": {
+            "abbreviatedOid": "476115e"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:30:09Z",
+          "updatedAt": "2022-05-24T17:30:09Z",
+          "comments": [
+            {
+              "originalPosition": 271,
+              "body": "Whitespace",
+              "createdAt": "2022-05-24T17:30:09Z",
+              "updatedAt": "2022-05-24T17:30:09Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oMu7",
+          "commit": {
+            "abbreviatedOid": "0825a5f"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:32:46Z",
+          "updatedAt": "2022-05-24T17:32:47Z",
+          "comments": [
+            {
+              "originalPosition": 416,
+              "body": "```suggestion\r\n- {{!RFC5246}} and TLS SignatureAlgorithm registries {{?RFC5246}}:\r\n```",
+              "createdAt": "2022-05-24T17:32:47Z",
+              "updatedAt": "2022-05-24T17:32:47Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oM4T",
+          "commit": {
+            "abbreviatedOid": "87589d1"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:33:18Z",
+          "updatedAt": "2022-05-24T17:33:19Z",
+          "comments": [
+            {
+              "originalPosition": 416,
+              "body": "```suggestion\r\n- {{!RFC5246}} and TLS SignatureAlgorithm registries {{!RFC5246}}:\r\n```",
+              "createdAt": "2022-05-24T17:33:19Z",
+              "updatedAt": "2022-05-24T17:33:19Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oNCE",
+          "commit": {
+            "abbreviatedOid": "f42debb"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:33:54Z",
+          "updatedAt": "2022-05-24T17:33:55Z",
+          "comments": [
+            {
+              "originalPosition": 437,
+              "body": "```suggestion\r\n  Identifiers registry {{!RFC5246}}:\r\n```",
+              "createdAt": "2022-05-24T17:33:55Z",
+              "updatedAt": "2022-05-24T17:33:55Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "id": "PR_kwDOHFJBYs44VA7c",
+      "title": "Trailing whitespace fixes",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/5",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-05-24T00:45:33Z",
+      "updatedAt": "2022-05-24T02:51:36Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "0167edd8ffd4afcfc85dc18e2cc4cf84aa87bf6f",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-patch-5",
+      "headRefOid": "35ef807deb794df59441f51c02a9fea2097d71d5",
+      "closedAt": "2022-05-24T02:51:36Z",
+      "mergedAt": "2022-05-24T02:51:36Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "a0d396d2af5d09c411217794223be8087a60abc9"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
