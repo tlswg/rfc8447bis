@@ -46,7 +46,7 @@ review of the TLS- and DTLS-related registries undertaken as part of the
 TLS 1.3 development process.
 
 This document obsoletes RFC 8447 and updates the following RFCs:
-3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301.
+3749, 5077, 4680, 5246, 5705, 5878, 6520, and 7301.
 
 --- middle
 
@@ -146,8 +146,11 @@ Not all items defined in standards track documents need to be
 marked as Recommended. Changing the Recommended status of a standards
 track item requires standards action.
 
-[Note: the registries in the rest of the document will need to have the recommended column updated
-appropriately, specifically to deprecate MD5 and SHA-1, etc.]
+<aside markdown="block">
+Note: the registries in the rest of the document will need to have the
+recommended column updated appropriately, specifically to deprecate MD5
+and SHA-1, etc.
+</aside>
 
 # Session Ticket TLS Extension
 
@@ -297,7 +300,9 @@ The TLS Cipher Suites registry has grown significantly and will continue to
 do so.  To better guide those not intimately involved in TLS, IANA
 [shall update/has updated] the TLS Cipher Suites registry as follows:
 
-[The following text needs to be update to reflect the new recommended policy]
+<aside markdown="block">
+The following text needs to be update to reflect the new recommended policy.
+</aside>
 
 - Added a "Recommended" column to the TLS Cipher Suites registry.  The
   cipher suites that follow in the two tables are marked as "Y".
@@ -704,7 +709,7 @@ item either has not been through the IETF consensus process, has
 limited applicability, or is intended only for specific use cases.
 
 Note:
-: The role of the designated expert is described in RFC 8447.
+: The role of the designated expert is described in {{!I-D.ietf-tls-rfc8447bis}}.
 The designated expert {{!RFC8126}} ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft
 (that is posted and never published as an RFC) or a document from
