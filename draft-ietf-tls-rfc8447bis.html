@@ -1825,34 +1825,36 @@ consensus, the decision was taken to change the registration policy to
 Specification Required while reserving some of the code
 space for Standards Track usage and a small part of the code space
 for Private Use <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>.  Therefore, IANA has updated the TLS
-ClientCertificateType Identifiers registry's policy as follows:
-~~~~
-      Values in the range 0-63 are assigned via Standards Action <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>.
-      Values 64-223 are assigned via Specification Required <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>.
-      Values 224-255 are reserved for Private Use <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>.
-~~~~<a href="#section-11-1" class="pilcrow">¶</a></p>
-<p id="section-11-2">See <a href="#expert-pool" class="xref">Section 18</a> for additional information about the designated
-expert pool.<a href="#section-11-2" class="pilcrow">¶</a></p>
-<p id="section-11-3">IANA [<span class="bcp14">SHALL</span> add/has added] the following notes:<a href="#section-11-3" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-11-4">
-        <dt id="section-11-4.1">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-11-4.2">
-          <p id="section-11-4.2.1">The role of the designated expert is described in [this-RFC].
+ClientCertificateType Identifiers registry's policy as follows:<a href="#section-11-1" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-11-2">
+<pre>
+      Values in the range 0-63 are assigned via Standards Action [RFC8126].
+      Values 64-223 are assigned via Specification Required [RFC8126].
+      Values 224-255 are reserved for Private Use [RFC8126].
+</pre><a href="#section-11-2" class="pilcrow">¶</a>
+</div>
+<p id="section-11-3">See <a href="#expert-pool" class="xref">Section 18</a> for additional information about the designated
+expert pool.<a href="#section-11-3" class="pilcrow">¶</a></p>
+<p id="section-11-4">IANA [<span class="bcp14">SHALL</span> add/has added] the following notes:<a href="#section-11-4" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-11-5">
+        <dt id="section-11-5.1">Note:</dt>
+        <dd style="margin-left: 1.5em" id="section-11-5.2">
+          <p id="section-11-5.2.1">The role of the designated expert is described in [this-RFC].
 The designated expert <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span> ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft
 (that is posted and never published as an RFC) or a document from
 another standards body, industry consortium, university site, etc.
 The expert may provide more in-depth reviews, but their approval
-should not be taken as an endorsement of the identifier.<a href="#section-11-4.2.1" class="pilcrow">¶</a></p>
+should not be taken as an endorsement of the identifier.<a href="#section-11-5.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
-<dt id="section-11-4.3">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-11-4.4">
-          <p id="section-11-4.4.1">As specified in <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>, assignments made in the Private Use
+<dt id="section-11-5.3">Note:</dt>
+        <dd style="margin-left: 1.5em" id="section-11-5.4">
+          <p id="section-11-5.4.1">As specified in <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>, assignments made in the Private Use
 space are not generally useful for broad interoperability.  It is
 the responsibility of those making use of the Private Use range to
 ensure that no conflicts occur (within the intended scope of use).
-For widespread experiments, temporary reservations are available.<a href="#section-11-4.4.1" class="pilcrow">¶</a></p>
+For widespread experiments, temporary reservations are available.<a href="#section-11-5.4.1" class="pilcrow">¶</a></p>
 </dd>
       <dd class="break"></dd>
 </dl>
@@ -1883,29 +1885,28 @@ column for entry 4 in the TLS HandshakeType registry.<a href="#section-12-2.2" c
 <p id="section-13-1">To aid those reviewers who start with the IANA registry, IANA [<span class="bcp14">SHALL</span>
 add/has added]:<a href="#section-13-1" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-13-2.1">The following note to the TLS Exporter Labels registry:<a href="#section-13-2.1" class="pilcrow">¶</a>
-</li>
-      </ul>
-<span class="break"></span><dl class="dlParallel" id="section-13-3">
-        <dt id="section-13-3.1">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-13-3.2">
-          <p id="section-13-3.2.1"><span>[<a href="#RFC5705" class="xref">RFC5705</a>]</span> defines keying material exporters for TLS in terms of
-the TLS PRF.  <span>[<a href="#I-D.ietf-tls-rfc8446bis" class="xref">I-D.ietf-tls-rfc8446bis</a>]</span> replaced the PRF with HKDF, thus
-requiring a new construction. The exporter interface remains the same;
-however, the value is computed differently.<a href="#section-13-3.2.1" class="pilcrow">¶</a></p>
+<li class="normal" id="section-13-2.1">
+          <p id="section-13-2.1.1">The following note to the TLS Exporter Labels registry:<a href="#section-13-2.1.1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-13-2.1.2">
+            <dt id="section-13-2.1.2.1">Note:</dt>
+            <dd style="margin-left: 1.5em" id="section-13-2.1.2.2">
+              <p id="section-13-2.1.2.2.1"><span>[<a href="#RFC5705" class="xref">RFC5705</a>]</span> defines keying material exporters for TLS in terms of
+  the TLS PRF.  <span>[<a href="#I-D.ietf-tls-rfc8446bis" class="xref">I-D.ietf-tls-rfc8446bis</a>]</span> replaced the PRF with HKDF, thus
+  requiring a new construction. The exporter interface remains the same;
+  however, the value is computed differently.<a href="#section-13-2.1.2.2.1" class="pilcrow">¶</a></p>
 </dd>
-      <dd class="break"></dd>
+          <dd class="break"></dd>
 </dl>
-<ul class="normal">
-<li class="normal" id="section-13-4.1">A "Recommended" column to the TLS Exporter Labels registry.  The
+</li>
+        <li class="normal" id="section-13-2.2">A "Recommended" column to the TLS Exporter Labels registry.  The
 table that follows has been generated by marking Standards Track
 RFCs as "Y" and all others as "N".  The "Recommended" column is
 assigned a value of "N" unless explicitly requested, and adding a
 value with a "Recommended" value of "Y" requires Standards Action <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>.
-IESG Approval is <span class="bcp14">REQUIRED</span> for a Y-&gt;N transition.<a href="#section-13-4.1" class="pilcrow">¶</a>
+IESG Approval is <span class="bcp14">REQUIRED</span> for a Y-&gt;N transition.<a href="#section-13-2.2" class="pilcrow">¶</a>
 </li>
       </ul>
-<div class="alignLeft art-text artwork" id="section-13-5">
+<div class="alignLeft art-text artwork" id="section-13-3">
 <pre>
 Exporter Value                  | Recommended |
 --------------------------------|-------------|
@@ -1919,14 +1920,14 @@ ttls challenge                  |         N |
 EXTRACTOR-dtls_srtp             |         Y |
 EXPORTER_DTLS_OVER_SCTP         |         Y |
 EXPORTER: teap session key seed |         Y |
-</pre><a href="#section-13-5" class="pilcrow">¶</a>
+</pre><a href="#section-13-3" class="pilcrow">¶</a>
 </div>
-<p id="section-13-6">To provide additional information for the designated experts, IANA
-[<span class="bcp14">SHALL</span> add/has added] the following notes:<a href="#section-13-6" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-13-7">
-        <dt id="section-13-7.1">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-13-7.2">
-          <p id="section-13-7.2.1">The role of the designated expert is described in <span>[<a href="#I-D.ietf-tls-rfc8447bis" class="xref">I-D.ietf-tls-rfc8447bis</a>]</span>.
+<p id="section-13-4">To provide additional information for the designated experts, IANA
+[<span class="bcp14">SHALL</span> add/has added] the following notes:<a href="#section-13-4" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-13-5">
+        <dt id="section-13-5.1">Note:</dt>
+        <dd style="margin-left: 1.5em" id="section-13-5.2">
+          <p id="section-13-5.2.1">The role of the designated expert is described in <span>[<a href="#I-D.ietf-tls-rfc8447bis" class="xref">I-D.ietf-tls-rfc8447bis</a>]</span>.
 The designated expert <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span> ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft
 (that is posted and never published as an RFC) or a document from
@@ -1936,20 +1937,20 @@ should not be taken as an endorsement of the exporter label.  The
 expert also verifies that the label is a string consisting of
 printable ASCII characters beginning with "EXPORTER".  IANA <span class="bcp14">MUST</span>
 also verify that one label is not a prefix of any other label.
-For example, labels "key" or "master secretary" are forbidden.<a href="#section-13-7.2.1" class="pilcrow">¶</a></p>
+For example, labels "key" or "master secretary" are forbidden.<a href="#section-13-5.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
-<dt id="section-13-7.3">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-13-7.4">
-          <p id="section-13-7.4.1">If an item is not marked as "Recommended", it does not
+<dt id="section-13-5.3">Note:</dt>
+        <dd style="margin-left: 1.5em" id="section-13-5.4">
+          <p id="section-13-5.4.1">If an item is not marked as "Recommended", it does not
 necessarily mean that it is flawed; rather, it indicates that the
 item either has not been through the IETF consensus process, has
-limited applicability, or is intended only for specific use cases.<a href="#section-13-7.4.1" class="pilcrow">¶</a></p>
+limited applicability, or is intended only for specific use cases.<a href="#section-13-5.4.1" class="pilcrow">¶</a></p>
 </dd>
       <dd class="break"></dd>
 </dl>
-<p id="section-13-8">IANA [<span class="bcp14">SHALL</span> update/has updated] the reference for this registry to also
-refer to this document.<a href="#section-13-8" class="pilcrow">¶</a></p>
+<p id="section-13-6">IANA [<span class="bcp14">SHALL</span> update/has updated] the reference for this registry to also
+refer to this document.<a href="#section-13-6" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="adding-missing-item-to-tls-alerts-registry">
@@ -2004,7 +2005,7 @@ expert pool.<a href="#section-15-5" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-15-7">
         <dt id="section-15-7.1">Note:</dt>
         <dd style="margin-left: 1.5em" id="section-15-7.2">
-          <p id="section-15-7.2.1">The role of the designated expert is described in [this-RFC].
+          <p id="section-15-7.2.1">The role of the designated expert is described in <span>[<a href="#I-D.ietf-tls-rfc8447bis" class="xref">I-D.ietf-tls-rfc8447bis</a>]</span>.
 The designated expert <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span> ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft
 (that is posted and never published as an RFC) or a document from
@@ -2035,63 +2036,60 @@ refer this document.<a href="#section-15-8" class="pilcrow">¶</a></p>
 they are only applicable to version of (D)TLS protocol versions prior
 to 1.3), IANA:<a href="#section-16-1" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-16-2.1">[<span class="bcp14">SHALL</span> add/has added] the following to the TLS Compression Method
-Identifiers registry <span>[<a href="#RFC3749" class="xref">RFC3749</a>]</span>:<a href="#section-16-2.1" class="pilcrow">¶</a>
-</li>
-      </ul>
-<span class="break"></span><dl class="dlParallel" id="section-16-3">
-        <dt id="section-16-3.1">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-16-3.2">
-          <p id="section-16-3.2.1">Value 0 (NULL) is the only value in this registry applicable to (D)TLS
-protocol version 1.3 or later.<a href="#section-16-3.2.1" class="pilcrow">¶</a></p>
+<li class="normal" id="section-16-2.1">
+          <p id="section-16-2.1.1">[<span class="bcp14">SHALL</span> add/has added] the following to the TLS Compression Method
+Identifiers registry <span>[<a href="#RFC3749" class="xref">RFC3749</a>]</span>:<a href="#section-16-2.1.1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-16-2.1.2">
+            <dt id="section-16-2.1.2.1">Note:</dt>
+            <dd style="margin-left: 1.5em" id="section-16-2.1.2.2">
+              <p id="section-16-2.1.2.2.1">Value 0 (NULL) is the only value in this registry applicable to (D)TLS
+  protocol version 1.3 or later.<a href="#section-16-2.1.2.2.1" class="pilcrow">¶</a></p>
 </dd>
-      <dd class="break"></dd>
+          <dd class="break"></dd>
 </dl>
-<ul class="normal">
-<li class="normal" id="section-16-4.1">[<span class="bcp14">SHALL</span> add/has added] the following to the TLS HashAlgorithm<a href="#section-16-4.1" class="pilcrow">¶</a>
 </li>
-        <li class="normal" id="section-16-4.2">
-          <span>[<a href="#RFC5246" class="xref">RFC5246</a>]</span> and TLS SignatureAlgorithm registries <span>[<a href="#RFC5246" class="xref">RFC5246</a>]</span>:<a href="#section-16-4.2" class="pilcrow">¶</a>
+        <li class="normal" id="section-16-2.2">[<span class="bcp14">SHALL</span> add/has added] the following to the TLS HashAlgorithm<a href="#section-16-2.2" class="pilcrow">¶</a>
 </li>
-      </ul>
-<span class="break"></span><dl class="dlParallel" id="section-16-5">
-        <dt id="section-16-5.1">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-16-5.2">
-          <p id="section-16-5.2.1">The values in this registry are only applicable to (D)TLS protocol
-versions prior to 1.3.  (D)TLS 1.3 and later versions' values are
-registered in the TLS SignatureScheme registry.<a href="#section-16-5.2.1" class="pilcrow">¶</a></p>
+        <li class="normal" id="section-16-2.3">
+          <p id="section-16-2.3.1"><span>[<a href="#RFC5246" class="xref">RFC5246</a>]</span> and TLS SignatureAlgorithm registries <span>[<a href="#RFC5246" class="xref">RFC5246</a>]</span>:<a href="#section-16-2.3.1" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-16-2.3.2">
+            <dt id="section-16-2.3.2.1">Note:</dt>
+            <dd style="margin-left: 1.5em" id="section-16-2.3.2.2">
+              <p id="section-16-2.3.2.2.1">The values in this registry are only applicable to (D)TLS protocol
+  versions prior to 1.3.  (D)TLS 1.3 and later versions' values are
+  registered in the TLS SignatureScheme registry.<a href="#section-16-2.3.2.2.1" class="pilcrow">¶</a></p>
 </dd>
-      <dd class="break"></dd>
+          <dd class="break"></dd>
 </dl>
-<ul class="normal">
-<li class="normal" id="section-16-6.1">[<span class="bcp14">SHALL</span> update/has updated] the "Reference" field in the TLS
+</li>
+        <li class="normal" id="section-16-2.4">[<span class="bcp14">SHALL</span> update/has updated] the "Reference" field in the TLS
 Compression Method Identifiers, TLS HashAlgorithm and TLS
-SignatureAlgorithm registries to also refer to this document.<a href="#section-16-6.1" class="pilcrow">¶</a>
+SignatureAlgorithm registries to also refer to this document.<a href="#section-16-2.4" class="pilcrow">¶</a>
 </li>
-        <li class="normal" id="section-16-6.2">[<span class="bcp14">SHALL</span> update/has updated] the TLS HashAlgorithm registry to list
+        <li class="normal" id="section-16-2.5">[<span class="bcp14">SHALL</span> update/has updated] the TLS HashAlgorithm registry to list
 values 7 and 9-223 as "Reserved" and the TLS SignatureAlgorithm
-registry to list values 4-6 and 9-223 as "Reserved".<a href="#section-16-6.2" class="pilcrow">¶</a>
+registry to list values 4-6 and 9-223 as "Reserved".<a href="#section-16-2.5" class="pilcrow">¶</a>
 </li>
-        <li class="normal" id="section-16-6.3">has added the following to the TLS ClientCertificateType
-Identifiers registry <span>[<a href="#RFC5246" class="xref">RFC5246</a>]</span>:<a href="#section-16-6.3" class="pilcrow">¶</a>
+        <li class="normal" id="section-16-2.6">has added the following to the TLS ClientCertificateType
+Identifiers registry <span>[<a href="#RFC5246" class="xref">RFC5246</a>]</span>:<a href="#section-16-2.6" class="pilcrow">¶</a>
 </li>
       </ul>
-<p id="section-16-7">Note: The values in this registry are only applicable to (D)TLS
-protocol versions prior to 1.3.<a href="#section-16-7" class="pilcrow">¶</a></p>
-<p id="section-16-8">Despite the fact that the TLS HashAlgorithm and SignatureAlgorithm
+<p id="section-16-3">Note: The values in this registry are only applicable to (D)TLS
+protocol versions prior to 1.3.<a href="#section-16-3" class="pilcrow">¶</a></p>
+<p id="section-16-4">Despite the fact that the TLS HashAlgorithm and SignatureAlgorithm
 registries are orphaned, it is still important to warn implementers
 of pre-TLS1.3 implementations about the dangers of blindly
 implementing cryptographic algorithms.  Therefore, IANA has added the
 following warning to the TLS HashAlgorithm and SignatureAlgorithm
-registries:<a href="#section-16-8" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-16-9">
-        <dt id="section-16-9.1">WARNING:</dt>
-        <dd style="margin-left: 1.5em" id="section-16-9.2">
-          <p id="section-16-9.2.1">Cryptographic algorithms and parameters will be broken or weakened
+registries:<a href="#section-16-4" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-16-5">
+        <dt id="section-16-5.1">WARNING:</dt>
+        <dd style="margin-left: 1.5em" id="section-16-5.2">
+          <p id="section-16-5.2.1">Cryptographic algorithms and parameters will be broken or weakened
 over time.  Blindly implementing the cryptographic algorithms listed
 here is not advised.  Implementers and users need to check that the
 cryptographic algorithms listed continue to provide the expected level
-of security.<a href="#section-16-9.2.1" class="pilcrow">¶</a></p>
+of security.<a href="#section-16-5.2.1" class="pilcrow">¶</a></p>
 </dd>
       <dd class="break"></dd>
 </dl>
