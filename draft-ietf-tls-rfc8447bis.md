@@ -232,8 +232,7 @@ update/has updated] the TLS ExtensionType Values registry as follows:
 IANA [SHALL update/has added] the following notes:
 
 Note:
-: The role of the designated expert is described in {{!I-D.ietf-tls-rfc8447bis}}
-
+: The role of the designated expert is described in {{!I-D.ietf-tls-rfc8447bis}}.
 The designated expert {{!RFC8126}} ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft (that
 is posted and never published as an RFC) or a document from another
@@ -645,8 +644,8 @@ to 1.3), IANA:
     : Value 0 (NULL) is the only value in this registry applicable to (D)TLS
     protocol version 1.3 or later.
 
-- [SHALL add/has added] the following to the TLS HashAlgorithm
-- {{!RFC5246}} and TLS SignatureAlgorithm registries {{!RFC5246}}:
+- [SHALL add/has added] the following to the TLS HashAlgorithm {{!RFC5246}}
+and TLS SignatureAlgorithm registries {{!RFC5246}}:
 
     Note:
     : The values in this registry are only applicable to (D)TLS protocol
@@ -664,8 +663,9 @@ to 1.3), IANA:
 - has added the following to the TLS ClientCertificateType
   Identifiers registry {{!RFC5246}}:
 
-Note: The values in this registry are only applicable to (D)TLS
-protocol versions prior to 1.3.
+    Note:
+    :The values in this registry are only applicable to (D)TLS
+    protocol versions prior to 1.3.
 
 Despite the fact that the TLS HashAlgorithm and SignatureAlgorithm
 registries are orphaned, it is still important to warn implementers
