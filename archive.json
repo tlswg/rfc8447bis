@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-06-26T01:43:22.229719+00:00",
+  "timestamp": "2022-06-28T01:40:45.287783+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -140,24 +140,26 @@
       "id": "PR_kwDOHFJBYs44UQfr",
       "title": "Editor/Reference Updates",
       "url": "https://github.com/tlswg/rfc8447bis/pull/4",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "@jsalowey PTAL.",
       "createdAt": "2022-05-23T19:35:54Z",
-      "updatedAt": "2022-05-24T17:34:00Z",
+      "updatedAt": "2022-06-27T19:04:02Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "6e8d3bd7540c2f8363682f4dc47fbd374022e3ef",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-patch-4",
-      "headRefOid": "e79074ae57c174841f3d48ec9fb409365f0ea199",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "681eb2c86e3bfd73bfd12be849021dea55d94347",
+      "closedAt": "2022-06-27T19:04:01Z",
+      "mergedAt": "2022-06-27T19:04:01Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "f44b1d33e3c2adae11d1d2e4ea12db2e5a39837f"
+      },
       "comments": [],
       "reviews": [
         {
