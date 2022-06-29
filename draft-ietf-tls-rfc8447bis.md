@@ -71,7 +71,7 @@ policy. Instead of listing the changes and their rationale here in the
 introduction, each section provides rationale for the proposed
 change(s). The instructions in this document revise the values of
 "Recommended" column, applies the new value to the registries, and adds
-this column as noted in {{orphaned}}. There are also instructions to
+this column as noted in {{orphaned-registries}}. There are also instructions to
 update references, including replacing references to {{?RFC8446}} with
 {{!I-D.ietf-tls-rfc8446bis}} and {{?RFC8447}} with {{!I-D.ietf-tls-rfc8447bis}}.
 
@@ -637,7 +637,7 @@ limited applicability, or is intended only for specific use cases.
 IANA [SHALL update/has updated] the reference for this registry to also
 refer this document.
 
-# Orphaned Registries {{#orphaned}}
+# Orphaned Registries
 
 To make it clear that (D)TLS 1.3 has orphaned certain registries (i.e.,
 they are only applicable to version of (D)TLS protocol versions prior
