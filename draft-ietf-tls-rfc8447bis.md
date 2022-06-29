@@ -159,7 +159,7 @@ Values registry correspond to the presentation language field name
 except for entry 35.  To ensure that the values in the registry are
 consistently identified in the registry, IANA:
 
-- [SHALL rename/has renamed] entry 35 to "session_ticket (renamed from
+- has renamed entry 35 to "session_ticket (renamed from
   "SessionTicket TLS")" {{!RFC5077}}.
 
 - [SHALL add/has added] a reference to this document in the "Reference"
