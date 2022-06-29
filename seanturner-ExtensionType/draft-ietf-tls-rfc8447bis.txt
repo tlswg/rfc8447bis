@@ -235,7 +235,8 @@ Table of Contents
     via Specification Required [RFC8126].  Values with the first byte
     255 (decimal) are reserved for Private Use [RFC8126].
 
-   *  Updated the "Reference" to also refer to this document.
+   *  Updated the "Reference" to refer to this document instead of
+      [RFC8447].
 
    See Section 18 for additional information about the designated expert
    pool.
