@@ -279,7 +279,7 @@ alignment between these specifications.
 # TLS Cipher Suites Registry
 
 <aside markdown="block">
-  Note: Review in light of {{!I-D.ietf-tls-deprecate-obsolete-kex }}.
+  Note: Review in light of {{!I-D.ietf-tls-deprecate-obsolete-kex}}.
 </aside>
 
 Experience has shown that the IETF Consensus registry policy for TLS
