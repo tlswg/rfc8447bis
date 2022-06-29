@@ -162,8 +162,8 @@ consistently identified in the registry, IANA:
 - has renamed entry 35 to "session_ticket (renamed from
   "SessionTicket TLS")" {{!RFC5077}}.
 
-- [SHALL add/has added] a reference to this document in the "Reference"
-  column for entry 35.
+- [SHALL replace/has replaced] the reference to {{?RFC8447}} with a
+  reference to this document in the "Reference" column for entry 35.
 
 # TLS ExtensionType Values
 
