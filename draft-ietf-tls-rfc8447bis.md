@@ -278,6 +278,10 @@ alignment between these specifications.
 
 # TLS Cipher Suites Registry
 
+<aside markdown="block">
+  Note: Review in light of {{!I-D.ietf-tls-deprecate-obsolete-kex }}.
+</aside>
+
 Experience has shown that the IETF Consensus registry policy for TLS
 Cipher Suites was too strict.  Based on WG consensus, the decision was
 taken to change the TLS Cipher Suites registry's registration policy
