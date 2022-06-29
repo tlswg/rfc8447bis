@@ -5,6 +5,7 @@ docname: draft-ietf-tls-rfc8447bis-latest
 category: std
 obsoletes: 8447
 updates: 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301
+v: 3
 
 ipr: trust200902
 area: "Security"
@@ -54,14 +55,25 @@ This document obsoletes RFC 8447 and updates the following RFCs:
 
 This document instructs IANA to make changes to a number of the IANA
 registries related to Transport Layer Security (TLS) and Datagram
-Transport Layer Security (DTLS). These changes were almost entirely
-motivated by the development of TLS 1.3 {{!I-D.ietf-tls-rfc8446bis}}.
+Transport Layer Security (DTLS).
 
-The changes introduced by this document range from simple, e.g., adding
-notes, to complex, e.g., changing a registry's registration policy.
-Instead of listing the changes and their rationale here in the
+<aside markdown="block">
+  NOTE for IANA: Where we make new changes we used [SHALL / has].
+  Otherwise, we left it as has, i.e., it matches the text in
+  {{?RFC8447}}.
+</aside>
+
+Most of the instructions included herein and previously included in
+{{?RFC8447}}, which this document obsoletes, were motivated by the
+development of TLS 1.3 {{?RFC8446}}. The changes ranged from simple,
+e.g., adding notes, to complex, e.g., changing a registry's registration
+policy. Instead of listing the changes and their rationale here in the
 introduction, each section provides rationale for the proposed
-change(s).
+change(s). The instructions in this document revise the values of
+"Recommended" column, applies the new value to the registries, and adds
+this column as noted in {{orphaned}}. There are also instructions to
+update references, including replacing references to {{?RFC8446}} with
+{{!I-D.ietf-tls-rfc8446bis}} and {{?RFC8447}} with {{!I-D.ietf-tls-rfc8447bis}}.
 
 This document proposes no changes to the registration policies for TLS
 Alerts {{!I-D.ietf-tls-rfc8446bis}}, TLS ContentType {{!I-D.ietf-tls-rfc8446bis}},
@@ -69,12 +81,6 @@ TLS HandshakeType {{!I-D.ietf-tls-rfc8446bis}}, and TLS Certificate Status
 Types {{?RFC6961}} registries; the existing policies (Standards Action
 for the first three; IETF Review for the last), are appropriate for
 these one-byte code points because of their scarcity.
-
-# Differences from RFC 8447
-
-This document obsoletes {{?RFC8447}} and revises the values of "Recommended"
-column. It also updates references to {{?RFC8446}} with {{!I-D.ietf-tls-rfc8446bis}}
-and {{?RFC8447}} with {{!I-D.ietf-tls-rfc8447bis}}.
 
 # Terminology
 
@@ -147,9 +153,9 @@ marked as Recommended. Changing the Recommended status of a standards
 track item requires standards action.
 
 <aside markdown="block">
-Note: the registries in the rest of the document will need to have the
-recommended column updated appropriately, specifically to deprecate MD5
-and SHA-1, etc.
+  Note: the registries in the rest of the document will need to have the
+  recommended column updated appropriately, specifically to deprecate MD5
+  and SHA-1, etc.
 </aside>
 
 # Session Ticket TLS Extension
@@ -300,7 +306,7 @@ do so.  To better guide those not intimately involved in TLS, IANA
 [shall update/has updated] the TLS Cipher Suites registry as follows:
 
 <aside markdown="block">
-The following text needs to be update to reflect the new recommended policy.
+  The following text needs to be update to reflect the new recommended policy.
 </aside>
 
 - Added a "Recommended" column to the TLS Cipher Suites registry.  The
@@ -631,7 +637,7 @@ limited applicability, or is intended only for specific use cases.
 IANA [SHALL update/has updated] the reference for this registry to also
 refer this document.
 
-# Orphaned Registries
+# Orphaned Registries {{#orphaned}}
 
 To make it clear that (D)TLS 1.3 has orphaned certain registries (i.e.,
 they are only applicable to version of (D)TLS protocol versions prior
@@ -664,7 +670,7 @@ and TLS SignatureAlgorithm registries {{!RFC5246}}:
   Identifiers registry {{!RFC5246}}:
 
     Note:
-    :The values in this registry are only applicable to (D)TLS
+    : The values in this registry are only applicable to (D)TLS
     protocol versions prior to 1.3.
 
 Despite the fact that the TLS HashAlgorithm and SignatureAlgorithm
