@@ -182,7 +182,7 @@ ExtensionType Values registry as follows:
     255 (decimal) are reserved for Private Use [RFC8126].
 ~~~
 
-- Updated the "Reference" to also refer to this document.
+- Updated the "Reference" to refer to this document instead of {{?RFC8447}}.
 
 See {{expert-pool}} for additional information about the designated
 expert pool.
