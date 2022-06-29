@@ -141,10 +141,10 @@ are:
     interoperability problems in deployment.
 
 Setting the Recommended item to "Y" or "D" or changing a
-item whose current value is "Y" or "D" requires standards action.
-Not all items defined in standards track documents need to be
-marked as Recommended. Changing the Recommended status of a standards
-track item requires standards action.
+item whose current value is "Y" or "D" requires Standards Action {{!RFC8126}}.
+Not all items defined in Standards Track RFCs need to be
+marked as Recommended. Changing the Recommended status of an item in a
+Standards Track RFC requires Standards Action {{!RFC8126}}.
 
 <aside markdown="block">
 Note: the registries in the rest of the document will need to have the
