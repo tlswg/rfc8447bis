@@ -6,9 +6,9 @@ Transport Layer Security                                      J. Salowey
 Internet-Draft                                                Salesforce
 Obsoletes: 8447 (if approved)                                  S. Turner
 Updates: 3749, 5077, 4680, 5246, 5705, 5878,                       sn3rd
-         6520, 7301 (if approved)                           27 June 2022
+         6520, 7301 (if approved)                           30 June 2022
 Intended status: Standards Track                                        
-Expires: 29 December 2022
+Expires: 1 January 2023
 
 
                  IANA Registry Updates for TLS and DTLS
@@ -54,7 +54,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 29 December 2022.
+   This Internet-Draft will expire on 1 January 2023.
 
 Copyright Notice
 
@@ -73,42 +73,51 @@ Copyright Notice
 Table of Contents
 
    1.  Introduction
-   2.  Differences from RFC 8447
-   3.  Terminology
-   4.  Adding "TLS" to Registry Names
-   5.  Aligning with RFC 8126
-   6.  Adding "Recommended" Column
-   7.  Session Ticket TLS Extension
-   8.  TLS ExtensionType Values
-   9.  TLS Cipher Suites Registry
-   10. TLS Supported Groups
-   11. TLS ClientCertificateType Identifiers
-   12. New Session Ticket TLS Handshake Message Type
-   13. TLS Exporter Labels Registry
-   14. Adding Missing Item to TLS Alerts Registry
-   15. TLS Certificate Types
-   16. Orphaned Registries
-   17. Additional Notes
-   18. Designated Expert Pool
-   19. Security Considerations
-   20. IANA Considerations
-   21. References
-     21.1.  Normative References
-     21.2.  Informative References
+   2.  Terminology
+   3.  Adding "TLS" to Registry Names
+   4.  Aligning with RFC 8126
+   5.  Adding "Recommended" Column
+   6.  Session Ticket TLS Extension
+   7.  TLS ExtensionType Values
+   8.  TLS Cipher Suites Registry
+   9.  TLS Supported Groups
+   10. TLS ClientCertificateType Identifiers
+   11. New Session Ticket TLS Handshake Message Type
+   12. TLS Exporter Labels Registry
+   13. Adding Missing Item to TLS Alerts Registry
+   14. TLS Certificate Types
+   15. Orphaned Registries
+   16. Additional Notes
+   17. Designated Expert Pool
+   18. Security Considerations
+   19. IANA Considerations
+   20. References
+     20.1.  Normative References
+     20.2.  Informative References
    Authors' Addresses
 
 1.  Introduction
 
    This document instructs IANA to make changes to a number of the IANA
    registries related to Transport Layer Security (TLS) and Datagram
-   Transport Layer Security (DTLS).  These changes were almost entirely
-   motivated by the development of TLS 1.3 [I-D.ietf-tls-rfc8446bis].
+   Transport Layer Security (DTLS).
 
-   The changes introduced by this document range from simple, e.g.,
-   adding notes, to complex, e.g., changing a registry's registration
-   policy.  Instead of listing the changes and their rationale here in
-   the introduction, each section provides rationale for the proposed
-   change(s).
+      |  NOTE for IANA: Where we make new changes we used [SHALL / has].
+      |  Otherwise, we left it as has, i.e., it matches the text in
+      |  [RFC8447].
+
+   Most of the instructions included herein and previously included in
+   [RFC8447], which this document obsoletes, were motivated by the
+   development of TLS 1.3 [RFC8446].  The changes ranged from simple,
+   e.g., adding notes, to complex, e.g., changing a registry's
+   registration policy.  Instead of listing the changes and their
+   rationale here in the introduction, each section provides rationale
+   for the proposed change(s).  The instructions in this document revise
+   the values of "Recommended" column, applies the new value to the
+   registries, and adds this column as noted in Section 15.  There are
+   also instructions to update references, including replacing
+   references to [RFC8446] with [I-D.ietf-tls-rfc8446bis] and [RFC8447]
+   with [I-D.ietf-tls-rfc8447bis].
 
    This document proposes no changes to the registration policies for
    TLS Alerts [I-D.ietf-tls-rfc8446bis], TLS ContentType
@@ -118,14 +127,7 @@ Table of Contents
    three; IETF Review for the last), are appropriate for these one-byte
    code points because of their scarcity.
 
-2.  Differences from RFC 8447
-
-   This document obsoletes [RFC8447] and revises the values of
-   "Recommended" column.  It also updates references to [RFC8446] with
-   [I-D.ietf-tls-rfc8446bis] and [RFC8447] with
-   [I-D.ietf-tls-rfc8447bis].
-
-3.  Terminology
+2.  Terminology
 
    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
    "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
@@ -133,7 +135,7 @@ Table of Contents
    BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
 
-4.  Adding "TLS" to Registry Names
+3.  Adding "TLS" to Registry Names
 
    For consistency amongst TLS registries, IANA [SHALL prepend/has
    prepended] "TLS" to the following registries:
@@ -151,7 +153,7 @@ Table of Contents
    registries to also refer to this document.  The remainder of this
    document will use the registry names with the "TLS" prefix.
 
-5.  Aligning with RFC 8126
+4.  Aligning with RFC 8126
 
    Many of the TLS-related IANA registries had the registration
    procedure "IETF Consensus", which was changed to "IETF Review" by
@@ -169,7 +171,7 @@ Table of Contents
    IANA [SHALL update/has updated] the reference for these two
    registries to also refer to this document.
 
-6.  Adding "Recommended" Column
+5.  Adding "Recommended" Column
 
    The instructions in this document update the Recommended column,
    originally added in [RFC8447] to add a third value, "D", indicating
@@ -207,7 +209,7 @@ Table of Contents
       |  have the recommended column updated appropriately, specifically
       |  to deprecate MD5 and SHA-1, etc.
 
-7.  Session Ticket TLS Extension
+6.  Session Ticket TLS Extension
 
    The nomenclature for the registry entries in the TLS ExtensionType
    Values registry correspond to the presentation language field name
@@ -220,7 +222,7 @@ Table of Contents
    *  [SHALL add/has added] a reference to this document in the
       "Reference" column for entry 35.
 
-8.  TLS ExtensionType Values
+7.  TLS ExtensionType Values
 
    Experience has shown that the IETF Review registry policy for TLS
    extensions was too strict.  Based on WG consensus, the decision was
@@ -237,7 +239,7 @@ Table of Contents
 
    *  Updated the "Reference" to also refer to this document.
 
-   See Section 18 for additional information about the designated expert
+   See Section 17 for additional information about the designated expert
    pool.
 
    Despite wanting to "loosen" the registration policies for TLS
@@ -359,7 +361,7 @@ Table of Contents
       extension not listed there marked as "-" to indicate that it is
       not used by TLS 1.3.
 
-9.  TLS Cipher Suites Registry
+8.  TLS Cipher Suites Registry
 
    Experience has shown that the IETF Consensus registry policy for TLS
    Cipher Suites was too strict.  Based on WG consensus, the decision
@@ -373,7 +375,7 @@ Table of Contents
        assigned via Specification Required [RFC8126].  Values with the
        first byte 255 (decimal) are reserved for Private Use [RFC8126].
 
-   See Section 18 for additional information about the designated expert
+   See Section 17 for additional information about the designated expert
    pool.
 
    The TLS Cipher Suites registry has grown significantly and will
@@ -492,7 +494,7 @@ Table of Contents
    IANA [SHALL update/has updated] the reference for this registry to
    also refer to this document.
 
-10.  TLS Supported Groups
+9.  TLS Supported Groups
 
    Similar to cipher suites, supported groups have proliferated over
    time, and some use the registry to measure implementations.
@@ -540,7 +542,7 @@ Table of Contents
 
    The value 0 (0x0000) has been marked as reserved.
 
-11.  TLS ClientCertificateType Identifiers
+10.  TLS ClientCertificateType Identifiers
 
    Experience has shown that the IETF Consensus registry policy for TLS
    ClientCertificateType Identifiers is too strict.  Based on WG
@@ -554,7 +556,7 @@ Table of Contents
       Values 64-223 are assigned via Specification Required [RFC8126].
       Values 224-255 are reserved for Private Use [RFC8126].
 
-   See Section 18 for additional information about the designated expert
+   See Section 17 for additional information about the designated expert
    pool.
 
    IANA [SHALL add/has added] the following notes:
@@ -573,7 +575,7 @@ Table of Contents
       ensure that no conflicts occur (within the intended scope of use).
       For widespread experiments, temporary reservations are available.
 
-12.  New Session Ticket TLS Handshake Message Type
+11.  New Session Ticket TLS Handshake Message Type
 
    To align with TLS implementations and to align the naming
    nomenclature with other Handshake message types, IANA:
@@ -585,7 +587,7 @@ Table of Contents
    *  [SHALL add/has added] a reference to this document in the
       "Reference" column for entry 4 in the TLS HandshakeType registry.
 
-13.  TLS Exporter Labels Registry
+12.  TLS Exporter Labels Registry
 
    To aid those reviewers who start with the IANA registry, IANA [SHALL
    add/has added]:
@@ -642,7 +644,7 @@ Table of Contents
    IANA [SHALL update/has updated] the reference for this registry to
    also refer to this document.
 
-14.  Adding Missing Item to TLS Alerts Registry
+13.  Adding Missing Item to TLS Alerts Registry
 
    IANA [SHALL add/has added] the following entry to the TLS Alerts
    registry; the entry was omitted from the IANA instructions in
@@ -650,7 +652,7 @@ Table of Contents
 
        120   no_application_protocol  Y  [RFC7301][This-document]
 
-15.  TLS Certificate Types
+14.  TLS Certificate Types
 
    Experience has shown that the IETF Consensus registry policy for TLS
    Certificate Types is too strict.  Based on WG consensus, the decision
@@ -672,7 +674,7 @@ Table of Contents
       Action [RFC8126].  IESG Approval is REQUIRED for a Y->N
       transition.
 
-   See Section 18 for additional information about the designated expert
+   See Section 17 for additional information about the designated expert
    pool.
 
    IANA [SHALL add/has added] the following note:
@@ -694,7 +696,7 @@ Table of Contents
    IANA [SHALL update/has updated] the reference for this registry to
    also refer this document.
 
-16.  Orphaned Registries
+15.  Orphaned Registries
 
    To make it clear that (D)TLS 1.3 has orphaned certain registries
    (i.e., they are only applicable to version of (D)TLS protocol
@@ -724,8 +726,8 @@ Table of Contents
    *  has added the following to the TLS ClientCertificateType
       Identifiers registry [RFC5246]:
 
-      Note: :The values in this registry are only applicable to (D)TLS
-      protocol versions prior to 1.3.
+      Note:  The values in this registry are only applicable to (D)TLS
+         protocol versions prior to 1.3.
 
    Despite the fact that the TLS HashAlgorithm and SignatureAlgorithm
    registries are orphaned, it is still important to warn implementers
@@ -740,7 +742,7 @@ Table of Contents
       need to check that the cryptographic algorithms listed continue to
       provide the expected level of security.
 
-17.  Additional Notes
+16.  Additional Notes
 
    IANA has added the following warning and note to the TLS
    SignatureScheme registry:
@@ -774,7 +776,7 @@ Table of Contents
       more in depth reviews, but their approval should not be taken as
       an endorsement of the key exchange mode.
 
-18.  Designated Expert Pool
+17.  Designated Expert Pool
 
    Specification Required [RFC8126] registry requests are registered
    after a three-week review period on the tls-reg-review@ietf.org
@@ -814,7 +816,7 @@ Table of Contents
    Expert, that Expert SHOULD defer to the judgment of the other
    Experts.
 
-19.  Security Considerations
+18.  Security Considerations
 
    The change to Specification Required from IETF Review lowers the
    amount of review provided by the WG for cipher suites and supported
@@ -835,14 +837,14 @@ Table of Contents
    taken as an endorsement of the cipher suite, extension, supported
    group, etc.
 
-20.  IANA Considerations
+19.  IANA Considerations
 
    This document is entirely about changes to TLS-related IANA
    registries.
 
-21.  References
+20.  References
 
-21.1.  Normative References
+20.1.  Normative References
 
    [I-D.ietf-tls-rfc8446bis]
               Rescorla, E., "The Transport Layer Security (TLS) Protocol
@@ -909,7 +911,7 @@ Table of Contents
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
 
-21.2.  Informative References
+20.2.  Informative References
 
    [RFC4366]  Blake-Wilson, S., Nystrom, M., Hopwood, D., Mikkelsen, J.,
               and T. Wright, "Transport Layer Security (TLS)
