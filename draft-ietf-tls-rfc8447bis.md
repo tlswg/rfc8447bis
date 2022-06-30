@@ -637,15 +637,15 @@ To make it clear that (D)TLS 1.3 has orphaned certain registries (i.e.,
 they are only applicable to version of (D)TLS protocol versions prior
 to 1.3), IANA:
 
-- [SHALL add/has added] the following to the TLS Compression Method
-  Identifiers registry {{!RFC3749}}:
+- has added the following to the TLS Compression Method Identifiers
+  registry {{!RFC3749}}:
 
     Note:
     : Value 0 (NULL) is the only value in this registry applicable to (D)TLS
     protocol version 1.3 or later.
 
-- [SHALL add/has added] the following to the TLS HashAlgorithm {{!RFC5246}}
-and TLS SignatureAlgorithm registries {{!RFC5246}}:
+- has added the following to the TLS HashAlgorithm {{!RFC5246}}
+  and TLS SignatureAlgorithm registries {{!RFC5246}}:
 
     Note:
     : The values in this registry are only applicable to (D)TLS protocol
@@ -654,9 +654,10 @@ and TLS SignatureAlgorithm registries {{!RFC5246}}:
 
 - [SHALL update/has updated] the "Reference" field in the TLS
   Compression Method Identifiers, TLS HashAlgorithm and TLS
-  SignatureAlgorithm registries to also refer to this document.
+  SignatureAlgorithm registries to refer to this document instead of
+  {{?RFC8447}}.
 
-- [SHALL update/has updated] the TLS HashAlgorithm registry to list
+- has updated the TLS HashAlgorithm registry to list
   values 7 and 9-223 as "Reserved" and the TLS SignatureAlgorithm
   registry to list values 4-6 and 9-223 as "Reserved".
 
@@ -700,8 +701,8 @@ the responsibility of those making use of the Private Use range to
 ensure that no conflicts occur (within the intended scope of use).
 For widespread experiments, temporary reservations are available.
 
-IANA has added the following notes to the TLS PskKeyExchangeMode
-registry:
+IANA [SHALL update/has updated] added the following notes to the
+TLS PskKeyExchangeMode registry:
 
 Note:
 : If an item is not marked as "Recommended", it does not
