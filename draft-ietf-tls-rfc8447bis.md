@@ -682,6 +682,58 @@ here is not advised.  Implementers and users need to check that the
 cryptographic algorithms listed continue to provide the expected level
 of security.
 
+Though TLS 1.0 and TLS 1.1 were deprecated {{!RFC8996}}, TLS 1.2 will
+be in use for some time. IANA [SHALL update/has updated] the TLS
+HashAlgorithm, TLS SignatureAlgorithm, and TLS ClientCertificateTypes
+registries to add a "Recommended" column as follows:
+
+TLS HashAlgorithm registry:
+
+| Descsription | Recommended |
+|:-------------|------------:|
+| none | Y |
+| md5  | D |
+| sha1 | D |
+| sha224 | D |
+| sha256 | Y |
+| sha384 | Y |
+| sha512 | Y |
+| Intrinsic | Y |
+
+TLS SignatureAlgorithm registry:
+
+| Descsription | Recommended |
+|:-------------|------------:|
+| anonymous| N |
+| rsa | Y |
+| dsa | N |
+| ecdsa | Y |
+| ed25519 | Y |
+| ed448 | Y |
+| gostr34102012_256 | N |
+| gostr34102012_512 | N |
+
+TLS ClientCertificateTypes registry:
+
+| Descsription | Recommended |
+|:-------------|------------:|
+| rsa_sign | Y |
+| dss_sign | N |
+| rsa_fixed_dh | N |
+| dss_fixed_dh | N |
+| rsa_ephemeral_dh_RESERVED | D |
+| dss_ephemeral_dh_RESERVED | D |
+| fortezza_dms_RESERVED | D |
+| ecdsa_sign | Y |
+| rsa_fixed_ecdh | N |
+| ecdsa_fixed_ecdh | N |
+| gost_sign256 | N |
+| gost_sign512 | N |
+
+In the TLS HashAlgorithm, TLS SignatureAlgorithm, and TLS
+ClientCertificateTypes registries, all unassigned and reserved values
+have a "Recommended" that is blank.
+
 # Additional Notes {#Notes}
 
 IANA has added the following warning and note to the TLS
