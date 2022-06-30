@@ -104,9 +104,8 @@ use the registry names with the "TLS" prefix.
 
 Many of the TLS-related IANA registries had the registration procedure
 "IETF Consensus", which was changed to "IETF Review" by {{!RFC8126}}.
-To align with the new terminology,
-IANA [SHALL update/has updated] the following registries to "IETF
-Review":
+To align with the new terminology, IANA has updated the following
+registries to "IETF Review":
 
 - TLS Authorization Data Formats {{!RFC4680}}
 - TLS Supplemental Data Formats (SupplementalDataType) {{!RFC5878}}
