@@ -488,7 +488,7 @@ expert pool.
 IANA [SHALL add/has added] the following notes:
 
 Note:
-: The role of the designated expert is described in [this-RFC].
+: The role of the designated expert is described in {{!I-D.ietf-tls-rfc8447bis}}.
 The designated expert {{!RFC8126}} ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft
 (that is posted and never published as an RFC) or a document from
