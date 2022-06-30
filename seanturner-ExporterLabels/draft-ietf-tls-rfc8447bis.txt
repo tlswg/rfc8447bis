@@ -604,7 +604,7 @@ Table of Contents
       assigned a value of "N" unless explicitly requested, and adding a
       value with a "Recommended" value of "Y" requires Standards Action
       [RFC8126].  IESG Approval is REQUIRED for a Y->N, Y->D, or D->Y|N
-      transition.
+      transitions.
 
    Exporter Value                  | Recommended |
    --------------------------------|-------------|
