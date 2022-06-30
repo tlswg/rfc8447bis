@@ -89,7 +89,7 @@ these one-byte code points because of their scarcity.
 # Adding "TLS" to Registry Names
 
 For consistency amongst TLS registries, IANA
-[SHALL prepend/has prepended] "TLS" to the following registries:
+has prepended "TLS" to the following registries:
 
 - Application-Layer Protocol Negotiation (ALPN) Protocol IDs {{!RFC7301}},
 - ExtensionType Values,
