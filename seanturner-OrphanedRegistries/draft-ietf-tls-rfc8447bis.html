@@ -2094,6 +2094,161 @@ of security.<a href="#section-16-4.2.1" class="pilcrow">¶</a></p>
 </dd>
       <dd class="break"></dd>
 </dl>
+<p id="section-16-5">Though TLS 1.0 and TLS 1.1 were deprecated <span>[<a href="#RFC8996" class="xref">RFC8996</a>]</span>, TLS 1.2 will
+be in use for some time. IANA [<span class="bcp14">SHALL</span> update/has updated] the TLS
+HashAlgorithm, TLS SignatureAlgorithm, and TLS ClientCertificateTypes
+registries to add a "Recommended" column as follows:<a href="#section-16-5" class="pilcrow">¶</a></p>
+<p id="section-16-6">TLS HashAlgorithm registry:<a href="#section-16-6" class="pilcrow">¶</a></p>
+<table class="center" id="table-2">
+        <caption><a href="#table-2" class="selfRef">Table 2</a></caption>
+<thead>
+          <tr>
+            <th class="text-left" rowspan="1" colspan="1">Descsription</th>
+            <th class="text-right" rowspan="1" colspan="1">Recommended</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">none</td>
+            <td class="text-right" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">md5</td>
+            <td class="text-right" rowspan="1" colspan="1">D</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">sha1</td>
+            <td class="text-right" rowspan="1" colspan="1">D</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">sha224</td>
+            <td class="text-right" rowspan="1" colspan="1">D</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">sha256</td>
+            <td class="text-right" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">sha384</td>
+            <td class="text-right" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">sha512</td>
+            <td class="text-right" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Intrinsic</td>
+            <td class="text-right" rowspan="1" colspan="1">Y</td>
+          </tr>
+        </tbody>
+      </table>
+<p id="section-16-8">TLS SignatureAlgorithm registry:<a href="#section-16-8" class="pilcrow">¶</a></p>
+<table class="center" id="table-3">
+        <caption><a href="#table-3" class="selfRef">Table 3</a></caption>
+<thead>
+          <tr>
+            <th class="text-left" rowspan="1" colspan="1">Descsription</th>
+            <th class="text-right" rowspan="1" colspan="1">Recommended</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">anonymous</td>
+            <td class="text-right" rowspan="1" colspan="1">N</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">rsa</td>
+            <td class="text-right" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">dsa</td>
+            <td class="text-right" rowspan="1" colspan="1">N</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">ecdsa</td>
+            <td class="text-right" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">ed25519</td>
+            <td class="text-right" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">ed448</td>
+            <td class="text-right" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">gostr34102012_256</td>
+            <td class="text-right" rowspan="1" colspan="1">N</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">gostr34102012_512</td>
+            <td class="text-right" rowspan="1" colspan="1">N</td>
+          </tr>
+        </tbody>
+      </table>
+<p id="section-16-10">TLS ClientCertificateTypes registry:<a href="#section-16-10" class="pilcrow">¶</a></p>
+<table class="center" id="table-4">
+        <caption><a href="#table-4" class="selfRef">Table 4</a></caption>
+<thead>
+          <tr>
+            <th class="text-left" rowspan="1" colspan="1">Descsription</th>
+            <th class="text-right" rowspan="1" colspan="1">Recommended</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">rsa_sign</td>
+            <td class="text-right" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">dss_sign</td>
+            <td class="text-right" rowspan="1" colspan="1">N</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">rsa_fixed_dh</td>
+            <td class="text-right" rowspan="1" colspan="1">N</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">dss_fixed_dh</td>
+            <td class="text-right" rowspan="1" colspan="1">N</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">rsa_ephemeral_dh_RESERVED</td>
+            <td class="text-right" rowspan="1" colspan="1">D</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">dss_ephemeral_dh_RESERVED</td>
+            <td class="text-right" rowspan="1" colspan="1">D</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">fortezza_dms_RESERVED</td>
+            <td class="text-right" rowspan="1" colspan="1">D</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">ecdsa_sign</td>
+            <td class="text-right" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">rsa_fixed_ecdh</td>
+            <td class="text-right" rowspan="1" colspan="1">N</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">ecdsa_fixed_ecdh</td>
+            <td class="text-right" rowspan="1" colspan="1">N</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">gost_sign256</td>
+            <td class="text-right" rowspan="1" colspan="1">N</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">gost_sign512</td>
+            <td class="text-right" rowspan="1" colspan="1">N</td>
+          </tr>
+        </tbody>
+      </table>
+<p id="section-16-12">In the TLS HashAlgorithm, TLS SignatureAlgorithm, and TLS
+ClientCertificateTypes registries, all unassigned and reserved values
+have a "Recommended" that is blank.<a href="#section-16-12" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="Notes">
@@ -2272,8 +2427,12 @@ endorsement of the cipher suite, extension, supported group, etc.<a href="#secti
 <span class="refAuthor">Cotton, M.</span>, <span class="refAuthor">Leiba, B.</span>, and <span class="refAuthor">T. Narten</span>, <span class="refTitle">"Guidelines for Writing an IANA Considerations Section in RFCs"</span>, <span class="seriesInfo">BCP 26</span>, <span class="seriesInfo">RFC 8126</span>, <span class="seriesInfo">DOI 10.17487/RFC8126</span>, <time datetime="2017-06" class="refDate">June 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8126">https://www.rfc-editor.org/rfc/rfc8126</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8174">[RFC8174]</dt>
-      <dd>
+        <dd>
 <span class="refAuthor">Leiba, B.</span>, <span class="refTitle">"Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 8174</span>, <span class="seriesInfo">DOI 10.17487/RFC8174</span>, <time datetime="2017-05" class="refDate">May 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8174">https://www.rfc-editor.org/rfc/rfc8174</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC8996">[RFC8996]</dt>
+      <dd>
+<span class="refAuthor">Moriarty, K.</span> and <span class="refAuthor">S. Farrell</span>, <span class="refTitle">"Deprecating TLS 1.0 and TLS 1.1"</span>, <span class="seriesInfo">BCP 195</span>, <span class="seriesInfo">RFC 8996</span>, <span class="seriesInfo">DOI 10.17487/RFC8996</span>, <time datetime="2021-03" class="refDate">March 2021</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8996">https://www.rfc-editor.org/rfc/rfc8996</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
