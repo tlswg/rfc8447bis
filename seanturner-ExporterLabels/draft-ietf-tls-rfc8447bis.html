@@ -1904,22 +1904,57 @@ of "Y" requires Standards Action <span>[<a href="#RFC8126" class="xref">RFC8126<
 Y-&gt;N, Y-&gt;D, or D-&gt;Y|N transitions.<a href="#section-13-2.2" class="pilcrow">¶</a>
 </li>
       </ul>
-<div class="alignLeft art-text artwork" id="section-13-3">
-<pre>
-Exporter Value                  | Recommended |
---------------------------------|-------------|
-client finished                 |         Y |
-server finished                 |         Y |
-master secret                   |         Y |
-key expansion                   |         Y |
-client EAP encryption           |         Y |
-ttls keying material            |         N |
-ttls challenge                  |         N |
-EXTRACTOR-dtls_srtp             |         Y |
-EXPORTER_DTLS_OVER_SCTP         |         Y |
-EXPORTER: teap session key seed |         Y |
-</pre><a href="#section-13-3" class="pilcrow">¶</a>
-</div>
+<table class="center" id="table-2">
+        <caption><a href="#table-2" class="selfRef">Table 2</a></caption>
+<thead>
+          <tr>
+            <th class="text-center" rowspan="1" colspan="1">Exporter Value</th>
+            <th class="text-center" rowspan="1" colspan="1">Recommended</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">client finished</td>
+            <td class="text-center" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">server finished</td>
+            <td class="text-center" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">master secret</td>
+            <td class="text-center" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">key expansion</td>
+            <td class="text-center" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">client EAP encryption</td>
+            <td class="text-center" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">ttls keying material</td>
+            <td class="text-center" rowspan="1" colspan="1">N</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">ttls challenge</td>
+            <td class="text-center" rowspan="1" colspan="1">N</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">EXTRACTOR-dtls_srtp</td>
+            <td class="text-center" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">EXPORTER_DTLS_OVER_SCTP</td>
+            <td class="text-center" rowspan="1" colspan="1">Y</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">EXPORTER: teap session key seed</td>
+            <td class="text-center" rowspan="1" colspan="1">Y</td>
+          </tr>
+        </tbody>
+      </table>
 <p id="section-13-4">To provide additional information for the designated experts, IANA
 [<span class="bcp14">SHALL</span> add/has added] the following notes:<a href="#section-13-4" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-13-5">

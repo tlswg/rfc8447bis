@@ -606,18 +606,31 @@ Table of Contents
       [RFC8126].  IESG Approval is REQUIRED for a Y->N, Y->D, or D->Y|N
       transitions.
 
-   Exporter Value                  | Recommended |
-   --------------------------------|-------------|
-   client finished                 |         Y |
-   server finished                 |         Y |
-   master secret                   |         Y |
-   key expansion                   |         Y |
-   client EAP encryption           |         Y |
-   ttls keying material            |         N |
-   ttls challenge                  |         N |
-   EXTRACTOR-dtls_srtp             |         Y |
-   EXPORTER_DTLS_OVER_SCTP         |         Y |
-   EXPORTER: teap session key seed |         Y |
+             +=================================+=============+
+             |          Exporter Value         | Recommended |
+             +=================================+=============+
+             |         client finished         |      Y      |
+             +---------------------------------+-------------+
+             |         server finished         |      Y      |
+             +---------------------------------+-------------+
+             |          master secret          |      Y      |
+             +---------------------------------+-------------+
+             |          key expansion          |      Y      |
+             +---------------------------------+-------------+
+             |      client EAP encryption      |      Y      |
+             +---------------------------------+-------------+
+             |       ttls keying material      |      N      |
+             +---------------------------------+-------------+
+             |          ttls challenge         |      N      |
+             +---------------------------------+-------------+
+             |       EXTRACTOR-dtls_srtp       |      Y      |
+             +---------------------------------+-------------+
+             |     EXPORTER_DTLS_OVER_SCTP     |      Y      |
+             +---------------------------------+-------------+
+             | EXPORTER: teap session key seed |      Y      |
+             +---------------------------------+-------------+
+
+                                  Table 2
 
    To provide additional information for the designated experts, IANA
    [SHALL add/has added] the following notes:
