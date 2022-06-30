@@ -590,8 +590,7 @@ Experience has shown that the IETF Consensus registry policy for TLS
 Certificate Types is too strict.  Based on WG consensus, the decision
 was taken to change registration policy to Specification Required
 while reserving a small part of the code space for Private Use {{!RFC8126}}.
-Therefore, IANA [SHALL change/has changed] the TLS Certificate Types
-registry as follows:
+Therefore, IANA has changed the TLS Certificate Types registry as follows:
 
 - Changed the registry policy to:
 
@@ -606,7 +605,7 @@ registry as follows:
   is assigned a value of "N" unless explicitly requested, and adding
   a value with a "Recommended" value of "Y" requires Standards
   Action {{!RFC8126}}.  IESG Approval is REQUIRED for
-  a Y->N transition.
+  a Y->N, Y->D, and D->Y|N transitions.
 
 See {{expert-pool}} for additional information about the designated
 expert pool.
@@ -628,8 +627,8 @@ necessarily mean that it is flawed; rather, it indicates that the
 item either has not been through the IETF consensus process, has
 limited applicability, or is intended only for specific use cases.
 
-IANA [SHALL update/has updated] the reference for this registry to also
-refer this document.
+IANA [SHALL update/has updated] the reference for this registry to
+refer this document instead of {{?RFC8447}}.
 
 # Orphaned Registries
 
