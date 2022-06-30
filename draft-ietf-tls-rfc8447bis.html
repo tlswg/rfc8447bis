@@ -1344,10 +1344,10 @@ are:<a href="#section-5-1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <p id="section-5-3">Setting the Recommended item to "Y" or "D" or changing a
-item whose current value is "Y" or "D" requires standards action.
-Not all items defined in standards track documents need to be
-marked as Recommended. Changing the Recommended status of a standards
-track item requires standards action.<a href="#section-5-3" class="pilcrow">¶</a></p>
+item whose current value is "Y" or "D" requires Standards Action <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>.
+Not all items defined in Standards Track RFCs need to be
+marked as Recommended. Changing the Recommended status of an item in a
+Standards Track RFC requires Standards Action <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>.<a href="#section-5-3" class="pilcrow">¶</a></p>
 <aside id="section-5-4">
         <p id="section-5-4.1">Note: the registries in the rest of the document will need to have the
   recommended column updated appropriately, specifically to deprecate MD5
@@ -1609,46 +1609,48 @@ used by TLS 1.3.<a href="#section-7-14.2" class="pilcrow">¶</a>
       <h2 id="name-tls-cipher-suites-registry">
 <a href="#section-8" class="section-number selfRef">8. </a><a href="#name-tls-cipher-suites-registry" class="section-name selfRef">TLS Cipher Suites Registry</a>
       </h2>
-<p id="section-8-1">Experience has shown that the IETF Consensus registry policy for TLS
+<aside id="section-8-1">
+        <p id="section-8-1.1">Note: Review in light of <span>[<a href="#I-D.ietf-tls-deprecate-obsolete-kex" class="xref">I-D.ietf-tls-deprecate-obsolete-kex</a>]</span>.<a href="#section-8-1.1" class="pilcrow">¶</a></p>
+</aside>
+<p id="section-8-2">Experience has shown that the IETF Consensus registry policy for TLS
 Cipher Suites was too strict.  Based on WG consensus, the decision was
 taken to change the TLS Cipher Suites registry's registration policy
 to Specification Required while reserving a small part of the code
 space for Experimental and Private Use <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>.  Therefore, IANA
-[<span class="bcp14">SHALL</span> update/has updated] the TLS Cipher Suites registry's policy as
-follows:<a href="#section-8-1" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-8-2">
+has updated the TLS Cipher Suites registry's policy as follows:<a href="#section-8-2" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-8-3">
 <pre>
     Values with the first byte in the range 0-254 (decimal) are
     assigned via Specification Required [RFC8126].  Values with the
     first byte 255 (decimal) are reserved for Private Use [RFC8126].
-</pre><a href="#section-8-2" class="pilcrow">¶</a>
+</pre><a href="#section-8-3" class="pilcrow">¶</a>
 </div>
-<p id="section-8-3">See <a href="#expert-pool" class="xref">Section 17</a> for additional information about the designated
-expert pool.<a href="#section-8-3" class="pilcrow">¶</a></p>
-<p id="section-8-4">The TLS Cipher Suites registry has grown significantly and will continue to
+<p id="section-8-4">See <a href="#expert-pool" class="xref">Section 17</a> for additional information about the designated
+expert pool.<a href="#section-8-4" class="pilcrow">¶</a></p>
+<p id="section-8-5">The TLS Cipher Suites registry has grown significantly and will continue to
 do so.  To better guide those not intimately involved in TLS, IANA
-[shall update/has updated] the TLS Cipher Suites registry as follows:<a href="#section-8-4" class="pilcrow">¶</a></p>
-<aside id="section-8-5">
-        <p id="section-8-5.1">The following text needs to be update to reflect the new recommended policy.<a href="#section-8-5.1" class="pilcrow">¶</a></p>
+[<span class="bcp14">SHALL</span> update/has updated] the TLS Cipher Suites registry as follows:<a href="#section-8-5" class="pilcrow">¶</a></p>
+<aside id="section-8-6">
+        <p id="section-8-6.1">The following text needs to be update to reflect the new recommended policy.<a href="#section-8-6.1" class="pilcrow">¶</a></p>
 </aside>
 <ul class="normal">
-<li class="normal" id="section-8-6.1">
-          <p id="section-8-6.1.1">Added a "Recommended" column to the TLS Cipher Suites registry.  The
+<li class="normal" id="section-8-7.1">
+          <p id="section-8-7.1.1">Added a "Recommended" column to the TLS Cipher Suites registry.  The
 cipher suites that follow in the two tables are marked as "Y".
 All other cipher suites are marked as "N".  The "Recommended"
 column is assigned a value of "N" unless explicitly requested, and
 adding a value with a "Recommended" value of "Y" requires
 Standards Action <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>.  IESG Approval is <span class="bcp14">REQUIRED</span> for a Y-&gt;N
-transition.<a href="#section-8-6.1.1" class="pilcrow">¶</a></p>
-<p id="section-8-6.1.2">
+transition.<a href="#section-8-7.1.1" class="pilcrow">¶</a></p>
+<p id="section-8-7.1.2">
 The cipher suites that follow are Standards Track server-authenticated
 (and optionally client-authenticated) cipher suites that are
-currently available in TLS 1.2.<a href="#section-8-6.1.2" class="pilcrow">¶</a></p>
+currently available in TLS 1.2.<a href="#section-8-7.1.2" class="pilcrow">¶</a></p>
 </li>
       </ul>
-<p id="section-8-7">RFC EDITOR: The previous paragraph is for document reviewers and is not
-meant for the registry.<a href="#section-8-7" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-8-8">
+<p id="section-8-8">RFC EDITOR: The previous paragraph is for document reviewers and is not
+meant for the registry.<a href="#section-8-8" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-8-9">
 <pre>
 Cipher Suite Name                             | Value
 ----------------------------------------------+------------
@@ -1663,13 +1665,13 @@ TLS_DHE_RSA_WITH_AES_256_CCM                  | {0xC0,0x9F}
 TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256   | {0xCC,0xA8}
 TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 | {0xCC,0xA9}
 TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAA}
-</pre><a href="#section-8-8" class="pilcrow">¶</a>
+</pre><a href="#section-8-9" class="pilcrow">¶</a>
 </div>
-<p id="section-8-9">The cipher suites that follow are Standards Track ephemeral pre-shared
-  key cipher suites that are available in TLS 1.2.<a href="#section-8-9" class="pilcrow">¶</a></p>
-<p id="section-8-10">RFC EDITOR: The previous paragraph is for document reviewers and is not
-meant for the registry.<a href="#section-8-10" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-8-11">
+<p id="section-8-10">The cipher suites that follow are Standards Track ephemeral pre-shared
+  key cipher suites that are available in TLS 1.2.<a href="#section-8-10" class="pilcrow">¶</a></p>
+<p id="section-8-11">RFC EDITOR: The previous paragraph is for document reviewers and is not
+meant for the registry.<a href="#section-8-11" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-8-12">
 <pre>
 Cipher Suite Name                             | Value
 ----------------------------------------------+------------
@@ -1682,85 +1684,85 @@ TLS_ECDHE_PSK_WITH_AES_256_GCM_SHA384         | {0xD0,0x02}
 TLS_ECDHE_PSK_WITH_AES_128_CCM_SHA256         | {0xD0,0x05}
 TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256   | {0xCC,0xAC}
 TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256     | {0xCC,0xAD}
-</pre><a href="#section-8-11" class="pilcrow">¶</a>
+</pre><a href="#section-8-12" class="pilcrow">¶</a>
 </div>
-<p id="section-8-12">The TLS 1.3 cipher suites specified by <span>[<a href="#I-D.ietf-tls-rfc8446bis" class="xref">I-D.ietf-tls-rfc8446bis</a>]</span> are
-not listed here; that document provides for their "Recommended" status.<a href="#section-8-12" class="pilcrow">¶</a></p>
-<p id="section-8-13">Despite the following behavior being misguided, experience has shown
+<p id="section-8-13">The TLS 1.3 cipher suites specified by <span>[<a href="#I-D.ietf-tls-rfc8446bis" class="xref">I-D.ietf-tls-rfc8446bis</a>]</span> are
+not listed here; that document provides for their "Recommended" status.<a href="#section-8-13" class="pilcrow">¶</a></p>
+<p id="section-8-14">Despite the following behavior being misguided, experience has shown
 that some customers use the IANA registry as a checklist against which
 to measure an implementation's completeness, and some implementers
-blindly implement cipher suites.  Therefore, IANA [<span class="bcp14">SHALL</span> add/has added]
-the following warning to the registry:<a href="#section-8-13" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-8-14">
-        <dt id="section-8-14.1">WARNING:</dt>
-        <dd style="margin-left: 1.5em" id="section-8-14.2">
-          <p id="section-8-14.2.1">Cryptographic algorithms and parameters will be broken or weakened
+blindly implement cipher suites.  Therefore, IANA has added the
+following warning to the registry:<a href="#section-8-14" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-8-15">
+        <dt id="section-8-15.1">WARNING:</dt>
+        <dd style="margin-left: 1.5em" id="section-8-15.2">
+          <p id="section-8-15.2.1">Cryptographic algorithms and parameters will be broken or weakened
 over time.  Blindly implementing cipher suites listed here is not
 advised.  Implementers and users need to check that the cryptographic
-algorithms listed continue to provide the expected level of security.<a href="#section-8-14.2.1" class="pilcrow">¶</a></p>
+algorithms listed continue to provide the expected level of security.<a href="#section-8-15.2.1" class="pilcrow">¶</a></p>
 </dd>
       <dd class="break"></dd>
 </dl>
-<p id="section-8-15">IANA [<span class="bcp14">SHALL</span> add/has added] the following note to ensure that those that
-focus on IANA registries are aware that TLS 1.3 <span>[<a href="#I-D.ietf-tls-rfc8446bis" class="xref">I-D.ietf-tls-rfc8446bis</a>]</span>
-uses the same registry but defines ciphers differently:<a href="#section-8-15" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-8-16">
-        <dt id="section-8-16.1">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-8-16.2">
-          <p id="section-8-16.2.1">Although TLS 1.3 uses the same cipher suite space as previous
+<p id="section-8-16">IANA has added the following note to ensure that those that focus on
+IANA registries are aware that TLS 1.3 <span>[<a href="#I-D.ietf-tls-rfc8446bis" class="xref">I-D.ietf-tls-rfc8446bis</a>]</span>
+uses the same registry but defines ciphers differently:<a href="#section-8-16" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-8-17">
+        <dt id="section-8-17.1">Note:</dt>
+        <dd style="margin-left: 1.5em" id="section-8-17.2">
+          <p id="section-8-17.2.1">Although TLS 1.3 uses the same cipher suite space as previous
 versions of TLS, TLS 1.3 cipher suites are defined differently, only
 specifying the symmetric ciphers and hash functions, and cannot be
 used for TLS 1.2.  Similarly, TLS 1.2 and lower cipher suite values
-cannot be used with TLS 1.3.<a href="#section-8-16.2.1" class="pilcrow">¶</a></p>
+cannot be used with TLS 1.3.<a href="#section-8-17.2.1" class="pilcrow">¶</a></p>
 </dd>
       <dd class="break"></dd>
 </dl>
-<p id="section-8-17">IANA [<span class="bcp14">SHALL</span> add/has added] the following notes to document the rules
-for populating the "Recommended" column:<a href="#section-8-17" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-8-18">
-        <dt id="section-8-18.1">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-8-18.2">
-          <p id="section-8-18.2.1">CCM_8 cipher suites are not marked as "Recommended".  These cipher
+<p id="section-8-18">IANA [<span class="bcp14">SHALL</span> add/has added] the following notes to document the rules
+for populating the "Recommended" column:<a href="#section-8-18" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-8-19">
+        <dt id="section-8-19.1">Note:</dt>
+        <dd style="margin-left: 1.5em" id="section-8-19.2">
+          <p id="section-8-19.2.1">CCM_8 cipher suites are not marked as "Recommended".  These cipher
 suites have a significantly truncated authentication tag that represents
 a security trade-off that may not be appropriate for general
-environments.<a href="#section-8-18.2.1" class="pilcrow">¶</a></p>
+environments.<a href="#section-8-19.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
-<dt id="section-8-18.3">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-8-18.4">
-          <p id="section-8-18.4.1">If an item is not marked as "Recommended", it does not necessarily mean
+<dt id="section-8-19.3">Note:</dt>
+        <dd style="margin-left: 1.5em" id="section-8-19.4">
+          <p id="section-8-19.4.1">If an item is not marked as "Recommended", it does not necessarily mean
 that it is flawed; rather, it indicates that the item either has not
 been through the IETF consensus process, has limited applicability, or
-is intended only for specific use cases.<a href="#section-8-18.4.1" class="pilcrow">¶</a></p>
+is intended only for specific use cases.<a href="#section-8-19.4.1" class="pilcrow">¶</a></p>
 </dd>
       <dd class="break"></dd>
 </dl>
-<p id="section-8-19">IANA [<span class="bcp14">SHALL</span> add/has added] the following notes for additional
-information:<a href="#section-8-19" class="pilcrow">¶</a></p>
-<span class="break"></span><dl class="dlParallel" id="section-8-20">
-        <dt id="section-8-20.1">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-8-20.2">
-          <p id="section-8-20.2.1">The role of the designated expert is described in <span>[<a href="#I-D.ietf-tls-rfc8447bis" class="xref">I-D.ietf-tls-rfc8447bis</a>]</span>.
+<p id="section-8-20">IANA [<span class="bcp14">SHALL</span> add/has added] the following notes for additional
+information:<a href="#section-8-20" class="pilcrow">¶</a></p>
+<span class="break"></span><dl class="dlParallel" id="section-8-21">
+        <dt id="section-8-21.1">Note:</dt>
+        <dd style="margin-left: 1.5em" id="section-8-21.2">
+          <p id="section-8-21.2.1">The role of the designated expert is described in <span>[<a href="#I-D.ietf-tls-rfc8447bis" class="xref">I-D.ietf-tls-rfc8447bis</a>]</span>.
 The designated expert <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span> ensures that the specification is
 publicly available.  It is sufficient to have an Internet-Draft (that
 is posted and never published as an RFC) or a document from another
 standards body, industry consortium, university site, etc.  The expert
 may provide more in-depth reviews, but their approval should not be
-taken as an endorsement of the cipher suite.<a href="#section-8-20.2.1" class="pilcrow">¶</a></p>
+taken as an endorsement of the cipher suite.<a href="#section-8-21.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
-<dt id="section-8-20.3">Note:</dt>
-        <dd style="margin-left: 1.5em" id="section-8-20.4">
-          <p id="section-8-20.4.1">As specified in <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>, assignments made in the Private Use
+<dt id="section-8-21.3">Note:</dt>
+        <dd style="margin-left: 1.5em" id="section-8-21.4">
+          <p id="section-8-21.4.1">As specified in <span>[<a href="#RFC8126" class="xref">RFC8126</a>]</span>, assignments made in the Private Use
 space are not generally useful for broad interoperability.  It is the
 responsibility of those making use of the Private Use range to ensure
 that no conflicts occur (within the intended scope of use).  For
-widespread experiments, temporary reservations are available.<a href="#section-8-20.4.1" class="pilcrow">¶</a></p>
+widespread experiments, temporary reservations are available.<a href="#section-8-21.4.1" class="pilcrow">¶</a></p>
 </dd>
       <dd class="break"></dd>
 </dl>
-<p id="section-8-21">IANA [<span class="bcp14">SHALL</span> update/has updated] the reference for this registry to
-also refer to this document.<a href="#section-8-21" class="pilcrow">¶</a></p>
+<p id="section-8-22">IANA [<span class="bcp14">SHALL</span> update/has updated] the reference for this registry to
+refer to this document instead of <span>[<a href="#RFC8447" class="xref">RFC8447</a>]</span>.<a href="#section-8-22" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="tls-supported-groups">
@@ -2236,6 +2238,10 @@ endorsement of the cipher suite, extension, supported group, etc.<a href="#secti
 <a href="#section-20.1" class="section-number selfRef">20.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
         </h3>
 <dl class="references">
+<dt id="I-D.ietf-tls-deprecate-obsolete-kex">[I-D.ietf-tls-deprecate-obsolete-kex]</dt>
+        <dd>
+<span class="refAuthor">Bartle, C.</span> and <span class="refAuthor">N. Aviram</span>, <span class="refTitle">"Deprecating Obsolete Key Exchange Methods in TLS"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-tls-deprecate-obsolete-kex-00</span>, <time datetime="2022-06-15" class="refDate">15 June 2022</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-tls-deprecate-obsolete-kex-00">https://datatracker.ietf.org/doc/html/draft-ietf-tls-deprecate-obsolete-kex-00</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="I-D.ietf-tls-rfc8446bis">[I-D.ietf-tls-rfc8446bis]</dt>
         <dd>
 <span class="refAuthor">Rescorla, E.</span>, <span class="refTitle">"The Transport Layer Security (TLS) Protocol Version 1.3"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-tls-rfc8446bis-04</span>, <time datetime="2022-03-07" class="refDate">7 March 2022</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-tls-rfc8446bis-04">https://datatracker.ietf.org/doc/html/draft-ietf-tls-rfc8446bis-04</a>&gt;</span>. </dd>
