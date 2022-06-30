@@ -534,9 +534,8 @@ unless explicitly requested, and adding a value with a "Recommended" value
 of "Y" requires Standards Action {{!RFC8126}}. IESG Approval is REQUIRED for a
 Y->N, Y->D, or D->Y|N transitions.
 
-~~~
-Exporter Value                  | Recommended |
---------------------------------|-------------|
+| Exporter Value                 | Recommended |
+|:------------------------------:|:-----------:|
 client finished                 |         Y |
 server finished                 |         Y |
 master secret                   |         Y |
@@ -547,7 +546,6 @@ ttls challenge                  |         N |
 EXTRACTOR-dtls_srtp             |         Y |
 EXPORTER_DTLS_OVER_SCTP         |         Y |
 EXPORTER: teap session key seed |         Y |
-~~~
 
 To provide additional information for the designated experts, IANA
 [SHALL add/has added] the following notes:
