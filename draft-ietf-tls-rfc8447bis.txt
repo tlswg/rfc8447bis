@@ -137,8 +137,8 @@ Table of Contents
 
 3.  Adding "TLS" to Registry Names
 
-   For consistency amongst TLS registries, IANA [SHALL prepend/has
-   prepended] "TLS" to the following registries:
+   For consistency amongst TLS registries, IANA has prepended "TLS" to
+   the following registries:
 
    *  Application-Layer Protocol Negotiation (ALPN) Protocol IDs
       [RFC7301],
