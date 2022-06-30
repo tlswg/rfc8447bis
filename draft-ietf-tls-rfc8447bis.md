@@ -287,8 +287,7 @@ Cipher Suites was too strict.  Based on WG consensus, the decision was
 taken to change the TLS Cipher Suites registry's registration policy
 to Specification Required while reserving a small part of the code
 space for Experimental and Private Use {{!RFC8126}}.  Therefore, IANA
-[SHALL update/has updated] the TLS Cipher Suites registry's policy as
-follows:
+has updated the TLS Cipher Suites registry's policy as follows:
 
 ~~~
     Values with the first byte in the range 0-254 (decimal) are
@@ -301,7 +300,7 @@ expert pool.
 
 The TLS Cipher Suites registry has grown significantly and will continue to
 do so.  To better guide those not intimately involved in TLS, IANA
-[shall update/has updated] the TLS Cipher Suites registry as follows:
+[SHALL update/has updated] the TLS Cipher Suites registry as follows:
 
 <aside markdown="block">
 The following text needs to be update to reflect the new recommended policy.
@@ -364,8 +363,8 @@ not listed here; that document provides for their "Recommended" status.
 Despite the following behavior being misguided, experience has shown
 that some customers use the IANA registry as a checklist against which
 to measure an implementation's completeness, and some implementers
-blindly implement cipher suites.  Therefore, IANA [SHALL add/has added]
-the following warning to the registry:
+blindly implement cipher suites.  Therefore, IANA has added the
+following warning to the registry:
 
 WARNING:
 : Cryptographic algorithms and parameters will be broken or weakened
@@ -373,8 +372,8 @@ over time.  Blindly implementing cipher suites listed here is not
 advised.  Implementers and users need to check that the cryptographic
 algorithms listed continue to provide the expected level of security.
 
-IANA [SHALL add/has added] the following note to ensure that those that
-focus on IANA registries are aware that TLS 1.3 {{!I-D.ietf-tls-rfc8446bis}}
+IANA has added the following note to ensure that those that focus on
+IANA registries are aware that TLS 1.3 {{!I-D.ietf-tls-rfc8446bis}}
 uses the same registry but defines ciphers differently:
 
 Note:
@@ -419,7 +418,7 @@ that no conflicts occur (within the intended scope of use).  For
 widespread experiments, temporary reservations are available.
 
 IANA [SHALL update/has updated] the reference for this registry to
-also refer to this document.
+refer to this document instead of {{RFC8447}}.
 
 # TLS Supported Groups
 
