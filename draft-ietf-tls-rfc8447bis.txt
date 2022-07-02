@@ -619,20 +619,34 @@ Table of Contents
       RFCs as "Y" and all others as "N".  The "Recommended" column is
       assigned a value of "N" unless explicitly requested, and adding a
       value with a "Recommended" value of "Y" requires Standards Action
-      [RFC8126].  IESG Approval is REQUIRED for a Y->N transition.
+      [RFC8126].  IESG Approval is REQUIRED for a Y->N, Y->D, or D->Y|N
+      transitions.
 
-   Exporter Value                  | Recommended |
-   --------------------------------|-------------|
-   client finished                 |         Y |
-   server finished                 |         Y |
-   master secret                   |         Y |
-   key expansion                   |         Y |
-   client EAP encryption           |         Y |
-   ttls keying material            |         N |
-   ttls challenge                  |         N |
-   EXTRACTOR-dtls_srtp             |         Y |
-   EXPORTER_DTLS_OVER_SCTP         |         Y |
-   EXPORTER: teap session key seed |         Y |
+             +=================================+=============+
+             |          Exporter Value         | Recommended |
+             +=================================+=============+
+             |         client finished         |      Y      |
+             +---------------------------------+-------------+
+             |         server finished         |      Y      |
+             +---------------------------------+-------------+
+             |          master secret          |      Y      |
+             +---------------------------------+-------------+
+             |          key expansion          |      Y      |
+             +---------------------------------+-------------+
+             |      client EAP encryption      |      Y      |
+             +---------------------------------+-------------+
+             |       ttls keying material      |      N      |
+             +---------------------------------+-------------+
+             |          ttls challenge         |      N      |
+             +---------------------------------+-------------+
+             |       EXTRACTOR-dtls_srtp       |      Y      |
+             +---------------------------------+-------------+
+             |     EXPORTER_DTLS_OVER_SCTP     |      Y      |
+             +---------------------------------+-------------+
+             | EXPORTER: teap session key seed |      Y      |
+             +---------------------------------+-------------+
+
+                                  Table 2
 
    To provide additional information for the designated experts, IANA
    [SHALL add/has added] the following notes:
@@ -656,7 +670,7 @@ Table of Contents
       limited applicability, or is intended only for specific use cases.
 
    IANA [SHALL update/has updated] the reference for this registry to
-   also refer to this document.
+   refer to refer to this document instead of [RFC8447].
 
 13.  Adding Missing Item to TLS Alerts Registry
 
@@ -784,7 +798,7 @@ Table of Contents
                       | Intrinsic    |           Y |
                       +--------------+-------------+
 
-                                 Table 2
+                                 Table 3
 
    TLS SignatureAlgorithm registry:
 
@@ -808,7 +822,7 @@ Table of Contents
                     | gostr34102012_512 |           N |
                     +-------------------+-------------+
 
-                                  Table 3
+                                  Table 4
 
    TLS ClientCertificateTypes registry:
 
@@ -840,7 +854,7 @@ Table of Contents
                 | gost_sign512              |           N |
                 +---------------------------+-------------+
 
-                                  Table 4
+                                  Table 5
 
    In the TLS HashAlgorithm, TLS SignatureAlgorithm, and TLS
    ClientCertificateTypes registries, all unassigned and reserved values
