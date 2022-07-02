@@ -595,9 +595,8 @@ to refer to this document instead of {{?RFC8447}}.
 
 # Adding Missing Item to TLS Alerts Registry
 
-IANA [SHALL add/has added] the following entry to the TLS Alerts
-registry; the entry was omitted from the IANA instructions in
-{{!RFC7301}}:
+IANA has added the following entry to the TLS Alerts registry;
+the entry was omitted from the IANA instructions in {{!RFC7301}}:
 
 ~~~
     120   no_application_protocol  Y  [RFC7301][This-document]
