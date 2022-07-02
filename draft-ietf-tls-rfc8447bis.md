@@ -472,8 +472,8 @@ taken as an endorsement of the supported groups.
 Despite the following behavior being misguided, experience has shown
 that some customers use the IANA registry as a checklist against which
 to measure an implementation's completeness, and some implementers
-blindly implement supported group.  Therefore, IANA
-[SHALL add/has added] the following warning to the registry:
+blindly implement supported group.  Therefore, IANA has added the
+following warning to the registry:
 
 WARNING:
 : Cryptographic algorithms and parameters will be broken or weakened
@@ -481,8 +481,8 @@ over time.  Blindly implementing supported groups listed here is not
 advised.  Implementers and users need to check that the cryptographic
 algorithms listed continue to provide the expected level of security.
 
-IANA [SHALL update/has updated] the reference for this registry to also
-refer to this document.
+IANA [SHALL update/has updated] the reference for this registry to
+refer to this document instead of {{?RFC8447}}.
 
 The value 0 (0x0000) has been marked as reserved.
 
