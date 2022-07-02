@@ -657,15 +657,15 @@ To make it clear that (D)TLS 1.3 has orphaned certain registries (i.e.,
 they are only applicable to version of (D)TLS protocol versions prior
 to 1.3), IANA:
 
-- [SHALL add/has added] the following to the TLS Compression Method
-  Identifiers registry {{!RFC3749}}:
+- has added the following to the TLS Compression Method Identifiers
+  registry {{!RFC3749}}:
 
     Note:
     : Value 0 (NULL) is the only value in this registry applicable to (D)TLS
     protocol version 1.3 or later.
 
-- [SHALL add/has added] the following to the TLS HashAlgorithm {{!RFC5246}}
-and TLS SignatureAlgorithm registries {{!RFC5246}}:
+- has added the following to the TLS HashAlgorithm {{!RFC5246}}
+  and TLS SignatureAlgorithm registries {{!RFC5246}}:
 
     Note:
     : The values in this registry are only applicable to (D)TLS protocol
@@ -674,9 +674,10 @@ and TLS SignatureAlgorithm registries {{!RFC5246}}:
 
 - [SHALL update/has updated] the "Reference" field in the TLS
   Compression Method Identifiers, TLS HashAlgorithm and TLS
-  SignatureAlgorithm registries to also refer to this document.
+  SignatureAlgorithm registries to refer to this document instead of
+  {{?RFC8447}}.
 
-- [SHALL update/has updated] the TLS HashAlgorithm registry to list
+- has updated the TLS HashAlgorithm registry to list
   values 7 and 9-223 as "Reserved" and the TLS SignatureAlgorithm
   registry to list values 4-6 and 9-223 as "Reserved".
 
@@ -701,6 +702,58 @@ here is not advised.  Implementers and users need to check that the
 cryptographic algorithms listed continue to provide the expected level
 of security.
 
+Though TLS 1.0 and TLS 1.1 were deprecated {{!RFC8996}}, TLS 1.2 will
+be in use for some time. IANA [SHALL update/has updated] the TLS
+HashAlgorithm, TLS SignatureAlgorithm, and TLS ClientCertificateTypes
+registries to add a "Recommended" column as follows:
+
+TLS HashAlgorithm registry:
+
+| Descsription | Recommended |
+|:-------------|------------:|
+| none | Y |
+| md5  | D |
+| sha1 | D |
+| sha224 | D |
+| sha256 | Y |
+| sha384 | Y |
+| sha512 | Y |
+| Intrinsic | Y |
+
+TLS SignatureAlgorithm registry:
+
+| Descsription | Recommended |
+|:-------------|------------:|
+| anonymous| N |
+| rsa | Y |
+| dsa | N |
+| ecdsa | Y |
+| ed25519 | Y |
+| ed448 | Y |
+| gostr34102012_256 | N |
+| gostr34102012_512 | N |
+
+TLS ClientCertificateTypes registry:
+
+| Descsription | Recommended |
+|:-------------|------------:|
+| rsa_sign | Y |
+| dss_sign | N |
+| rsa_fixed_dh | N |
+| dss_fixed_dh | N |
+| rsa_ephemeral_dh_RESERVED | D |
+| dss_ephemeral_dh_RESERVED | D |
+| fortezza_dms_RESERVED | D |
+| ecdsa_sign | Y |
+| rsa_fixed_ecdh | N |
+| ecdsa_fixed_ecdh | N |
+| gost_sign256 | N |
+| gost_sign512 | N |
+
+In the TLS HashAlgorithm, TLS SignatureAlgorithm, and TLS
+ClientCertificateTypes registries, all unassigned and reserved values
+have a "Recommended" that is blank.
+
 # Additional Notes {#Notes}
 
 IANA has added the following warning and note to the TLS
@@ -720,8 +773,8 @@ the responsibility of those making use of the Private Use range to
 ensure that no conflicts occur (within the intended scope of use).
 For widespread experiments, temporary reservations are available.
 
-IANA has added the following notes to the TLS PskKeyExchangeMode
-registry:
+IANA [SHALL update/has updated] added the following notes to the
+TLS PskKeyExchangeMode registry:
 
 Note:
 : If an item is not marked as "Recommended", it does not
