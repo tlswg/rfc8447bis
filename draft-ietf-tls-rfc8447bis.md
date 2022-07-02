@@ -528,11 +528,12 @@ For widespread experiments, temporary reservations are available.
 To align with TLS implementations and to align the naming nomenclature
 with other Handshake message types, IANA:
 
-- [SHALL rename/has renamed] entry 4 in the TLS HandshakeType registry
-to "new_session_ticket (renamed from NewSessionTicket)" {{!RFC5077}}.
+- has renamed entry 4 in the TLS HandshakeType registry to
+"new_session_ticket (renamed from NewSessionTicket)" {{!RFC5077}}.
 
-- [SHALL add/has added] a reference to this document in the "Reference"
-column for entry 4 in the TLS HandshakeType registry.
+- [SHALL replace/has replaced] a reference to {{?RFC8447}} with a
+reference to this document in the "Reference" column for entry 4 in
+the TLS HandshakeType registry.
 
 # TLS Exporter Labels Registry
 
