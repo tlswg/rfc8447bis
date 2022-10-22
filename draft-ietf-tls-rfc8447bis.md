@@ -26,7 +26,7 @@ author:
  -
     ins: J. Salowey
     name: Joe Salowey
-    organization: Salesforce
+    organization: Venafi
     email: joe@salowey.net
  -
     ins: S. Turner
