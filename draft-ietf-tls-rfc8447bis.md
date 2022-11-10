@@ -486,15 +486,20 @@ EXTRACTOR-dtls_srtp             |         Y |
 EXPORTER_DTLS_OVER_SCTP         |         Y |
 EXPORTER: teap session key seed |         Y |
 
+IANA [SHALL update/has updated] the registration policy from
+Specification Required to Expert Review.
+
 To provide additional information for the designated experts, IANA
 [SHALL add/has added] the following notes:
 
 Note:
 : The role of the designated expert is described in {{!I-D.ietf-tls-rfc8447bis}}.
-The designated expert {{!RFC8126}} ensures that the specification is
-publicly available.  It is sufficient to have an Internet-Draft
-(that is posted and never published as an RFC) or a document from
-another standards body, industry consortium, university site, etc.
+Even though this registry does not require a specification, the
+designated expert {{!RFC8126}} will highly encourage registrants
+to provide a link to a publicly available specification. An
+Internet-Draft (that is posted and never published as an RFC)
+or a document from another standards body, industry consortium,
+university site, etc. are suitable for these purposes.
 The expert may provide more in-depth reviews, but their approval
 should not be taken as an endorsement of the exporter label.  The
 expert also verifies that the label is a string consisting of
