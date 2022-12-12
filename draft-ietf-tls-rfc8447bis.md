@@ -3,7 +3,7 @@ title: IANA Registry Updates for TLS and DTLS
 abbrev: (D)TLS IANA Registry Updates
 docname: draft-ietf-tls-rfc8447bis-latest
 category: std
-obsoletes: 8447
+updates: 8447
 updates: 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301
 v: 3
 
@@ -46,7 +46,7 @@ the registration policy.  These changes were mostly motivated by WG
 review of the TLS- and DTLS-related registries undertaken as part of the
 TLS 1.3 development process.
 
-This document obsoletes RFC 8447 and updates the following RFCs:
+This document updates RFC 8447 and updates the following RFCs:
 3749, 5077, 4680, 5246, 5705, 5878, 6520, and 7301.
 
 --- middle
@@ -55,67 +55,20 @@ This document obsoletes RFC 8447 and updates the following RFCs:
 
 This document instructs IANA to make changes to a number of the IANA
 registries related to Transport Layer Security (TLS) and Datagram
-Transport Layer Security (DTLS).
+Transport Layer Security (DTLS). These changes update the changes made
+in {{?RFC8447}}.
 
 <aside markdown="block">
-  NOTE for IANA: Where we make new changes we used [SHALL / has].
-  Otherwise, we left it as has, i.e., it matches the text in
-  {{?RFC8447}}.
+  NOTE for IANA: This document specifies changes to the registry to update
+  the changes made in {{?RFC8447}}.
 </aside>
 
-Most of the instructions included herein and previously included in
-{{?RFC8447}}, which this document obsoletes, were motivated by the
-development of TLS 1.3 {{?RFC8446}}. The changes ranged from simple,
-e.g., adding notes, to complex, e.g., changing a registry's registration
-policy. Instead of listing the changes and their rationale here in the
-introduction, each section provides rationale for the proposed
-change(s). The instructions in this document revise the values of
-"Recommended" column, applies the new value to the registries, and adds
-this column as noted in {{orphaned-registries}}. There are also instructions to
-update references, including replacing references to {{?RFC8446}} with
-{{!I-D.ietf-tls-rfc8446bis}} and {{?RFC8447}} with {{!I-D.ietf-tls-rfc8447bis}}.
-
-This document proposes no changes to the registration policies for TLS
-Alerts {{!I-D.ietf-tls-rfc8446bis}}, TLS ContentType {{!I-D.ietf-tls-rfc8446bis}},
-TLS HandshakeType {{!I-D.ietf-tls-rfc8446bis}}, and TLS Certificate Status
-Types {{?RFC6961}} registries; the existing policies (Standards Action
-for the first three; IETF Review for the last), are appropriate for
-these one-byte code points because of their scarcity.
+This specification updates the "Recommended" column in TLS
+registriests define a third value "D" for items that are discouraged.
 
 # Terminology
 
 {::boilerplate bcp14-tagged}
-
-# Adding "TLS" to Registry Names
-
-For consistency amongst TLS registries, IANA
-has prepended "TLS" to the following registries:
-
-- Application-Layer Protocol Negotiation (ALPN) Protocol IDs {{!RFC7301}},
-- ExtensionType Values,
-- Heartbeat Message Types {{!RFC6520}}, and
-- Heartbeat Modes {{RFC6520}}.
-
-IANA [SHALL update/has updated] the reference for these four registries
-to also refer to this document.  The remainder of this document will
-use the registry names with the "TLS" prefix.
-
-# Aligning with RFC 8126
-
-Many of the TLS-related IANA registries had the registration procedure
-"IETF Consensus", which was changed to "IETF Review" by {{!RFC8126}}.
-To align with the new terminology, IANA has updated the following
-registries to "IETF Review":
-
-- TLS Authorization Data Formats {{!RFC4680}}
-- TLS Supplemental Data Formats (SupplementalDataType) {{!RFC5878}}
-
-This is not a universal change, as some registries originally defined
-with "IETF Consensus" are undergoing other changes either as a result
-of this document or {{?RFC8422}}.
-
-IANA [SHALL update/has updated] the reference for these two registries
-to also refer to this document.
 
 # Adding "Recommended" Column
 
@@ -139,36 +92,17 @@ are:
     mean that the mechanism is flawed, only that no consensus exists.
     The IETF might have consensus to leave an items marked as "N" on
     the basis of it having limited applicability or usage constraints.
-- D: Indicates that the item is discouraged and SHOULD
-    NOT or MUST NOT be used. This marking could be used to identify
+- D: Indicates that the item is discouraged. This marking could be used to identify
     mechanisms that might result in problems if they are used, such as
     a weak cryptographic algorithm or a mechanism that might cause
-    interoperability problems in deployment.
+    interoperability problems in deployment. Implementers should 
+    consult the linked references associated with the item to
+    determine the conditions under which it SHOULD NOT or MUST NOT be used. 
 
-Setting the Recommended item to "Y" or "D" or changing a
-item whose current value is "Y" or "D" requires Standards Action {{!RFC8126}}.
-Not all items defined in Standards Track RFCs need to be
-marked as Recommended. Changing the Recommended status of an item in a
-Standards Track RFC requires Standards Action {{!RFC8126}}.
-
-<aside markdown="block">
-  Note: the registries in the rest of the document will need to have the
-  recommended column updated appropriately, specifically to deprecate MD5
-  and SHA-1, etc.
-</aside>
-
-# Session Ticket TLS Extension
-
-The nomenclature for the registry entries in the TLS ExtensionType
-Values registry correspond to the presentation language field name
-except for entry 35.  To ensure that the values in the registry are
-consistently identified in the registry, IANA:
-
-- has renamed entry 35 to "session_ticket (renamed from
-  "SessionTicket TLS")" {{!RFC5077}}.
-
-- [SHALL replace] the references to {{?RFC8447}} with a
-  reference to this document in the "Reference" column for entry 35.
+Setting a value to "Y" or "D" in the "Recommended" column requires IETF Standards
+Action {{!RFC8126}}.  Any state transition to or from a "Y" or "D" value requires
+IESG Apporval. Not all items defined in Standards Track RFCs need to be set
+to "Y" or "D". Any item not otherwise specific is set to "N".
 
 # TLS ExtensionType Values
 
