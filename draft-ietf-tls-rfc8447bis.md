@@ -95,9 +95,9 @@ are:
 - D: Indicates that the item is discouraged. This marking could be used to identify
     mechanisms that might result in problems if they are used, such as
     a weak cryptographic algorithm or a mechanism that might cause
-    interoperability problems in deployment. Implementers should 
+    interoperability problems in deployment. Implementers should
     consult the linked references associated with the item to
-    determine the conditions under which it SHOULD NOT or MUST NOT be used. 
+    determine the conditions under which it SHOULD NOT or MUST NOT be used.
 
 Setting a value to "Y" or "D" in the "Recommended" column requires IETF Standards
 Action {{!RFC8126}}.  Any state transition to or from a "Y" or "D" value requires
