@@ -102,7 +102,7 @@ are:
 Setting a value to "Y" or "D" in the "Recommended" column requires IETF Standards
 Action {{!RFC8126}}.  Any state transition to or from a "Y" or "D" value requires
 IESG Apporval. Not all items defined in Standards Track RFCs need to be set
-to "Y" or "D". Any item not otherwise specific is set to "N".
+to "Y" or "D". Any item not otherwise specified is set to "N".
 
 # TLS ExtensionType Values
 
