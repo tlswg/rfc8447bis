@@ -254,7 +254,7 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 
 # TLS Exporter Labels Registry
 
-THe document updates the registration procedure for the TLS Exporter
+This document updates the registration procedure for the TLS Exporter
 registry and updates the Recommended column allocation.
 IANA SHALL update the TLS Exporter Labels Registry as follows:
 
@@ -273,7 +273,7 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
 
 - Update note on the recommended column with text in {{rec-note}}.
 
-- updare the note on the role of the expert reviewer as follows:
+- updare the note on the role of the expert reviewer as follows.
 
 Note:
 : The role of the designated expert is described in {{!RFC8447}}.
