@@ -3,8 +3,7 @@ title: IANA Registry Updates for TLS and DTLS
 abbrev: (D)TLS IANA Registry Updates
 docname: draft-ietf-tls-rfc8447bis-latest
 category: std
-updates: 8447
-updates: 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301
+updates: 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, 8447
 v: 3
 
 ipr: trust200902
@@ -45,7 +44,7 @@ made in RFC 8447. It adds a new value "D" for discouraged
 to the recommended column of the selected TLS registries.
 
 This document updates the following RFCs:
-8447, 3749, 5077, 4680, 5246, 5705, 5878, 6520, and 7301.
+3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447.
 
 --- middle
 
@@ -62,7 +61,7 @@ in {{?RFC8447}}.
 </aside>
 
 This specification updates the "Recommended" column in TLS
-registriests define a third value "D" for items that are discouraged.
+registries to define a third value "D" for items that are discouraged.
 
 # Terminology
 
@@ -93,7 +92,7 @@ are:
 - D: Indicates that the item is discouraged. This marking could be used to identify
     mechanisms that might result in problems if they are used, such as
     a weak cryptographic algorithm or a mechanism that might cause
-    interoperability problems in deployment. Implementers should
+    interoperability problems in deployment. Implementers SHOULD
     consult the linked references associated with the item to
     determine the conditions under which it SHOULD NOT or MUST NOT be used.
 
@@ -146,7 +145,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 |40 |Reserved                        |         D |
 |46 |Reserved                        |         D |
 
-- Update note on the recommended column with text in {{rec-note}}
+- Update note on the recommended column with text in {{rec-note}}.
 
 
 
@@ -212,7 +211,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 | 0x00,0x25	| TLS_KRB5_WITH_IDEA_CBC_MD5           |   D  |
 | 0x00,0x26	| TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA  | D |
 | 0x00,0x27	| TLS_KRB5_EXPORT_WITH_RC2_CBC_40_SHA | D |
-| 0x00,0x28	| TLS_KRB5_EXPORT_WITH_RC4_40_SHA	N	N	 | D |
+| 0x00,0x28	| TLS_KRB5_EXPORT_WITH_RC4_40_SHA	| D |
 | 0x00,0x29	| TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5	 | D |
 | 0x00,0x2A	| TLS_KRB5_EXPORT_WITH_RC2_CBC_40_MD5	 | D |
 | 0x00,0x2B	| TLS_KRB5_EXPORT_WITH_RC4_40_MD5 | D |
@@ -227,7 +226,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 | 0xC0,0x33	| TLS_ECDHE_PSK_WITH_RC4_128_SHA | D |
 
 
-- Update note on the recommended column with text in {{rec-note}}
+- Update note on the recommended column with text in {{rec-note}}.
 
 
 # TLS Supported Groups
@@ -245,13 +244,13 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 
 - Add a reference to this document under the reference heading.
 
-- Entries keep their existing recommended column "Y" and "N" entries.
+- Entries keep their existing Recommended column "Y" and "N" entries.
 <aside markdown="block">
   Note: Review in light of {{!I-D.ietf-tls-deprecate-obsolete-kex}}
   also there are some weaker elliptic curves in this list.
 </aside>
 
-- Update note on the recommended column with text in {{rec-note}}
+- Update note on the recommended column with text in {{rec-note}}.
 
 # TLS Exporter Labels Registry
 
@@ -268,9 +267,9 @@ IANA SHALL update the  TLS Exporter Labels Registry as follows:
 
 - Add a reference to this document under the reference heading.
 
-- Entries keep their existing recommended column "Y" and "N" entries.
+- Entries keep their existing Recommended column "Y" and "N" entries
 
-- Update note on the recommended column with text in {{rec-note}}
+- Update note on the recommended column with text in {{rec-note}}.
 
 
 # TLS Certificate Types
@@ -291,9 +290,9 @@ IANA SHALL update the the TLS Certificate Types registry as follows:
 
 - Add a reference to this document under the reference heading.
 
-- Entries keep their existing recommended column "Y" and "N" entries.
+- Entries keep their existing Recommended column "Y" and "N" entries.
 
-- Update note on the recommended column with text in {{rec-note}}
+- Update note on the recommended column with text in {{rec-note}}.
 
 
 # TLS HashAlgorithm Registry
@@ -327,7 +326,7 @@ registry as follows:
 | 6 | sha512 | Y |
 | 8 | Intrinsic | Y |
 
-- Add note on the recommended column with text in {{rec-note}}
+- Add note on the recommended column with text in {{rec-note}}.
 
 
 # TLS SignatureAlgorithm registry
@@ -361,7 +360,7 @@ registry as follows:
 | 64 | gostr34102012_256 | N |
 | 65 | gostr34102012_512 | N |
 
-- Add note on the recommended column with text in {{rec-note}}
+- Add note on the recommended column with text in {{rec-note}}.
 
 # TLS ClientCertificateTypes registry
 
@@ -398,7 +397,7 @@ column as follows:
 | 67 | gost_sign256 | N |
 | 68 | gost_sign512 | N |
 
-- Add note on the recommended column with text in {{rec-note}}
+- Add note on the recommended column with text in {{rec-note}}.
 
 # TLS PskKeyExchangeMode registry
 
@@ -417,7 +416,7 @@ IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 
 - Entries keep their existing recommended column "Y" and "N" entries.
 
-- Update note on the recommended column with text in {{rec-note}}
+- Update note on the recommended column with text in {{rec-note}}.
 
 # Security Considerations
 
