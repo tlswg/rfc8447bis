@@ -254,10 +254,12 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 
 # TLS Exporter Labels Registry
 
-In order to refect the changes in the Recommended column allocation,
-IANA SHALL update the  TLS Exporter Labels Registry as follows:
+This document updates the registration procedure for the TLS Exporter
+registry and updates the Recommended column allocation.
+IANA SHALL update the TLS Exporter Labels Registry as follows:
 
-- Update the registration procedure to include:
+- Change the registration procedure from Specification Required to
+  Expert Review and update it to include:
 
 ~~~
     Setting a "Recommended" column value to Y or D requires Standards
@@ -270,6 +272,23 @@ IANA SHALL update the  TLS Exporter Labels Registry as follows:
 - Entries keep their existing Recommended column "Y" and "N" entries
 
 - Update note on the recommended column with text in {{rec-note}}.
+
+- update the note on the role of the expert reviewer as follows.
+
+Note:
+: The role of the designated expert is described in {{!RFC8447}}.
+Even though this registry does not require a specification, the
+designated expert {{!RFC8126}} will highly encourage registrants
+to provide a link to a publicly available specification. An
+Internet-Draft (that is posted and never published as an RFC)
+or a document from another standards body, industry consortium,
+university site, etc. are suitable for these purposes.
+The expert may provide more in-depth reviews, but their approval
+should not be taken as an endorsement of the exporter label.  The
+expert also verifies that the label is a string consisting of
+printable ASCII characters beginning with "EXPORTER".  IANA MUST
+also verify that one label is not a prefix of any other label.
+For example, labels "key" or "master secretary" are forbidden.
 
 
 # TLS Certificate Types
