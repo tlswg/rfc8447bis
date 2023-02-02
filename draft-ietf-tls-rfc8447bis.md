@@ -273,7 +273,7 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
 
 - Update note on the recommended column with text in {{rec-note}}.
 
-- updare the note on the role of the expert reviewer as follows.
+- update the note on the role of the expert reviewer as follows.
 
 Note:
 : The role of the designated expert is described in {{!RFC8447}}.
