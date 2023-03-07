@@ -98,7 +98,7 @@ are:
 
 Setting a value to "Y" or "D" in the "Recommended" column requires IETF Standards
 Action {{!RFC8126}}.  Any state transition to or from a "Y" or "D" value requires
-IESG Apporval. Not all items defined in Standards Track RFCs need to be set
+IESG Approval. Not all items defined in Standards Track RFCs need to be set
 to "Y" or "D". Any item not otherwise specified is set to "N". The column is
 blank for values that are unassigned or reserved unless specifically set.
 
@@ -129,7 +129,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
     255 (decimal) are reserved for Private Use [RFC8126].  Setting a
     "Recommended" column value to Y or D requires Standards Action {{!RFC8126}}.
     Any state transition to or from a "Y" or "D" value requires
-    IESG Apporval.
+    IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -166,7 +166,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
     first byte 255 (decimal) are reserved for Private Use [RFC8126].
     Setting a "Recommended" column value to Y or D requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
-    value requires IESG Apporval.
+    value requires IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -239,7 +239,7 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 ~~~
     Setting a "Recommended" column value to Y or D requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
-    value requires IESG Apporval.
+    value requires IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -264,7 +264,7 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
 ~~~
     Setting a "Recommended" column value to Y or D requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
-    value requires IESG Apporval.
+    value requires IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -304,7 +304,7 @@ IANA SHALL update the the TLS Certificate Types registry as follows:
     reserved for Private Use [RFC8126]. Setting a "Recommended" column
     value to Y or D requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
-    value requires IESG Apporval.
+    value requires IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -326,7 +326,7 @@ registry as follows:
 ~~~
     Setting a "Recommended" column value to Y or D requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
-    value requires IESG Apporval.
+    value requires IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -360,7 +360,7 @@ registry as follows:
 ~~~
     Setting a "Recommended" column value to Y or D requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
-    value requires IESG Apporval.
+    value requires IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -393,7 +393,7 @@ registry as follows:
 ~~~
     Setting a "Recommended" column value to Y or D requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
-    value requires IESG Apporval.
+    value requires IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -428,7 +428,7 @@ IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 ~~~
     Setting a "Recommended" column value to Y or D requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
-    value requires IESG Apporval.
+    value requires IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
