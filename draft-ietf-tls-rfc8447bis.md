@@ -106,7 +106,7 @@ blank for values that are unassigned or reserved unless specifically set.
 
 Existing registries have a note on the meaning of the recommended column. For the
 registries discussed in the subsequent sections this note is updated
-with a sentence describing the 'D' vaue as follows:
+with a sentence describing the "D" vaue as follows:
 
 Note:
 
@@ -127,7 +127,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
     Values with the first byte in the range 0-254 (decimal) are assigned
     via Specification Required [RFC8126].  Values with the first byte
     255 (decimal) are reserved for Private Use [RFC8126].  Setting a
-    "Recommended" column value to Y or D requires Standards Action {{!RFC8126}}.
+    "Recommended" column value to "Y" or "D" requires Standards Action {{!RFC8126}}.
     Any state transition to or from a "Y" or "D" value requires
     IESG Approval.
 ~~~
@@ -164,7 +164,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
     Values with the first byte in the range 0-254 (decimal) are
     assigned via Specification Required [RFC8126].  Values with the
     first byte 255 (decimal) are reserved for Private Use [RFC8126].
-    Setting a "Recommended" column value to Y or D requires Standards
+    Setting a "Recommended" column value to "Y" or "D" requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
 ~~~
@@ -237,7 +237,7 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 - Update the registration policy to include:
 
 ~~~
-    Setting a "Recommended" column value to Y or D requires Standards
+    Setting a "Recommended" column value to "Y" or "D" requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
 ~~~
@@ -262,7 +262,7 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
   Expert Review and update it to include:
 
 ~~~
-    Setting a "Recommended" column value to Y or D requires Standards
+    Setting a "Recommended" column value to "Y" or "D" requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
 ~~~
@@ -302,7 +302,7 @@ IANA SHALL update the the TLS Certificate Types registry as follows:
     Values in the range 0-223 (decimal) are assigned via Specification
     Required [RFC8126]. Values in the range 224-255 (decimal) are
     reserved for Private Use [RFC8126]. Setting a "Recommended" column
-    value to Y or D requires Standards
+    value to "Y" or "D" requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
 ~~~
@@ -324,7 +324,7 @@ registry as follows:
 - Update the registration procedure to include:
 
 ~~~
-    Setting a "Recommended" column value to Y or D requires Standards
+    Setting a "Recommended" column value to "Y" or "D" requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
 ~~~
@@ -358,7 +358,7 @@ registry as follows:
 - Update the registration procedure to include:
 
 ~~~
-    Setting a "Recommended" column value to Y or D requires Standards
+    Setting a "Recommended" column value to "Y" or "D" requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
 ~~~
@@ -391,7 +391,7 @@ registry as follows:
 - Update the registration procedure to include:
 
 ~~~
-    Setting a "Recommended" column value to Y or D requires Standards
+    Setting a "Recommended" column value to "Y" or "D" requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
 ~~~
@@ -426,7 +426,7 @@ IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 - Update the registration procedure to include:
 
 ~~~
-    Setting a "Recommended" column value to Y or D requires Standards
+    Setting a "Recommended" column value to "Y" or "D" requires Standards
     Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
 ~~~
