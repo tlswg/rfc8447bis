@@ -201,7 +201,6 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 | 0x00,0x19	| TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA            |   D  |
 | 0x00,0x1A	| TLS_DH_anon_WITH_DES_CBC_SHA           |   D  |
 | 0x00,0x1B	| TLS_DH_anon_WITH_3DES_EDE_CBC_SHA           |   D  |
-| 0x00,0x19	| TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA            |   D  |
 | 0x00,0x1E	| TLS_KRB5_WITH_DES_CBC_SHA            |   D  |
 | 0x00,0x20	| TLS_KRB5_WITH_RC4_128_SHA            |   D  |
 | 0x00,0x21	| TLS_KRB5_WITH_IDEA_CBC_SHA            |   D  |
