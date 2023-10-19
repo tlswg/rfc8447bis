@@ -74,7 +74,8 @@ originally added in {{?RFC8447}} to add a third value, "D",
 indicating that a value is "Discouraged". The permitted values
 are:
 
-- Y: Indicates that the IETF has consensus that the
+Y:
+: Indicates that the IETF has consensus that the
     item is RECOMMENDED. This only means that the associated
     mechanism is fit for the purpose for which it was defined.
     Careful reading of the documentation for the mechanism is
@@ -83,13 +84,15 @@ are:
     applicability, but will provide applicability statements that
     describe any limitations of the mechanism or necessary constraints
     on its use.
-- N: Indicates that the item has not been evaluated by
+N:
+: Indicates that the item has not been evaluated by
     the IETF and that the IETF has made no statement about the
     suitability of the associated mechanism. This does not necessarily
     mean that the mechanism is flawed, only that no consensus exists.
     The IETF might have consensus to leave an items marked as "N" on
     the basis of it having limited applicability or usage constraints.
-- D: Indicates that the item is discouraged. This marking could be used to identify
+D:
+: Indicates that the item is discouraged. This marking could be used to identify
     mechanisms that might result in problems if they are used, such as
     a weak cryptographic algorithm or a mechanism that might cause
     interoperability problems in deployment. Implementers SHOULD
