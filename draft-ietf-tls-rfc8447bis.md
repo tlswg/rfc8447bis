@@ -158,12 +158,12 @@ Several categories of ciphersuites are discouraged for general use and
 are maked as "D".
 
 Ciphersuites that use NULL encryption do not provide the confidentiality
-normally expected of TLS. Protocols and applications are often designed 
+normally expected of TLS. Protocols and applications are often designed
 to require confidentialy as a security property. These
 ciphersuites MUST NOT be used in those cases.
 
-Ciphersuites marked as EXPORT use weak ciphers and were deprecated in 
-TLS 1.1 [RFC4346]. 
+Ciphersuites marked as EXPORT use weak ciphers and were deprecated in
+TLS 1.1 [RFC4346].
 
 Cipher suites maked as anon do not provide any authentication and are
 vulnerable to man-in-the-middle attacks and are deprecated in TLS 1.1
@@ -193,7 +193,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 - Update the "Recommended" column with the changes as listed below.  Entries
   keep their existing "Y" and "N" entries except for the entries in following table.
   A reference to this document SHALL be added to these entries. This document does not
-  make any changes to the DTLS-OK column. 
+  make any changes to the DTLS-OK column.
 
 | Value | Cipher Suite Name                             | Recommeded |
 |:------|:---------------------------------------------|-----------:|
@@ -219,7 +219,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 | 0x00,0x19	| TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA            |   D  |
 | 0x00,0x1A	| TLS_DH_anon_WITH_DES_CBC_SHA           |   D  |
 | 0x00,0x1B	| TLS_DH_anon_WITH_3DES_EDE_CBC_SHA           |   D  |
-| 0x00,0x1E	| TLS_KRB5_WITH_DES_CBC_SHA            |   D  |  |
+| 0x00,0x1E	| TLS_KRB5_WITH_DES_CBC_SHA            |   D  |
 | 0x00,0x20	| TLS_KRB5_WITH_RC4_128_SHA            |   D  |
 | 0x00,0x21	| TLS_KRB5_WITH_IDEA_CBC_SHA            |   D  |
 | 0x00,0x22	| TLS_KRB5_WITH_DES_CBC_MD5            |   D  |
@@ -269,11 +269,11 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 | 0xC0,0x18 | TLS_ECDH_anon_WITH_AES_128_CBC_SHA	| D |
 | 0xC0,0x19 | TLS_ECDH_anon_WITH_AES_256_CBC_SHA | D |
 | 0xC0,0x33	| TLS_ECDHE_PSK_WITH_RC4_128_SHA | D |
-| 0xC0,0x39	| TLS_ECDHE_PSK_WITH_NULL_SHA	| D 
+| 0xC0,0x39	| TLS_ECDHE_PSK_WITH_NULL_SHA	| D |
 | 0xC0,0x3A | TLS_ECDHE_PSK_WITH_NULL_SHA256 | D |
 | 0xC0,0x3B | TLS_ECDHE_PSK_WITH_NULL_SHA384 | D |
 | 0xC0,0x46 | TLS_DH_anon_WITH_ARIA_128_CBC_SHA256	| D |
-| 0xC0,0x47 | TLS_DH_anon_WITH_ARIA_256_CBC_SHA384	| 
+| 0xC0,0x47 | TLS_DH_anon_WITH_ARIA_256_CBC_SHA384	| D |
 | 0xC0,0x5A | TLS_DH_anon_WITH_ARIA_128_GCM_SHA256	| D |
 | 0xC0,0x5B | TLS_DH_anon_WITH_ARIA_256_GCM_SHA384 | D |
 | 0xC0,0x84 | TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256 | D |
