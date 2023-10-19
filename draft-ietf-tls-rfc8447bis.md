@@ -277,7 +277,7 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
 Note:
 : The role of the designated expert is described in {{!RFC8447}}.
 Even though this registry does not require a specification, the
-designated expert {{!RFC8126}} will highly encourage registrants
+designated expert {{!RFC8126}} will strongly encourage registrants
 to provide a link to a publicly available specification. An
 Internet-Draft (that is posted and never published as an RFC)
 or a document from another standards body, industry consortium,
