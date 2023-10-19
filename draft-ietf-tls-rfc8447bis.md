@@ -74,7 +74,8 @@ originally added in {{?RFC8447}} to add a third value, "D",
 indicating that a value is "Discouraged". The permitted values
 are:
 
-- Y: Indicates that the IETF has consensus that the
+Y:
+: Indicates that the IETF has consensus that the
     item is RECOMMENDED. This only means that the associated
     mechanism is fit for the purpose for which it was defined.
     Careful reading of the documentation for the mechanism is
@@ -83,13 +84,15 @@ are:
     applicability, but will provide applicability statements that
     describe any limitations of the mechanism or necessary constraints
     on its use.
-- N: Indicates that the item has not been evaluated by
+N:
+: Indicates that the item has not been evaluated by
     the IETF and that the IETF has made no statement about the
     suitability of the associated mechanism. This does not necessarily
     mean that the mechanism is flawed, only that no consensus exists.
     The IETF might have consensus to leave an items marked as "N" on
     the basis of it having limited applicability or usage constraints.
-- D: Indicates that the item is discouraged. This marking could be used to identify
+D:
+: Indicates that the item is discouraged. This marking could be used to identify
     mechanisms that might result in problems if they are used, such as
     a weak cryptographic algorithm or a mechanism that might cause
     interoperability problems in deployment. Implementers SHOULD
@@ -123,14 +126,14 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 
 - Change the registration procedure to:
 
-~~~
+
     Values with the first byte in the range 0-254 (decimal) are assigned
     via Specification Required [RFC8126].  Values with the first byte
     255 (decimal) are reserved for Private Use [RFC8126].  Setting a
-    "Recommended" column value to "Y" or "D" requires Standards Action {{!RFC8126}}.
+    "Recommended" column value to "Y" or "D" requires Standards Action [RFC8126].
     Any state transition to or from a "Y" or "D" value requires
     IESG Approval.
-~~~
+
 
 - Add a reference to this document under the reference heading.
 
@@ -160,14 +163,14 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 
 - Change the registration procedure to:
 
-~~~
+
     Values with the first byte in the range 0-254 (decimal) are
     assigned via Specification Required [RFC8126].  Values with the
     first byte 255 (decimal) are reserved for Private Use [RFC8126].
     Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
+    Action [RFC8126]. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
-~~~
+
 
 - Add a reference to this document under the reference heading.
 
@@ -201,7 +204,6 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 | 0x00,0x19	| TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA            |   D  |
 | 0x00,0x1A	| TLS_DH_anon_WITH_DES_CBC_SHA           |   D  |
 | 0x00,0x1B	| TLS_DH_anon_WITH_3DES_EDE_CBC_SHA           |   D  |
-| 0x00,0x19	| TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA            |   D  |
 | 0x00,0x1E	| TLS_KRB5_WITH_DES_CBC_SHA            |   D  |
 | 0x00,0x20	| TLS_KRB5_WITH_RC4_128_SHA            |   D  |
 | 0x00,0x21	| TLS_KRB5_WITH_IDEA_CBC_SHA            |   D  |
@@ -236,11 +238,10 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 
 - Update the registration policy to include:
 
-~~~
     Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
+    Action [RFC8126]. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
-~~~
+
 
 - Add a reference to this document under the reference heading.
 
@@ -261,11 +262,9 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
 - Change the registration procedure from Specification Required to
   Expert Review and update it to include:
 
-~~~
     Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
+    Action [RFC8126]. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
-~~~
 
 - Add a reference to this document under the reference heading.
 
@@ -278,7 +277,7 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
 Note:
 : The role of the designated expert is described in {{!RFC8447}}.
 Even though this registry does not require a specification, the
-designated expert {{!RFC8126}} will highly encourage registrants
+designated expert {{!RFC8126}} will strongly encourage registrants
 to provide a link to a publicly available specification. An
 Internet-Draft (that is posted and never published as an RFC)
 or a document from another standards body, industry consortium,
@@ -298,14 +297,13 @@ IANA SHALL update the the TLS Certificate Types registry as follows:
 
 - Change the registration procedure to:
 
-~~~
     Values in the range 0-223 (decimal) are assigned via Specification
     Required [RFC8126]. Values in the range 224-255 (decimal) are
     reserved for Private Use [RFC8126]. Setting a "Recommended" column
     value to "Y" or "D" requires Standards
-    Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
+    Action [RFC8126]. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
-~~~
+
 
 - Add a reference to this document under the reference heading.
 
@@ -323,11 +321,10 @@ registry as follows:
 
 - Update the registration procedure to include:
 
-~~~
     Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
+    Action [RFC8126]. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
-~~~
+
 
 - Add a reference to this document under the reference heading.
 
@@ -357,11 +354,9 @@ registry as follows:
 
 - Update the registration procedure to include:
 
-~~~
     Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
+    Action [RFC8126]. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
-~~~
 
 - Add a reference to this document under the reference heading.
 
@@ -390,11 +385,9 @@ registry as follows:
 
 - Update the registration procedure to include:
 
-~~~
     Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
+    Action [RFC8126]. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
-~~~
 
 - Add a reference to this document under the reference heading.
 
@@ -425,11 +418,9 @@ IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 
 - Update the registration procedure to include:
 
-~~~
     Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action {{!RFC8126}}. Any state transition to or from a "Y" or "D"
+    Action [RFC8126]. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
-~~~
 
 - Add a reference to this document under the reference heading.
 
