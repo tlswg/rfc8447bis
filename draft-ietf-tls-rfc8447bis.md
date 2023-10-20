@@ -246,11 +246,27 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 
 - Add a reference to this document under the reference heading.
 
-- Entries keep their existing Recommended column "Y" and "N" entries.
-<aside markdown="block">
-  Note: Review in light of {{!I-D.ietf-tls-deprecate-obsolete-kex}}
-  also there are some weaker elliptic curves in this list.
-</aside>
+- Update the "Recommended" column with the changes as listed below.  Entries
+  keep their existing "Y" and "N" entries except for the entries in following table.
+  A reference to this document SHALL be added to these entries.
+
+| Value | Curve | Recommended |
+|:-|:-|:-|
+| 1 |sect163k1 | D |
+| 2 | sect163r1 | D |
+| 3 | sect163r2 | D |
+| 4 | sect193r1 | D |
+| 5 | sect193r2 | D |
+| 6 | sect233k1 | D| 
+| 7 | sect233r1 | D | 
+| 8 | sect239k1 | D |
+| 15 | secp160k1 | D |
+| 16 | secp160r1 | D |
+| 17 | secp160r2 | D |
+| 18 | secp192k1 | D |
+| 19 | secp192r1 | D |
+| 20 | secp224k1 | D |
+| 21 | secp224r1 | D |
 
 - Update note on the recommended column with text in {{rec-note}}.
 
