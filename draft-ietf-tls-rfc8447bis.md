@@ -165,16 +165,16 @@ to require confidentialy as a security property. These
 ciphersuites MUST NOT be used in those cases.
 
 Ciphersuites marked as EXPORT use weak ciphers and were deprecated in
-TLS 1.1 [RFC4346].
+TLS 1.1 {{?RFC4346}}.
 
 Cipher suites maked as anon do not provide any authentication and are
 vulnerable to man-in-the-middle attacks and are deprecated in TLS 1.1
-[RFC4346].
+{{?RFC4346}}.
 
-RC4 is a weak cipher and is deprecated in [RFC7465].
+RC4 is a weak cipher and is deprecated in {{?RFC7465}}.
 
 DES and IDEA are not considered secure for general use and are deprecated
-in [RFC5469].
+in {{?RFC5469}}.
 
 In order to refect the changes in the Recommended column allocation,
 IANA SHALL update the TLS ExtensionType Values registry as follows:
@@ -307,7 +307,7 @@ IANA SHALL update the TLS Supported Groups registry as follows:
   A reference to this document SHALL be added to these entries.
 
 | Value | Curve | Recommended |
-|:-|:-|:-|
+|:-|:-|-:|
 | 1 |sect163k1 | D |
 | 2 | sect163r1 | D |
 | 3 | sect163r2 | D |
