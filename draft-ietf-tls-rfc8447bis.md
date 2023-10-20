@@ -257,7 +257,7 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 | 3 | sect163r2 | D |
 | 4 | sect193r1 | D |
 | 5 | sect193r2 | D |
-| 6 | sect233k1 | D | 
+| 6 | sect233k1 | D |
 | 7 | sect233r1 | D |
 | 8 | sect239k1 | D |
 | 15 | secp160k1 | D |
