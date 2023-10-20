@@ -154,9 +154,25 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 
 # TLS Cipher Suites Registry
 
-<aside markdown="block">
-  Note: Review in light of {{!I-D.ietf-tls-deprecate-obsolete-kex}}.
-</aside>
+Several categories of ciphersuites are discouraged for general use and
+are maked as "D".
+
+Ciphersuites that use NULL encryption do not provide the confidentiality
+normally expected of TLS. Protocols and applications are often designed
+to require confidentialy as a security property. These
+ciphersuites MUST NOT be used in those cases.
+
+Ciphersuites marked as EXPORT use weak ciphers and were deprecated in
+TLS 1.1 [RFC4346].
+
+Cipher suites maked as anon do not provide any authentication and are
+vulnerable to man-in-the-middle attacks and are deprecated in TLS 1.1
+[RFC4346].
+
+RC4 is a weak cipher and is deprecated in [RFC7465].
+
+DES and IDEA are not considered secure for general use and are deprecated
+in [RFC5469].
 
 In order to refect the changes in the Recommended column allocation,
 IANA SHALL update the TLS ExtensionType Values registry as follows:
@@ -176,27 +192,26 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 
 - Update the "Recommended" column with the changes as listed below.  Entries
   keep their existing "Y" and "N" entries except for the entries in following table.
-  A reference to this document SHALL be added to these entries.
+  A reference to this document SHALL be added to these entries. This document does not
+  make any changes to the DTLS-OK column.
 
 | Value | Cipher Suite Name                             | Recommeded |
 |:------|:---------------------------------------------|-----------:|
 | 0x00,0x01	| TLS_RSA_WITH_NULL_MD5             |   D  |
 | 0x00,0x02	| TLS_RSA_WITH_NULL_SHA            |   D  |
-| 0x00,0x03	| TLS_RSA_EXPORT_WITH_RC4_40_MD5            |   D  |
+| 0x00,0x03	| TLS_RSA_EXPORT_WITH_RC4_40_MD5   | D |
 | 0x00,0x04	| TLS_RSA_WITH_RC4_128_MD5            |   D  |
 | 0x00,0x05	| TLS_RSA_WITH_RC4_128_SHA            |   D  |
-| 0x00,0x06	| TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5            |   D  |
+| 0x00,0x06	| TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5            | D|
 | 0x00,0x07	| TLS_RSA_WITH_IDEA_CBC_SHA            |   D  |
 | 0x00,0x08	| TLS_RSA_EXPORT_WITH_DES40_CBC_SHA            |   D  |
 | 0x00,0x09	| TLS_RSA_WITH_DES_CBC_SHA            |   D  |
 | 0x00,0x0B | TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA            |   D  |
 | 0x00,0x0C	| TLS_DH_DSS_WITH_DES_CBC_SHA            |   D  |
-| 0x00,0x0D	| TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA            |   D  |
 | 0x00,0x0E	| TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA            |   D  |
 | 0x00,0x0F | TLS_DH_RSA_WITH_DES_CBC_SHA    |  D  |
 | 0x00,0x11	| TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA            |   D  |
 | 0x00,0x12	| TLS_DHE_DSS_WITH_DES_CBC_SHA            |   D  |
-| 0x00,0x13	| TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA            |   D  |
 | 0x00,0x14	| TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA            |   D  |
 | 0x00,0x15	| TLS_DHE_RSA_WITH_DES_CBC_SHA           |   D  |
 | 0x00,0x17	| TLS_DH_anon_EXPORT_WITH_RC4_40_MD5          |   D  |
@@ -208,7 +223,6 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 | 0x00,0x20	| TLS_KRB5_WITH_RC4_128_SHA            |   D  |
 | 0x00,0x21	| TLS_KRB5_WITH_IDEA_CBC_SHA            |   D  |
 | 0x00,0x22	| TLS_KRB5_WITH_DES_CBC_MD5            |   D  |
-| 0x00,0x23	| TLS_KRB5_WITH_3DES_EDE_CBC_MD5           |   D  |
 | 0x00,0x24	| TLS_KRB5_WITH_RC4_128_MD5            |   D  |
 | 0x00,0x25	| TLS_KRB5_WITH_IDEA_CBC_MD5           |   D  |
 | 0x00,0x26	| TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA  | D |
@@ -217,15 +231,55 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 | 0x00,0x29	| TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5	 | D |
 | 0x00,0x2A	| TLS_KRB5_EXPORT_WITH_RC2_CBC_40_MD5	 | D |
 | 0x00,0x2B	| TLS_KRB5_EXPORT_WITH_RC4_40_MD5 | D |
+| 0x00,0x2C | TLS_PSK_WITH_NULL_SHA | D |
+| 0x00,0x2D | TLS_DHE_PSK_WITH_NULL_SHA | D |
+| 0x00,0x2E | TLS_RSA_PSK_WITH_NULL_SHA | D |
+| 0x00,0x34 | TLS_DH_anon_WITH_AES_128_CBC_SHA | D |
+| 0x00,0x3A | TLS_DH_anon_WITH_AES_256_CBC_SHA | D |
+| 0x00,0x3B | TLS_RSA_WITH_NULL_SHA256 | D |
+| 0x00,0x46 | TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA | D |
+| 0x00,0x6C | TLS_DH_anon_WITH_AES_128_CBC_SHA256 | D |
+| 0x00,0x6D | TLS_DH_anon_WITH_AES_256_CBC_SHA256 | D |
+| 0x00,0x89 | TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA | D |
 | 0x00,0x8A	| TLS_PSK_WITH_RC4_128_SHA | D |
 | 0x00,0x8E	| TLS_DHE_PSK_WITH_RC4_128_SHA | D |
 | 0x00,0x92	| TLS_RSA_PSK_WITH_RC4_128_SHA | D |
+| 0x00,0x9B | TLS_DH_anon_WITH_SEED_CBC_SHA | D |
+| 0x00,0xA6 | TLS_DH_anon_WITH_AES_128_GCM_SHA256 | D |
+| 0x00,0xA7 | TLS_DH_anon_WITH_AES_256_GCM_SHA384 | D |
+| 0x00,0xB0	| TLS_PSK_WITH_NULL_SHA256 | D |
+| 0x00,0xB1	| TLS_PSK_WITH_NULL_SHA384 | D |
+| 0x00,0xB4 | TLS_DHE_PSK_WITH_NULL_SHA256 | D |
+| 0x00,0xB5 | TLS_DHE_PSK_WITH_NULL_SHA384 | D |
+| 0x00,0xB8 | TLS_RSA_PSK_WITH_NULL_SHA256	| D |
+| 0x00,0xB9 | TLS_RSA_PSK_WITH_NULL_SHA384 | D |
+| 0x00,0xBF | TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256 | D |
+| 0x00,0xC5 | TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256 | D |
+| 0xC0,0x01 | TLS_ECDH_ECDSA_WITH_NULL_SHA | D |
 | 0xC0,0x02	| TLS_ECDH_ECDSA_WITH_RC4_128_SHA | D |
+| 0xC0,0x06 | TLS_ECDHE_ECDSA_WITH_NULL_SHA | D |
 | 0xC0,0x07	| TLS_ECDHE_ECDSA_WITH_RC4_128_SHA | D |
+| 0xC0,0x0B | TLS_ECDH_RSA_WITH_NULL_SHA | D |
 | 0xC0,0x0C	| TLS_ECDH_RSA_WITH_RC4_128_SHA | D |
+| 0xC0,0x10 | TLS_ECDHE_RSA_WITH_NULL_SHA | D |
 | 0xC0,0x11	| TLS_ECDHE_RSA_WITH_RC4_128_SHA | D |
+| 0xC0,0x15 | TLS_ECDH_anon_WITH_NULL_SHA | D |
 | 0xC0,0x16	| TLS_ECDH_anon_WITH_RC4_128_SHA | D |
+| 0xC0,0x17 | TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA | D |
+| 0xC0,0x18 | TLS_ECDH_anon_WITH_AES_128_CBC_SHA	| D |
+| 0xC0,0x19 | TLS_ECDH_anon_WITH_AES_256_CBC_SHA | D |
 | 0xC0,0x33	| TLS_ECDHE_PSK_WITH_RC4_128_SHA | D |
+| 0xC0,0x39	| TLS_ECDHE_PSK_WITH_NULL_SHA	| D |
+| 0xC0,0x3A | TLS_ECDHE_PSK_WITH_NULL_SHA256 | D |
+| 0xC0,0x3B | TLS_ECDHE_PSK_WITH_NULL_SHA384 | D |
+| 0xC0,0x46 | TLS_DH_anon_WITH_ARIA_128_CBC_SHA256	| D |
+| 0xC0,0x47 | TLS_DH_anon_WITH_ARIA_256_CBC_SHA384	| D |
+| 0xC0,0x5A | TLS_DH_anon_WITH_ARIA_128_GCM_SHA256	| D |
+| 0xC0,0x5B | TLS_DH_anon_WITH_ARIA_256_GCM_SHA384 | D |
+| 0xC0,0x84 | TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256 | D |
+| 0xC0,0x85 | TLS_DH_anon_WITH_CAMELLIA_256_GCM_SHA384 | D |
+| 0xC0,0xB4 | TLS_SHA256_SHA256 | D |
+| 0xC0,0xB5 | TLS_SHA384_SHA384 | D |
 
 
 - Update note on the recommended column with text in {{rec-note}}.
