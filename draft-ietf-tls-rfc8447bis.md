@@ -532,7 +532,7 @@ IANA is requested to add a "Comment" column to the following registries:
 - TLS KDF Identifiers
 
 This list of registries is all registries that do not already have a
-"Comment" or "Notes" column or that was not orphaned by TLS 1.3. The TLS
+"Comment" or "Notes" column or that were not orphaned by TLS 1.3. The TLS
 ExtensionType Values is not listed above because it has the "TLS 1.3"
 column.
 
