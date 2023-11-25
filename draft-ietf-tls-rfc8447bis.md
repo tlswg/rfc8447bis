@@ -511,6 +511,31 @@ IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 
 - Update note on the recommended column with text in {{rec-note}}.
 
+# Adding "Comment" Column
+
+IANA is requested to add a "Comment" column to the following registries:
+
+- TLS Application-Layer Protocol Negotiation (ALPN) Protocol IDs
+- TLS CachedInformationType Values
+- TLS Certificate Compression Algorithm IDs
+- TLS Cipher Suites
+- TLS ContentType
+- TLS EC Point Formats
+- TLS EC Curve Types
+- TLS Supplemental Data Formats (SupplementalDataType)
+- TLS UserMappingType Values
+- TLS Authorization Data Formats
+- TLS Heartbeat Message Types
+- TLS Heartbeat Modes
+- TLS SignatureScheme
+- TLS PskKeyExchangeMode
+- TLS KDF Identifiers
+
+This list of registries is all registries that do not already have a
+"Comment" or "Notes" column or that were not orphaned by TLS 1.3. The TLS
+ExtensionType Values is not listed above because it has the "TLS 1.3"
+column.
+
 # Security Considerations
 
 The change to Specification Required from IETF Review lowers the amount
