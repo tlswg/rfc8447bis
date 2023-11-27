@@ -515,6 +515,7 @@ IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 
 IANA is requested to add a "Comment" column to the following registries:
 
+- TLS ExtensionType Values
 - TLS Application-Layer Protocol Negotiation (ALPN) Protocol IDs
 - TLS CachedInformationType Values
 - TLS Certificate Compression Algorithm IDs
@@ -532,9 +533,7 @@ IANA is requested to add a "Comment" column to the following registries:
 - TLS KDF Identifiers
 
 This list of registries is all registries that do not already have a
-"Comment" or "Notes" column or that were not orphaned by TLS 1.3. The TLS
-ExtensionType Values is not listed above because it has the "TLS 1.3"
-column.
+"Comment" or "Notes" column or that were not orphaned by TLS 1.3.
 
 # Security Considerations
 
