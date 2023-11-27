@@ -1,0 +1,997 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2022-07-03T01:47:06.220409+00:00",
+  "repo": "tlswg/rfc8447bis",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 20,
+      "id": "I_kwDOHFJBYs5M3Bp3",
+      "title": "Recommended Note",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/20",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Currently the I-D includes the following note:\r\n\r\n    Note:\r\n    : If an item is not marked as \"Recommended\", it does not\r\n    necessarily mean that it is flawed; rather, it indicates that the\r\n    item either has not been through the IETF consensus process, has\r\n    limited applicability, or is intended only for specific use cases.\r\n\r\nNow that we have three values do we need to expand this to also include \"D\".",
+      "createdAt": "2022-06-30T02:19:50Z",
+      "updatedAt": "2022-06-30T02:19:50Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 21,
+      "id": "I_kwDOHFJBYs5M3FLc",
+      "title": "Reserved values",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/21",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Some registries have values that are reserved because the values were \"burned\". These values are not in private use space but are mid-range, 40 in the ExtensionType registry. Should we mark these as \"D\"?",
+      "createdAt": "2022-06-30T02:46:16Z",
+      "updatedAt": "2022-06-30T02:46:16Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOHFJBYs44T1f2",
+      "title": "Correct mail repo",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/1",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Fixes a cut/paste error and now points to the TLS repo (and not the lamps repo).",
+      "createdAt": "2022-05-23T17:23:03Z",
+      "updatedAt": "2022-06-29T18:27:14Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "111943e37c4c05eb356663f0b9cc35ca5628bbc8",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-patch-1",
+      "headRefOid": "648045bf47fa47980663880aaf5bf27bbf322cf8",
+      "closedAt": "2022-05-23T18:07:55Z",
+      "mergedAt": "2022-05-23T18:07:55Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "b2250efc9ca44aaec70fd73f99483cf11860de5a"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOHFJBYs44T2hz",
+      "title": "Refer to draft-ietf-tls-rfc8446bis",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/2",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "8446bis is in the works, we should refer to it.",
+      "createdAt": "2022-05-23T17:27:50Z",
+      "updatedAt": "2022-06-29T18:27:13Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "111943e37c4c05eb356663f0b9cc35ca5628bbc8",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-patch-2",
+      "headRefOid": "1c4b21363baf29b5fa9e8ad2abfad84ed3aba445",
+      "closedAt": "2022-05-23T18:08:45Z",
+      "mergedAt": "2022-05-23T18:08:45Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "2ac317bdccd365f4f0e44fe0c385546bbf11c5a8"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOHFJBYs44T5_b",
+      "title": "Add Difference from RFC8447 Sections",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/3",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-05-23T17:43:43Z",
+      "updatedAt": "2022-06-29T18:26:58Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "111943e37c4c05eb356663f0b9cc35ca5628bbc8",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-patch-3-1",
+      "headRefOid": "fc85e81066cd870efda79c6c7da958c98c8f94f8",
+      "closedAt": "2022-05-23T18:09:21Z",
+      "mergedAt": "2022-05-23T18:09:21Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "0167edd8ffd4afcfc85dc18e2cc4cf84aa87bf6f"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 4,
+      "id": "PR_kwDOHFJBYs44UQfr",
+      "title": "Editor/Reference Updates",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/4",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "@jsalowey PTAL.",
+      "createdAt": "2022-05-23T19:35:54Z",
+      "updatedAt": "2022-06-29T18:26:55Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "6e8d3bd7540c2f8363682f4dc47fbd374022e3ef",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-patch-4",
+      "headRefOid": "681eb2c86e3bfd73bfd12be849021dea55d94347",
+      "closedAt": "2022-06-27T19:04:01Z",
+      "mergedAt": "2022-06-27T19:04:01Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "f44b1d33e3c2adae11d1d2e4ea12db2e5a39837f"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs46oLhZ",
+          "commit": {
+            "abbreviatedOid": "db03bb9"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:28:32Z",
+          "updatedAt": "2022-05-24T17:28:33Z",
+          "comments": [
+            {
+              "originalPosition": 79,
+              "body": "```suggestion\r\nNote: \r\n```",
+              "createdAt": "2022-05-24T17:28:33Z",
+              "updatedAt": "2022-05-24T17:28:33Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oLts",
+          "commit": {
+            "abbreviatedOid": "cd55b97"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:29:10Z",
+          "updatedAt": "2022-05-24T17:29:10Z",
+          "comments": [
+            {
+              "originalPosition": 79,
+              "body": "```suggestion\r\nNote:\r\n```",
+              "createdAt": "2022-05-24T17:29:10Z",
+              "updatedAt": "2022-05-24T17:29:11Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oL7c",
+          "commit": {
+            "abbreviatedOid": "476115e"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:29:54Z",
+          "updatedAt": "2022-05-24T17:29:54Z",
+          "comments": [
+            {
+              "originalPosition": 271,
+              "body": "```suggestion\r\n\r\n```",
+              "createdAt": "2022-05-24T17:29:54Z",
+              "updatedAt": "2022-05-24T17:29:54Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oL_7",
+          "commit": {
+            "abbreviatedOid": "476115e"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:30:09Z",
+          "updatedAt": "2022-05-24T17:30:09Z",
+          "comments": [
+            {
+              "originalPosition": 271,
+              "body": "Whitespace",
+              "createdAt": "2022-05-24T17:30:09Z",
+              "updatedAt": "2022-05-24T17:30:09Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oMu7",
+          "commit": {
+            "abbreviatedOid": "0825a5f"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:32:46Z",
+          "updatedAt": "2022-05-24T17:32:47Z",
+          "comments": [
+            {
+              "originalPosition": 416,
+              "body": "```suggestion\r\n- {{!RFC5246}} and TLS SignatureAlgorithm registries {{?RFC5246}}:\r\n```",
+              "createdAt": "2022-05-24T17:32:47Z",
+              "updatedAt": "2022-05-24T17:32:47Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oM4T",
+          "commit": {
+            "abbreviatedOid": "87589d1"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:33:18Z",
+          "updatedAt": "2022-05-24T17:33:19Z",
+          "comments": [
+            {
+              "originalPosition": 416,
+              "body": "```suggestion\r\n- {{!RFC5246}} and TLS SignatureAlgorithm registries {{!RFC5246}}:\r\n```",
+              "createdAt": "2022-05-24T17:33:19Z",
+              "updatedAt": "2022-05-24T17:33:19Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs46oNCE",
+          "commit": {
+            "abbreviatedOid": "f42debb"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-05-24T17:33:54Z",
+          "updatedAt": "2022-05-24T17:33:55Z",
+          "comments": [
+            {
+              "originalPosition": 437,
+              "body": "```suggestion\r\n  Identifiers registry {{!RFC5246}}:\r\n```",
+              "createdAt": "2022-05-24T17:33:55Z",
+              "updatedAt": "2022-05-24T17:33:55Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "id": "PR_kwDOHFJBYs44VA7c",
+      "title": "Trailing whitespace fixes",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/5",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-05-24T00:45:33Z",
+      "updatedAt": "2022-06-29T18:26:56Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "0167edd8ffd4afcfc85dc18e2cc4cf84aa87bf6f",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-patch-5",
+      "headRefOid": "35ef807deb794df59441f51c02a9fea2097d71d5",
+      "closedAt": "2022-05-24T02:51:36Z",
+      "mergedAt": "2022-05-24T02:51:36Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "a0d396d2af5d09c411217794223be8087a60abc9"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 6,
+      "id": "PR_kwDOHFJBYs46lsZX",
+      "title": "Tweaking Intro",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/6",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Reworked intro to make it slightly clearer what changes were motivated when. I also think we should make it easier on IANA and only use the [SHALL/has] intro when we are asking them to make a change as a result of this I-D.",
+      "createdAt": "2022-06-29T18:25:52Z",
+      "updatedAt": "2022-06-30T03:55:52Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-intro",
+      "headRefOid": "e4c92fc3afaf081bf336bce21c63238d68fddbf7",
+      "closedAt": "2022-06-30T03:55:51Z",
+      "mergedAt": "2022-06-30T03:55:51Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "55cc406cf134ccecfe56d35d5228a049777efb0d"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49DDTi",
+          "commit": {
+            "abbreviatedOid": "e4c92fc"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-06-30T03:05:48Z",
+          "updatedAt": "2022-06-30T03:05:48Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "id": "PR_kwDOHFJBYs46ltLH",
+      "title": "Adding \"TLS\" to Registry Names",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/7",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Clarifying IANA is only to update the reference in this section.",
+      "createdAt": "2022-06-29T18:28:53Z",
+      "updatedAt": "2022-06-30T03:56:13Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-RegistryNames",
+      "headRefOid": "c4588f94a6005f4353706c024bf885599837e4fe",
+      "closedAt": "2022-06-30T03:56:13Z",
+      "mergedAt": "2022-06-30T03:56:13Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "3046488eba467282006e3d0cb673b3a39943dd01"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49DDZf",
+          "commit": {
+            "abbreviatedOid": "c4588f9"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-06-30T03:06:39Z",
+          "updatedAt": "2022-06-30T03:06:39Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "id": "PR_kwDOHFJBYs46lt0h",
+      "title": "Aligning with RFC 8126",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/8",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Clarifying IANA only needs to update references as a result of this section.",
+      "createdAt": "2022-06-29T18:31:12Z",
+      "updatedAt": "2022-06-30T03:56:29Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-8126Alignment",
+      "headRefOid": "0b69bd57d8fbdf94fc22a0679dc25989821b020a",
+      "closedAt": "2022-06-30T03:56:29Z",
+      "mergedAt": "2022-06-30T03:56:29Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "cda3a46921c50b37caf8c6f45acdac38a216efbd"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49DDdK",
+          "commit": {
+            "abbreviatedOid": "0b69bd5"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-06-30T03:07:11Z",
+          "updatedAt": "2022-06-30T03:07:11Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "id": "PR_kwDOHFJBYs46lviL",
+      "title": "Session Ticket TLS Extension",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/9",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Clarifying IANA only needs to update references as a result of this section.",
+      "createdAt": "2022-06-29T18:38:00Z",
+      "updatedAt": "2022-06-30T03:56:44Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-SessionTicket",
+      "headRefOid": "e462680bf495c59ffcc1bc667756591b5ccfd285",
+      "closedAt": "2022-06-30T03:56:44Z",
+      "mergedAt": "2022-06-30T03:56:44Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "ead8147ee8b0dae2deac4d97ce732a182fd3b853"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49DDjH",
+          "commit": {
+            "abbreviatedOid": "e462680"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-06-30T03:08:01Z",
+          "updatedAt": "2022-06-30T03:08:01Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "PR_kwDOHFJBYs46l3pQ",
+      "title": "TLS ExtensionType Values",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/10",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Tweaks to add the D values, explanations about D, etc.",
+      "createdAt": "2022-06-29T19:11:17Z",
+      "updatedAt": "2022-06-30T03:58:30Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-ExtensionType",
+      "headRefOid": "7302ba8b8f90778765c743fff6485be94f1557b0",
+      "closedAt": "2022-06-30T03:58:30Z",
+      "mergedAt": "2022-06-30T03:58:30Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "5bb68668b2839728133bb3aa4c60d862c7e90add"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49DD7a",
+          "commit": {
+            "abbreviatedOid": "7302ba8"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "We might want to check that the subsequent registries all have an appropriate value in the column. ",
+          "createdAt": "2022-06-30T03:11:35Z",
+          "updatedAt": "2022-06-30T03:11:35Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "id": "PR_kwDOHFJBYs46l4V2",
+      "title": "Adding \"Recommended\" Column",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/11",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Minor tweaks.",
+      "createdAt": "2022-06-29T19:14:47Z",
+      "updatedAt": "2022-06-30T03:58:43Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-RecommendedColumn",
+      "headRefOid": "c9ede47764e2a4696ea241dbd40689be5b907c98",
+      "closedAt": "2022-06-30T03:58:43Z",
+      "mergedAt": "2022-06-30T03:58:43Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "01506617cbf98a13b154d6caca2a13ea5712df3d"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49DEAL",
+          "commit": {
+            "abbreviatedOid": "c9ede47"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-06-30T03:12:20Z",
+          "updatedAt": "2022-06-30T03:12:20Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "id": "PR_kwDOHFJBYs46l6jf",
+      "title": "Cipher Suites",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/12",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Just noting that we'll need to review this based on [draft-ietf-tls-deprecate-obsolete-kex](https://datatracker.ietf.org/doc/draft-ietf-tls-deprecate-obsolete-kex/).",
+      "createdAt": "2022-06-29T19:25:08Z",
+      "updatedAt": "2022-06-30T03:59:13Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-CipherSuites-patch1",
+      "headRefOid": "51c9c77733d2c8cd7911aa5e451e7b654ec40bad",
+      "closedAt": "2022-06-30T03:59:13Z",
+      "mergedAt": "2022-06-30T03:59:13Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "aa3b556a7eebc0a381ae7d1bab9b8055bdfaa9b0"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49B_dy",
+          "commit": {
+            "abbreviatedOid": "4a76e6b"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-06-29T19:59:28Z",
+          "updatedAt": "2022-06-29T19:59:29Z",
+          "comments": [
+            {
+              "originalPosition": 5,
+              "body": "Remove the space\r\n```suggestion\r\n  Note: Review in light of {{!I-D.ietf-tls-deprecate-obsolete-kex}}.\r\n```",
+              "createdAt": "2022-06-29T19:59:29Z",
+              "updatedAt": "2022-06-29T19:59:29Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs49DEHN",
+          "commit": {
+            "abbreviatedOid": "51c9c77"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-06-30T03:13:20Z",
+          "updatedAt": "2022-06-30T03:13:20Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "id": "PR_kwDOHFJBYs46m1xK",
+      "title": "Orphaned Registries",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/13",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Tweaks for Orphaned Registries. Part 1.",
+      "createdAt": "2022-06-30T01:33:17Z",
+      "updatedAt": "2022-07-02T21:45:52Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-OrphanedRegistries",
+      "headRefOid": "6bbe04095b16fcdbbd903e5165f126d745ee23f5",
+      "closedAt": "2022-07-02T21:45:51Z",
+      "mergedAt": "2022-07-02T21:45:51Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "1df3a5ea0413448a45675c42672998dd8bc54017"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49M5L7",
+          "commit": {
+            "abbreviatedOid": "6bbe040"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-07-02T21:45:44Z",
+          "updatedAt": "2022-07-02T21:45:44Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "id": "PR_kwDOHFJBYs46m3OA",
+      "title": "TLS Supported Groups",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/14",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Tweaks for Supported Groups.\r\n\r\nWe still need to figure out what to do with curves smaller than 256.",
+      "createdAt": "2022-06-30T01:49:11Z",
+      "updatedAt": "2022-07-02T21:46:31Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-SupportedGroups",
+      "headRefOid": "feaafb5e3046c8b3589dfbe8981be487fa9f8955",
+      "closedAt": "2022-07-02T21:46:31Z",
+      "mergedAt": "2022-07-02T21:46:31Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "74f54a595d2f7016d8433b3fce3a51593d7407fb"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49M5MY",
+          "commit": {
+            "abbreviatedOid": "feaafb5"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-07-02T21:46:24Z",
+          "updatedAt": "2022-07-02T21:46:24Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "id": "PR_kwDOHFJBYs46m4OK",
+      "title": "TLS ClientCertificateType Identifiers",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/15",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "changing the DE ref to this document",
+      "createdAt": "2022-06-30T01:59:52Z",
+      "updatedAt": "2022-07-02T21:47:20Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-ClientCertificateType-Ids-note",
+      "headRefOid": "57df0d1be8ae21c09e441986a9164396700a547f",
+      "closedAt": "2022-07-02T21:47:20Z",
+      "mergedAt": "2022-07-02T21:47:20Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "bb755adccc97620d83ab953be7bc45a233b19291"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49M5Mz",
+          "commit": {
+            "abbreviatedOid": "57df0d1"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-07-02T21:47:03Z",
+          "updatedAt": "2022-07-02T21:47:03Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "id": "PR_kwDOHFJBYs46m4pG",
+      "title": "NST in Handshake Message Type",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/16",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Ref to 8447bis instead of 8447.",
+      "createdAt": "2022-06-30T02:03:55Z",
+      "updatedAt": "2022-07-02T21:47:53Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-NST",
+      "headRefOid": "53affc19d40fe16ddc4f117709ee34e042a30a4e",
+      "closedAt": "2022-07-02T21:47:53Z",
+      "mergedAt": "2022-07-02T21:47:53Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "08fd774304244d3a9b44474d3a0bdff470c0a82c"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49M5NO",
+          "commit": {
+            "abbreviatedOid": "53affc1"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-07-02T21:47:48Z",
+          "updatedAt": "2022-07-02T21:47:48Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "id": "PR_kwDOHFJBYs46m5aN",
+      "title": "TLS Exporter Labels",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/17",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-06-30T02:11:24Z",
+      "updatedAt": "2022-07-02T21:49:26Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-ExporterLabels",
+      "headRefOid": "399dfe224ac2faf4613da9322f523f346874267a",
+      "closedAt": "2022-07-02T21:49:26Z",
+      "mergedAt": "2022-07-02T21:49:26Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "c38f518c2b367e66d5ed30745d2ddf52d3b8306e"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49C9Yo",
+          "commit": {
+            "abbreviatedOid": "4454e21"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-06-30T02:17:17Z",
+          "updatedAt": "2022-06-30T02:17:18Z",
+          "comments": [
+            {
+              "originalPosition": 15,
+              "body": "```suggestion\r\nY->N, Y->D, or D->Y|N transitions.\r\n```",
+              "createdAt": "2022-06-30T02:17:18Z",
+              "updatedAt": "2022-06-30T02:17:18Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs49M5OR",
+          "commit": {
+            "abbreviatedOid": "399dfe2"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-07-02T21:49:20Z",
+          "updatedAt": "2022-07-02T21:49:20Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "id": "PR_kwDOHFJBYs46m5mH",
+      "title": "TLS Alert",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/18",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Making it clear IANA doesn't have to do anything with this one.",
+      "createdAt": "2022-06-30T02:13:01Z",
+      "updatedAt": "2022-07-02T21:49:49Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-Alert",
+      "headRefOid": "0de672d74ad7249415027644cd20db579896a787",
+      "closedAt": "2022-07-02T21:49:49Z",
+      "mergedAt": "2022-07-02T21:49:49Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "8c9c511bfc0e7618223ba755aef24f1f911f0f22"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49M5Os",
+          "commit": {
+            "abbreviatedOid": "0de672d"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-07-02T21:49:44Z",
+          "updatedAt": "2022-07-02T21:49:44Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "id": "PR_kwDOHFJBYs46m5-r",
+      "title": "TLS CertificateTypes",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/19",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Just ref updates and making it easier on IANA.",
+      "createdAt": "2022-06-30T02:16:34Z",
+      "updatedAt": "2022-07-02T21:50:41Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c31ff3794b537541f26f243d2c5b2c147820f29b",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-CertificateTypes",
+      "headRefOid": "16d9624285a924086f19e9a9f814d2442c83cb63",
+      "closedAt": "2022-07-02T21:50:41Z",
+      "mergedAt": "2022-07-02T21:50:41Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "1bf64369fab1ea06ee73987b668dfb1cc77b41bc"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs49M5PN",
+          "commit": {
+            "abbreviatedOid": "16d9624"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2022-07-02T21:50:36Z",
+          "updatedAt": "2022-07-02T21:50:36Z",
+          "comments": []
+        }
+      ]
+    }
+  ]
+}
