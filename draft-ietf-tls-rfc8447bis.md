@@ -535,6 +535,19 @@ IANA is requested to add a "Comment" column to the following registries:
 This list of registries is all registries that do not already have a
 "Comment" or "Notes" column or that were not orphaned by TLS 1.3.
 
+# Expert Review of Current and Potential IETF and IRTF Documents
+
+The intent of the Specification Required standard for TLS code points
+is to allow for easy registration for code points associated with
+protocols and algorithms that are not being actively developed inside
+IETF or IRTF. When TLS-based technologies are being developed inside
+the IRTF/IETF they should be done in coordination with the TLS WG in
+order to provide appropriate review. For this reason, designated
+experts should discourage code point registrations for documents which
+have already been adoption or are being proposed for adopted by IETF
+working groups or IRTF research groups.
+
+
 # Security Considerations
 
 The change to Specification Required from IETF Review lowers the amount
