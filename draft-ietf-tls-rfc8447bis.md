@@ -53,11 +53,11 @@ This document updates the following RFCs:
 This document instructs IANA to make changes to a number of the IANA
 registries related to Transport Layer Security (TLS) and Datagram
 Transport Layer Security (DTLS). These changes update the changes made
-in {{?RFC8447}}.
+in {{!RFC8447}}.
 
 <aside markdown="block">
   NOTE for IANA: This document specifies changes to the registry to update
-  the changes made in {{?RFC8447}}.
+  the changes made in {{RFC8447}}.
 </aside>
 
 This specification updates the "Recommended" column in TLS
@@ -70,7 +70,7 @@ registries to define a third value "D" for items that are discouraged.
 # Adding "Recommended" Column
 
 The instructions in this document update the Recommended column,
-originally added in {{?RFC8447}} to add a third value, "D",
+originally added in {{RFC8447}} to add a third value, "D",
 indicating that a value is "Discouraged". The permitted values
 are:
 
@@ -350,7 +350,7 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
 - update the note on the role of the expert reviewer as follows.
 
 Note:
-: The role of the designated expert is described in {{!RFC8447}}.
+: The role of the designated expert is described in {{RFC8447}}.
 Even though this registry does not require a specification, the
 designated expert {{!RFC8126}} will strongly encourage registrants
 to provide a link to a publicly available specification. An
