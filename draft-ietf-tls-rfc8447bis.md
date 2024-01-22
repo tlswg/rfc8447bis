@@ -511,6 +511,10 @@ IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 
 - Update note on the recommended column with text in {{rec-note}}.
 
+# TLS SignatureScheme registry
+
+IANA is requested to add a reference to this document under the reference heading.
+
 # Adding "Comment" Column
 
 IANA is requested to add a "Comment" column to the following registries:
