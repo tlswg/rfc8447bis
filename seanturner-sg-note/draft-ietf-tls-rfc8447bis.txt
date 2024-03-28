@@ -6,8 +6,8 @@ Transport Layer Security                                      J. Salowey
 Internet-Draft                                                    Venafi
 Updates: 3749, 5077, 4680, 5246, 5705, 5878,                   S. Turner
          6520, 7301, 8447 (if approved)                            sn3rd
-Intended status: Standards Track                         22 January 2024
-Expires: 25 July 2024
+Intended status: Standards Track                           28 March 2024
+Expires: 29 September 2024
 
 
                  IANA Registry Updates for TLS and DTLS
@@ -52,7 +52,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 25 July 2024.
+   This Internet-Draft will expire on 29 September 2024.
 
 Copyright Notice
 
@@ -85,9 +85,10 @@ Table of Contents
    12. TLS PskKeyExchangeMode registry
    13. TLS SignatureScheme registry
    14. Adding "Comment" Column
-   15. Security Considerations
-   16. IANA Considerations
-   17. Normative References
+   15. Expert Review of Current and Potential IETF and IRTF Documents
+   16. Security Considerations
+   17. IANA Considerations
+   18. Normative References
    Authors' Addresses
 
 1.  Introduction
@@ -470,6 +471,9 @@ Table of Contents
 
    *  Update note on the recommended column with text in Section 3.1.
 
+   *  Replace the registry range table note column for the 0-255,
+      512-65535 range with "Unallocated".
+
 7.  TLS Exporter Labels Registry
 
    This document updates the registration procedure for the TLS Exporter
@@ -723,7 +727,19 @@ Table of Contents
    This list of registries is all registries that do not already have a
    "Comment" or "Notes" column or that were not orphaned by TLS 1.3.
 
-15.  Security Considerations
+15.  Expert Review of Current and Potential IETF and IRTF Documents
+
+   The intent of the Specification Required standard for TLS code points
+   is to allow for easy registration for code points associated with
+   protocols and algorithms that are not being actively developed inside
+   IETF or IRTF.  When TLS-based technologies are being developed inside
+   the IRTF/IETF they should be done in coordination with the TLS WG in
+   order to provide appropriate review.  For this reason, designated
+   experts should decline code point registrations for documents which
+   have already been adopted or are being proposed for adoption by IETF
+   working groups or IRTF research groups.
+
+16.  Security Considerations
 
    The change to Specification Required from IETF Review lowers the
    amount of review provided by the WG for cipher suites and supported
@@ -744,12 +760,12 @@ Table of Contents
    taken as an endorsement of the cipher suite, extension, supported
    group, etc.
 
-16.  IANA Considerations
+17.  IANA Considerations
 
    This document is entirely about changes to TLS-related IANA
    registries.
 
-17.  Normative References
+18.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
