@@ -549,7 +549,8 @@ the IRTF/IETF they should be done in coordination with the TLS WG in
 order to provide appropriate review. For this reason, designated
 experts should decline code point registrations for documents which
 have already been adopted or are being proposed for adoption by IETF
-working groups or IRTF research groups.
+working groups or IRTF research groups unless the WG Chairs indicate
+otherwise via email.
 
 
 # Security Considerations
