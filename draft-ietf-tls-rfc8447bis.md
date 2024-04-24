@@ -326,6 +326,9 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 
 - Update note on the recommended column with text in {{rec-note}}.
 
+- Replace the registry range table note column for the 0-255, 512-65535
+  range with "Unallocated".
+
 # TLS Exporter Labels Registry
 
 This document updates the registration procedure for the TLS Exporter
