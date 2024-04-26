@@ -549,7 +549,8 @@ is to allow for easy registration for code points associated with
 protocols and algorithms that are not being actively developed inside
 IETF or IRTF. When TLS-based technologies are being developed inside
 the IRTF/IETF they should be done in coordination with the TLS WG in
-order to provide appropriate review. For this reason, designated
+order to provide appropriate review. For this reason, unless the WG
+chairs indicate otherwise email, designated
 experts should decline code point registrations for documents which
 have already been adopted or are being proposed for adoption by IETF
 working groups or IRTF research groups unless the WG Chairs indicate
