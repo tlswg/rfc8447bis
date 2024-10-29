@@ -6,8 +6,8 @@ Transport Layer Security                                      J. Salowey
 Internet-Draft                                                    Venafi
 Updates: 3749, 5077, 4680, 5246, 5705, 5878,                   S. Turner
          6520, 7301, 8447 (if approved)                            sn3rd
-Intended status: Standards Track                           10 April 2024
-Expires: 12 October 2024
+Intended status: Standards Track                         29 October 2024
+Expires: 2 May 2025
 
 
                  IANA Registry Updates for TLS and DTLS
@@ -52,7 +52,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 12 October 2024.
+   This Internet-Draft will expire on 2 May 2025.
 
 Copyright Notice
 
@@ -471,6 +471,9 @@ Table of Contents
 
    *  Update note on the recommended column with text in Section 3.1.
 
+   *  Replace the registry range table note column for the 0-255,
+      512-65535 range with "Unallocated".
+
 7.  TLS Exporter Labels Registry
 
    This document updates the registration procedure for the TLS Exporter
@@ -731,10 +734,11 @@ Table of Contents
    protocols and algorithms that are not being actively developed inside
    IETF or IRTF.  When TLS-based technologies are being developed inside
    the IRTF/IETF they should be done in coordination with the TLS WG in
-   order to provide appropriate review.  For this reason, designated
-   experts should decline code point registrations for documents which
-   have already been adopted or are being proposed for adoption by IETF
-   working groups or IRTF research groups unless the WG Chairs indicate
+   order to provide appropriate review.  For this reason, unless the WG
+   chairs indicate otherwise via email, designated experts should
+   decline code point registrations for documents which have already
+   been adopted or are being proposed for adoption by IETF working
+   groups or IRTF research groups unless the WG Chairs indicate
    otherwise via email.
 
 16.  Security Considerations
