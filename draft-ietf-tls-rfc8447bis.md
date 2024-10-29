@@ -41,7 +41,8 @@ informative:
 
 This document updates the changes to TLS and DTLS IANA registries
 made in RFC 8447. It adds a new value "D" for discouraged
-to the recommended column of the selected TLS registries.
+to the recommended column of the selected TLS registries and
+adds a "Comments" column to all active registries.
 
 This document updates the following RFCs:
 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447.
@@ -353,7 +354,7 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
 - update the note on the role of the expert reviewer as follows.
 
 Note:
-: The role of the designated expert is described in {{RFC8447}}.
+: The role of the designated expert is described in {{RFC8447, Section 17}}.
 Even though this registry does not require a specification, the
 designated expert {{!RFC8126}} will strongly encourage registrants
 to provide a link to a publicly available specification. An
@@ -549,12 +550,11 @@ is to allow for easy registration for code points associated with
 protocols and algorithms that are not being actively developed inside
 IETF or IRTF. When TLS-based technologies are being developed inside
 the IRTF/IETF they should be done in coordination with the TLS WG in
-order to provide appropriate review. For this reason, unless the WG
+order to provide appropriate review. For this reason, unless the TLS WG
 chairs indicate otherwise via email, designated
 experts should decline code point registrations for documents which
 have already been adopted or are being proposed for adoption by IETF
-working groups or IRTF research groups unless the WG Chairs indicate
-otherwise via email.
+working groups or IRTF research groups.
 
 
 # Security Considerations
