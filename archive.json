@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-07-03T01:47:06.220409+00:00",
+  "timestamp": "2024-10-31T01:48:25.280668+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -55,31 +55,257 @@
       "id": "I_kwDOHFJBYs5M3Bp3",
       "title": "Recommended Note",
       "url": "https://github.com/tlswg/rfc8447bis/issues/20",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "Currently the I-D includes the following note:\r\n\r\n    Note:\r\n    : If an item is not marked as \"Recommended\", it does not\r\n    necessarily mean that it is flawed; rather, it indicates that the\r\n    item either has not been through the IETF consensus process, has\r\n    limited applicability, or is intended only for specific use cases.\r\n\r\nNow that we have three values do we need to expand this to also include \"D\".",
       "createdAt": "2022-06-30T02:19:50Z",
-      "updatedAt": "2022-06-30T02:19:50Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2023-02-01T14:41:37Z",
+      "closedAt": "2023-02-01T14:41:37Z",
+      "comments": [
+        {
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Proposed text in PR #30 ",
+          "createdAt": "2022-10-22T19:12:45Z",
+          "updatedAt": "2022-10-22T19:12:45Z"
+        }
+      ]
     },
     {
       "number": 21,
       "id": "I_kwDOHFJBYs5M3FLc",
       "title": "Reserved values",
       "url": "https://github.com/tlswg/rfc8447bis/issues/21",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "Some registries have values that are reserved because the values were \"burned\". These values are not in private use space but are mid-range, 40 in the ExtensionType registry. Should we mark these as \"D\"?",
       "createdAt": "2022-06-30T02:46:16Z",
-      "updatedAt": "2022-06-30T02:46:16Z",
-      "closedAt": null,
+      "updatedAt": "2023-02-01T14:41:45Z",
+      "closedAt": "2023-02-01T14:41:45Z",
+      "comments": [
+        {
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I think we should make those as D.  Addressed in PR #30 ",
+          "createdAt": "2022-10-22T19:12:13Z",
+          "updatedAt": "2022-10-22T19:12:13Z"
+        },
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@jsalowey agreed. Will close this out.",
+          "createdAt": "2023-02-01T14:41:18Z",
+          "updatedAt": "2023-02-01T14:41:18Z"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "id": "I_kwDOHFJBYs5Um1ce",
+      "title": "Could this document update instead of obsolete RFC8447",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/31",
+      "state": "CLOSED",
+      "author": "jsalowey",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Obsoleting RFC 8447 means duplicating a lot of text and making changes to it which makes the document have awkward wording and makes the changes difficult to follow.   I think it would be clearer if it were an update and just listed the changes.  see Extension Types PR #30 ",
+      "createdAt": "2022-10-22T19:19:12Z",
+      "updatedAt": "2023-02-01T14:44:10Z",
+      "closedAt": "2023-02-01T14:44:10Z",
+      "comments": [
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "At IETF 115, there was general agreement that this document could be an update as opposed to an obsolete to make it easier on IANA.",
+          "createdAt": "2022-11-28T18:24:49Z",
+          "updatedAt": "2022-11-28T18:24:49Z"
+        },
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Closed via #34.",
+          "createdAt": "2023-02-01T14:44:10Z",
+          "updatedAt": "2023-02-01T14:44:10Z"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "id": "I_kwDOHFJBYs5Ut-ve",
+      "title": "Make TLS Exporter Labels use Expert Review instead of Specification Required",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/32",
+      "state": "CLOSED",
+      "author": "DavidSchinazi",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "I was recently surprised to learn that the [TLS Exporter Labels registry](https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#exporter-labels) uses [Specification Required](https://www.rfc-editor.org/rfc/rfc8126#section-4.6). This is a problem for us - we have an internal use of an exporter that we cannot release a specification for at this time. This means that our only option is to \"squat\" on the value instead of registering it. Since we're already making changes to these repositories and we now have a Recommended column, I propose that we instead use [Expert Review](https://www.rfc-editor.org/rfc/rfc8126#section-4.5). Note that Expert Review is exactly the same as Specification Required, with the exception that it doesn't require a specification. We could also add a requirement that entries with `Recommended = Y` have a specification.",
+      "createdAt": "2022-10-24T19:41:52Z",
+      "updatedAt": "2023-02-02T04:50:03Z",
+      "closedAt": "2023-02-02T04:50:03Z",
+      "comments": []
+    },
+    {
+      "number": 41,
+      "id": "I_kwDOHFJBYs50J4VX",
+      "title": "Deprecate Curves",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/41",
+      "state": "CLOSED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "jsalowey"
+      ],
+      "labels": [],
+      "body": "Need make some curves with a \"D\" in the recommended column.  How about we start with anything smaller that 256?  More specifically these:\r\n\r\n\r\n| Value | Description | DTLS-OK | Current value for Recommended | Ref|CHANGE|\r\n|-:|:-: |:-: |:-: |:-:|:-:|\r\n| 1 |sect163k1 | Y | N | [RFC8422] | N->D\r\n2 | sect163r1 | Y | N | [RFC8422] | \u00a0N->D\r\n3 | sect163r2 | Y | N | [RFC8422] | \u00a0N->D\r\n4 | sect193r1 | Y | N | [RFC8422] | \u00a0N->D\r\n5 | sect193r2 | Y | N | [RFC8422] | \u00a0N->D\r\n6 | sect233k1 | Y | N | [RFC8422] | \u00a0N->D\r\n7 | sect233r1 | Y | N | [RFC8422] | \u00a0N->D\r\n8 | sect239k1 | Y | N | [RFC8422] | \u00a0N->D\r\n15 | secp160k1 | Y | N | [RFC8422] | \u00a0N->D\r\n16 | secp160r1 | Y | N | [RFC8422] | \u00a0N->D\r\n17 | secp160r2 | Y | N | [RFC8422] | \u00a0N->D\r\n18 | secp192k1 | Y | N | [RFC8422] | \u00a0N->D\r\n19 | secp192r1 | Y | N | [RFC8422] | \u00a0N->D\r\n20 | secp224k1 | Y | N | [RFC8422] | \u00a0N->D\r\n21 | secp224r1  | Y | N | [RFC8422] | \u00a0N->D",
+      "createdAt": "2023-10-18T03:49:26Z",
+      "updatedAt": "2023-11-06T15:07:32Z",
+      "closedAt": "2023-11-06T15:07:32Z",
+      "comments": [
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "This lines up with @emanjon was suggesting in [NULL Encryption and Key Exchange Without Forward Secrecy are Discouraged](https://github.com/emanjon/draft-mattsson-tls-psk-ke-dont-dont-dont).  But he also included:\r\n\r\n| Value | Description | DTLS-OK | Current value for Recommended | Ref|CHANGE|\r\n|-:|:-: |:-: |:-: |:-:|:-:|\r\n|256 | ffdhe2048 | Y | N | [RFC7919]| N->D |\r\n",
+          "createdAt": "2023-10-18T04:49:34Z",
+          "updatedAt": "2023-10-18T04:49:34Z"
+        },
+        {
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "ffdhe2048 might be something for the keyex draft. ",
+          "createdAt": "2023-10-20T04:09:27Z",
+          "updatedAt": "2023-10-20T04:09:27Z"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "id": "I_kwDOHFJBYs50J8xV",
+      "title": "Deprecate Cipher Suites",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/42",
+      "state": "CLOSED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "The only suites listed in this document that are not in [draft-ietf-deprecate-obsoelete-key](https://github.com/tlswg/draft-deprecate-obsolete-kex) are:\r\n\r\n    TLS_KRB5_WITH_*\r\n    TLS_PSK_WITH_RC4_128_SHA\r\n    TLS_ECDHE_RSA_WITH_RC4_128_SHA\r\n    TLS_ECDHE_PSK_WITH_RC4_128_SHA",
+      "createdAt": "2023-10-18T04:06:35Z",
+      "updatedAt": "2023-11-06T15:07:23Z",
+      "closedAt": "2023-11-06T15:07:23Z",
+      "comments": [
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@emanjon was suggesting in [NULL Encryption and Key Exchange Without Forward Secrecy are Discouraged](https://github.com/emanjon/draft-mattsson-tls-psk-ke-dont-dont-dont) that we also include:\r\n\r\n| Description | Change |\r\n|:-|:-|\r\n| TLS_SHA256_SHA256 | N->D |\r\n| TLS_SHA384_SHA384 | N->D |\r\n| TLS_PSK_WITH_CHACHA20_POLY1305_SHA256 | N->D | ",
+          "createdAt": "2023-10-18T04:54:49Z",
+          "updatedAt": "2023-10-18T04:54:49Z"
+        },
+        {
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Null encryption is added, seems like forward secrecy would be on topic for the keyex draft. ",
+          "createdAt": "2023-10-20T04:08:05Z",
+          "updatedAt": "2023-10-20T04:08:05Z"
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "id": "I_kwDOHFJBYs51-ymi",
+      "title": "Add  \"For TLS 1.3 or later\" column",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/47",
+      "state": "CLOSED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Based on discussions at IETF 115 on draft-rsalz-tls-tls12-frozen.",
+      "createdAt": "2023-11-06T15:09:55Z",
+      "updatedAt": "2023-11-25T20:20:55Z",
+      "closedAt": "2023-11-25T20:20:55Z",
+      "comments": [
+        {
+          "author": "richsalz",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I think we really want the field called \"Comments\"",
+          "createdAt": "2023-11-10T16:16:49Z",
+          "updatedAt": "2023-11-10T16:16:49Z"
+        },
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Ah ... okay some of the non-orphaned registries already have a \"Comment\" column, but we can add that column to the others. I'll probably skip [ExtensionType](https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml#tls-extensiontype-values-1) because it already has a \"TLS 1.3 column\". Ah and \"TLS Exporter Labels\" also seems to have a \"Note\" column.",
+          "createdAt": "2023-11-24T18:22:23Z",
+          "updatedAt": "2023-11-24T18:22:23Z"
+        },
+        {
+          "author": "richsalz",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I wouldn\u2019t skip ExtensionType, because the TLS 1.3 column only shows where things can appear. There\u2019s no room to say \u201cNot for TLS 1.2 or earlier\u201d in that table.\r\n\r\n\r\n",
+          "createdAt": "2023-11-24T20:01:44Z",
+          "updatedAt": "2023-11-24T20:01:44Z"
+        },
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I revised PR #48.",
+          "createdAt": "2023-11-25T01:35:49Z",
+          "updatedAt": "2023-11-25T01:35:49Z"
+        }
+      ]
+    },
+    {
+      "number": 53,
+      "id": "I_kwDOHFJBYs6BlB3O",
+      "title": "Section 15 ambiguity",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/53",
+      "state": "CLOSED",
+      "author": "richsalz",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "I'm not sure how to interpret this final sentence of section 15: \"For this reason, designated experts should decline code point registrations for documents which have already been adopted or are being proposed for adoption by IETF working groups or IRTF research groups.\"  \r\n\r\nDo you mean to add \"other than TLS\" at the end?",
+      "createdAt": "2024-03-07T14:15:58Z",
+      "updatedAt": "2024-04-24T13:31:21Z",
+      "closedAt": "2024-04-24T13:31:21Z",
+      "comments": [
+        {
+          "author": "richsalz",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "And do you also mean the DE's should verify/ensure/check/something that there is consensus within TLSWG to do that?\r\n",
+          "createdAt": "2024-03-07T14:18:58Z",
+          "updatedAt": "2024-03-07T14:18:58Z"
+        },
+        {
+          "author": "ekr",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I don't think this should say other than TLS. The basic sense here is that if the document is being worked in in the I[ER]TF or proposed for being worked on in in the I[ER]TF, then they shouldn't also be pursuing independent code point assignment via the experts, except if the TLS WG signs off.\r\n\r\nSo, concretely, if I am asking the TLS WG -- or some other WG or RG -- to adopt my document then the experts should decline a code point.\r\n\r\nIn terms of what the experts should check, I guess we could have an email from the chairs or something.",
+          "createdAt": "2024-03-19T07:17:33Z",
+          "updatedAt": "2024-03-19T07:18:24Z"
+        }
+      ]
+    },
+    {
+      "number": 54,
+      "id": "I_kwDOHFJBYs6D7fOn",
+      "title": "Update \"Elliptic curve groups\" note in TLS Support Groups Registry ",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/54",
+      "state": "CLOSED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "[-connolly-tls-mlkem-key-agreement](https://datatracker.ietf.org/doc/draft-connolly-tls-mlkem-key-agreement/) has suggested that code points for the NIST PQ be registered in the [TLS Supported Groups IANA registry](https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-8). If this is to be the case then the \"Elliptic curve groups\" note needs to be reworded.",
+      "createdAt": "2024-03-28T14:39:00Z",
+      "updatedAt": "2024-04-24T13:19:08Z",
+      "closedAt": "2024-04-24T13:19:08Z",
       "comments": []
     }
   ],
@@ -992,6 +1218,1604 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 30,
+      "id": "PR_kwDOHFJBYs5BWDKC",
+      "title": "Update ve Obsolete Extension Type",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/30",
+      "state": "MERGED",
+      "author": "jsalowey",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "It might be clearer to have the document update RFC 8447 instead of obsolete.  This would make the changes more targeted and may make the document easier to review and apply to the existing registry.  It also contains text for issue #20 ",
+      "createdAt": "2022-10-22T19:04:32Z",
+      "updatedAt": "2022-10-24T04:34:59Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "7803f22942d9f509be9c3c4d2c6b4bc889dad99a",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "ietf-115-update",
+      "headRefOid": "f76d941e30d6fab5982e71b7bf95122e88b862b5",
+      "closedAt": "2022-10-24T04:34:59Z",
+      "mergedAt": "2022-10-24T04:34:59Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "0c2626507475c496afabc2eca95699b40cce5e92"
+      },
+      "comments": [
+        {
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "rewrote Extensions section as an update instead of obsolete.  Included proposal for recommended note",
+          "createdAt": "2022-10-24T04:34:20Z",
+          "updatedAt": "2022-10-24T04:34:20Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 33,
+      "id": "PR_kwDOHFJBYs5CmvJZ",
+      "title": "Switch TLS Exporter Labels registry to Expert Review",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/33",
+      "state": "CLOSED",
+      "author": "DavidSchinazi",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Fixes #32",
+      "createdAt": "2022-11-10T10:10:42Z",
+      "updatedAt": "2023-02-01T05:27:20Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "a5d98f27de76295f267fcff9326bc1e426731569",
+      "headRepository": "DavidSchinazi/rfc8447bis",
+      "headRefName": "patch-1",
+      "headRefOid": "4c4f9bf2d96d35f4cef332d762aedfe527ab34f8",
+      "closedAt": "2023-02-01T05:27:19Z",
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@jsalowey this LGTM",
+          "createdAt": "2023-01-31T15:39:14Z",
+          "updatedAt": "2023-01-31T15:39:14Z"
+        },
+        {
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Replaced by pr #35 ",
+          "createdAt": "2023-02-01T05:27:19Z",
+          "updatedAt": "2023-02-01T05:27:19Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 34,
+      "id": "PR_kwDOHFJBYs5FJHqn",
+      "title": "transition document to update",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/34",
+      "state": "MERGED",
+      "author": "jsalowey",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Updated introduction and recommended column section.  Deleted some irrelevant sections.  ",
+      "createdAt": "2022-12-12T05:02:08Z",
+      "updatedAt": "2023-02-01T04:58:34Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "0c2626507475c496afabc2eca95699b40cce5e92",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "update-intro",
+      "headRefOid": "c5f2d187450da929d48ffd3a4b89bc118643bc12",
+      "closedAt": "2023-02-01T04:58:33Z",
+      "mergedAt": "2023-02-01T04:58:33Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "a5d98f27de76295f267fcff9326bc1e426731569"
+      },
+      "comments": [
+        {
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Changed from obsolete to update.",
+          "createdAt": "2023-02-01T04:58:14Z",
+          "updatedAt": "2023-02-01T04:58:14Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs5MJQlW",
+          "commit": {
+            "abbreviatedOid": "72f6f6b"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "These are nits.",
+          "createdAt": "2023-01-31T15:43:17Z",
+          "updatedAt": "2023-01-31T16:00:29Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "```suggestion\r\nupdates: 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, 8447\r\n```",
+              "createdAt": "2023-01-31T15:43:17Z",
+              "updatedAt": "2023-01-31T16:00:29Z"
+            },
+            {
+              "originalPosition": 25,
+              "body": "```suggestion\r\n3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447.\r\n```",
+              "createdAt": "2023-01-31T15:43:28Z",
+              "updatedAt": "2023-01-31T16:00:29Z"
+            },
+            {
+              "originalPosition": 64,
+              "body": "```suggestion\r\nregistries to define a third value \"D\" for items that are discouraged.\r\n```",
+              "createdAt": "2023-01-31T15:44:41Z",
+              "updatedAt": "2023-01-31T16:00:29Z"
+            },
+            {
+              "originalPosition": 114,
+              "body": "```suggestion\r\n    interoperability problems in deployment. Implementers SHOULD\r\n```\r\nNote entirely sure about this, but it's worth considering.",
+              "createdAt": "2023-01-31T15:47:38Z",
+              "updatedAt": "2023-01-31T16:00:29Z"
+            },
+            {
+              "originalPosition": 198,
+              "body": "```suggestion\r\n- Update note on the recommended column with text in {{rec-note}}.\r\n```",
+              "createdAt": "2023-01-31T15:52:24Z",
+              "updatedAt": "2023-01-31T16:00:29Z"
+            },
+            {
+              "originalPosition": 282,
+              "body": "```suggestion\r\n| 0x00,0x28\t| TLS_KRB5_EXPORT_WITH_RC4_40_SHA\t| D |\r\n```",
+              "createdAt": "2023-01-31T15:54:36Z",
+              "updatedAt": "2023-01-31T16:00:29Z"
+            },
+            {
+              "originalPosition": 297,
+              "body": "```suggestion\r\n- Update note on the recommended column with text in {{rec-note}}.\r\n```",
+              "createdAt": "2023-01-31T15:54:51Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            },
+            {
+              "originalPosition": 361,
+              "body": "```suggestion\r\n- Entries keep their existing Recommended column \"Y\" and \"N\" entries.\r\n```",
+              "createdAt": "2023-01-31T15:56:16Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            },
+            {
+              "originalPosition": 365,
+              "body": "I like this note, because it allows us to publish the I-D and ask for review.",
+              "createdAt": "2023-01-31T15:56:57Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            },
+            {
+              "originalPosition": 369,
+              "body": "```suggestion\r\n- Update note on the recommended column with text in {{rec-note}}.\r\n```",
+              "createdAt": "2023-01-31T15:57:06Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            },
+            {
+              "originalPosition": 419,
+              "body": "```suggestion\r\n- Update note on the recommended column with text in {{rec-note}}.\r\n```",
+              "createdAt": "2023-01-31T15:57:31Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            },
+            {
+              "originalPosition": 412,
+              "body": "```suggestion\r\n- Entries keep their existing Recommended column \"Y\" and \"N\" entries\r\n```",
+              "createdAt": "2023-01-31T15:57:43Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            },
+            {
+              "originalPosition": 478,
+              "body": "```suggestion\r\n- Entries keep their existing Recommended column \"Y\" and \"N\" entries.\r\n```",
+              "createdAt": "2023-01-31T15:58:16Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            },
+            {
+              "originalPosition": 526,
+              "body": "```suggestion\r\n- Update note on the recommended column with text in {{rec-note}}.\r\n```",
+              "createdAt": "2023-01-31T15:58:24Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            },
+            {
+              "originalPosition": 628,
+              "body": "```suggestion\r\n- Add note on the recommended column with text in {{rec-note}}.\r\n```",
+              "createdAt": "2023-01-31T15:58:48Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            },
+            {
+              "originalPosition": 674,
+              "body": "```suggestion\r\n- Add note on the recommended column with text in {{rec-note}}.\r\n```",
+              "createdAt": "2023-01-31T15:59:11Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            },
+            {
+              "originalPosition": 737,
+              "body": "```suggestion\r\n- Add note on the recommended column with text in {{rec-note}}.\r\n```",
+              "createdAt": "2023-01-31T15:59:35Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            },
+            {
+              "originalPosition": 936,
+              "body": "```suggestion\r\n- Update note on the recommended column with text in {{rec-note}}.\r\n```",
+              "createdAt": "2023-01-31T15:59:57Z",
+              "updatedAt": "2023-01-31T16:00:30Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "id": "PR_kwDOHFJBYs5I-Uv4",
+      "title": "Exporter update",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/35",
+      "state": "MERGED",
+      "author": "jsalowey",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Update exporter",
+      "createdAt": "2023-02-01T05:22:56Z",
+      "updatedAt": "2023-02-02T04:50:02Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "a5d98f27de76295f267fcff9326bc1e426731569",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "exporter-update",
+      "headRefOid": "6514c95dd16487e2877d6d4aca01e00ad1eb690a",
+      "closedAt": "2023-02-02T04:50:01Z",
+      "mergedAt": "2023-02-02T04:50:01Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "4e7071e487af85fe12e6699fdd44f51f83b26bcb"
+      },
+      "comments": [
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@jsalowey minor nit, but this is what I remember being discussed in Philly.",
+          "createdAt": "2023-02-01T14:40:27Z",
+          "updatedAt": "2023-02-01T14:40:27Z"
+        },
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Resolves #32.",
+          "createdAt": "2023-02-01T14:43:18Z",
+          "updatedAt": "2023-02-01T14:43:18Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs5MP7wW",
+          "commit": {
+            "abbreviatedOid": "b3df5a3"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-02-01T14:37:53Z",
+          "updatedAt": "2023-02-01T14:37:54Z",
+          "comments": [
+            {
+              "originalPosition": 20,
+              "body": "```suggestion\r\n- update the note on the role of the expert reviewer as follows.\r\n```",
+              "createdAt": "2023-02-01T14:37:53Z",
+              "updatedAt": "2023-02-01T14:37:54Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "id": "PR_kwDOHFJBYs5LbHdH",
+      "title": "Typo",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/36",
+      "state": "MERGED",
+      "author": "DavidSchinazi",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "I'd like to request your Apporval on this PR.",
+      "createdAt": "2023-03-07T00:22:15Z",
+      "updatedAt": "2023-03-27T07:42:02Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "4e7071e487af85fe12e6699fdd44f51f83b26bcb",
+      "headRepository": "DavidSchinazi/rfc8447bis",
+      "headRefName": "patch-2",
+      "headRefOid": "5f4e619d2fd6bf11cdbc7a414711f9c7d2bb66d8",
+      "closedAt": "2023-03-27T07:42:01Z",
+      "mergedAt": "2023-03-27T07:42:01Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "61befbe055c435ed7423259c76990e64ae2a038c"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs5Q-UJ4",
+          "commit": {
+            "abbreviatedOid": "5f4e619"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-03-27T07:40:53Z",
+          "updatedAt": "2023-03-27T07:40:53Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "id": "PR_kwDOHFJBYs5NHtQd",
+      "title": "Definition lists FTW",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/37",
+      "state": "MERGED",
+      "author": "martinthomson",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-03-29T02:31:23Z",
+      "updatedAt": "2023-10-19T04:36:59Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "61befbe055c435ed7423259c76990e64ae2a038c",
+      "headRepository": "martinthomson/rfc8447bis",
+      "headRefName": "patch-1",
+      "headRefOid": "0a5aa1f53cc2384c01e17caa83c9aa4e6be51888",
+      "closedAt": "2023-10-19T04:36:59Z",
+      "mergedAt": "2023-10-19T04:36:59Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "a31304d3c27f9525626e231a14cc5a668fd7618e"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs5kXbO5",
+          "commit": {
+            "abbreviatedOid": "0a5aa1f"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-10-18T03:14:19Z",
+          "updatedAt": "2023-10-18T03:14:19Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "id": "PR_kwDOHFJBYs5PgH6-",
+      "title": "Adding quotes",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/38",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Couple of places the \"\" were missing around the Y, N, and D values.",
+      "createdAt": "2023-05-01T13:34:59Z",
+      "updatedAt": "2023-10-19T05:00:27Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "a31304d3c27f9525626e231a14cc5a668fd7618e",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-quotes",
+      "headRefOid": "2ae1fe5c5284c23f7d1cc6e1809de1f66ca2c76b",
+      "closedAt": "2023-10-19T05:00:27Z",
+      "mergedAt": "2023-10-19T05:00:27Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "c05bf3d027500a0fff27310c9b203e05eb86bd95"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 39,
+      "id": "PR_kwDOHFJBYs5PgJ5G",
+      "title": "s/highly/strongly",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/39",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-05-01T13:45:01Z",
+      "updatedAt": "2023-10-19T04:29:48Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "61befbe055c435ed7423259c76990e64ae2a038c",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-strongly",
+      "headRefOid": "e56e3f9693d54b1329b67bcf3625774691088d5f",
+      "closedAt": "2023-10-19T04:29:48Z",
+      "mergedAt": "2023-10-19T04:29:48Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "64a92a37a02e51cfd31bddd1fb914e6a336242b8"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 40,
+      "id": "PR_kwDOHFJBYs5dFkW2",
+      "title": "Fix some refe notations",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/40",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Using the { } and notation in code snippets doesn't work.  Need to change to [ ].",
+      "createdAt": "2023-10-18T03:33:13Z",
+      "updatedAt": "2023-10-19T04:29:22Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "61befbe055c435ed7423259c76990e64ae2a038c",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-ref-notations",
+      "headRefOid": "f7bd71e132e6ec1ab541d201de53b8eb15e8db65",
+      "closedAt": "2023-10-19T04:29:22Z",
+      "mergedAt": "2023-10-19T04:29:22Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "ee9a437bcd484ca0811069da040d572e6c416dbe"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 43,
+      "id": "PR_kwDOHFJBYs5dF05T",
+      "title": "Remove duplicate CS",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/43",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Removing duplicate CS.",
+      "createdAt": "2023-10-18T04:43:47Z",
+      "updatedAt": "2023-10-19T04:28:35Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "61befbe055c435ed7423259c76990e64ae2a038c",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-dupe-cs",
+      "headRefOid": "0708efcd1929d3d97be27377934891a178ef74c6",
+      "closedAt": "2023-10-19T04:28:35Z",
+      "mergedAt": "2023-10-19T04:28:35Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "b6e15823d3525a3b1cc8222bb623fcea16da5f80"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 44,
+      "id": "PR_kwDOHFJBYs5dTJHC",
+      "title": "Update draft-ietf-tls-rfc8447bis.md",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/44",
+      "state": "MERGED",
+      "author": "jsalowey",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Updated Discouraged Ciphers section.",
+      "createdAt": "2023-10-19T17:12:41Z",
+      "updatedAt": "2023-10-20T01:14:42Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "c05bf3d027500a0fff27310c9b203e05eb86bd95",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "jsalowey-cipher-d",
+      "headRefOid": "54470cc7aefcb0760e62495c0edd1179e0d9ab29",
+      "closedAt": "2023-10-20T01:14:42Z",
+      "mergedAt": "2023-10-20T01:14:42Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "fb60e3f0e7eb216df1f0a5661db215c502ab2804"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs5kpM7E",
+          "commit": {
+            "abbreviatedOid": "54470cc"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-10-19T19:42:51Z",
+          "updatedAt": "2023-10-19T19:42:51Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5kq6Bf",
+          "commit": {
+            "abbreviatedOid": "54470cc"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "Should:\r\n\r\n     TLS_SHA256_SHA256\r\n     TLS_SH384_SH384\r\n\r\nAlso be included here? They provide no confidentiality.",
+          "createdAt": "2023-10-20T01:11:06Z",
+          "updatedAt": "2023-10-20T01:11:06Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5kq8Ur",
+          "commit": {
+            "abbreviatedOid": "54470cc"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-10-20T01:14:26Z",
+          "updatedAt": "2023-10-20T01:14:26Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "id": "PR_kwDOHFJBYs5dVKaK",
+      "title": "Curves to D",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/45",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-10-20T01:19:53Z",
+      "updatedAt": "2023-10-20T04:05:54Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "fb60e3f0e7eb216df1f0a5661db215c502ab2804",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-curve-D",
+      "headRefOid": "c5cfe4da47542986b1d91d3085c08824a9477664",
+      "closedAt": "2023-10-20T04:05:53Z",
+      "mergedAt": "2023-10-20T04:05:53Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "f54138ef1543ec2936f006cd54f676d2b0ef5dda"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs5kq_it",
+          "commit": {
+            "abbreviatedOid": "50695bb"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-10-20T01:23:17Z",
+          "updatedAt": "2023-10-20T01:23:17Z",
+          "comments": [
+            {
+              "originalPosition": 29,
+              "body": "```suggestion\r\n- Update the \"Recommended\" column with the changes as listed below.  Entries\r\n  keep their existing \"Y\" and \"N\" entries except for the entries in following table.\r\n  A reference to this document SHALL be added to these entries.\r\n\r\n| Value | Curve | Recommended |\r\n|:-|:-|:-|\r\n| 1 |sect163k1 | D |\r\n| 2 | sect163r1 | D |\r\n| 3 | sect163r2 | D |\r\n| 4 | sect193r1 | D |\r\n| 5 | sect193r2 | D |\r\n| 6 | sect233k1 | D | \r\n| 7 | sect233r1 | D |\r\n| 8 | sect239k1 | D |\r\n| 15 | secp160k1 | D |\r\n| 16 | secp160r1 | D |\r\n| 17 | secp160r2 | D |\r\n| 18 | secp192k1 | D |\r\n| 19 | secp192r1 | D |\r\n| 20 | secp224k1 | D |\r\n| 21 | secp224r1 | D |\r\n```",
+              "createdAt": "2023-10-20T01:23:17Z",
+              "updatedAt": "2023-10-20T01:23:17Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5kq_6E",
+          "commit": {
+            "abbreviatedOid": "ef80894"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-10-20T01:24:49Z",
+          "updatedAt": "2023-10-20T01:25:15Z",
+          "comments": [
+            {
+              "originalPosition": 20,
+              "body": "```suggestion\r\n| 6 | sect233k1 | D |\r\n```",
+              "createdAt": "2023-10-20T01:24:50Z",
+              "updatedAt": "2023-10-20T01:25:15Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "id": "PR_kwDOHFJBYs5dVwyR",
+      "title": "Update draft-ietf-tls-rfc8447bis.md",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/46",
+      "state": "MERGED",
+      "author": "jsalowey",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "formatting fixup",
+      "createdAt": "2023-10-20T04:21:03Z",
+      "updatedAt": "2023-10-20T04:41:37Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "f54138ef1543ec2936f006cd54f676d2b0ef5dda",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "jsalowey-formatting",
+      "headRefOid": "fce1b93fadd90ef315b797163e1da3666d1da55c",
+      "closedAt": "2023-10-20T04:41:37Z",
+      "mergedAt": "2023-10-20T04:41:37Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "f72314cca5f7f1fb1fca126287b65d1e3ffe3cce"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 48,
+      "id": "PR_kwDOHFJBYs5gU-x-",
+      "title": "add \"Comment\" column",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/48",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #47.",
+      "createdAt": "2023-11-24T18:23:40Z",
+      "updatedAt": "2023-11-25T20:20:54Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "f72314cca5f7f1fb1fca126287b65d1e3ffe3cce",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-comment-column",
+      "headRefOid": "b64d9550b2dedd59c6c063c720b6335e3d29b282",
+      "closedAt": "2023-11-25T20:20:54Z",
+      "mergedAt": "2023-11-25T20:20:54Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "062df721966b6b515c1c7b42ee0073d82cd26512"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs5oNSIR",
+          "commit": {
+            "abbreviatedOid": "7f0715f"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-11-24T18:24:00Z",
+          "updatedAt": "2023-11-24T18:24:00Z",
+          "comments": [
+            {
+              "originalPosition": 25,
+              "body": "```suggestion\r\n\"Comment\" or \"Notes\" column or that were not orphaned by TLS 1.3. The TLS\r\n```",
+              "createdAt": "2023-11-24T18:24:00Z",
+              "updatedAt": "2023-11-24T18:24:00Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5oOGDD",
+          "commit": {
+            "abbreviatedOid": "b64d955"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-11-25T01:34:50Z",
+          "updatedAt": "2023-11-25T01:34:51Z",
+          "comments": [
+            {
+              "originalPosition": 8,
+              "body": "```suggestion\r\n- TLS ExtensionType Values\r\n- TLS Application-Layer Protocol Negotiation (ALPN) Protocol IDs\r\n```",
+              "createdAt": "2023-11-25T01:34:51Z",
+              "updatedAt": "2023-11-25T01:34:51Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5oOGPN",
+          "commit": {
+            "abbreviatedOid": "b64d955"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-11-25T01:35:19Z",
+          "updatedAt": "2023-11-25T01:35:20Z",
+          "comments": [
+            {
+              "originalPosition": 27,
+              "body": "```suggestion\r\n\"Comment\" or \"Notes\" column or that were not orphaned by TLS 1.3.\r\n```",
+              "createdAt": "2023-11-25T01:35:19Z",
+              "updatedAt": "2023-11-25T01:35:20Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "id": "PR_kwDOHFJBYs5gcy8q",
+      "title": "Comments for TLS ExtensionType Values",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/49",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-11-27T15:08:41Z",
+      "updatedAt": "2023-11-27T15:10:22Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "062df721966b6b515c1c7b42ee0073d82cd26512",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-comments-ExtensionType",
+      "headRefOid": "be988ccebb3597e89b90bb21ba04e6d5e3671845",
+      "closedAt": "2023-11-27T15:10:22Z",
+      "mergedAt": "2023-11-27T15:10:22Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "0240bf31711b036ae915112fcb1d9a0f89b36c70"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 50,
+      "id": "PR_kwDOHFJBYs5hPQAr",
+      "title": "Add text discouraging registration of code points from other WGs and RGs.",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/50",
+      "state": "MERGED",
+      "author": "ekr",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "In general, when the I[ER]TF is doing TLS-related work then that work should happen in coordination with TLS WG. This text asks the experts to discourage code point registration for drafts associated with that work.\r\n\r\n@martinthomson ",
+      "createdAt": "2023-12-05T23:28:45Z",
+      "updatedAt": "2024-01-23T17:23:55Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "0240bf31711b036ae915112fcb1d9a0f89b36c70",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "non_individual_drafts",
+      "headRefOid": "ea7f65f331b7c271c95ad5c623fef5a7c9e90a2e",
+      "closedAt": "2024-01-23T17:23:55Z",
+      "mergedAt": "2024-01-23T17:23:55Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "39547981ab528fa06960d19d746e4e938a1d24f2"
+      },
+      "comments": [
+        {
+          "author": "richsalz",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "What does \"discourage\" mean? Imagine this email exchange:\r\n```\r\nAuthor: I want to register my new UNBREAKABLE crypto alg\r\nDE: No\r\nAuthor: But I can't break it\r\nDE: No\r\nAuthor: Please\r\nDE: ok\r\n```\r\n\r\nPerhaps it's better to say that the applicant must consult TLS WG such as by sending email.\r\n\r\nAlso, is the omission of Individual stream deliberate? (If so, why)\r\n\r\nFinally, this is not appropriate for some registries (exporters, ALPN) and that should be explicitly called out.",
+          "createdAt": "2023-12-06T16:31:46Z",
+          "updatedAt": "2023-12-06T16:31:46Z"
+        },
+        {
+          "author": "ekr",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "> What does \"discourage\" mean? Imagine this email exchange:\r\n> \r\n> ```\r\n> Author: I want to register my new UNBREAKABLE crypto alg\r\n> DE: No\r\n> Author: But I can't break it\r\n> DE: No\r\n> Author: Please\r\n> DE: ok\r\n> ```\r\n\r\nWell, my hope would be that given that these drafts are being effectively proposed for RG/WG adoption, the RG/WG  chairs would help manage the situation once the experts flagged it.\r\n\r\n\r\n> Perhaps it's better to say that the applicant must consult TLS WG such as by sending email.\r\n\r\nThat would be fine with me.\r\n\r\n> Also, is the omission of Individual stream deliberate? (If so, why)\r\n\r\nDo you mean \"independent stream\" here?\r\n\r\n> \r\n> Finally, this is not appropriate for some registries (exporters, ALPN) and that should be explicitly called out.\r\n\r\n",
+          "createdAt": "2023-12-06T17:48:20Z",
+          "updatedAt": "2023-12-06T17:48:20Z"
+        },
+        {
+          "author": "richsalz",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Well, my hope would be that given that these drafts are being effectively proposed for RG/WG adoption, the RG/WG chairs would help manage the situation once the experts flagged it.\r\n\r\nI believe most requests come in after adoption, but that\u2019s based on my fallible memory.\r\n\r\nPerhaps it's better to say that the applicant must consult TLS WG such as by sending email.\r\n\r\nThat would be fine with me.\r\n\r\nGood.  My personal preference, as one of the DE\u2019s, is to have little room for personal judgement.\r\n\r\nAlso, is the omission of Individual stream deliberate? (If so, why)\r\n\r\nDo you mean \"independent stream\" here?\r\n\r\nYes. So was it deliberately omitted and if so why.\r\n\r\nFinally, this is not appropriate for some registries (exporters, ALPN) and that should be explicitly called out.\r\n\r\nSo you agree with that point?\r\n",
+          "createdAt": "2023-12-06T18:33:37Z",
+          "updatedAt": "2023-12-06T18:33:37Z"
+        },
+        {
+          "author": "ekr",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "On Wed, Dec 6, 2023 at 10:33\u202fAM Rich Salz ***@***.***> wrote:\r\n\r\n> Well, my hope would be that given that these drafts are being effectively\r\n> proposed for RG/WG adoption, the RG/WG chairs would help manage the\r\n> situation once the experts flagged it.\r\n>\r\n> I believe most requests come in after adoption, but that\u2019s based on my\r\n> fallible memory.\r\n>\r\n> Perhaps it's better to say that the applicant must consult TLS WG such as\r\n> by sending email.\r\n>\r\n> That would be fine with me.\r\n>\r\n> Good. My personal preference, as one of the DE\u2019s, is to have little room\r\n> for personal judgement.\r\n>\r\n> Also, is the omission of Individual stream deliberate? (If so, why)\r\n>\r\n> Do you mean \"independent stream\" here?\r\n>\r\n> Yes. So was it deliberately omitted and if so why.\r\n>\r\n\r\nYes, it was, because I know people use the ISE this way. TBH, I'd prefer\r\nthey didn't but I suspect that would be more controversial.\r\n\r\n>\r\n> Finally, this is not appropriate for some registries (exporters, ALPN) and\r\n> that should be explicitly called out.\r\n>\r\n> So you agree with that point?\r\n>\r\n\r\nI'm not sure. Maybe?\r\n\r\n> \u2014\r\n> Reply to this email directly, view it on GitHub\r\n> <https://github.com/tlswg/rfc8447bis/pull/50#issuecomment-1843460104>, or\r\n> unsubscribe\r\n> <https://github.com/notifications/unsubscribe-auth/AAIPLIOUL34I6C4ESEM7AM3YIC3A3AVCNFSM6AAAAABAIPQKSOVHI2DSMVQWIX3LMV43OSLTON2WKQ3PNVWWK3TUHMYTQNBTGQ3DAMJQGQ>\r\n> .\r\n> You are receiving this because you authored the thread.Message ID:\r\n> ***@***.***>\r\n>\r\n",
+          "createdAt": "2023-12-06T19:34:25Z",
+          "updatedAt": "2023-12-06T19:34:25Z"
+        },
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@kaduk PTAL I am hoping that these suggestions address your concerns.",
+          "createdAt": "2024-01-17T20:58:20Z",
+          "updatedAt": "2024-01-17T20:58:20Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs5pR8vG",
+          "commit": {
+            "abbreviatedOid": "017105b"
+          },
+          "author": "martinthomson",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "Good.  I don't think that you need to explicitly say that the discouragement doesn't apply when a proposal has been rejected; the restriction is clearly scoped.",
+          "createdAt": "2023-12-05T23:50:43Z",
+          "updatedAt": "2023-12-05T23:51:30Z",
+          "comments": [
+            {
+              "originalPosition": 13,
+              "body": "```suggestion\r\nhave already been adopted or are being proposed for adoption by IETF\r\n```",
+              "createdAt": "2023-12-05T23:50:43Z",
+              "updatedAt": "2023-12-05T23:51:30Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5pYobB",
+          "commit": {
+            "abbreviatedOid": "017105b"
+          },
+          "author": "taddhar",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-12-06T16:30:44Z",
+          "updatedAt": "2023-12-06T16:30:45Z",
+          "comments": [
+            {
+              "originalPosition": 13,
+              "body": "Minor edit: `been adopted` vs `been adoption` no?",
+              "createdAt": "2023-12-06T16:30:45Z",
+              "updatedAt": "2023-12-06T16:30:45Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5rll03",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "kaduk",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-04T21:42:24Z",
+          "updatedAt": "2024-01-04T21:48:16Z",
+          "comments": [
+            {
+              "originalPosition": 4,
+              "body": "If this is supposed to be guidance to the experts, how are we planning to promulgate it?  Most of our current guidance to the experts is present as \"note\"s on the registry in question; do we expect this text or some similar text to be present in such a fashion?  If so, on which registries?",
+              "createdAt": "2024-01-04T21:42:24Z",
+              "updatedAt": "2024-01-04T21:48:16Z"
+            },
+            {
+              "originalPosition": 11,
+              "body": "When do we expect this coordination to occur?  Would a registration still be reasonable after such coordination but prior to publication as an RFC?  Do we want to consider the case of WGs that produce drafts not intended for publication as an RFC (it would be a bit weird for such things to want to register TLS codepoints, IMO)?",
+              "createdAt": "2024-01-04T21:46:36Z",
+              "updatedAt": "2024-01-04T21:48:16Z"
+            },
+            {
+              "originalPosition": 14,
+              "body": "I agree with Rich that we should provide a bit more clarity on our expectations about \"discourage\" in the face of resistance to the discouragement.",
+              "createdAt": "2024-01-04T21:48:12Z",
+              "updatedAt": "2024-01-04T21:48:16Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5rmLWv",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "ekr",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-04T23:57:20Z",
+          "updatedAt": "2024-01-04T23:57:20Z",
+          "comments": [
+            {
+              "originalPosition": 11,
+              "body": "I don't think we have to specify this.\r\n\r\nHowever, I think that the answer is \"must have TLS WG assent\".",
+              "createdAt": "2024-01-04T23:57:20Z",
+              "updatedAt": "2024-01-04T23:57:20Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5rmLaT",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "ekr",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-04T23:57:43Z",
+          "updatedAt": "2024-01-04T23:57:44Z",
+          "comments": [
+            {
+              "originalPosition": 14,
+              "body": "Perhaps I was being too cute and we should simply say \"decline\".",
+              "createdAt": "2024-01-04T23:57:44Z",
+              "updatedAt": "2024-01-04T23:57:44Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5rmWBD",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "richsalz",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-05T00:52:04Z",
+          "updatedAt": "2024-01-05T00:52:05Z",
+          "comments": [
+            {
+              "originalPosition": 4,
+              "body": "I do not think it is.  I view the notes as content that is more intended for those reading/using the registry. In my experience the major source of guidance are RFC 8126 and 8447.",
+              "createdAt": "2024-01-05T00:52:05Z",
+              "updatedAt": "2024-01-05T00:52:05Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5rrGMO",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "kaduk",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-05T17:28:49Z",
+          "updatedAt": "2024-01-05T17:30:43Z",
+          "comments": [
+            {
+              "originalPosition": 4,
+              "body": "I mean, I think that \"designated experts should ...\" reads like guidance to the experts.  Now, we could well say that we expect the experts to be familiar with the RFCs that are references for the registry as a whole, and opt to not put a note in the registry itself, but I would like that to be a conscious WG decision.",
+              "createdAt": "2024-01-05T17:28:49Z",
+              "updatedAt": "2024-01-05T17:30:44Z"
+            },
+            {
+              "originalPosition": 11,
+              "body": "Well, the current text (mostly a couple lines below) seems to say that if there is a WG/RG draft the experts should push back, full stop.  If we really mean \"should push back in the absence of coordination with the TLS WG\", we should probably say that.",
+              "createdAt": "2024-01-05T17:29:58Z",
+              "updatedAt": "2024-01-05T17:30:44Z"
+            },
+            {
+              "originalPosition": 14,
+              "body": "My mental model is that we do want to leave some room for the expert judgment of the experts, but would prefer phrasing involving \"decline\" to phrasing involving \"discourage\".",
+              "createdAt": "2024-01-05T17:30:39Z",
+              "updatedAt": "2024-01-05T17:30:44Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5rrWGu",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "ekr",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-05T17:55:15Z",
+          "updatedAt": "2024-01-05T17:55:15Z",
+          "comments": [
+            {
+              "originalPosition": 11,
+              "body": "That seems reasonable. Do you have some proposed text?",
+              "createdAt": "2024-01-05T17:55:15Z",
+              "updatedAt": "2024-01-05T17:55:15Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5rrWLj",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "ekr",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-05T17:55:29Z",
+          "updatedAt": "2024-01-05T17:55:29Z",
+          "comments": [
+            {
+              "originalPosition": 14,
+              "body": "Isn't the \"should\" what leaves room?",
+              "createdAt": "2024-01-05T17:55:29Z",
+              "updatedAt": "2024-01-05T17:55:29Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5rrhAB",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "richsalz",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-05T18:12:40Z",
+          "updatedAt": "2024-01-05T18:12:40Z",
+          "comments": [
+            {
+              "originalPosition": 14,
+              "body": "I am one of three DE's for the TLS registries. I don't know how Nick and Yoav feel. But i greatly prefer to have as little wiggle-room as possible, if only because there is no formal process for a WG, the IESG, or the IETF community to \"overrule\" a DE decision, short of replacing them which seems a little over-the-top.",
+              "createdAt": "2024-01-05T18:12:40Z",
+              "updatedAt": "2024-01-05T18:12:40Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5r3h6A",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-08T18:01:28Z",
+          "updatedAt": "2024-01-08T18:01:28Z",
+          "comments": [
+            {
+              "originalPosition": 4,
+              "body": "@kaduk s17 of RFC 8447 includes instructions for DEs. Could we add a reference to that section to make to make it clear to all that the DEs will follow this?",
+              "createdAt": "2024-01-08T18:01:28Z",
+              "updatedAt": "2024-01-08T18:01:28Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5r3j1K",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-08T18:06:56Z",
+          "updatedAt": "2024-01-08T18:06:57Z",
+          "comments": [
+            {
+              "originalPosition": 12,
+              "body": "```suggestion\r\nexperts should, in the absence of coordination with the TLS WG, discourage code point registrations for documents which\r\n```",
+              "createdAt": "2024-01-08T18:06:56Z",
+              "updatedAt": "2024-01-08T18:06:57Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5r3kgW",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-08T18:08:55Z",
+          "updatedAt": "2024-01-08T18:08:55Z",
+          "comments": [
+            {
+              "originalPosition": 12,
+              "body": "```suggestion\r\nexperts should decline code point registrations for documents which\r\n```",
+              "createdAt": "2024-01-08T18:08:55Z",
+              "updatedAt": "2024-01-08T18:08:55Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5r6PMM",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-09T05:32:42Z",
+          "updatedAt": "2024-01-09T05:32:43Z",
+          "comments": [
+            {
+              "originalPosition": 12,
+              "body": "I think Sean's revision encourages the behavior that we want.  If an IRTF/IETF document has not be discussed with the TLS working group then it should be declined until that discussion happens.  The result of the discussion might be a go ahead to publish or some action to correct issues with the document.  \r\n",
+              "createdAt": "2024-01-09T05:32:42Z",
+              "updatedAt": "2024-01-09T05:32:43Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5sFVfE",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-10T14:19:45Z",
+          "updatedAt": "2024-01-10T14:19:46Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "@kaduk suggestion to address the above issue.\r\n\r\n```suggestion\r\n\r\nThis section expands upon instructions provided to the designated experts in {{Section 17 of RFC84477}}.\r\n\r\nThe intent of the Specification Required standard for TLS code points\r\n```",
+              "createdAt": "2024-01-10T14:19:45Z",
+              "updatedAt": "2024-01-10T14:19:46Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5tHBK9",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "kaduk",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-18T21:06:30Z",
+          "updatedAt": "2024-01-18T21:09:23Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "It seems like this still requires the DE to (either already \"just know\" or) look at the registry, follow the link to RFC 8447, and then follow the link to this document as indicated in an \"Updates:\" header.  It seems like it would be appropriate to update the affected registries to list this document as an additional reference, so that it's directly indicated that this document has bearing on the operations of the registry in question.",
+              "createdAt": "2024-01-18T21:06:30Z",
+              "updatedAt": "2024-01-18T21:09:23Z"
+            },
+            {
+              "originalPosition": 11,
+              "body": "Sean beat me to it.",
+              "createdAt": "2024-01-18T21:07:10Z",
+              "updatedAt": "2024-01-18T21:09:23Z"
+            },
+            {
+              "originalPosition": 12,
+              "body": "LGTM with the follow-up.",
+              "createdAt": "2024-01-18T21:07:42Z",
+              "updatedAt": "2024-01-18T21:09:23Z"
+            },
+            {
+              "originalPosition": 12,
+              "body": "LGTM.",
+              "createdAt": "2024-01-18T21:07:44Z",
+              "updatedAt": "2024-01-18T21:09:23Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5thBoU",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-22T21:05:45Z",
+          "updatedAt": "2024-01-22T21:05:46Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "Okay I think we're good in all but one registry:\r\n\r\nIn each registry that this document uses a value of \"D\" to, there is an IANA instructions to:\r\n\r\n     Add a reference to this document under the reference heading.\r\n\r\nThe only registry that this document does not mention that also has a Recommended column is the TLS SignatureScheme registry; that registry was created by RFC 8446; PskKeyExchangeMode also includes a Recommended column and was created by RFC 8446, but this document includes an IANA instruction to update the references to this document. Newly submitted PR #52 instructs IANA to update the reference in the TLS SignatureScheme registry to also include this document.",
+              "createdAt": "2024-01-22T21:05:46Z",
+              "updatedAt": "2024-01-22T21:05:46Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5thC7S",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "kaduk",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-22T21:09:22Z",
+          "updatedAt": "2024-01-22T21:09:22Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "Thank you for going through the registries to see which would be affected, and submitting the (thankfully small) delta!",
+              "createdAt": "2024-01-22T21:09:22Z",
+              "updatedAt": "2024-01-22T21:09:22Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5thFY-",
+          "commit": {
+            "abbreviatedOid": "6301ddf"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-22T21:16:29Z",
+          "updatedAt": "2024-01-22T21:16:29Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "NP\r\n\r\n@jsalowey can you double check to make sure I got that right?",
+              "createdAt": "2024-01-22T21:16:29Z",
+              "updatedAt": "2024-01-22T21:16:30Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5to3tk",
+          "commit": {
+            "abbreviatedOid": "ea7f65f"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "Thanks everyone this looks good",
+          "createdAt": "2024-01-23T17:23:37Z",
+          "updatedAt": "2024-01-23T17:23:37Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "id": "PR_kwDOHFJBYs5jsOvq",
+      "title": "fix 8447 ref",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/51",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "RFC 8447 ref is normative: ?RFC84447 -> !RFC84447 once and then remove ? from remaining.",
+      "createdAt": "2024-01-10T14:24:36Z",
+      "updatedAt": "2024-01-18T03:24:29Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "0240bf31711b036ae915112fcb1d9a0f89b36c70",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-8447-ref",
+      "headRefOid": "4fbcb9180248aba9fbddb280138d5902f6e2425a",
+      "closedAt": "2024-01-18T03:24:29Z",
+      "mergedAt": "2024-01-18T03:24:29Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "a035e1889e44d355d97d368a7263a386bb9a0eb8"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 52,
+      "id": "PR_kwDOHFJBYs5kxCJm",
+      "title": "Update TLS SignatureScheme registry ref",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/52",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Need to also refer to this document from the TLS SignatureScheme  registry.",
+      "createdAt": "2024-01-22T21:05:19Z",
+      "updatedAt": "2024-01-23T17:26:58Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "a035e1889e44d355d97d368a7263a386bb9a0eb8",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-sig-scheme-reg",
+      "headRefOid": "bf8694fff4c1c20b6c087e86b854814ee0707e7e",
+      "closedAt": "2024-01-23T17:26:58Z",
+      "mergedAt": "2024-01-23T17:26:58Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "a8d636768ee5395836aaea9d104a2cd1c22364d4"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs5thDSW",
+          "commit": {
+            "abbreviatedOid": "bf8694f"
+          },
+          "author": "kaduk",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "We could add an internal reference to the part of this document that affects the registry, but this document is small enough that I'm not terribly concerned about it.",
+          "createdAt": "2024-01-22T21:10:10Z",
+          "updatedAt": "2024-01-22T21:10:10Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOHFJBYs5to6tn",
+          "commit": {
+            "abbreviatedOid": "bf8694f"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-01-23T17:26:49Z",
+          "updatedAt": "2024-01-23T17:26:49Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 55,
+      "id": "PR_kwDOHFJBYs5rEM2y",
+      "title": "support groups note column",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/55",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #54.",
+      "createdAt": "2024-03-28T14:51:26Z",
+      "updatedAt": "2024-04-24T13:19:08Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "a8d636768ee5395836aaea9d104a2cd1c22364d4",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-sg-note",
+      "headRefOid": "e30185918449f4a22cc8d89920bfbcb1d35157d3",
+      "closedAt": "2024-04-24T13:19:07Z",
+      "mergedAt": "2024-04-24T13:19:07Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "71aaa0a5d394a3d73e604331b4cc661e7872fbda"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs51N7PG",
+          "commit": {
+            "abbreviatedOid": "e301859"
+          },
+          "author": "davidben",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "+1. We regrettably need to treat 256-511 as special to [accommodate RFC 7919's reuse of the DHE ciphers](https://datatracker.ietf.org/doc/html/rfc7919#section-4), even though this very reuse is why RFC 7919 is unusable ([1](https://mailarchive.ietf.org/arch/msg/tls/I3hATzFWwkc2GZqt3hB8QX4c-CA/), [2](https://mailarchive.ietf.org/arch/msg/tls/DzazUXCUZDUpVgBPVHOwatb65dA/), [3](https://mailarchive.ietf.org/arch/msg/tls/bAOJD281iGc2HuEVq0uUlpYL2Mo/)), but I'm not aware of any need to treat the others as special.",
+          "createdAt": "2024-03-28T15:44:49Z",
+          "updatedAt": "2024-03-28T15:44:49Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOHFJBYs54RSRy",
+          "commit": {
+            "abbreviatedOid": "e301859"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-04-23T16:58:13Z",
+          "updatedAt": "2024-04-23T16:58:13Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 56,
+      "id": "PR_kwDOHFJBYs5sQ4Ve",
+      "title": "Address s15 ambiguity",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/56",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #53.\r\n\r\n@ekr PTAL",
+      "createdAt": "2024-04-10T15:48:12Z",
+      "updatedAt": "2024-04-24T13:31:20Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "a8d636768ee5395836aaea9d104a2cd1c22364d4",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-s15-ambiquity",
+      "headRefOid": "c3ad1615dbcefed13dc7340ee37eea2fe06db7d5",
+      "closedAt": "2024-04-24T13:31:20Z",
+      "mergedAt": "2024-04-24T13:31:20Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "5b45ac47a2bbf4e272c9202f881994bf2f03b61f"
+      },
+      "comments": [
+        {
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Look good",
+          "createdAt": "2024-04-23T16:57:29Z",
+          "updatedAt": "2024-04-23T16:57:29Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs54RSGI",
+          "commit": {
+            "abbreviatedOid": "c3ad161"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-04-23T16:57:49Z",
+          "updatedAt": "2024-04-23T16:57:49Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 57,
+      "id": "PR_kwDOHFJBYs5t2wMp",
+      "title": "Slight tweak to s15 ambiguity fix",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/57",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-04-26T15:24:38Z",
+      "updatedAt": "2024-04-30T17:51:39Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "5b45ac47a2bbf4e272c9202f881994bf2f03b61f",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-s15-tweak",
+      "headRefOid": "66a5681cbb9367a61c907c68794eebecf3497473",
+      "closedAt": "2024-04-30T17:51:39Z",
+      "mergedAt": "2024-04-30T17:51:39Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "367bf5a095b72a94791e816b5b72d6904c56c2d7"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs542BA8",
+          "commit": {
+            "abbreviatedOid": "cc5e52e"
+          },
+          "author": "ekr",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-04-29T00:25:40Z",
+          "updatedAt": "2024-04-29T00:25:41Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "```suggestion\r\nchairs indicate otherwise via email, designated\r\n```",
+              "createdAt": "2024-04-29T00:25:41Z",
+              "updatedAt": "2024-04-29T00:25:41Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs55AhNz",
+          "commit": {
+            "abbreviatedOid": "66a5681"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-04-30T04:22:52Z",
+          "updatedAt": "2024-04-30T04:22:52Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 58,
+      "id": "PR_kwDOHFJBYs5-4Nsu",
+      "title": "A few WGLC nits",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/58",
+      "state": "MERGED",
+      "author": "richsalz",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-16T19:22:58Z",
+      "updatedAt": "2024-10-29T02:21:36Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "367bf5a095b72a94791e816b5b72d6904c56c2d7",
+      "headRepository": "richsalz/rfc8447bis",
+      "headRefName": "rsalz-1",
+      "headRefOid": "85a28668e9887a115312d7705eccc82cb9bf8657",
+      "closedAt": "2024-10-29T02:21:36Z",
+      "mergedAt": "2024-10-29T02:21:36Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "71bcc7ff576403ff8dbdc63c3bc3a93c1ae75a26"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6PFXqs",
+          "commit": {
+            "abbreviatedOid": "85a2866"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-10-29T02:01:59Z",
+          "updatedAt": "2024-10-29T02:01:59Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 59,
+      "id": "PR_kwDOHFJBYs6ALV1X",
+      "title": "Update workflow",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/59",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Update archive.yml",
+      "createdAt": "2024-10-29T02:03:53Z",
+      "updatedAt": "2024-10-29T02:20:14Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "367bf5a095b72a94791e816b5b72d6904c56c2d7",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-workflow",
+      "headRefOid": "e61a9715278d36b531b5d1e0ba7cad2bb0312606",
+      "closedAt": "2024-10-29T02:20:14Z",
+      "mergedAt": "2024-10-29T02:20:14Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "831d3a50ed3e2eb4f1685df358f3751b6790c0eb"
+      },
+      "comments": [],
+      "reviews": []
     }
   ]
 }
