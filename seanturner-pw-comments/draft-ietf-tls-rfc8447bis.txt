@@ -6,8 +6,8 @@ Transport Layer Security                                      J. Salowey
 Internet-Draft                                                    Venafi
 Updates: 3749, 5077, 4680, 5246, 5705, 5878,                   S. Turner
          6520, 7301, 8447 (if approved)                            sn3rd
-Intended status: Standards Track                         29 October 2024
-Expires: 2 May 2025
+Intended status: Standards Track                            8 March 2025
+Expires: 9 September 2025
 
 
                  IANA Registry Updates for TLS and DTLS
@@ -17,7 +17,8 @@ Abstract
 
    This document updates the changes to TLS and DTLS IANA registries
    made in RFC 8447.  It adds a new value "D" for discouraged to the
-   recommended column of the selected TLS registries.
+   recommended column of the selected TLS registries and adds a
+   "Comments" column to all active registries.
 
    This document updates the following RFCs: 3749, 5077, 4680, 5246,
    5705, 5878, 6520, 7301, and 8447.
@@ -52,11 +53,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 2 May 2025.
+   This Internet-Draft will expire on 9 September 2025.
 
 Copyright Notice
 
-   Copyright (c) 2024 IETF Trust and the persons identified as the
+   Copyright (c) 2025 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -81,7 +82,7 @@ Table of Contents
    8.  TLS Certificate Types
    9.  TLS HashAlgorithm Registry
    10. TLS SignatureAlgorithm registry
-   11. TLS ClientCertificateTypes registry
+   11. TLS ClientCertificateType Identifiers registry
    12. TLS PskKeyExchangeMode registry
    13. TLS SignatureScheme registry
    14. Adding "Comment" Column
@@ -143,11 +144,10 @@ Table of Contents
       MUST NOT be used.
 
    Setting a value to "Y" or "D" in the "Recommended" column requires
-   IETF Standards Action [RFC8126].  Any state transition to or from a
-   "Y" or "D" value requires IESG Approval.  Not all items defined in
-   Standards Track RFCs need to be set to "Y" or "D".  Any item not
-   otherwise specified is set to "N".  The column is blank for values
-   that are unassigned or reserved unless specifically set.
+   IETF Standards Action [RFC8126] or IESG Approval.  Not all items
+   defined in Standards Track RFCs need to be set to "Y" or "D".  Any
+   item not otherwise specified is set to "N".  The column is blank for
+   values that are unassigned or reserved unless specifically set.
 
 3.1.  Recommended Note
 
@@ -471,8 +471,8 @@ Table of Contents
 
    *  Update note on the recommended column with text in Section 3.1.
 
-   *  Replace the registry range table note column for the 0-255,
-      512-65535 range with "Unallocated".
+   *  Remove the "Elliptic curve groups" note from the registration
+      procedures table.
 
 7.  TLS Exporter Labels Registry
 
@@ -483,9 +483,8 @@ Table of Contents
    *  Change the registration procedure from Specification Required to
       Expert Review and update it to include:
 
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+      Setting a value to "Y" or "D" in the "Recommended" column requires
+      IETF Standards Action [RFC8126] or IESG Approval.
 
    *  Add a reference to this document under the reference heading.
 
@@ -495,19 +494,20 @@ Table of Contents
 
    *  update the note on the role of the expert reviewer as follows.
 
-   Note:  The role of the designated expert is described in [RFC8447].
-      Even though this registry does not require a specification, the
-      designated expert [RFC8126] will strongly encourage registrants to
-      provide a link to a publicly available specification.  An
-      Internet-Draft (that is posted and never published as an RFC) or a
-      document from another standards body, industry consortium,
-      university site, etc. are suitable for these purposes.  The expert
-      may provide more in-depth reviews, but their approval should not
-      be taken as an endorsement of the exporter label.  The expert also
-      verifies that the label is a string consisting of printable ASCII
-      characters beginning with "EXPORTER".  IANA MUST also verify that
-      one label is not a prefix of any other label.  For example, labels
-      "key" or "master secretary" are forbidden.
+   Note:  The role of the designated expert is described in [RFC8447],
+      Section 17.  Even though this registry does not require a
+      specification, the designated expert [RFC8126] will strongly
+      encourage registrants to provide a link to a publicly available
+      specification.  An Internet-Draft (that is posted and never
+      published as an RFC) or a document from another standards body,
+      industry consortium, university site, etc. are suitable for these
+      purposes.  The expert may provide more in-depth reviews, but their
+      approval should not be taken as an endorsement of the exporter
+      label.  The expert also verifies that the label is a string
+      consisting of printable ASCII characters beginning with
+      "EXPORTER".  IANA MUST also verify that one label is not a prefix
+      of any other label.  For example, labels "key" or "master
+      secretary" are forbidden.
 
 8.  TLS Certificate Types
 
@@ -516,12 +516,11 @@ Table of Contents
 
    *  Change the registration procedure to:
 
-      Values in the range 0-223 (decimal) are assigned via Specification
-      Required [RFC8126]. Values in the range 224-255 (decimal) are
-      reserved for Private Use [RFC8126]. Setting a "Recommended" column
-      value to "Y" or "D" requires Standards
-      Action [RFC8126]. Any state transition to or from a "Y" or "D"
-      value requires IESG Approval.
+    Values in the range 0-223 (decimal) are assigned via Specification
+    Required [RFC8126]. Values in the range 224-255 (decimal) are
+    reserved for Private Use [RFC8126]. Setting a value to "Y" or "D"
+    in the "Recommended" column requires IETF Standards Action [RFC8126]
+    or IESG Approval.
 
    *  Add a reference to this document under the reference heading.
 
@@ -539,9 +538,8 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+      Setting a value to "Y" or "D" in the "Recommended" column requires
+      IETF Standards Action [RFC8126] or IESG Approval.
 
    *  Add a reference to this document under the reference heading.
 
@@ -581,9 +579,8 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+      Setting a value to "Y" or "D" in the "Recommended" column requires
+      IETF Standards Action [RFC8126] or IESG Approval.
 
    *  Add a reference to this document under the reference heading.
 
@@ -614,22 +611,21 @@ Table of Contents
 
    *  Add note on the recommended column with text in Section 3.1.
 
-11.  TLS ClientCertificateTypes registry
+11.  TLS ClientCertificateType Identifiers registry
 
    Though TLS 1.0 and TLS 1.1 were deprecated [RFC8996], TLS 1.2 will be
    in use for some time.  In order to refect the changes in the
    Recommended column allocation, IANA SHALL update the TLS
-   ClientCertificateTypes registry as follows:
+   ClientCertificateType Identifier registry as follows:
 
    *  Update the registration procedure to include:
 
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+      Setting a value to "Y" or "D" in the "Recommended" column requires
+      IETF Standards Action [RFC8126] or IESG Approval.
 
    *  Add a reference to this document under the reference heading.
 
-   *  Update the TLS ClientCertificateTypes registry to add a
+   *  Update the TLS ClientCertificateType Identifier registry to add a
       "Recommended" column as follows:
 
             +=======+===========================+=============+
@@ -671,9 +667,8 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+      Setting a value to "Y" or "D" in the "Recommended" column requires
+      IETF Standards Action [RFC8126] or IESG Approval.
 
    *  Add a reference to this document under the reference heading.
 
@@ -734,12 +729,11 @@ Table of Contents
    protocols and algorithms that are not being actively developed inside
    IETF or IRTF.  When TLS-based technologies are being developed inside
    the IRTF/IETF they should be done in coordination with the TLS WG in
-   order to provide appropriate review.  For this reason, unless the WG
-   chairs indicate otherwise via email, designated experts should
+   order to provide appropriate review.  For this reason, unless the TLS
+   WG chairs indicate otherwise via email, designated experts should
    decline code point registrations for documents which have already
    been adopted or are being proposed for adoption by IETF working
-   groups or IRTF research groups unless the WG Chairs indicate
-   otherwise via email.
+   groups or IRTF research groups.
 
 16.  Security Considerations
 
