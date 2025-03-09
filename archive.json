@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-03-06T01:51:01.292921+00:00",
+  "timestamp": "2025-03-09T01:35:25.397910+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -306,6 +306,22 @@
       "createdAt": "2024-03-28T14:39:00Z",
       "updatedAt": "2024-04-24T13:19:08Z",
       "closedAt": "2024-04-24T13:19:08Z",
+      "comments": []
+    },
+    {
+      "number": 60,
+      "id": "I_kwDOHFJBYs6tEauO",
+      "title": "AD review comments",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/60",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "- [x] Section 3 - See #61 \n\n        Setting a value to \"Y\" or \"D\" in the \"Recommended\" column requires\n        IETF Standards Action [RFC8126]. Any state transition to or from a\n        \"Y\" or \"D\" value requires IESG Approval.\n       \nIsn't this easier written as:\n\n        Setting a value to \"Y\" or \"D\" in the \"Recommended\" column requires\n        IETF Standards Action [RFC8126] or IESG Approval.\n\nThis appears in a number of sections in the document.\n\n- [ ] Section 4 TLS ExtensionType Values - Awaiting response from PW\n\n        Values with the first byte in the range 0-254 (decimal) are\n        assigned via Specification Required [RFC8126].  Values with the\n        first byte 255 (decimal) are reserved for Private Use [RFC8126].\n\nI'd rather not let IANA figure out decimal network order byte math. Or\nrequire everyone to do that math when checking the registry. Why not:\n\n        Values in the range 0-65279 are assigned via Specification Required\n        [RFC8126]. Values in the range 65280-65535 are reserved for Private\n        Use [RFC8126].\n\nAlso, this is not true for:\n\n        65281   renegotiation_info\n\nwhich is clearly not usable for Private Use. Maybe it makes sense to say:\n\n        Values in the range 0-65279 are assigned via Specification Required\n        [RFC8126]. Values in the range 65280-65295 are Reserved. Values in\n        the range 65296-65535 are reserved for Private Use [RFC8126].\n\nThis then leaves 0xff00-0xff0f for whatever the reason for 65281 was to be\nable to happen a few more times, and keep the private range valid without\nstrange exceptions.\n\n- [ ] Section 5  TLS Cipher Suites Registry - see [email](https://mailarchive.ietf.org/arch/msg/tls/plubZSdt2fnoYtowOy9P3tLTNeY/)\n\nThis section contains some reasoning why it is Discouraging things. The current\nIANA registry also contains such reasoning on the form of notes, but this section\ndoes not add to the notes. So now this inforation is splintered between RFC and\nRegistry. I think the easiest fix is to add these few reasons specified here\nas Note: to the IANA registry.\n\n\nNote that this registry states:\n\n        When this registry is modified, the YANG module\n        \"iana-tls-cipher-suite-algs\" [iana-tls-cipher-suite-algs] must\n        be updated as defined in [RFC9645].\n\nHas this happened or is it scheduled? If so who is the contact I can follow up with?\n\n\n- [x] Section 6 TLS Supported Groups - see #61\n\n        * Replace the registry range table note column for the 0-255,\n          512-65535 range with \"Unallocated\".\n\nThis makes no sense. That current line with its note reads:\n\n        0-255, 512-65535        Specification Required  Elliptic curve groups\n\nI understand that the note should remove the text \"Elliptic curve groups\",\nbut it makes no sense to add \"Unallocated\" because the range does have\nallocations in it. Maybe just instruct IANA to remove the note \"Elliptic\ncurve groups\" ?\n\n\n- [x] Section 11 TLS ClientCertificateTypes registry - see #61\n\nThe registry name is not \"TLS ClientCertificateTypes\" registry, but\n\"TLS ClientCertificateTypes Identifiers\" registry.",
+      "createdAt": "2025-03-07T18:00:49Z",
+      "updatedAt": "2025-03-08T02:51:04Z",
+      "closedAt": null,
       "comments": []
     }
   ],
@@ -2814,6 +2830,32 @@
       "mergeCommit": {
         "oid": "831d3a50ed3e2eb4f1685df358f3751b6790c0eb"
       },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 61,
+      "id": "PR_kwDOHFJBYs6N2bbS",
+      "title": "Addressing AD comments",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/61",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Addressing #60. All but one.",
+      "createdAt": "2025-03-08T02:48:44Z",
+      "updatedAt": "2025-03-08T02:48:45Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "71bcc7ff576403ff8dbdc63c3bc3a93c1ae75a26",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-pw-comments",
+      "headRefOid": "05bd25f940b1a1e6600f269a48066ebae516681c",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
       "comments": [],
       "reviews": []
     }
