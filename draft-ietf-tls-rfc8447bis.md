@@ -41,7 +41,7 @@ informative:
 
 This document updates the changes to TLS and DTLS IANA registries
 made in RFC 8447. It adds a new value "D" for discouraged
-to the recommended column of the selected TLS registries and
+to the Recommended column of the selected TLS registries and
 adds a "Comments" column to all active registries.
 
 This document updates the following RFCs:
@@ -110,9 +110,9 @@ blank for values that are unassigned or reserved unless specifically set.
 
 ## Recommended Note {#rec-note}
 
-Existing registries have a note on the meaning of the recommended column. For the
+Existing registries have a note on the meaning of the Recommended column. For the
 registries discussed in the subsequent sections this note is updated
-with a sentence describing the "D" vaue as follows:
+with a sentence describing the "D" value as follows:
 
 Note:
 
@@ -124,7 +124,7 @@ is set to "D" the item is discouraged and SHOULD NOT or MUST NOT be used.
 
 # TLS ExtensionType Values
 
-In order to refect the changes in the Recommended column allocation,
+In order to reflect the changes in the Recommended column allocation,
 IANA SHALL update the TLS ExtensionType Values registry as follows:
 
 - Change the registration procedure to:
@@ -151,24 +151,24 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 |40 |Reserved                        |         D |
 |46 |Reserved                        |         D |
 
-- Update note on the recommended column with text in {{rec-note}}.
+- Update note on the Recommended column with text in {{rec-note}}.
 
 
 
 # TLS Cipher Suites Registry
 
 Several categories of ciphersuites are discouraged for general use and
-are maked as "D".
+are marked as "D".
 
 Ciphersuites that use NULL encryption do not provide the confidentiality
 normally expected of TLS. Protocols and applications are often designed
-to require confidentialy as a security property. These
+to require confidentiality as a security property. These
 ciphersuites MUST NOT be used in those cases.
 
 Ciphersuites marked as EXPORT use weak ciphers and were deprecated in
 TLS 1.1 {{!RFC4346}}.
 
-Cipher suites maked as anon do not provide any authentication and are
+Cipher suites marked as anon do not provide any authentication and are
 vulnerable to man-in-the-middle attacks and are deprecated in TLS 1.1
 {{!RFC4346}}.
 
@@ -177,7 +177,7 @@ RC4 is a weak cipher and is deprecated in {{!RFC7465}}.
 DES and IDEA are not considered secure for general use and are deprecated
 in {{!RFC5469}}.
 
-In order to refect the changes in the Recommended column allocation,
+In order to reflect the changes in the Recommended column allocation,
 IANA SHALL update the TLS ExtensionType Values registry as follows:
 
 - Change the registration procedure to:
@@ -198,7 +198,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
   A reference to this document SHALL be added to these entries. This document does not
   make any changes to the DTLS-OK column.
 
-| Value | Cipher Suite Name                             | Recommeded |
+| Value | Cipher Suite Name                             | Recommended |
 |:------|:---------------------------------------------|-----------:|
 | 0x00,0x01	| TLS_RSA_WITH_NULL_MD5             |   D  |
 | 0x00,0x02	| TLS_RSA_WITH_NULL_SHA            |   D  |
@@ -285,12 +285,12 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 | 0xC0,0xB5 | TLS_SHA384_SHA384 | D |
 
 
-- Update note on the recommended column with text in {{rec-note}}.
+- Update note on the Recommended column with text in {{rec-note}}.
 
 
 # TLS Supported Groups
 
-In order to refect the changes in the Recommended column allocation,
+In order to reflect the changes in the Recommended column allocation,
 IANA SHALL update the TLS Supported Groups registry as follows:
 
 - Update the registration policy to include:
@@ -325,7 +325,7 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 | 20 | secp224k1 | D |
 | 21 | secp224r1 | D |
 
-- Update note on the recommended column with text in {{rec-note}}.
+- Update note on the Recommended column with text in {{rec-note}}.
 
 - Replace the registry range table note column for the 0-255, 512-65535
   range with "Unallocated".
@@ -349,7 +349,7 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
 
 - Entries keep their existing Recommended column "Y" and "N" entries
 
-- Update note on the recommended column with text in {{rec-note}}.
+- Update note on the Recommended column with text in {{rec-note}}.
 
 - update the note on the role of the expert reviewer as follows.
 
@@ -371,7 +371,7 @@ For example, labels "key" or "master secretary" are forbidden.
 
 # TLS Certificate Types
 
-In order to refect the changes in the Recommended column allocation,
+In order to reflect the changes in the Recommended column allocation,
 IANA SHALL update the the TLS Certificate Types registry as follows:
 
 - Change the registration procedure to:
@@ -389,13 +389,13 @@ IANA SHALL update the the TLS Certificate Types registry as follows:
 
 - Entries keep their existing Recommended column "Y" and "N" entries.
 
-- Update note on the recommended column with text in {{rec-note}}.
+- Update note on the Recommended column with text in {{rec-note}}.
 
 
 # TLS HashAlgorithm Registry
 
 Though TLS 1.0 and TLS 1.1 were deprecated {{!RFC8996}}, TLS 1.2 will
-be in use for some time. In order to refect the changes in the Recommended
+be in use for some time. In order to reflect the changes in the Recommended
 column allocation, IANA SHALL update the TLS HashAlgorithm Registry
 registry as follows:
 
@@ -412,7 +412,7 @@ registry as follows:
 - Update the TLS HashAlgorithm registry to add a "Recommended" column
   as follows:
 
-| Value | Descsription | Recommended |
+| Value | Description | Recommended |
 |:----  |:-------------|------------:|
 | 0 | none | Y |
 | 1 | md5  | D |
@@ -423,13 +423,13 @@ registry as follows:
 | 6 | sha512 | Y |
 | 8 | Intrinsic | Y |
 
-- Add note on the recommended column with text in {{rec-note}}.
+- Add note on the Recommended column with text in {{rec-note}}.
 
 
 # TLS SignatureAlgorithm registry
 
 Though TLS 1.0 and TLS 1.1 were deprecated {{!RFC8996}}, TLS 1.2 will
-be in use for some time. In order to refect the changes in the Recommended
+be in use for some time. In order to reflect the changes in the Recommended
 column allocation, IANA SHALL update the TLS SignatureAlgorithm registry
 registry as follows:
 
@@ -446,7 +446,7 @@ registry as follows:
 - Update the TLS SignatureAlgorithm registry to add a "Recommended"
   column as follows:
 
-|Value | Descsription | Recommended |
+|Value | Description | Recommended |
 |:-----|:-------------|------------:|
 | 0 | anonymous| N |
 | 1 | rsa | Y |
@@ -457,12 +457,12 @@ registry as follows:
 | 64 | gostr34102012_256 | N |
 | 65 | gostr34102012_512 | N |
 
-- Add note on the recommended column with text in {{rec-note}}.
+- Add note on the Recommended column with text in {{rec-note}}.
 
 # TLS ClientCertificateTypes registry
 
 Though TLS 1.0 and TLS 1.1 were deprecated {{!RFC8996}}, TLS 1.2 will
-be in use for some time. In order to refect the changes in the Recommended
+be in use for some time. In order to reflect the changes in the Recommended
 column allocation, IANA SHALL update the  TLS ClientCertificateTypes
 registry as follows:
 
@@ -479,7 +479,7 @@ registry as follows:
 - Update the TLS ClientCertificateTypes registry to add a "Recommended"
 column as follows:
 
-| Value | Descsription | Recommended |
+| Value | Description | Recommended |
 |:------|:-------------|------------:|
 | 1 | rsa_sign | Y |
 | 2 | dss_sign | N |
@@ -494,11 +494,11 @@ column as follows:
 | 67 | gost_sign256 | N |
 | 68 | gost_sign512 | N |
 
-- Add note on the recommended column with text in {{rec-note}}.
+- Add note on the Recommended column with text in {{rec-note}}.
 
 # TLS PskKeyExchangeMode registry
 
-In order to refect the changes in the Recommended column allocation,
+In order to reflect the changes in the Recommended column allocation,
 IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 
 - Update the registration procedure to include:
@@ -511,9 +511,9 @@ IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 
 - Add a reference to this document under the reference heading.
 
-- Entries keep their existing recommended column "Y" and "N" entries.
+- Entries keep their existing Recommended column "Y" and "N" entries.
 
-- Update note on the recommended column with text in {{rec-note}}.
+- Update note on the Recommended column with text in {{rec-note}}.
 
 # TLS SignatureScheme registry
 
