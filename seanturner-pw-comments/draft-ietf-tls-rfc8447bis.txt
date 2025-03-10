@@ -519,7 +519,7 @@ Table of Contents
 
     Values in the range 0-223 (decimal) are assigned via Specification
     Required [RFC8126]. Values in the range 224-255 (decimal) are
-    reserved for Private Use [RFC8126]. Setting a value to "Y" or "D"
+    reserved for Private Use [RFC8126]. Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"
     in the "Recommended" column requires IETF Standards Action [RFC8126]
     or IESG Approval.
 
@@ -539,8 +539,8 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-      Setting a value to "Y" or "D" in the "Recommended" column requires
-      IETF Standards Action [RFC8126] or IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 
    *  Add a reference to this document under the reference heading.
 
@@ -580,8 +580,8 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-      Setting a value to "Y" or "D" in the "Recommended" column requires
-      IETF Standards Action [RFC8126] or IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 
    *  Add a reference to this document under the reference heading.
 
@@ -621,8 +621,8 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-      Setting a value to "Y" or "D" in the "Recommended" column requires
-      IETF Standards Action [RFC8126] or IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 
    *  Add a reference to this document under the reference heading.
 
@@ -668,8 +668,8 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-      Setting a value to "Y" or "D" in the "Recommended" column requires
-      IETF Standards Action [RFC8126] or IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 
    *  Add a reference to this document under the reference heading.
 
