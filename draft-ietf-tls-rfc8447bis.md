@@ -378,7 +378,7 @@ IANA SHALL update the the TLS Certificate Types registry as follows:
 ~~~
     Values in the range 0-223 (decimal) are assigned via Specification
     Required [RFC8126]. Values in the range 224-255 (decimal) are
-    reserved for Private Use [RFC8126]. Setting a value to "Y" or "D" or transitioning the value from "Y" or "D" 
+    reserved for Private Use [RFC8126]. Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"
     in the "Recommended" column requires IETF Standards Action [RFC8126]
     or IESG Approval.
 ~~~
