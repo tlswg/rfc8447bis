@@ -102,7 +102,7 @@ D:
     consult the linked references associated with the item to
     determine the conditions under which it SHOULD NOT or MUST NOT be used.
 
-Setting a value to "Y" or "D" in the "Recommended" column requires
+Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
 IETF Standards Action {{!RFC8126}} or IESG Approval. Not all items defined
 in Standards Track RFCs need to be set
 to "Y" or "D". Any item not otherwise specified is set to "N". The column is
