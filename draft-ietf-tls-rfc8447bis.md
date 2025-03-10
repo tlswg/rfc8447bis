@@ -340,7 +340,7 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
   Expert Review and update it to include:
 
 ~~~
-    Setting a value to "Y" or "D" in the "Recommended" column requires
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D" in the "Recommended" column requires
     IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
