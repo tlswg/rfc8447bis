@@ -1198,7 +1198,7 @@ adds a "Comments" column to all active registries.<a href="#section-abstract-1" 
             <p id="section-toc.1-1.10.1"><a href="#section-10" class="auto internal xref">10</a>. <a href="#name-tls-signaturealgorithm-regi" class="internal xref">TLS SignatureAlgorithm registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11">
-            <p id="section-toc.1-1.11.1"><a href="#section-11" class="auto internal xref">11</a>. <a href="#name-tls-clientcertificatetypes-" class="internal xref">TLS ClientCertificateTypes registry</a></p>
+            <p id="section-toc.1-1.11.1"><a href="#section-11" class="auto internal xref">11</a>. <a href="#name-tls-clientcertificatetype-i" class="internal xref">TLS ClientCertificateType Identifiers registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12">
             <p id="section-toc.1-1.12.1"><a href="#section-12" class="auto internal xref">12</a>. <a href="#name-tls-pskkeyexchangemode-regi" class="internal xref">TLS PskKeyExchangeMode registry</a></p>
@@ -1300,9 +1300,9 @@ are:<a href="#section-3-1" class="pilcrow">¶</a></p>
 </dd>
       <dd class="break"></dd>
 </dl>
-<p id="section-3-3">Setting a value to "Y" or "D" in the "Recommended" column requires IETF Standards
-Action <span>[<a href="#RFC8126" class="cite xref">RFC8126</a>]</span>.  Any state transition to or from a "Y" or "D" value requires
-IESG Approval. Not all items defined in Standards Track RFCs need to be set
+<p id="section-3-3">Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+IETF Standards Action <span>[<a href="#RFC8126" class="cite xref">RFC8126</a>]</span> or IESG Approval. Not all items defined
+in Standards Track RFCs need to be set
 to "Y" or "D". Any item not otherwise specified is set to "N". The column is
 blank for values that are unassigned or reserved unless specifically set.<a href="#section-3-3" class="pilcrow">¶</a></p>
 <div id="rec-note">
@@ -1996,8 +1996,8 @@ A reference to this document <span class="bcp14">SHALL</span> be added to these 
           <p id="section-6-6.1.1">Update note on the recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-6-6.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-6-6.2">
-          <p id="section-6-6.2.1">Replace the registry range table note column for the 0-255, 512-65535
-range with "Unallocated".<a href="#section-6-6.2.1" class="pilcrow">¶</a></p>
+          <p id="section-6-6.2.1">Remove the "Elliptic curve groups" note from the registration
+procedures table.<a href="#section-6-6.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
@@ -2018,9 +2018,8 @@ Expert Review and update it to include:<a href="#section-7-2.1.1" class="pilcrow
       </ul>
 <div class="alignLeft art-text artwork" id="section-7-3">
 <pre>
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D" in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 </pre><a href="#section-7-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -2072,10 +2071,9 @@ IANA <span class="bcp14">SHALL</span> update the the TLS Certificate Types regis
       </ul>
 <div class="alignLeft art-text artwork" id="section-8-3">
 <pre>
-    Setting a "Recommended" column
-    value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"
+    in the "Recommended" column requires IETF Standards Action [RFC8126]
+    or IESG Approval.
 </pre><a href="#section-8-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -2107,9 +2105,8 @@ registry as follows:<a href="#section-9-1" class="pilcrow">¶</a></p>
       </ul>
 <div class="alignLeft art-text artwork" id="section-9-3">
 <pre>
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 </pre><a href="#section-9-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -2196,9 +2193,8 @@ registry as follows:<a href="#section-10-1" class="pilcrow">¶</a></p>
       </ul>
 <div class="alignLeft art-text artwork" id="section-10-3">
 <pre>
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 </pre><a href="#section-10-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -2269,14 +2265,14 @@ column as follows:<a href="#section-10-4.2.1" class="pilcrow">¶</a></p>
       </ul>
 </section>
 </div>
-<div id="tls-clientcertificatetypes-registry">
+<div id="tls-clientcertificatetype-identifiers-registry">
 <section id="section-11">
-      <h2 id="name-tls-clientcertificatetypes-">
-<a href="#section-11" class="section-number selfRef">11. </a><a href="#name-tls-clientcertificatetypes-" class="section-name selfRef">TLS ClientCertificateTypes registry</a>
+      <h2 id="name-tls-clientcertificatetype-i">
+<a href="#section-11" class="section-number selfRef">11. </a><a href="#name-tls-clientcertificatetype-i" class="section-name selfRef">TLS ClientCertificateType Identifiers registry</a>
       </h2>
 <p id="section-11-1">Though TLS 1.0 and TLS 1.1 were deprecated <span>[<a href="#RFC8996" class="cite xref">RFC8996</a>]</span>, TLS 1.2 will
 be in use for some time. In order to refect the changes in the Recommended
-column allocation, IANA <span class="bcp14">SHALL</span> update the  TLS ClientCertificateTypes
+column allocation, IANA <span class="bcp14">SHALL</span> update the  TLS ClientCertificateType Identifier
 registry as follows:<a href="#section-11-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-11-2.1">
@@ -2285,9 +2281,8 @@ registry as follows:<a href="#section-11-1" class="pilcrow">¶</a></p>
       </ul>
 <div class="alignLeft art-text artwork" id="section-11-3">
 <pre>
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 </pre><a href="#section-11-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -2295,7 +2290,7 @@ registry as follows:<a href="#section-11-1" class="pilcrow">¶</a></p>
           <p id="section-11-4.1.1">Add a reference to this document under the reference heading.<a href="#section-11-4.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-11-4.2">
-          <p id="section-11-4.2.1">Update the TLS ClientCertificateTypes registry to add a "Recommended"
+          <p id="section-11-4.2.1">Update the TLS ClientCertificateType Identifier registry to add a "Recommended"
 column as follows:<a href="#section-11-4.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
@@ -2392,9 +2387,8 @@ IANA <span class="bcp14">SHALL</span> update the TLS PskKeyExchangeMode registry
       </ul>
 <div class="alignLeft art-text artwork" id="section-12-3">
 <pre>
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 </pre><a href="#section-12-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
