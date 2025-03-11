@@ -10,7 +10,7 @@
 <meta content='
        This document updates the changes to TLS and DTLS IANA registries
 made in RFC 8447. It adds a new value "D" for discouraged
-to the recommended column of the selected TLS registries and
+to the Recommended column of the selected TLS registries and
 adds a "Comments" column to all active registries. 
        This document updates the following RFCs:
 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447. 
@@ -1094,7 +1094,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
 <p id="section-abstract-1">This document updates the changes to TLS and DTLS IANA registries
 made in RFC 8447. It adds a new value "D" for discouraged
-to the recommended column of the selected TLS registries and
+to the Recommended column of the selected TLS registries and
 adds a "Comments" column to all active registries.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 <p id="section-abstract-2">This document updates the following RFCs:
 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
@@ -1310,9 +1310,9 @@ blank for values that are unassigned or reserved unless specifically set.<a href
         <h3 id="name-recommended-note">
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-recommended-note" class="section-name selfRef">Recommended Note</a>
         </h3>
-<p id="section-3.1-1">Existing registries have a note on the meaning of the recommended column. For the
+<p id="section-3.1-1">Existing registries have a note on the meaning of the Recommended column. For the
 registries discussed in the subsequent sections this note is updated
-with a sentence describing the "D" vaue as follows:<a href="#section-3.1-1" class="pilcrow">¶</a></p>
+with a sentence describing the "D" value as follows:<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-3.1-2">
           <dt id="section-3.1-2.1">Note:</dt>
           <dd style="margin-left: 1.5em" id="section-3.1-2.2">
@@ -1333,7 +1333,7 @@ is set to "D" the item is discouraged and <span class="bcp14">SHOULD NOT</span> 
       <h2 id="name-tls-extensiontype-values">
 <a href="#section-4" class="section-number selfRef">4. </a><a href="#name-tls-extensiontype-values" class="section-name selfRef">TLS ExtensionType Values</a>
       </h2>
-<p id="section-4-1">In order to refect the changes in the Recommended column allocation,
+<p id="section-4-1">In order to reflect the changes in the Recommended column allocation,
 IANA <span class="bcp14">SHALL</span> update the TLS ExtensionType Values registry as follows:<a href="#section-4-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-4-2.1">
@@ -1392,7 +1392,7 @@ A reference to this document <span class="bcp14">SHALL</span> be added to these 
       </table>
 <ul class="normal">
 <li class="normal" id="section-4-6.1">
-          <p id="section-4-6.1.1">Update note on the recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-4-6.1.1" class="pilcrow">¶</a></p>
+          <p id="section-4-6.1.1">Update note on the Recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-4-6.1.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
@@ -1403,20 +1403,20 @@ A reference to this document <span class="bcp14">SHALL</span> be added to these 
 <a href="#section-5" class="section-number selfRef">5. </a><a href="#name-tls-cipher-suites-registry" class="section-name selfRef">TLS Cipher Suites Registry</a>
       </h2>
 <p id="section-5-1">Several categories of ciphersuites are discouraged for general use and
-are maked as "D".<a href="#section-5-1" class="pilcrow">¶</a></p>
+are marked as "D".<a href="#section-5-1" class="pilcrow">¶</a></p>
 <p id="section-5-2">Ciphersuites that use NULL encryption do not provide the confidentiality
 normally expected of TLS. Protocols and applications are often designed
-to require confidentialy as a security property. These
+to require confidentiality as a security property. These
 ciphersuites <span class="bcp14">MUST NOT</span> be used in those cases.<a href="#section-5-2" class="pilcrow">¶</a></p>
 <p id="section-5-3">Ciphersuites marked as EXPORT use weak ciphers and were deprecated in
 TLS 1.1 <span>[<a href="#RFC4346" class="cite xref">RFC4346</a>]</span>.<a href="#section-5-3" class="pilcrow">¶</a></p>
-<p id="section-5-4">Cipher suites maked as anon do not provide any authentication and are
+<p id="section-5-4">Cipher suites marked as anon do not provide any authentication and are
 vulnerable to man-in-the-middle attacks and are deprecated in TLS 1.1
 <span>[<a href="#RFC4346" class="cite xref">RFC4346</a>]</span>.<a href="#section-5-4" class="pilcrow">¶</a></p>
 <p id="section-5-5">RC4 is a weak cipher and is deprecated in <span>[<a href="#RFC7465" class="cite xref">RFC7465</a>]</span>.<a href="#section-5-5" class="pilcrow">¶</a></p>
 <p id="section-5-6">DES and IDEA are not considered secure for general use and are deprecated
 in <span>[<a href="#RFC5469" class="cite xref">RFC5469</a>]</span>.<a href="#section-5-6" class="pilcrow">¶</a></p>
-<p id="section-5-7">In order to refect the changes in the Recommended column allocation,
+<p id="section-5-7">In order to reflect the changes in the Recommended column allocation,
 IANA <span class="bcp14">SHALL</span> update the TLS ExtensionType Values registry as follows:<a href="#section-5-7" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-5-8.1">
@@ -1447,7 +1447,7 @@ make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcro
           <tr>
             <th class="text-left" rowspan="1" colspan="1">Value</th>
             <th class="text-left" rowspan="1" colspan="1">Cipher Suite Name</th>
-            <th class="text-right" rowspan="1" colspan="1">Recommeded</th>
+            <th class="text-right" rowspan="1" colspan="1">Recommended</th>
           </tr>
         </thead>
         <tbody>
@@ -1870,7 +1870,7 @@ make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcro
       </table>
 <ul class="normal">
 <li class="normal" id="section-5-12.1">
-          <p id="section-5-12.1.1">Update note on the recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-5-12.1.1" class="pilcrow">¶</a></p>
+          <p id="section-5-12.1.1">Update note on the Recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-5-12.1.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
@@ -1880,7 +1880,7 @@ make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcro
       <h2 id="name-tls-supported-groups">
 <a href="#section-6" class="section-number selfRef">6. </a><a href="#name-tls-supported-groups" class="section-name selfRef">TLS Supported Groups</a>
       </h2>
-<p id="section-6-1">In order to refect the changes in the Recommended column allocation,
+<p id="section-6-1">In order to reflect the changes in the Recommended column allocation,
 IANA <span class="bcp14">SHALL</span> update the TLS Supported Groups registry as follows:<a href="#section-6-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-6-2.1">
@@ -1993,7 +1993,7 @@ A reference to this document <span class="bcp14">SHALL</span> be added to these 
       </table>
 <ul class="normal">
 <li class="normal" id="section-6-6.1">
-          <p id="section-6-6.1.1">Update note on the recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-6-6.1.1" class="pilcrow">¶</a></p>
+          <p id="section-6-6.1.1">Update note on the Recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-6-6.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-6-6.2">
           <p id="section-6-6.2.1">Remove the "Elliptic curve groups" note from the registration
@@ -2030,7 +2030,7 @@ Expert Review and update it to include:<a href="#section-7-2.1.1" class="pilcrow
           <p id="section-7-4.2.1">Entries keep their existing Recommended column "Y" and "N" entries<a href="#section-7-4.2.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-7-4.3">
-          <p id="section-7-4.3.1">Update note on the recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-7-4.3.1" class="pilcrow">¶</a></p>
+          <p id="section-7-4.3.1">Update note on the Recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-7-4.3.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-7-4.4">
           <p id="section-7-4.4.1">update the note on the role of the expert reviewer as follows.<a href="#section-7-4.4.1" class="pilcrow">¶</a></p>
@@ -2062,7 +2062,7 @@ For example, labels "key" or "master secretary" are forbidden.<a href="#section-
       <h2 id="name-tls-certificate-types">
 <a href="#section-8" class="section-number selfRef">8. </a><a href="#name-tls-certificate-types" class="section-name selfRef">TLS Certificate Types</a>
       </h2>
-<p id="section-8-1">In order to refect the changes in the Recommended column allocation,
+<p id="section-8-1">In order to reflect the changes in the Recommended column allocation,
 IANA <span class="bcp14">SHALL</span> update the the TLS Certificate Types registry as follows:<a href="#section-8-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-8-2.1">
@@ -2084,7 +2084,7 @@ IANA <span class="bcp14">SHALL</span> update the the TLS Certificate Types regis
           <p id="section-8-4.2.1">Entries keep their existing Recommended column "Y" and "N" entries.<a href="#section-8-4.2.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-8-4.3">
-          <p id="section-8-4.3.1">Update note on the recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-8-4.3.1" class="pilcrow">¶</a></p>
+          <p id="section-8-4.3.1">Update note on the Recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-8-4.3.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
@@ -2095,7 +2095,7 @@ IANA <span class="bcp14">SHALL</span> update the the TLS Certificate Types regis
 <a href="#section-9" class="section-number selfRef">9. </a><a href="#name-tls-hashalgorithm-registry" class="section-name selfRef">TLS HashAlgorithm Registry</a>
       </h2>
 <p id="section-9-1">Though TLS 1.0 and TLS 1.1 were deprecated <span>[<a href="#RFC8996" class="cite xref">RFC8996</a>]</span>, TLS 1.2 will
-be in use for some time. In order to refect the changes in the Recommended
+be in use for some time. In order to reflect the changes in the Recommended
 column allocation, IANA <span class="bcp14">SHALL</span> update the TLS HashAlgorithm Registry
 registry as follows:<a href="#section-9-1" class="pilcrow">¶</a></p>
 <ul class="normal">
@@ -2123,7 +2123,7 @@ as follows:<a href="#section-9-4.2.1" class="pilcrow">¶</a></p>
 <thead>
           <tr>
             <th class="text-left" rowspan="1" colspan="1">Value</th>
-            <th class="text-left" rowspan="1" colspan="1">Descsription</th>
+            <th class="text-left" rowspan="1" colspan="1">Description</th>
             <th class="text-right" rowspan="1" colspan="1">Recommended</th>
           </tr>
         </thead>
@@ -2172,7 +2172,7 @@ as follows:<a href="#section-9-4.2.1" class="pilcrow">¶</a></p>
       </table>
 <ul class="normal">
 <li class="normal" id="section-9-6.1">
-          <p id="section-9-6.1.1">Add note on the recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-9-6.1.1" class="pilcrow">¶</a></p>
+          <p id="section-9-6.1.1">Add note on the Recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-9-6.1.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
@@ -2183,7 +2183,7 @@ as follows:<a href="#section-9-4.2.1" class="pilcrow">¶</a></p>
 <a href="#section-10" class="section-number selfRef">10. </a><a href="#name-tls-signaturealgorithm-regi" class="section-name selfRef">TLS SignatureAlgorithm registry</a>
       </h2>
 <p id="section-10-1">Though TLS 1.0 and TLS 1.1 were deprecated <span>[<a href="#RFC8996" class="cite xref">RFC8996</a>]</span>, TLS 1.2 will
-be in use for some time. In order to refect the changes in the Recommended
+be in use for some time. In order to reflect the changes in the Recommended
 column allocation, IANA <span class="bcp14">SHALL</span> update the TLS SignatureAlgorithm registry
 registry as follows:<a href="#section-10-1" class="pilcrow">¶</a></p>
 <ul class="normal">
@@ -2211,7 +2211,7 @@ column as follows:<a href="#section-10-4.2.1" class="pilcrow">¶</a></p>
 <thead>
           <tr>
             <th class="text-left" rowspan="1" colspan="1">Value</th>
-            <th class="text-left" rowspan="1" colspan="1">Descsription</th>
+            <th class="text-left" rowspan="1" colspan="1">Description</th>
             <th class="text-right" rowspan="1" colspan="1">Recommended</th>
           </tr>
         </thead>
@@ -2260,7 +2260,7 @@ column as follows:<a href="#section-10-4.2.1" class="pilcrow">¶</a></p>
       </table>
 <ul class="normal">
 <li class="normal" id="section-10-6.1">
-          <p id="section-10-6.1.1">Add note on the recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-10-6.1.1" class="pilcrow">¶</a></p>
+          <p id="section-10-6.1.1">Add note on the Recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-10-6.1.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
@@ -2299,7 +2299,7 @@ column as follows:<a href="#section-11-4.2.1" class="pilcrow">¶</a></p>
 <thead>
           <tr>
             <th class="text-left" rowspan="1" colspan="1">Value</th>
-            <th class="text-left" rowspan="1" colspan="1">Descsription</th>
+            <th class="text-left" rowspan="1" colspan="1">Description</th>
             <th class="text-right" rowspan="1" colspan="1">Recommended</th>
           </tr>
         </thead>
@@ -2368,7 +2368,7 @@ column as follows:<a href="#section-11-4.2.1" class="pilcrow">¶</a></p>
       </table>
 <ul class="normal">
 <li class="normal" id="section-11-6.1">
-          <p id="section-11-6.1.1">Add note on the recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-11-6.1.1" class="pilcrow">¶</a></p>
+          <p id="section-11-6.1.1">Add note on the Recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-11-6.1.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
@@ -2378,7 +2378,7 @@ column as follows:<a href="#section-11-4.2.1" class="pilcrow">¶</a></p>
       <h2 id="name-tls-pskkeyexchangemode-regi">
 <a href="#section-12" class="section-number selfRef">12. </a><a href="#name-tls-pskkeyexchangemode-regi" class="section-name selfRef">TLS PskKeyExchangeMode registry</a>
       </h2>
-<p id="section-12-1">In order to refect the changes in the Recommended column allocation,
+<p id="section-12-1">In order to reflect the changes in the Recommended column allocation,
 IANA <span class="bcp14">SHALL</span> update the TLS PskKeyExchangeMode registry as follows:<a href="#section-12-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-12-2.1">
@@ -2396,10 +2396,10 @@ IANA <span class="bcp14">SHALL</span> update the TLS PskKeyExchangeMode registry
           <p id="section-12-4.1.1">Add a reference to this document under the reference heading.<a href="#section-12-4.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-12-4.2">
-          <p id="section-12-4.2.1">Entries keep their existing recommended column "Y" and "N" entries.<a href="#section-12-4.2.1" class="pilcrow">¶</a></p>
+          <p id="section-12-4.2.1">Entries keep their existing Recommended column "Y" and "N" entries.<a href="#section-12-4.2.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-12-4.3">
-          <p id="section-12-4.3.1">Update note on the recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-12-4.3.1" class="pilcrow">¶</a></p>
+          <p id="section-12-4.3.1">Update note on the Recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-12-4.3.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
