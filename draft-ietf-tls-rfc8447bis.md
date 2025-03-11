@@ -102,7 +102,7 @@ D:
     consult the linked references associated with the item to
     determine the conditions under which it SHOULD NOT or MUST NOT be used.
 
-Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+Setting a value to "Y" or "D" or transitioning the value from "Y" or "D" in the "Recommended" column requires
 IETF Standards Action {{!RFC8126}} or IESG Approval. Not all items defined
 in Standards Track RFCs need to be set
 to "Y" or "D". Any item not otherwise specified is set to "N". The column is
@@ -130,10 +130,9 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 - Adjust the registration procedure related to setting the “Recommended” column as follows:
 
 ~~~
-    Setting a
-    "Recommended" column value to "Y" or "D" requires Standards Action [RFC8126].
-    Any state transition to or from a "Y" or "D" value requires
-    IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D" in the "Recommended" column requires
+    IETF Standards Action {{!RFC8126}} or IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -291,9 +290,9 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 - Update the registration policy to include:
 
 ~~~
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D" in the "Recommended" column requires
+    IETF Standards Action {{!RFC8126}} or IESG Approval
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -335,7 +334,8 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
   Expert Review and update it to include:
 
 ~~~
-    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D" in the "Recommended" column requires
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D" in the "Recommended" column requires
     IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
@@ -371,9 +371,9 @@ IANA SHALL update the the TLS Certificate Types registry as follows:
 - Adjust the registration procedure related to setting the “Recommended” column as follows:
 
 ~~~
-    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"
-    in the "Recommended" column requires IETF Standards Action [RFC8126]
-    or IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D" in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -393,7 +393,8 @@ registry as follows:
 - Update the registration procedure to include:
 
 ~~~
-    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D"  in the "Recommended" column requires
     IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
@@ -426,7 +427,8 @@ registry as follows:
 - Update the registration procedure to include:
 
 ~~~
-    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D"  in the "Recommended" column requires
     IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
@@ -458,7 +460,8 @@ registry as follows:
 - Update the registration procedure to include:
 
 ~~~
-    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D"  in the "Recommended" column requires
     IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
@@ -492,7 +495,8 @@ IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 - Update the registration procedure to include:
 
 ~~~
-    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D"  in the "Recommended" column requires
     IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
