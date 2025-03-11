@@ -369,7 +369,7 @@ For example, labels "key" or "master secretary" are forbidden.
 In order to refect the changes in the Recommended column allocation,
 IANA SHALL update the the TLS Certificate Types registry as follows:
 
-- Adjust the registration procedure related to setting the “Recommended” column as follows::
+- Adjust the registration procedure related to setting the “Recommended” column as follows:
 
 ~~~
     Setting a "Recommended" column
