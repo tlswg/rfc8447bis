@@ -127,7 +127,7 @@ is set to "D" the item is discouraged and SHOULD NOT or MUST NOT be used.
 In order to refect the changes in the Recommended column allocation,
 IANA SHALL update the TLS ExtensionType Values registry as follows:
 
-- Change the registration procedure to:
+- Adjust the registration procedure related to setting the “Recommended” column as follows:
 
 ~~~
     Setting a
