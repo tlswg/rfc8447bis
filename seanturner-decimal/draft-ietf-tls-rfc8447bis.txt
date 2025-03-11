@@ -514,7 +514,7 @@ Table of Contents
    IANA SHALL update the the TLS Certificate Types registry as follows:
 
    *  Adjust the registration procedure related to setting the
-      “Recommended” column as follows::
+      “Recommended” column as follows:
 
        Setting a "Recommended" column
        value to "Y" or "D" requires Standards
