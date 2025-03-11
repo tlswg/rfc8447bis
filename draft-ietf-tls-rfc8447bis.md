@@ -371,11 +371,9 @@ IANA SHALL update the the TLS Certificate Types registry as follows:
 - Adjust the registration procedure related to setting the “Recommended” column as follows:
 
 ~~~
-
     Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"
     in the "Recommended" column requires IETF Standards Action [RFC8126]
     or IESG Approval.
-    
 ~~~
 
 - Add a reference to this document under the reference heading.
