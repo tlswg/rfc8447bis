@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-03-09T01:35:25.397910+00:00",
+  "timestamp": "2025-03-11T01:51:58.607329+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -318,9 +318,9 @@
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
-      "body": "- [x] Section 3 - See #61 \n\n        Setting a value to \"Y\" or \"D\" in the \"Recommended\" column requires\n        IETF Standards Action [RFC8126]. Any state transition to or from a\n        \"Y\" or \"D\" value requires IESG Approval.\n       \nIsn't this easier written as:\n\n        Setting a value to \"Y\" or \"D\" in the \"Recommended\" column requires\n        IETF Standards Action [RFC8126] or IESG Approval.\n\nThis appears in a number of sections in the document.\n\n- [ ] Section 4 TLS ExtensionType Values - Awaiting response from PW\n\n        Values with the first byte in the range 0-254 (decimal) are\n        assigned via Specification Required [RFC8126].  Values with the\n        first byte 255 (decimal) are reserved for Private Use [RFC8126].\n\nI'd rather not let IANA figure out decimal network order byte math. Or\nrequire everyone to do that math when checking the registry. Why not:\n\n        Values in the range 0-65279 are assigned via Specification Required\n        [RFC8126]. Values in the range 65280-65535 are reserved for Private\n        Use [RFC8126].\n\nAlso, this is not true for:\n\n        65281   renegotiation_info\n\nwhich is clearly not usable for Private Use. Maybe it makes sense to say:\n\n        Values in the range 0-65279 are assigned via Specification Required\n        [RFC8126]. Values in the range 65280-65295 are Reserved. Values in\n        the range 65296-65535 are reserved for Private Use [RFC8126].\n\nThis then leaves 0xff00-0xff0f for whatever the reason for 65281 was to be\nable to happen a few more times, and keep the private range valid without\nstrange exceptions.\n\n- [ ] Section 5  TLS Cipher Suites Registry - see [email](https://mailarchive.ietf.org/arch/msg/tls/plubZSdt2fnoYtowOy9P3tLTNeY/)\n\nThis section contains some reasoning why it is Discouraging things. The current\nIANA registry also contains such reasoning on the form of notes, but this section\ndoes not add to the notes. So now this inforation is splintered between RFC and\nRegistry. I think the easiest fix is to add these few reasons specified here\nas Note: to the IANA registry.\n\n\nNote that this registry states:\n\n        When this registry is modified, the YANG module\n        \"iana-tls-cipher-suite-algs\" [iana-tls-cipher-suite-algs] must\n        be updated as defined in [RFC9645].\n\nHas this happened or is it scheduled? If so who is the contact I can follow up with?\n\n\n- [x] Section 6 TLS Supported Groups - see #61\n\n        * Replace the registry range table note column for the 0-255,\n          512-65535 range with \"Unallocated\".\n\nThis makes no sense. That current line with its note reads:\n\n        0-255, 512-65535        Specification Required  Elliptic curve groups\n\nI understand that the note should remove the text \"Elliptic curve groups\",\nbut it makes no sense to add \"Unallocated\" because the range does have\nallocations in it. Maybe just instruct IANA to remove the note \"Elliptic\ncurve groups\" ?\n\n\n- [x] Section 11 TLS ClientCertificateTypes registry - see #61\n\nThe registry name is not \"TLS ClientCertificateTypes\" registry, but\n\"TLS ClientCertificateTypes Identifiers\" registry.",
+      "body": "- [x] Section 3 - See #61 \n\n        Setting a value to \"Y\" or \"D\" in the \"Recommended\" column requires\n        IETF Standards Action [RFC8126]. Any state transition to or from a\n        \"Y\" or \"D\" value requires IESG Approval.\n       \nIsn't this easier written as:\n\n        Setting a value to \"Y\" or \"D\" in the \"Recommended\" column requires\n        IETF Standards Action [RFC8126] or IESG Approval.\n\nThis appears in a number of sections in the document.\n\n- [ ] Section 4 TLS ExtensionType Values - See #62 - Awaiting response from PW\n\n        Values with the first byte in the range 0-254 (decimal) are\n        assigned via Specification Required [RFC8126].  Values with the\n        first byte 255 (decimal) are reserved for Private Use [RFC8126].\n\nI'd rather not let IANA figure out decimal network order byte math. Or\nrequire everyone to do that math when checking the registry. Why not:\n\n        Values in the range 0-65279 are assigned via Specification Required\n        [RFC8126]. Values in the range 65280-65535 are reserved for Private\n        Use [RFC8126].\n\nAlso, this is not true for:\n\n        65281   renegotiation_info\n\nwhich is clearly not usable for Private Use. Maybe it makes sense to say:\n\n        Values in the range 0-65279 are assigned via Specification Required\n        [RFC8126]. Values in the range 65280-65295 are Reserved. Values in\n        the range 65296-65535 are reserved for Private Use [RFC8126].\n\nThis then leaves 0xff00-0xff0f for whatever the reason for 65281 was to be\nable to happen a few more times, and keep the private range valid without\nstrange exceptions.\n\n- [ ] Section 5  TLS Cipher Suites Registry - see [email](https://mailarchive.ietf.org/arch/msg/tls/plubZSdt2fnoYtowOy9P3tLTNeY/)\n\nThis section contains some reasoning why it is Discouraging things. The current\nIANA registry also contains such reasoning on the form of notes, but this section\ndoes not add to the notes. So now this inforation is splintered between RFC and\nRegistry. I think the easiest fix is to add these few reasons specified here\nas Note: to the IANA registry.\n\n\nNote that this registry states:\n\n        When this registry is modified, the YANG module\n        \"iana-tls-cipher-suite-algs\" [iana-tls-cipher-suite-algs] must\n        be updated as defined in [RFC9645].\n\nHas this happened or is it scheduled? If so who is the contact I can follow up with?\n\n\n- [x] Section 6 TLS Supported Groups - see #61\n\n        * Replace the registry range table note column for the 0-255,\n          512-65535 range with \"Unallocated\".\n\nThis makes no sense. That current line with its note reads:\n\n        0-255, 512-65535        Specification Required  Elliptic curve groups\n\nI understand that the note should remove the text \"Elliptic curve groups\",\nbut it makes no sense to add \"Unallocated\" because the range does have\nallocations in it. Maybe just instruct IANA to remove the note \"Elliptic\ncurve groups\" ?\n\n\n- [x] Section 11 TLS ClientCertificateTypes registry - see #61\n\nThe registry name is not \"TLS ClientCertificateTypes\" registry, but\n\"TLS ClientCertificateTypes Identifiers\" registry.",
       "createdAt": "2025-03-07T18:00:49Z",
-      "updatedAt": "2025-03-08T02:51:04Z",
+      "updatedAt": "2025-03-10T13:09:59Z",
       "closedAt": null,
       "comments": []
     }
@@ -2845,13 +2845,206 @@
       "labels": [],
       "body": "Addressing #60. All but one.",
       "createdAt": "2025-03-08T02:48:44Z",
-      "updatedAt": "2025-03-08T02:48:45Z",
+      "updatedAt": "2025-03-10T13:19:07Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "71bcc7ff576403ff8dbdc63c3bc3a93c1ae75a26",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-pw-comments",
-      "headRefOid": "05bd25f940b1a1e6600f269a48066ebae516681c",
+      "headRefOid": "26288d0bbba6c266ecdfb8e7928210315e1ff16c",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6fIJ12",
+          "commit": {
+            "abbreviatedOid": "05bd25f"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-10T03:33:30Z",
+          "updatedAt": "2025-03-10T03:33:30Z",
+          "comments": [
+            {
+              "originalPosition": 7,
+              "body": "```suggestion\r\nSetting a value to \"Y\" or \"D\" or transitioning the value from \"Y\" or \"D\"  in the \"Recommended\" column requires\r\n```",
+              "createdAt": "2025-03-10T03:33:30Z",
+              "updatedAt": "2025-03-10T03:33:31Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs6fIKQy",
+          "commit": {
+            "abbreviatedOid": "05bd25f"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-10T03:35:45Z",
+          "updatedAt": "2025-03-10T03:35:45Z",
+          "comments": [
+            {
+              "originalPosition": 31,
+              "body": "```suggestion\r\n    Setting a value to \"Y\" or \"D\" or transitioning the value from \"Y\" or \"D\" in the \"Recommended\" column requires\r\n```",
+              "createdAt": "2025-03-10T03:35:45Z",
+              "updatedAt": "2025-03-10T03:35:46Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs6fIKix",
+          "commit": {
+            "abbreviatedOid": "05bd25f"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-10T03:36:28Z",
+          "updatedAt": "2025-03-10T03:36:28Z",
+          "comments": [
+            {
+              "originalPosition": 44,
+              "body": "```suggestion\r\n    reserved for Private Use [RFC8126]. Setting a value to \"Y\" or \"D\" or transitioning the value from \"Y\" or \"D\" \r\n```",
+              "createdAt": "2025-03-10T03:36:28Z",
+              "updatedAt": "2025-03-10T03:36:28Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs6fIKoZ",
+          "commit": {
+            "abbreviatedOid": "05bd25f"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-10T03:36:55Z",
+          "updatedAt": "2025-03-10T03:36:56Z",
+          "comments": [
+            {
+              "originalPosition": 57,
+              "body": "```suggestion\r\n    Setting a value to \"Y\" or \"D\" or transitioning the value from \"Y\" or \"D\"  in the \"Recommended\" column requires\r\n```",
+              "createdAt": "2025-03-10T03:36:56Z",
+              "updatedAt": "2025-03-10T03:36:56Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs6fIKrc",
+          "commit": {
+            "abbreviatedOid": "05bd25f"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-10T03:37:12Z",
+          "updatedAt": "2025-03-10T03:37:12Z",
+          "comments": [
+            {
+              "originalPosition": 69,
+              "body": "```suggestion\r\n    Setting a value to \"Y\" or \"D\" or transitioning the value from \"Y\" or \"D\"  in the \"Recommended\" column requires\r\n```",
+              "createdAt": "2025-03-10T03:37:12Z",
+              "updatedAt": "2025-03-10T03:37:12Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs6fIKw4",
+          "commit": {
+            "abbreviatedOid": "05bd25f"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-10T03:37:44Z",
+          "updatedAt": "2025-03-10T03:37:45Z",
+          "comments": [
+            {
+              "originalPosition": 93,
+              "body": "```suggestion\r\n    Setting a value to \"Y\" or \"D\" or transitioning the value from \"Y\" or \"D\"  in the \"Recommended\" column requires\r\n```",
+              "createdAt": "2025-03-10T03:37:44Z",
+              "updatedAt": "2025-03-10T03:37:45Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs6fIK0u",
+          "commit": {
+            "abbreviatedOid": "05bd25f"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-10T03:38:08Z",
+          "updatedAt": "2025-03-10T03:38:09Z",
+          "comments": [
+            {
+              "originalPosition": 111,
+              "body": "```suggestion\r\n    Setting a value to \"Y\" or \"D\" or transitioning the value from \"Y\" or \"D\"  in the \"Recommended\" column requires\r\n```",
+              "createdAt": "2025-03-10T03:38:09Z",
+              "updatedAt": "2025-03-10T03:38:09Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 62,
+      "id": "PR_kwDOHFJBYs6N_gWW",
+      "title": "Addressing decimal",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/62",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "If Paul prefers the remove it option for his comments regarding the ranges.  We don't make any changes to them so we could delete them.",
+      "createdAt": "2025-03-10T13:09:21Z",
+      "updatedAt": "2025-03-10T13:09:21Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "71bcc7ff576403ff8dbdc63c3bc3a93c1ae75a26",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-decimal",
+      "headRefOid": "8f5bd47073bdfb2c4a0844f78b1b882bb8362030",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 63,
+      "id": "PR_kwDOHFJBYs6N_qGA",
+      "title": "Spelling",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/63",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Fixes some spelling errors.",
+      "createdAt": "2025-03-10T13:26:04Z",
+      "updatedAt": "2025-03-10T13:26:04Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "71bcc7ff576403ff8dbdc63c3bc3a93c1ae75a26",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-spelling",
+      "headRefOid": "22ad4b39936805a9a2e44124ae37ad7b2aaea6cc",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
