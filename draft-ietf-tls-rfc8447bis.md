@@ -102,9 +102,9 @@ D:
     consult the linked references associated with the item to
     determine the conditions under which it SHOULD NOT or MUST NOT be used.
 
-Setting a value to "Y" or "D" in the "Recommended" column requires IETF Standards
-Action {{!RFC8126}}.  Any state transition to or from a "Y" or "D" value requires
-IESG Approval. Not all items defined in Standards Track RFCs need to be set
+Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+IETF Standards Action {{!RFC8126}} or IESG Approval. Not all items defined
+in Standards Track RFCs need to be set
 to "Y" or "D". Any item not otherwise specified is set to "N". The column is
 blank for values that are unassigned or reserved unless specifically set.
 
@@ -322,8 +322,8 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 
 - Update note on the recommended column with text in {{rec-note}}.
 
-- Replace the registry range table note column for the 0-255, 512-65535
-  range with "Unallocated".
+- Remove the "Elliptic curve groups" note from the registration
+  procedures table.
 
 # TLS Exporter Labels Registry
 
@@ -335,9 +335,8 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
   Expert Review and update it to include:
 
 ~~~
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D" in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -372,10 +371,11 @@ IANA SHALL update the the TLS Certificate Types registry as follows:
 - Adjust the registration procedure related to setting the “Recommended” column as follows:
 
 ~~~
-    Setting a "Recommended" column
-    value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"
+    in the "Recommended" column requires IETF Standards Action [RFC8126]
+    or IESG Approval.
+    
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -395,9 +395,8 @@ registry as follows:
 - Update the registration procedure to include:
 
 ~~~
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -429,9 +428,8 @@ registry as follows:
 - Update the registration procedure to include:
 
 ~~~
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -452,24 +450,23 @@ registry as follows:
 
 - Add note on the recommended column with text in {{rec-note}}.
 
-# TLS ClientCertificateTypes registry
+# TLS ClientCertificateType Identifiers registry
 
 Though TLS 1.0 and TLS 1.1 were deprecated {{!RFC8996}}, TLS 1.2 will
 be in use for some time. In order to refect the changes in the Recommended
-column allocation, IANA SHALL update the  TLS ClientCertificateTypes
+column allocation, IANA SHALL update the  TLS ClientCertificateType Identifier
 registry as follows:
 
 - Update the registration procedure to include:
 
 ~~~
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
 
-- Update the TLS ClientCertificateTypes registry to add a "Recommended"
+- Update the TLS ClientCertificateType Identifier registry to add a "Recommended"
 column as follows:
 
 | Value | Descsription | Recommended |
@@ -497,9 +494,8 @@ IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 - Update the registration procedure to include:
 
 ~~~
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action [RFC8126] or IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
