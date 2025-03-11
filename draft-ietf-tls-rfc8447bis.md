@@ -127,12 +127,10 @@ is set to "D" the item is discouraged and SHOULD NOT or MUST NOT be used.
 In order to refect the changes in the Recommended column allocation,
 IANA SHALL update the TLS ExtensionType Values registry as follows:
 
-- Change the registration procedure to:
+- Adjust the registration procedure related to setting the “Recommended” column as follows:
 
 ~~~
-    Values with the first byte in the range 0-254 (decimal) are assigned
-    via Specification Required [RFC8126].  Values with the first byte
-    255 (decimal) are reserved for Private Use [RFC8126].  Setting a
+    Setting a
     "Recommended" column value to "Y" or "D" requires Standards Action [RFC8126].
     Any state transition to or from a "Y" or "D" value requires
     IESG Approval.
@@ -180,12 +178,9 @@ in {{!RFC5469}}.
 In order to refect the changes in the Recommended column allocation,
 IANA SHALL update the TLS ExtensionType Values registry as follows:
 
-- Change the registration procedure to:
+- Adjust the registration procedure related to setting the “Recommended” column as follows:
 
 ~~~
-    Values with the first byte in the range 0-254 (decimal) are
-    assigned via Specification Required [RFC8126].  Values with the
-    first byte 255 (decimal) are reserved for Private Use [RFC8126].
     Setting a "Recommended" column value to "Y" or "D" requires Standards
     Action [RFC8126]. Any state transition to or from a "Y" or "D"
     value requires IESG Approval.
@@ -373,12 +368,10 @@ For example, labels "key" or "master secretary" are forbidden.
 In order to refect the changes in the Recommended column allocation,
 IANA SHALL update the the TLS Certificate Types registry as follows:
 
-- Change the registration procedure to:
+- Adjust the registration procedure related to setting the “Recommended” column as follows:
 
 ~~~
-    Values in the range 0-223 (decimal) are assigned via Specification
-    Required [RFC8126]. Values in the range 224-255 (decimal) are
-    reserved for Private Use [RFC8126]. Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"
+    Setting a value to "Y" or "D" or transitioning the value from "Y" or "D"
     in the "Recommended" column requires IETF Standards Action [RFC8126]
     or IESG Approval.
 ~~~
