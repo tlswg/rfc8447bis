@@ -180,9 +180,9 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 - Adjust the registration procedure related to setting the “Recommended” column as follows:
 
 ~~~
-    Setting a "Recommended" column value to "Y" or "D" requires Standards
-    Action [RFC8126]. Any state transition to or from a "Y" or "D"
-    value requires IESG Approval.
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D" in the "Recommended" column requires
+    IETF Standards Action {{!RFC8126}} or IESG Approval.
 ~~~
 
 - Add a reference to this document under the reference heading.
