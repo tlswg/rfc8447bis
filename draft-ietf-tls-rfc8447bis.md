@@ -2,6 +2,7 @@
 title: IANA Registry Updates for TLS and DTLS
 abbrev: (D)TLS IANA Registry Updates
 docname: draft-ietf-tls-rfc8447bis-latest
+submissiontype: IETF
 category: std
 updates: 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, 8447
 v: 3
