@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-03-11T01:51:58.607329+00:00",
+  "timestamp": "2025-03-13T01:52:40.722382+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -313,16 +313,24 @@
       "id": "I_kwDOHFJBYs6tEauO",
       "title": "AD review comments",
       "url": "https://github.com/tlswg/rfc8447bis/issues/60",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
-      "body": "- [x] Section 3 - See #61 \n\n        Setting a value to \"Y\" or \"D\" in the \"Recommended\" column requires\n        IETF Standards Action [RFC8126]. Any state transition to or from a\n        \"Y\" or \"D\" value requires IESG Approval.\n       \nIsn't this easier written as:\n\n        Setting a value to \"Y\" or \"D\" in the \"Recommended\" column requires\n        IETF Standards Action [RFC8126] or IESG Approval.\n\nThis appears in a number of sections in the document.\n\n- [ ] Section 4 TLS ExtensionType Values - See #62 - Awaiting response from PW\n\n        Values with the first byte in the range 0-254 (decimal) are\n        assigned via Specification Required [RFC8126].  Values with the\n        first byte 255 (decimal) are reserved for Private Use [RFC8126].\n\nI'd rather not let IANA figure out decimal network order byte math. Or\nrequire everyone to do that math when checking the registry. Why not:\n\n        Values in the range 0-65279 are assigned via Specification Required\n        [RFC8126]. Values in the range 65280-65535 are reserved for Private\n        Use [RFC8126].\n\nAlso, this is not true for:\n\n        65281   renegotiation_info\n\nwhich is clearly not usable for Private Use. Maybe it makes sense to say:\n\n        Values in the range 0-65279 are assigned via Specification Required\n        [RFC8126]. Values in the range 65280-65295 are Reserved. Values in\n        the range 65296-65535 are reserved for Private Use [RFC8126].\n\nThis then leaves 0xff00-0xff0f for whatever the reason for 65281 was to be\nable to happen a few more times, and keep the private range valid without\nstrange exceptions.\n\n- [ ] Section 5  TLS Cipher Suites Registry - see [email](https://mailarchive.ietf.org/arch/msg/tls/plubZSdt2fnoYtowOy9P3tLTNeY/)\n\nThis section contains some reasoning why it is Discouraging things. The current\nIANA registry also contains such reasoning on the form of notes, but this section\ndoes not add to the notes. So now this inforation is splintered between RFC and\nRegistry. I think the easiest fix is to add these few reasons specified here\nas Note: to the IANA registry.\n\n\nNote that this registry states:\n\n        When this registry is modified, the YANG module\n        \"iana-tls-cipher-suite-algs\" [iana-tls-cipher-suite-algs] must\n        be updated as defined in [RFC9645].\n\nHas this happened or is it scheduled? If so who is the contact I can follow up with?\n\n\n- [x] Section 6 TLS Supported Groups - see #61\n\n        * Replace the registry range table note column for the 0-255,\n          512-65535 range with \"Unallocated\".\n\nThis makes no sense. That current line with its note reads:\n\n        0-255, 512-65535        Specification Required  Elliptic curve groups\n\nI understand that the note should remove the text \"Elliptic curve groups\",\nbut it makes no sense to add \"Unallocated\" because the range does have\nallocations in it. Maybe just instruct IANA to remove the note \"Elliptic\ncurve groups\" ?\n\n\n- [x] Section 11 TLS ClientCertificateTypes registry - see #61\n\nThe registry name is not \"TLS ClientCertificateTypes\" registry, but\n\"TLS ClientCertificateTypes Identifiers\" registry.",
+      "body": "- [x] Section 3 - See #61 \n\n        Setting a value to \"Y\" or \"D\" in the \"Recommended\" column requires\n        IETF Standards Action [RFC8126]. Any state transition to or from a\n        \"Y\" or \"D\" value requires IESG Approval.\n       \nIsn't this easier written as:\n\n        Setting a value to \"Y\" or \"D\" in the \"Recommended\" column requires\n        IETF Standards Action [RFC8126] or IESG Approval.\n\nThis appears in a number of sections in the document.\n\n- [x] Section 4 TLS ExtensionType Values - See #62 - Awaiting response from PW\n\n        Values with the first byte in the range 0-254 (decimal) are\n        assigned via Specification Required [RFC8126].  Values with the\n        first byte 255 (decimal) are reserved for Private Use [RFC8126].\n\nI'd rather not let IANA figure out decimal network order byte math. Or\nrequire everyone to do that math when checking the registry. Why not:\n\n        Values in the range 0-65279 are assigned via Specification Required\n        [RFC8126]. Values in the range 65280-65535 are reserved for Private\n        Use [RFC8126].\n\nAlso, this is not true for:\n\n        65281   renegotiation_info\n\nwhich is clearly not usable for Private Use. Maybe it makes sense to say:\n\n        Values in the range 0-65279 are assigned via Specification Required\n        [RFC8126]. Values in the range 65280-65295 are Reserved. Values in\n        the range 65296-65535 are reserved for Private Use [RFC8126].\n\nThis then leaves 0xff00-0xff0f for whatever the reason for 65281 was to be\nable to happen a few more times, and keep the private range valid without\nstrange exceptions.\n\n- [x] Section 5  TLS Cipher Suites Registry - see [email](https://mailarchive.ietf.org/arch/msg/tls/plubZSdt2fnoYtowOy9P3tLTNeY/)\n\nThis section contains some reasoning why it is Discouraging things. The current\nIANA registry also contains such reasoning on the form of notes, but this section\ndoes not add to the notes. So now this inforation is splintered between RFC and\nRegistry. I think the easiest fix is to add these few reasons specified here\nas Note: to the IANA registry.\n\n\nNote that this registry states:\n\n        When this registry is modified, the YANG module\n        \"iana-tls-cipher-suite-algs\" [iana-tls-cipher-suite-algs] must\n        be updated as defined in [RFC9645].\n\nHas this happened or is it scheduled? If so who is the contact I can follow up with?\n\n\n- [x] Section 6 TLS Supported Groups - see #61\n\n        * Replace the registry range table note column for the 0-255,\n          512-65535 range with \"Unallocated\".\n\nThis makes no sense. That current line with its note reads:\n\n        0-255, 512-65535        Specification Required  Elliptic curve groups\n\nI understand that the note should remove the text \"Elliptic curve groups\",\nbut it makes no sense to add \"Unallocated\" because the range does have\nallocations in it. Maybe just instruct IANA to remove the note \"Elliptic\ncurve groups\" ?\n\n\n- [x] Section 11 TLS ClientCertificateTypes registry - see #61\n\nThe registry name is not \"TLS ClientCertificateTypes\" registry, but\n\"TLS ClientCertificateTypes Identifiers\" registry.",
       "createdAt": "2025-03-07T18:00:49Z",
-      "updatedAt": "2025-03-10T13:09:59Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2025-03-11T19:03:19Z",
+      "closedAt": "2025-03-11T19:03:18Z",
+      "comments": [
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Close via #61 and #62.",
+          "createdAt": "2025-03-11T19:03:18Z",
+          "updatedAt": "2025-03-11T19:03:18Z"
+        }
+      ]
     }
   ],
   "pulls": [
@@ -2838,24 +2846,26 @@
       "id": "PR_kwDOHFJBYs6N2bbS",
       "title": "Addressing AD comments",
       "url": "https://github.com/tlswg/rfc8447bis/pull/61",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "Addressing #60. All but one.",
       "createdAt": "2025-03-08T02:48:44Z",
-      "updatedAt": "2025-03-10T13:19:07Z",
+      "updatedAt": "2025-03-11T15:13:52Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "71bcc7ff576403ff8dbdc63c3bc3a93c1ae75a26",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-pw-comments",
       "headRefOid": "26288d0bbba6c266ecdfb8e7928210315e1ff16c",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2025-03-11T15:13:51Z",
+      "mergedAt": "2025-03-11T15:13:51Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "236bc92708de584a852091deadb554fe98c07fca"
+      },
       "comments": [],
       "reviews": [
         {
@@ -3005,50 +3015,323 @@
       "id": "PR_kwDOHFJBYs6N_gWW",
       "title": "Addressing decimal",
       "url": "https://github.com/tlswg/rfc8447bis/pull/62",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "If Paul prefers the remove it option for his comments regarding the ranges.  We don't make any changes to them so we could delete them.",
       "createdAt": "2025-03-10T13:09:21Z",
-      "updatedAt": "2025-03-10T13:09:21Z",
+      "updatedAt": "2025-03-11T19:02:37Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
-      "baseRefOid": "71bcc7ff576403ff8dbdc63c3bc3a93c1ae75a26",
+      "baseRefOid": "236bc92708de584a852091deadb554fe98c07fca",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-decimal",
-      "headRefOid": "8f5bd47073bdfb2c4a0844f78b1b882bb8362030",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "dab1ad8ffe754aa48c3aad453fc6be37617a516c",
+      "closedAt": "2025-03-11T19:02:37Z",
+      "mergedAt": "2025-03-11T19:02:37Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "6c5846ad4c47757eddc294b56bcc28909fa27718"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6fZ4Ho",
+          "commit": {
+            "abbreviatedOid": "8f5bd47"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-11T12:49:54Z",
+          "updatedAt": "2025-03-11T12:49:54Z",
+          "comments": [
+            {
+              "originalPosition": 1,
+              "body": "```suggestion\r\n- Adjust the registration procedure related to setting the \u201cRecommended\u201d column as follows:\r\n```",
+              "createdAt": "2025-03-11T12:49:54Z",
+              "updatedAt": "2025-03-11T12:49:55Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs6fZ4gR",
+          "commit": {
+            "abbreviatedOid": "8f5bd47"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-11T12:50:12Z",
+          "updatedAt": "2025-03-11T12:50:12Z",
+          "comments": [
+            {
+              "originalPosition": 12,
+              "body": "```suggestion\r\n- Adjust the registration procedure related to setting the \u201cRecommended\u201d column as follows:\r\n```",
+              "createdAt": "2025-03-11T12:50:12Z",
+              "updatedAt": "2025-03-11T12:50:12Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs6fZ428",
+          "commit": {
+            "abbreviatedOid": "8f5bd47"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-11T12:50:30Z",
+          "updatedAt": "2025-03-11T12:50:31Z",
+          "comments": [
+            {
+              "originalPosition": 22,
+              "body": "```suggestion\r\n- Adjust the registration procedure related to setting the \u201cRecommended\u201d column as follows::\r\n```",
+              "createdAt": "2025-03-11T12:50:30Z",
+              "updatedAt": "2025-03-11T12:50:31Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs6fZ6CA",
+          "commit": {
+            "abbreviatedOid": "93dc753"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-11T12:51:44Z",
+          "updatedAt": "2025-03-11T12:51:44Z",
+          "comments": [
+            {
+              "originalPosition": 34,
+              "body": "```suggestion\r\n- Adjust the registration procedure related to setting the \u201cRecommended\u201d column as follows:\r\n```",
+              "createdAt": "2025-03-11T12:51:44Z",
+              "updatedAt": "2025-03-11T12:51:44Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs6fcinK",
+          "commit": {
+            "abbreviatedOid": "dab1ad8"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2025-03-11T15:29:48Z",
+          "updatedAt": "2025-03-11T15:29:48Z",
+          "comments": []
+        }
+      ]
     },
     {
       "number": 63,
       "id": "PR_kwDOHFJBYs6N_qGA",
       "title": "Spelling",
       "url": "https://github.com/tlswg/rfc8447bis/pull/63",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "Fixes some spelling errors.",
       "createdAt": "2025-03-10T13:26:04Z",
-      "updatedAt": "2025-03-10T13:26:04Z",
+      "updatedAt": "2025-03-11T19:02:50Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
-      "baseRefOid": "71bcc7ff576403ff8dbdc63c3bc3a93c1ae75a26",
+      "baseRefOid": "236bc92708de584a852091deadb554fe98c07fca",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-spelling",
-      "headRefOid": "22ad4b39936805a9a2e44124ae37ad7b2aaea6cc",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "c39488728209756710a3ad69ecc89c5220a23989",
+      "closedAt": "2025-03-11T19:02:50Z",
+      "mergedAt": "2025-03-11T19:02:50Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "cdaf8ecdd2e1701969b84ebfde37b602c7c1fc43"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6fch8B",
+          "commit": {
+            "abbreviatedOid": "c394887"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2025-03-11T15:29:17Z",
+          "updatedAt": "2025-03-11T15:29:17Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 64,
+      "id": "PR_kwDOHFJBYs6OOOe4",
+      "title": "Remove Tabs",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/64",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-03-11T19:19:46Z",
+      "updatedAt": "2025-03-11T19:31:15Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "cdaf8ecdd2e1701969b84ebfde37b602c7c1fc43",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-tab-removal",
+      "headRefOid": "dd352eeabd832fd66c35119e4c919e7a36c6bd4c",
+      "closedAt": "2025-03-11T19:31:15Z",
+      "mergedAt": "2025-03-11T19:31:15Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "6dc6b06e49bf6b5e4ca15d342bd531b53a3ccd3e"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6fflXR",
+          "commit": {
+            "abbreviatedOid": "dd352ee"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-11T19:20:12Z",
+          "updatedAt": "2025-03-11T19:20:12Z",
+          "comments": [
+            {
+              "originalPosition": 68,
+              "body": "```suggestion\r\n| 0x00,0x29 | TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5 | D |\r\n| 0x00,0x2A | TLS_KRB5_EXPORT_WITH_RC2_CBC_40_MD5 | D |\r\n```",
+              "createdAt": "2025-03-11T19:20:12Z",
+              "updatedAt": "2025-03-11T19:20:13Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 65,
+      "id": "PR_kwDOHFJBYs6OOUXI",
+      "title": "Make consistent \"Y\" to \"D\" text",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/65",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "A couple of places it was different.",
+      "createdAt": "2025-03-11T19:30:18Z",
+      "updatedAt": "2025-03-11T19:31:30Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "cdaf8ecdd2e1701969b84ebfde37b602c7c1fc43",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-more-AD-comments",
+      "headRefOid": "1562a307437238d37facb86f65ccc5d5502df0f6",
+      "closedAt": "2025-03-11T19:31:30Z",
+      "mergedAt": "2025-03-11T19:31:30Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "a5fe0f03ea403edc6b1b66c444f1a7d2ef007e77"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 66,
+      "id": "PR_kwDOHFJBYs6OOYRx",
+      "title": "More AD updates",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/66",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Missed one!",
+      "createdAt": "2025-03-11T19:37:53Z",
+      "updatedAt": "2025-03-11T19:38:20Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "a5fe0f03ea403edc6b1b66c444f1a7d2ef007e77",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-more-AD-comments-2",
+      "headRefOid": "698570aab1500dfb2913e334870ffb574149a2a8",
+      "closedAt": "2025-03-11T19:38:20Z",
+      "mergedAt": "2025-03-11T19:38:20Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "1defacf9e478ebdf1629516f794bc1d6b4169b48"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 67,
+      "id": "PR_kwDOHFJBYs6OOZbO",
+      "title": "Add submissionType",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/67",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-03-11T19:40:12Z",
+      "updatedAt": "2025-03-12T00:50:35Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "1defacf9e478ebdf1629516f794bc1d6b4169b48",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-submission-type",
+      "headRefOid": "188ab0911b9fd17227adbfd5a93fe6e8521bfe05",
+      "closedAt": "2025-03-12T00:50:35Z",
+      "mergedAt": "2025-03-12T00:50:35Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "7a231d2dcdcac94b9a9e7d9bfdb659790a545624"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 68,
+      "id": "PR_kwDOHFJBYs6OQUVT",
+      "title": "Fix {{}}",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/68",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-03-12T00:49:56Z",
+      "updatedAt": "2025-03-12T00:50:25Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "1defacf9e478ebdf1629516f794bc1d6b4169b48",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-fix-parenthesis",
+      "headRefOid": "8eaa2773b288bf9c694afd91d5cec2484378f3d4",
+      "closedAt": "2025-03-12T00:50:25Z",
+      "mergedAt": "2025-03-12T00:50:25Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "0cae7bf4587b5c06b0f21857d5565b78e236435d"
+      },
       "comments": [],
       "reviews": []
     }
