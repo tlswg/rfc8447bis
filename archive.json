@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-03-13T01:52:40.722382+00:00",
+  "timestamp": "2025-03-16T01:58:18.083513+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -331,6 +331,22 @@
           "updatedAt": "2025-03-11T19:03:18Z"
         }
       ]
+    },
+    {
+      "number": 69,
+      "id": "I_kwDOHFJBYs6uJOL6",
+      "title": "Address SecDir review comments",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/69",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "From [email](https://mailarchive.ietf.org/arch/msg/tls/J7x5Jnw1_ZdqY2UqHRRFJVVILdM/):\n\n    Reviewer: Benjamin Schwartz\n    Review result: Ready\n    \n    Nit: \"leave an items\", lower case \"*  update the note on the role ...\".\n    \n    Use of BCP 14 \"IANA SHALL\" seems odd, but I assume IANA process experts have\n    reviewed this formulation.\n\n    I wish this document would populate the \"Comment\" column on some of the\n    discouraged entries, or at least note the reasoning in the body of the\n    document.  As it stands, it seems that a reader could find a discouraged entry\n    in these registries, read the Comment column, read all the linked reference\n    documents (including this one), and still find no explanation for why it is\n    discouraged.",
+      "createdAt": "2025-03-15T02:55:22Z",
+      "updatedAt": "2025-03-15T02:55:22Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
   "pulls": [
@@ -3332,6 +3348,32 @@
       "mergeCommit": {
         "oid": "0cae7bf4587b5c06b0f21857d5565b78e236435d"
       },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 70,
+      "id": "PR_kwDOHFJBYs6Ov_gF",
+      "title": "Fix nits from SecDir Review",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/70",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Partially addressing #69.",
+      "createdAt": "2025-03-15T02:59:50Z",
+      "updatedAt": "2025-03-15T02:59:51Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "7a231d2dcdcac94b9a9e7d9bfdb659790a545624",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-secdir-nits",
+      "headRefOid": "880d14e0dbdf6fe51a25c9f3f9d60c09f60cfa7c",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
       "comments": [],
       "reviews": []
     }
