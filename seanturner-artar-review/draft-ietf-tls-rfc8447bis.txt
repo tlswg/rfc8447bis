@@ -161,7 +161,8 @@ Table of Contents
       has not been through the IETF consensus process, has limited
       applicability, or is intended only for specific use cases.  If the
       "Recommended" column is set to "D" the item is discouraged and
-      SHOULD NOT or MUST NOT be used.
+      SHOULD NOT or MUST NOT be used, depending upon the situation;
+      consult the item’s references for clarity.
 
 4.  TLS ExtensionType Values
 
