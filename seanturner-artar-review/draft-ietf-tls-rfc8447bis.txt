@@ -491,7 +491,7 @@ Table of Contents
 
    *  Update note on the Recommended column with text in Section 3.1.
 
-   *  update the note on the role of the expert reviewer as follows.
+   *  Update the note on the role of the expert reviewer as follows.
 
    Note:  The role of the designated expert is described in [RFC8447],
       Section 17.  Even though this registry does not require a
