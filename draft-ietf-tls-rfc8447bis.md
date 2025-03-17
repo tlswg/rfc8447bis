@@ -99,8 +99,10 @@ D:
 : Indicates that the item is discouraged. This marking could be used to identify
     mechanisms that might result in problems if they are used, such as
     a weak cryptographic algorithm or a mechanism that might cause
-    interoperability problems in deployment. Implementers SHOULD
-    consult the linked references associated with the item to
+    interoperability problems in deployment. When marking a registry entry as
+    “D”, either the References or the Comments Column MUST include sufficient
+    information to determine why the marking has been applied. Implementers
+    SHOULD consult the linked references associated with the item to
     determine the conditions under which it SHOULD NOT or MUST NOT be used.
 
 Setting a value to "Y" or "D" or transitioning the value from "Y" or "D" in the "Recommended" column requires
@@ -123,6 +125,7 @@ been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.  If the "Recommended" column
 is set to "D" the item is discouraged and SHOULD NOT or MUST NOT be used,
 depending upon the situation; consult the item’s references for clarity.
+
 
 # TLS ExtensionType Values
 
@@ -152,6 +155,11 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 
 - Update note on the Recommended column with text in {{rec-note}}.
 
+- For the truncated_hmac, add the following link to Reference column:
+https://www.iacr.org/archive/asiacrypt2011/70730368/70730368.pdf
+
+- For the two Reserved values above, add the following link in the Reference column:
+https://mailarchive.ietf.org/arch/msg/tls-reg-review/5BD62HBFjo_AsW-Y8ohVuWEe1gI/
 
 
 # TLS Cipher Suites Registry
@@ -280,7 +288,6 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 | 0xC0,0xB4 | TLS_SHA256_SHA256 | D |
 | 0xC0,0xB5 | TLS_SHA384_SHA384 | D |
 
-
 - Update note on the Recommended column with text in {{rec-note}}.
 
 
@@ -325,6 +332,11 @@ IANA SHALL update the TLS Supported Groups registry as follows:
 
 - Remove the "Elliptic curve groups" note from the registration
   procedures table.
+
+- For each of the entries above, add the following link to the
+  Comment column:
+https://datatracker.ietf.org/meeting/118/materials/slides-118-tls-rfc8447bis-00
+
 
 # TLS Exporter Labels Registry
 
