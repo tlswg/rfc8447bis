@@ -92,7 +92,7 @@ N:
     the IETF and that the IETF has made no statement about the
     suitability of the associated mechanism. This does not necessarily
     mean that the mechanism is flawed, only that no consensus exists.
-    The IETF might have consensus to leave an items marked as "N" on
+    The IETF might have consensus to leave an item marked as "N" on
     the basis of it having limited applicability or usage constraints.
 
 D:
@@ -346,7 +346,7 @@ IANA SHALL update the TLS Exporter Labels Registry as follows:
 
 - Update note on the Recommended column with text in {{rec-note}}.
 
-- update the note on the role of the expert reviewer as follows.
+- Update the note on the role of the expert reviewer as follows.
 
 Note:
 : The role of the designated expert is described in {{RFC8447, Section 17}}.
