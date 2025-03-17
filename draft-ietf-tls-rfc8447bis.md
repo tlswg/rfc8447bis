@@ -93,7 +93,7 @@ N:
     suitability of the associated mechanism. This does not necessarily
     mean that the mechanism is flawed, only that no consensus exists.
     The IETF might have consensus to leave an items marked as "N" on
-    the basis of it having limited applicability or usage constraints.
+    the basis of its having limited applicability or usage constraints.
 
 D:
 : Indicates that the item is discouraged. This marking could be used to identify
