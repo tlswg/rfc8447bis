@@ -6,8 +6,8 @@ Transport Layer Security                                      J. Salowey
 Internet-Draft                                                    Venafi
 Updates: 3749, 5077, 4680, 5246, 5705, 5878,                   S. Turner
          6520, 7301, 8447 (if approved)                            sn3rd
-Intended status: Standards Track                           12 March 2025
-Expires: 13 September 2025
+Intended status: Standards Track                           17 March 2025
+Expires: 18 September 2025
 
 
                  IANA Registry Updates for TLS and DTLS
@@ -53,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 13 September 2025.
+   This Internet-Draft will expire on 18 September 2025.
 
 Copyright Notice
 
@@ -132,7 +132,7 @@ Table of Contents
       that the IETF has made no statement about the suitability of the
       associated mechanism.  This does not necessarily mean that the
       mechanism is flawed, only that no consensus exists.  The IETF
-      might have consensus to leave an items marked as "N" on the basis
+      might have consensus to leave an item marked as "N" on the basis
       of it having limited applicability or usage constraints.
 
    D:  Indicates that the item is discouraged.  This marking could be
@@ -490,7 +490,7 @@ Table of Contents
 
    *  Update note on the Recommended column with text in Section 3.1.
 
-   *  update the note on the role of the expert reviewer as follows.
+   *  Update the note on the role of the expert reviewer as follows.
 
    Note:  The role of the designated expert is described in [RFC8447],
       Section 17.  Even though this registry does not require a
