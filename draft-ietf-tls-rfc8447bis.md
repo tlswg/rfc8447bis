@@ -92,8 +92,8 @@ N:
     the IETF and that the IETF has made no statement about the
     suitability of the associated mechanism. This does not necessarily
     mean that the mechanism is flawed, only that no consensus exists.
-    The IETF might have consensus to leave an item marked as "N" on
-    the basis of it having limited applicability or usage constraints.
+    The IETF might have consensus to leave an items marked as "N" on
+    the basis of its having limited applicability or usage constraints.
 
 D:
 : Indicates that the item is discouraged. This marking could be used to identify
@@ -121,7 +121,8 @@ Note:
 that it is flawed; rather, it indicates that the item either has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.  If the "Recommended" column
-is set to "D" the item is discouraged and SHOULD NOT or MUST NOT be used.
+is set to "D" the item is discouraged and SHOULD NOT or MUST NOT be used,
+depending upon the situation; consult the item’s references for clarity.
 
 # TLS ExtensionType Values
 
