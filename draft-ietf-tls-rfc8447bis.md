@@ -121,7 +121,8 @@ Note:
 that it is flawed; rather, it indicates that the item either has not
 been through the IETF consensus process, has limited applicability, or
 is intended only for specific use cases.  If the "Recommended" column
-is set to "D" the item is discouraged and SHOULD NOT or MUST NOT be used.
+is set to "D" the item is discouraged and SHOULD NOT or MUST NOT be used,
+depending upon the situation; consult the item’s references for clarity.
 
 # TLS ExtensionType Values
 
