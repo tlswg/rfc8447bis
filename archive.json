@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-03-16T01:58:18.083513+00:00",
+  "timestamp": "2025-03-18T01:52:59.535678+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -346,6 +346,22 @@
       "createdAt": "2025-03-15T02:55:22Z",
       "updatedAt": "2025-03-15T02:55:22Z",
       "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 71,
+      "id": "I_kwDOHFJBYs6uRFgR",
+      "title": "Address ArtArt review comments",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/71",
+      "state": "CLOSED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "From [email](https://mailarchive.ietf.org/arch/msg/tls/vx8Dh3yBfsAQ56TGNGdUKNWT2hM/):\n\n    Reviewer: Barry Leiba\n    Review result: Ready with Nits\n    \n    This document is in good shape and does what it needs to do.  I have just one\n    very minor substantive comment, and two very nitty nits:\n    \n    \u2014 Section 3.1 \u2014\n    \n      If the\n      \"Recommended\" column is set to \"D\" the item is discouraged and\n      SHOULD NOT or MUST NOT be used.\n\n    That seems a little odd, and I wonder whether some readers of the note (who\n    don\u2019t look here for the definition of \u201cD\u201d) might be confused about whether it\u2019s\n    SHOULD NOT or MUST NOT.  Perhaps this?:\n    \n    NEW-1\n    If the \"Recommended\" column is set to \"D\" the item is discouraged and SHOULD\n    NOT or MUST NOT be used; consult the item\u2019s references to understand the\n    situation. END\n    \n    \u2026or maybe\u2026\n    \n    NEW-2\n    If the \"Recommended\" column is set to \"D\" the item is discouraged and SHOULD\n    NOT or MUST NOT be used, depending upon the situation; consult the item\u2019s\n    references for clarity. END\n    \n    \u2014 Section 3 \u2014\n    \n    Nit in the definition of \u201cN\u201d: \u201cleave an items\u201d -> \u201cleave an item\u201d.\n    Also \u201cbasis of it having\u201d -> \u201cbasis of its having\u201d, as standard practice uses\n    possessive pronouns with gerunds.",
+      "createdAt": "2025-03-17T04:30:42Z",
+      "updatedAt": "2025-03-17T07:45:12Z",
+      "closedAt": "2025-03-17T07:45:12Z",
       "comments": []
     }
   ],
@@ -3356,20 +3372,104 @@
       "id": "PR_kwDOHFJBYs6Ov_gF",
       "title": "Fix nits from SecDir Review",
       "url": "https://github.com/tlswg/rfc8447bis/pull/70",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "Partially addressing #69.",
       "createdAt": "2025-03-15T02:59:50Z",
-      "updatedAt": "2025-03-15T02:59:51Z",
+      "updatedAt": "2025-03-17T07:41:50Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "7a231d2dcdcac94b9a9e7d9bfdb659790a545624",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-secdir-nits",
       "headRefOid": "880d14e0dbdf6fe51a25c9f3f9d60c09f60cfa7c",
+      "closedAt": "2025-03-17T07:41:50Z",
+      "mergedAt": "2025-03-17T07:41:50Z",
+      "mergedBy": "jsalowey",
+      "mergeCommit": {
+        "oid": "5a2725a0485135bf4a2557ce85fdfd7bd3a6dff5"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6gTO2y",
+          "commit": {
+            "abbreviatedOid": "880d14e"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2025-03-17T07:41:33Z",
+          "updatedAt": "2025-03-17T07:41:33Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 72,
+      "id": "PR_kwDOHFJBYs6O2k3-",
+      "title": "Fix Nits from ArtArt Review",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/72",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #71.",
+      "createdAt": "2025-03-17T04:33:33Z",
+      "updatedAt": "2025-03-17T07:45:11Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "5a2725a0485135bf4a2557ce85fdfd7bd3a6dff5",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-artar-review",
+      "headRefOid": "20da421499355052690471e366f779baa73bf637",
+      "closedAt": "2025-03-17T07:45:11Z",
+      "mergedAt": "2025-03-17T07:45:11Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "22a6c9f3e8aa9aa2353656e1a374875843f6c60a"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6gTOC-",
+          "commit": {
+            "abbreviatedOid": "df8e3a1"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2025-03-17T07:39:53Z",
+          "updatedAt": "2025-03-17T07:39:53Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 73,
+      "id": "PR_kwDOHFJBYs6O5ubF",
+      "title": "Address SecDir comments",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/73",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #69.",
+      "createdAt": "2025-03-17T10:54:06Z",
+      "updatedAt": "2025-03-17T10:54:07Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "22a6c9f3e8aa9aa2353656e1a374875843f6c60a",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-secdir-discourage-reasons",
+      "headRefOid": "5d67f5cc0147fc7c947fa56e147b8efeb84b68e0",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
