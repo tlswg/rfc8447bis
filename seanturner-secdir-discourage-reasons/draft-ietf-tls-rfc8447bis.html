@@ -24,7 +24,7 @@ adds a "Comments" column to all active registries.
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
-    Jinja2 3.1.5
+    Jinja2 3.1.6
     lxml 5.3.0
     platformdirs 4.3.6
     pycountry 24.6.1
@@ -1054,7 +1054,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Salowey &amp; Turner</td>
-<td class="center">Expires 18 September 2025</td>
+<td class="center">Expires 20 September 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1070,12 +1070,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="https://www.rfc-editor.org/rfc/rfc3749" class="eref">3749</a>, <a href="https://www.rfc-editor.org/rfc/rfc5077" class="eref">5077</a>, <a href="https://www.rfc-editor.org/rfc/rfc4680" class="eref">4680</a>, <a href="https://www.rfc-editor.org/rfc/rfc5246" class="eref">5246</a>, <a href="https://www.rfc-editor.org/rfc/rfc5705" class="eref">5705</a>, <a href="https://www.rfc-editor.org/rfc/rfc5878" class="eref">5878</a>, <a href="https://www.rfc-editor.org/rfc/rfc6520" class="eref">6520</a>, <a href="https://www.rfc-editor.org/rfc/rfc7301" class="eref">7301</a>, <a href="https://www.rfc-editor.org/rfc/rfc8447" class="eref">8447</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-03-17" class="published">17 March 2025</time>
+<time datetime="2025-03-19" class="published">19 March 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-09-18">18 September 2025</time></dd>
+<dd class="expires"><time datetime="2025-09-20">20 September 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1133,7 +1133,7 @@ adds a "Comments" column to all active registries.<a href="#section-abstract-1" 
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 18 September 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 20 September 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1425,7 +1425,7 @@ vulnerable to man-in-the-middle attacks and are deprecated in TLS 1.1
 <span>[<a href="#RFC4346" class="cite xref">RFC4346</a>]</span>.<a href="#section-5-4" class="pilcrow">¶</a></p>
 <p id="section-5-5">RC4 is a weak cipher and is deprecated in <span>[<a href="#RFC7465" class="cite xref">RFC7465</a>]</span>.<a href="#section-5-5" class="pilcrow">¶</a></p>
 <p id="section-5-6">DES and IDEA are not considered secure for general use and are deprecated
-in <span>[<a href="#RFC5469" class="cite xref">RFC5469</a>]</span>.<a href="#section-5-6" class="pilcrow">¶</a></p>
+in <span>[<a href="#RFC5469" class="cite xref">RFC5469</a>]</span>. Nor is MD5 or SHA-1 and these are deprecated in <span>[<a href="#RFC9155" class="cite xref">RFC9155</a>]</span>.<a href="#section-5-6" class="pilcrow">¶</a></p>
 <p id="section-5-7">In order to reflect the changes in the Recommended column allocation,
 IANA <span class="bcp14">SHALL</span> update the TLS ExtensionType Values registry as follows:<a href="#section-5-7" class="pilcrow">¶</a></p>
 <ul class="normal">
@@ -1461,116 +1461,6 @@ make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcro
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x01</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_NULL_MD5</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x02</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_NULL_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x03</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_EXPORT_WITH_RC4_40_MD5</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x04</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_RC4_128_MD5</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x05</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_RC4_128_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x06</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x07</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_IDEA_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x08</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_EXPORT_WITH_DES40_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x09</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_DES_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x0B</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x0C</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_DSS_WITH_DES_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x0E</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x0F</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_RSA_WITH_DES_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x11</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x12</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_DSS_WITH_DES_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x14</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x15</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_RSA_WITH_DES_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x17</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_EXPORT_WITH_RC4_40_MD5</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x18</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_RC4_128_MD5</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x19</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x1A</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_DES_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x1B</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_3DES_EDE_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">0x00,0x1E</td>
             <td class="text-left" rowspan="1" colspan="1">TLS_KRB5_WITH_DES_CBC_SHA</td>
@@ -1637,78 +1527,8 @@ make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcro
             <td class="text-right" rowspan="1" colspan="1">D</td>
           </tr>
           <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x2D</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_PSK_WITH_NULL_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x2E</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_PSK_WITH_NULL_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x34</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_128_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x3A</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_256_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x3B</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_NULL_SHA256</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x46</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x6C</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_128_CBC_SHA256</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x6D</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_256_CBC_SHA256</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x89</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
             <td class="text-left" rowspan="1" colspan="1">0x00,0x8A</td>
             <td class="text-left" rowspan="1" colspan="1">TLS_PSK_WITH_RC4_128_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x8E</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_PSK_WITH_RC4_128_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x92</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_PSK_WITH_RC4_128_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0x9B</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_SEED_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0xA6</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_128_GCM_SHA256</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0xA7</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_256_GCM_SHA384</td>
             <td class="text-right" rowspan="1" colspan="1">D</td>
           </tr>
           <tr>
@@ -1722,46 +1542,6 @@ make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcro
             <td class="text-right" rowspan="1" colspan="1">D</td>
           </tr>
           <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0xB4</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_PSK_WITH_NULL_SHA256</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0xB5</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_PSK_WITH_NULL_SHA384</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0xB8</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_PSK_WITH_NULL_SHA256</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0xB9</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_PSK_WITH_NULL_SHA384</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0xBF</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0x00,0xC5</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x01</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_ECDSA_WITH_NULL_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x02</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_ECDSA_WITH_RC4_128_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
             <td class="text-left" rowspan="1" colspan="1">0xC0,0x06</td>
             <td class="text-left" rowspan="1" colspan="1">TLS_ECDHE_ECDSA_WITH_NULL_SHA</td>
             <td class="text-right" rowspan="1" colspan="1">D</td>
@@ -1772,16 +1552,6 @@ make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcro
             <td class="text-right" rowspan="1" colspan="1">D</td>
           </tr>
           <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x0B</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_RSA_WITH_NULL_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x0C</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_RSA_WITH_RC4_128_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
             <td class="text-left" rowspan="1" colspan="1">0xC0,0x10</td>
             <td class="text-left" rowspan="1" colspan="1">TLS_ECDHE_RSA_WITH_NULL_SHA</td>
             <td class="text-right" rowspan="1" colspan="1">D</td>
@@ -1789,31 +1559,6 @@ make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcro
           <tr>
             <td class="text-left" rowspan="1" colspan="1">0xC0,0x11</td>
             <td class="text-left" rowspan="1" colspan="1">TLS_ECDHE_RSA_WITH_RC4_128_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x15</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_anon_WITH_NULL_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x16</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_anon_WITH_RC4_128_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x17</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x18</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_anon_WITH_AES_128_CBC_SHA</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x19</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_anon_WITH_AES_256_CBC_SHA</td>
             <td class="text-right" rowspan="1" colspan="1">D</td>
           </tr>
           <tr>
@@ -1837,36 +1582,6 @@ make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcro
             <td class="text-right" rowspan="1" colspan="1">D</td>
           </tr>
           <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x46</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_ARIA_128_CBC_SHA256</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x47</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_ARIA_256_CBC_SHA384</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x5A</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_ARIA_128_GCM_SHA256</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x5B</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_ARIA_256_GCM_SHA384</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x84</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xC0,0x85</td>
-            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_256_GCM_SHA384</td>
-            <td class="text-right" rowspan="1" colspan="1">D</td>
-          </tr>
-          <tr>
             <td class="text-left" rowspan="1" colspan="1">0xC0,0xB4</td>
             <td class="text-left" rowspan="1" colspan="1">TLS_SHA256_SHA256</td>
             <td class="text-right" rowspan="1" colspan="1">D</td>
@@ -1882,7 +1597,333 @@ make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcro
 <li class="normal" id="section-5-12.1">
           <p id="section-5-12.1.1">Update note on the Recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-5-12.1.1" class="pilcrow">¶</a></p>
 </li>
+        <li class="normal" id="section-5-12.2">
+          <p id="section-5-12.2.1"><span>[<a href="#I-D.ietf-tls-deprecate-obsolete-kex" class="cite xref">I-D.ietf-tls-deprecate-obsolete-kex</a>]</span> sets the Recommended column
+for the following cipher suites to "D". This document adds additional
+references to indicate why the cipher suites are marked as "D".<a href="#section-5-12.2.1" class="pilcrow">¶</a></p>
+</li>
       </ul>
+<aside id="section-5-13">
+        <p id="section-5-13.1">RFC Editor NOTE: Replace [ThisRFC] in the table that follows with the
+  eventual RFC #.<a href="#section-5-13.1" class="pilcrow">¶</a></p>
+</aside>
+<table class="center" id="table-3">
+        <caption><a href="#table-3" class="selfRef">Table 3</a></caption>
+<thead>
+          <tr>
+            <th class="text-left" rowspan="1" colspan="1">Value</th>
+            <th class="text-left" rowspan="1" colspan="1">Cipher Suite Name</th>
+            <th class="text-right" rowspan="1" colspan="1">Reference</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x01</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_NULL_MD5</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x02</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_NULL_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x03</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_EXPORT_WITH_RC4_40_MD5</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x04</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_RC4_128_MD5</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x05</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_RC4_128_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x06</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x07</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_IDEA_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x08</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_EXPORT_WITH_DES40_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x09</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_DES_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x0B</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x0C</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_DSS_WITH_DES_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x0E</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x0F</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_RSA_WITH_DES_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x0B</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x0C</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_DSS_WITH_DES_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x0E</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x0F</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_RSA_WITH_DES_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x11</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x12</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_DSS_WITH_DES_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x14</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x15</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_RSA_WITH_DES_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x17</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_EXPORT_WITH_RC4_40_MD5</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x18</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_RC4_128_MD5</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x19</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x1A</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_DES_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x1B</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_3DES_EDE_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x2D</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_PSK_WITH_NULL_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x2E</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_PSK_WITH_NULL_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x34</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_128_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x3A</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_256_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x3B</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_WITH_NULL_SHA256</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x46</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x6C</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_128_CBC_SHA256</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x6D</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_256_CBC_SHA256</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x89</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x8E</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_PSK_WITH_RC4_128_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x92</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_PSK_WITH_RC4_128_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0xB4</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_PSK_WITH_NULL_SHA256</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0xB5</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DHE_PSK_WITH_NULL_SHA384</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0xB8</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_PSK_WITH_NULL_SHA256</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0xB9</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_RSA_PSK_WITH_NULL_SHA384</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0x9B</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_SEED_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0xA6</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_128_GCM_SHA256</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0xA7</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_AES_256_GCM_SHA384</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0xBF</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0x00,0xC5</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x01</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_ECDSA_WITH_NULL_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x02</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_ECDSA_WITH_RC4_128_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x0B</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_RSA_WITH_NULL_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x0C</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_RSA_WITH_RC4_128_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x15</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_anon_WITH_NULL_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x16</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_anon_WITH_RC4_128_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x17</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x18</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_anon_WITH_AES_128_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x19</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_ECDH_anon_WITH_AES_256_CBC_SHA</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x46</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_ARIA_128_CBC_SHA256</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x47</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_ARIA_256_CBC_SHA384</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x5A</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_ARIA_128_GCM_SHA256</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x5B</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_ARIA_256_GCM_SHA384</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x84</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">0xC0,0x85</td>
+            <td class="text-left" rowspan="1" colspan="1">TLS_DH_anon_WITH_CAMELLIA_256_GCM_SHA384</td>
+            <td class="text-right" rowspan="1" colspan="1">[ThisRFC]</td>
+          </tr>
+        </tbody>
+      </table>
 </section>
 </div>
 <div id="tls-supported-groups">
@@ -1914,8 +1955,8 @@ keep their existing "Y" and "N" entries except for the entries in following tabl
 A reference to this document <span class="bcp14">SHALL</span> be added to these entries.<a href="#section-6-4.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
-<table class="center" id="table-3">
-        <caption><a href="#table-3" class="selfRef">Table 3</a></caption>
+<table class="center" id="table-4">
+        <caption><a href="#table-4" class="selfRef">Table 4</a></caption>
 <thead>
           <tr>
             <th class="text-left" rowspan="1" colspan="1">Value</th>
@@ -2135,8 +2176,8 @@ registry as follows:<a href="#section-9-1" class="pilcrow">¶</a></p>
 as follows:<a href="#section-9-4.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
-<table class="center" id="table-4">
-        <caption><a href="#table-4" class="selfRef">Table 4</a></caption>
+<table class="center" id="table-5">
+        <caption><a href="#table-5" class="selfRef">Table 5</a></caption>
 <thead>
           <tr>
             <th class="text-left" rowspan="1" colspan="1">Value</th>
@@ -2224,8 +2265,8 @@ registry as follows:<a href="#section-10-1" class="pilcrow">¶</a></p>
 column as follows:<a href="#section-10-4.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
-<table class="center" id="table-5">
-        <caption><a href="#table-5" class="selfRef">Table 5</a></caption>
+<table class="center" id="table-6">
+        <caption><a href="#table-6" class="selfRef">Table 6</a></caption>
 <thead>
           <tr>
             <th class="text-left" rowspan="1" colspan="1">Value</th>
@@ -2313,8 +2354,8 @@ registry as follows:<a href="#section-11-1" class="pilcrow">¶</a></p>
 column as follows:<a href="#section-11-4.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
-<table class="center" id="table-6">
-        <caption><a href="#table-6" class="selfRef">Table 6</a></caption>
+<table class="center" id="table-7">
+        <caption><a href="#table-7" class="selfRef">Table 7</a></caption>
 <thead>
           <tr>
             <th class="text-left" rowspan="1" colspan="1">Value</th>
@@ -2545,6 +2586,10 @@ endorsement of the cipher suite, extension, supported group, etc.<a href="#secti
 <a href="#section-18" class="section-number selfRef">18. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
       </h2>
 <dl class="references">
+<dt id="I-D.ietf-tls-deprecate-obsolete-kex">[I-D.ietf-tls-deprecate-obsolete-kex]</dt>
+      <dd>
+<span class="refAuthor">Bartle, C.</span> and <span class="refAuthor">N. Aviram</span>, <span class="refTitle">"Deprecating Obsolete Key Exchange Methods in TLS 1.2"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-tls-deprecate-obsolete-kex-05</span>, <time datetime="2024-09-03" class="refDate">3 September 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-tls-deprecate-obsolete-kex-05">https://datatracker.ietf.org/doc/html/draft-ietf-tls-deprecate-obsolete-kex-05</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="RFC2119">[RFC2119]</dt>
       <dd>
 <span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"Key words for use in RFCs to Indicate Requirement Levels"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 2119</span>, <span class="seriesInfo">DOI 10.17487/RFC2119</span>, <time datetime="1997-03" class="refDate">March 1997</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a>&gt;</span>. </dd>
@@ -2574,8 +2619,12 @@ endorsement of the cipher suite, extension, supported group, etc.<a href="#secti
 <span class="refAuthor">Salowey, J.</span> and <span class="refAuthor">S. Turner</span>, <span class="refTitle">"IANA Registry Updates for TLS and DTLS"</span>, <span class="seriesInfo">RFC 8447</span>, <span class="seriesInfo">DOI 10.17487/RFC8447</span>, <time datetime="2018-08" class="refDate">August 2018</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8447">https://www.rfc-editor.org/rfc/rfc8447</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8996">[RFC8996]</dt>
-    <dd>
+      <dd>
 <span class="refAuthor">Moriarty, K.</span> and <span class="refAuthor">S. Farrell</span>, <span class="refTitle">"Deprecating TLS 1.0 and TLS 1.1"</span>, <span class="seriesInfo">BCP 195</span>, <span class="seriesInfo">RFC 8996</span>, <span class="seriesInfo">DOI 10.17487/RFC8996</span>, <time datetime="2021-03" class="refDate">March 2021</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8996">https://www.rfc-editor.org/rfc/rfc8996</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC9155">[RFC9155]</dt>
+    <dd>
+<span class="refAuthor">Velvindron, L.</span>, <span class="refAuthor">Moriarty, K.</span>, and <span class="refAuthor">A. Ghedini</span>, <span class="refTitle">"Deprecating MD5 and SHA-1 Signature Hashes in TLS 1.2 and DTLS 1.2"</span>, <span class="seriesInfo">RFC 9155</span>, <span class="seriesInfo">DOI 10.17487/RFC9155</span>, <time datetime="2021-12" class="refDate">December 2021</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc9155">https://www.rfc-editor.org/rfc/rfc9155</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
