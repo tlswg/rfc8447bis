@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-03-18T01:52:59.535678+00:00",
+  "timestamp": "2025-03-20T01:52:08.738799+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -3463,17 +3463,45 @@
       "labels": [],
       "body": "Closes #69.",
       "createdAt": "2025-03-17T10:54:06Z",
-      "updatedAt": "2025-03-17T10:54:07Z",
+      "updatedAt": "2025-03-19T07:31:30Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "22a6c9f3e8aa9aa2353656e1a374875843f6c60a",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-secdir-discourage-reasons",
-      "headRefOid": "5d67f5cc0147fc7c947fa56e147b8efeb84b68e0",
+      "headRefOid": "a923a3e0764000b752bd000a75f9869e38569add",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 74,
+      "id": "PR_kwDOHFJBYs6POQKp",
+      "title": "Add deprecation rationale for Algs",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/74",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-03-19T07:30:48Z",
+      "updatedAt": "2025-03-19T07:31:29Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "seanturner-secdir-discourage-reasons",
+      "baseRefOid": "5d67f5cc0147fc7c947fa56e147b8efeb84b68e0",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-dep-algs",
+      "headRefOid": "881a3c79f13c19d4b6d1b394318e5b0929782629",
+      "closedAt": "2025-03-19T07:31:29Z",
+      "mergedAt": "2025-03-19T07:31:29Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "a923a3e0764000b752bd000a75f9869e38569add"
+      },
       "comments": [],
       "reviews": []
     }
