@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-03-23T01:59:29.670612+00:00",
+  "timestamp": "2025-03-25T01:54:39.653222+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -3463,7 +3463,7 @@
       "labels": [],
       "body": "Closes #69.",
       "createdAt": "2025-03-17T10:54:06Z",
-      "updatedAt": "2025-03-19T07:31:30Z",
+      "updatedAt": "2025-03-23T07:47:03Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "22a6c9f3e8aa9aa2353656e1a374875843f6c60a",
@@ -3475,7 +3475,28 @@
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6hcDCM",
+          "commit": {
+            "abbreviatedOid": "a923a3e"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-03-23T07:47:02Z",
+          "updatedAt": "2025-03-23T07:47:03Z",
+          "comments": [
+            {
+              "originalPosition": 138,
+              "body": "Should this column reference both obsolete keyex and this doc?  [ThisRFC],[ObsoleteKeyxRFC]\r\n\r\nMaybe just change the Replace[ThisRFC] with the RFC numbers for this document and the ietf-tls-deprecate-obsolete-kex document",
+              "createdAt": "2025-03-23T07:47:03Z",
+              "updatedAt": "2025-03-23T07:47:03Z"
+            }
+          ]
+        }
+      ]
     },
     {
       "number": 74,
