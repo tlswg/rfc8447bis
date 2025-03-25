@@ -6,8 +6,8 @@ Transport Layer Security                                      J. Salowey
 Internet-Draft                                                    Venafi
 Updates: 3749, 5077, 4680, 5246, 5705, 5878,                   S. Turner
          6520, 7301, 8447 (if approved)                            sn3rd
-Intended status: Standards Track                           19 March 2025
-Expires: 20 September 2025
+Intended status: Standards Track                           25 March 2025
+Expires: 26 September 2025
 
 
                  IANA Registry Updates for TLS and DTLS
@@ -53,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 September 2025.
+   This Internet-Draft will expire on 26 September 2025.
 
 Copyright Notice
 
@@ -316,7 +316,8 @@ Table of Contents
       as "D".
 
       |  RFC Editor NOTE: Replace [ThisRFC] in the table that follows
-      |  with the eventual RFC #.
+      |  with the RFCs for this document and
+      |  [I-D.ietf-tls-deprecate-obsolete-kex].
 
    +===========+==========================================+===========+
    | Value     | Cipher Suite Name                        | Reference |
