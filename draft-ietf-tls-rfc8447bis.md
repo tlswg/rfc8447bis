@@ -239,7 +239,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 
 <aside markdown="block">
   RFC Editor NOTE: Replace [ThisRFC] in the table that follows with the
-  eventual RFC #.
+  RFCs for this document and {{I-D.ietf-tls-deprecate-obsolete-kex}}.
 </aside>
 
 | Value | Cipher Suite Name                            | Reference |
