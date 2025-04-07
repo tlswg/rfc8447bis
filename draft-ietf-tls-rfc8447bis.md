@@ -43,7 +43,8 @@ informative:
 This document updates the changes to TLS and DTLS IANA registries
 made in RFC 8447. It adds a new value "D" for discouraged
 to the Recommended column of the selected TLS registries and
-adds a "Comments" column to all active registries.
+adds a "Comments" column to all active registries that do not
+already have a "Comments" column.
 
 This document updates the following RFCs:
 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447.
@@ -74,7 +75,7 @@ registries to define a third value "D" for items that are discouraged.
 The instructions in this document update the Recommended column,
 originally added in {{RFC8447}} to add a third value, "D",
 indicating that a value is "Discouraged". The permitted values
-are:
+of the "Recommended" column are:
 
 Y:
 : Indicates that the IETF has consensus that the
