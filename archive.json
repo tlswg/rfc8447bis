@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-04-08T01:55:12.304530+00:00",
+  "timestamp": "2025-04-13T03:21:59.537519+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -369,15 +369,15 @@
       "id": "I_kwDOHFJBYs6xdwpp",
       "title": "Address OpsDir Comments",
       "url": "https://github.com/tlswg/rfc8447bis/issues/75",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "From [email](https://mailarchive.ietf.org/arch/msg/tls/F7IIHkxOZmsoX4SqGi-XDWig9aA/):\n\n    Reviewer: Giuseppe Fioccola\n    Review result: Has Nits\n    \n    This document updates the changes in RFC 8447 and requests IANA to make changes\n    to a number of TLS and DTLS registries. In particular, it updates the\n    \"Recommended\" column in TLS registries by defining a third value \"D\" for items\n    that are discouraged and adds a \"Comment\" column to the registries that do not\n    already have it. This document updates several RFCs: RFC 3749, RFC 5077, RFC\n    4680, RFC 5246, RFC 5705, RFC 5878, RFC 6520, RFC 7301, and RFC 8447.\n\n    I think that the document has a well defined scope and is quite clear. However,\n    I have few suggestions:\n\n    - In the Abstract, I suggest to replace 'adds a Comments column to all active\n    registries' with 'adds a Comment column to all the registries that do not\n    already have it'.\n\n    - In section 3, I suggest to replace 'The permitted values are' with 'The\n    permitted values of the Recommended column are', just to avoid any confusion.\n\n    - In the sections from 4 to 14, I suggest to add some explanation on why\n    specific registries are changed to discouraged. Some insight would help the\n    reader.\n\n    - I would also add some observations on the operational and interoperability\n    impacts, if any, of the changes proposed in the document.\n\n    - Currently, the section on \"IANA Considerations\" simply says that the document\n    is entirely about changes to TLS-related IANA registries, as per RFC 8447.\n    Instead, I would put all the relevant sections on IANA requests (i.e. sections\n    from 4 to 14) under an \"IANA Considerations\" section. In this way you can avoid\n    the IANA section with no content.",
       "createdAt": "2025-04-07T16:15:32Z",
-      "updatedAt": "2025-04-07T16:15:32Z",
-      "closedAt": null,
+      "updatedAt": "2025-04-10T13:53:46Z",
+      "closedAt": "2025-04-10T13:53:46Z",
       "comments": []
     }
   ],
@@ -3615,24 +3615,26 @@
       "id": "PR_kwDOHFJBYs6RqS1E",
       "title": "Address OpsDir Comments",
       "url": "https://github.com/tlswg/rfc8447bis/pull/76",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "Closes #75",
       "createdAt": "2025-04-07T16:20:09Z",
-      "updatedAt": "2025-04-07T16:20:10Z",
+      "updatedAt": "2025-04-10T13:53:45Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "e4efb5ab927487d44b89f5d3d5405f5c933ff70c",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-opsdir-comments",
       "headRefOid": "828c305ab763d580932f18c99c2ccd97b5d892f9",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2025-04-10T13:53:45Z",
+      "mergedAt": "2025-04-10T13:53:45Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "2f7626ffa0655d3e2028eef259c78c3f05f494f1"
+      },
       "comments": [],
       "reviews": []
     }
