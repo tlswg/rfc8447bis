@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-04-13T03:21:59.537519+00:00",
+  "timestamp": "2025-05-01T02:08:34.102493+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -378,6 +378,25 @@
       "createdAt": "2025-04-07T16:15:32Z",
       "updatedAt": "2025-04-10T13:53:46Z",
       "closedAt": "2025-04-10T13:53:46Z",
+      "comments": []
+    },
+    {
+      "number": 77,
+      "id": "I_kwDOHFJBYs60x6T1",
+      "title": "Comment on Comments",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/77",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [
+        "seanturner",
+        "jsalowey"
+      ],
+      "labels": [],
+      "body": "In the Abstract we say we are adding a \"Comments\" column. In s14, we say we are adding a \"Comment\" column. Just need to pick one.",
+      "createdAt": "2025-05-01T01:56:59Z",
+      "updatedAt": "2025-05-01T01:56:59Z",
+      "closedAt": null,
       "comments": []
     }
   ],
