@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-05-01T02:08:34.102493+00:00",
+  "timestamp": "2025-05-08T02:02:26.561375+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -398,6 +398,37 @@
       "updatedAt": "2025-05-01T01:56:59Z",
       "closedAt": null,
       "comments": []
+    },
+    {
+      "number": 78,
+      "id": "I_kwDOHFJBYs61XaQh",
+      "title": "mention `iana-prot-param@iana.org`",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/78",
+      "state": "OPEN",
+      "author": "richsalz",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "The doc should mention somewhere that the place to submit requests is by emailing to `iana-prot-param@iana.org` or by using the online form at `https://www.iana.org/form/protocol-assignment`. Those are the only two ways to officially make a request, which gets it into their tracking system and ensures it doesn't get lost/forgotten.\n\nI know this is late, but it should be a minor editorial addition.  Thanks",
+      "createdAt": "2025-05-06T13:14:15Z",
+      "updatedAt": "2025-05-06T14:45:59Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "As this is an \"updates\" and RFC 8447 already includes a section with information on how to register, are you suggesting that we point back to that section in RFC 8447?  Or maybe ...\n\nRFC 8447 says this:\n\n    Specification Required RFC8126 registry requests are registered\n    after a three-week review period on the <tls-reg-review@ietf.org>\n    mailing list, on the advice of one or more designated experts.\n    However, to allow for the allocation of values prior to publication,\n    the designated experts may approve registration once they are\n    satisfied that such a specification will be published.\n\n    Registration requests sent to the mailing list for review SHOULD use\n    an appropriate subject (e.g., \"Request to register value in TLS bar\n    registry\").\n\nWhat I think you are suggesting is changing the second para to something like this:\n\n    Registration requests are submitted to the sent to the iana-prot-param@iana.org\n    mailing list or via the online form at\n    https://www.iana.org/form/protocol-assignment. Requests for review SHOULD use\n    an appropriate subject (e.g., \"Request to register value in TLS bar\n    registry\").",
+          "createdAt": "2025-05-06T13:20:20Z",
+          "updatedAt": "2025-05-06T13:56:39Z"
+        },
+        {
+          "author": "richsalz",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "8447 ends up sending people to the internal discussion list, which isn't right.  Something like this is the content I am suggesting:\n\n```\nRegistration requests MUST submitted in one of two ways;\n\n1. By sending email to iana-prot-param@iana.org; this email SHOULD\nuse an appropriate subject (e.g., \"Request to register value in TLS bar\nregistry\").\n\n2. Using the online form at\nhttps://www.iana.org/form/protocol-assignment. \n\nSpecification Required RFC8126 registry requests are registered\nafter a three-week review period \non the advice of one or more designated experts.\nHowever, to allow for the allocation of values prior to publication,\nthe designated experts may approve registration once they are\nsatisfied that such a specification will be published.\n```",
+          "createdAt": "2025-05-06T14:45:58Z",
+          "updatedAt": "2025-05-06T14:45:58Z"
+        }
+      ]
     }
   ],
   "pulls": [
