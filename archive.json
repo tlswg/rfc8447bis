@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-05-08T02:02:26.561375+00:00",
+  "timestamp": "2025-05-25T02:13:52.488082+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -429,6 +429,22 @@
           "updatedAt": "2025-05-06T14:45:58Z"
         }
       ]
+    },
+    {
+      "number": 79,
+      "id": "I_kwDOHFJBYs632WOA",
+      "title": "Move -obsolete-key reference column update",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/79",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "This document updated the Reference column for ciphers deprecated by -obsolete-key. Those updates really belong in -obsolete-key; see [PR](https://github.com/tlswg/draft-deprecate-obsolete-kex/pull/23).",
+      "createdAt": "2025-05-22T20:27:58Z",
+      "updatedAt": "2025-05-22T20:27:58Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
   "pulls": [
@@ -3685,6 +3701,32 @@
       "mergeCommit": {
         "oid": "2f7626ffa0655d3e2028eef259c78c3f05f494f1"
       },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 80,
+      "id": "PR_kwDOHFJBYs6XSau_",
+      "title": "Move Reference Column Updates",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/80",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #79.",
+      "createdAt": "2025-05-22T20:29:27Z",
+      "updatedAt": "2025-05-22T20:29:28Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "2f7626ffa0655d3e2028eef259c78c3f05f494f1",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-move-ref-column-updates",
+      "headRefOid": "179db005b336082eed07f72e506d3846fa73ffde",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
       "comments": [],
       "reviews": []
     }
