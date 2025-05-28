@@ -580,7 +580,7 @@ working groups or IRTF research groups.
 
 # Registration Requests
 
-Registration requests MUST submitted in one of two ways:
+Registration requests MUST be submitted in one of two ways:
 
 1. By sending email to iana-prot-param@iana.org; this email SHOULD
 use an appropriate subject (e.g., "Request to register value in TLS
