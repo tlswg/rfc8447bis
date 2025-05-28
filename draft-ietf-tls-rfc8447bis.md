@@ -578,6 +578,22 @@ experts should decline code point registrations for documents which
 have already been adopted or are being proposed for adoption by IETF
 working groups or IRTF research groups.
 
+# Registration Requests
+
+Registration requests MUST submitted in one of two ways:
+
+1. By sending email to iana-prot-param@iana.org; this email SHOULD
+use an appropriate subject (e.g., "Request to register value in TLS
+bar registry").
+
+3. Using the online form at
+https://www.iana.org/form/protocol-assignment.
+
+Specification Required {{RFC8126}} registry requests are registered after
+a three-week review period on the advice of one or more designated
+experts. However, to allow for the allocation of values prior to
+publication, the designated experts may approve registration once they
+are satisfied that such a specification will be published.
 
 # Security Considerations
 
