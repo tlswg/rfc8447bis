@@ -490,7 +490,7 @@ as follows:
 
 Though TLS 1.0 and TLS 1.1 were deprecated {{!RFC8996}}, TLS 1.2 will
 be in use for some time. In order to refect the changes in the Recommended
-column allocation, IANA is requested to update the  TLS ClientCertificateType Identifiers
+column allocation, IANA is requested to update the TLS ClientCertificateType Identifiers
 registry as follows:
 
 - Update the registration procedure to include:
