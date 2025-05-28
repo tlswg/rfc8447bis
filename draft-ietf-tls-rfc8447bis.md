@@ -75,7 +75,7 @@ active registries that do not already have a "Comment" column.
 
 {::boilerplate bcp14-tagged}
 
-# Updating "Recommended" Column's Values 
+# Updating "Recommended" Column's Values
 
 The instructions in this document update the Recommended column,
 originally added in {{RFC8447}} to add a third value, "D",
