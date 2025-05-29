@@ -44,7 +44,8 @@ This document updates the changes to TLS and DTLS IANA registries
 made in RFC 8447. It adds a new value "D" for discouraged
 to the Recommended column of the selected TLS registries and
 adds a "Comment" column to all active registries that do not
-already have a "Comment" column.
+already have a "Comment" column. Finally, it updates the
+registration request instructions.
 
 This document updates the following RFCs:
 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447.
@@ -65,6 +66,8 @@ in {{!RFC8447}}.
 
 This specification updates the "Recommended" column in TLS
 registries to define a third value "D" for items that are discouraged.
+
+This specication also updates the registration request instructions.
 
 # Terminology
 
@@ -505,6 +508,22 @@ experts should decline code point registrations for documents which
 have already been adopted or are being proposed for adoption by IETF
 working groups or IRTF research groups.
 
+# Registration Requests
+
+Registration requests MUST be submitted in one of two ways:
+
+1. By sending email to iana-prot-param@iana.org; this email SHOULD
+use an appropriate subject (e.g., "Request to register value in TLS
+bar registry").
+
+3. Using the online form at
+https://www.iana.org/form/protocol-assignment.
+
+Specification Required {{RFC8126}} registry requests are registered after
+a three-week review period on the advice of one or more designated
+experts. However, to allow for the allocation of values prior to
+publication, the designated experts may approve registration once they
+are satisfied that such a specification will be published.
 
 # Security Considerations
 
