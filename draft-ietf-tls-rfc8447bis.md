@@ -43,8 +43,8 @@ informative:
 This document updates the changes to TLS and DTLS IANA registries
 made in RFC 8447. It adds a new value "D" for discouraged
 to the Recommended column of the selected TLS registries and
-adds a "Comments" column to all active registries that do not
-already have a "Comments" column. Finally, it updates the
+adds a "Comment" column to all active registries that do not
+already have a "Comment" column. Finally, it updates the
 registration request instructions.
 
 This document updates the following RFCs:
@@ -104,7 +104,7 @@ D:
     mechanisms that might result in problems if they are used, such as
     a weak cryptographic algorithm or a mechanism that might cause
     interoperability problems in deployment. When marking a registry entry as
-    “D”, either the References or the Comments Column MUST include sufficient
+    “D”, either the References or the Comment Column MUST include sufficient
     information to determine why the marking has been applied. Implementers
     SHOULD consult the linked references associated with the item to
     determine the conditions under which it SHOULD NOT or MUST NOT be used.
@@ -236,79 +236,6 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 | 0xC0,0xB5 | TLS_SHA384_SHA384 | D |
 
 - Update note on the Recommended column with text in {{rec-note}}.
-
-- {{!I-D.ietf-tls-deprecate-obsolete-kex}} sets the Recommended column
-  for the following cipher suites to "D". This document adds additional
-  references to indicate why the cipher suites are marked as "D".
-
-<aside markdown="block">
-  RFC Editor NOTE: Replace [ThisRFC] in the table that follows with the
-  RFCs for this document and {{I-D.ietf-tls-deprecate-obsolete-kex}}.
-</aside>
-
-| Value | Cipher Suite Name                            | Reference |
-|:------|:---------------------------------------------|----------:|
-| 0x00,0x01 | TLS_RSA_WITH_NULL_MD5                    | [ThisRFC] |
-| 0x00,0x02 | TLS_RSA_WITH_NULL_SHA                    | [ThisRFC] |
-| 0x00,0x03 | TLS_RSA_EXPORT_WITH_RC4_40_MD5           | [ThisRFC] |
-| 0x00,0x04 | TLS_RSA_WITH_RC4_128_MD5                 | [ThisRFC] |
-| 0x00,0x05 | TLS_RSA_WITH_RC4_128_SHA                 | [ThisRFC] |
-| 0x00,0x06 | TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5       | [ThisRFC] |
-| 0x00,0x07 | TLS_RSA_WITH_IDEA_CBC_SHA                | [ThisRFC] |
-| 0x00,0x08 | TLS_RSA_EXPORT_WITH_DES40_CBC_SHA        | [ThisRFC] |
-| 0x00,0x09 | TLS_RSA_WITH_DES_CBC_SHA                 | [ThisRFC] |
-| 0x00,0x0B | TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA     | [ThisRFC] |
-| 0x00,0x0C | TLS_DH_DSS_WITH_DES_CBC_SHA              | [ThisRFC] |
-| 0x00,0x0E | TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA     | [ThisRFC] |
-| 0x00,0x0F | TLS_DH_RSA_WITH_DES_CBC_SHA              | [ThisRFC] |
-| 0x00,0x0B | TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA     | [ThisRFC] |
-| 0x00,0x0C | TLS_DH_DSS_WITH_DES_CBC_SHA              | [ThisRFC] |
-| 0x00,0x0E | TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA     | [ThisRFC] |
-| 0x00,0x0F | TLS_DH_RSA_WITH_DES_CBC_SHA              | [ThisRFC] |
-| 0x00,0x11 | TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA    | [ThisRFC] |
-| 0x00,0x12 | TLS_DHE_DSS_WITH_DES_CBC_SHA             | [ThisRFC] |
-| 0x00,0x14 | TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA    | [ThisRFC] |
-| 0x00,0x15 | TLS_DHE_RSA_WITH_DES_CBC_SHA             | [ThisRFC] |
-| 0x00,0x17 | TLS_DH_anon_EXPORT_WITH_RC4_40_MD5       | [ThisRFC] |
-| 0x00,0x18 | TLS_DH_anon_WITH_RC4_128_MD5             | [ThisRFC] |
-| 0x00,0x19 | TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA    | [ThisRFC] |
-| 0x00,0x1A | TLS_DH_anon_WITH_DES_CBC_SHA             | [ThisRFC] |
-| 0x00,0x1B | TLS_DH_anon_WITH_3DES_EDE_CBC_SHA        | [ThisRFC] |
-| 0x00,0x2D | TLS_DHE_PSK_WITH_NULL_SHA                | [ThisRFC] |
-| 0x00,0x2E | TLS_RSA_PSK_WITH_NULL_SHA                | [ThisRFC] |
-| 0x00,0x34 | TLS_DH_anon_WITH_AES_128_CBC_SHA         | [ThisRFC] |
-| 0x00,0x3A | TLS_DH_anon_WITH_AES_256_CBC_SHA         | [ThisRFC] |
-| 0x00,0x3B | TLS_RSA_WITH_NULL_SHA256                 | [ThisRFC] |
-| 0x00,0x46 | TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA    | [ThisRFC] |
-| 0x00,0x6C | TLS_DH_anon_WITH_AES_128_CBC_SHA256      | [ThisRFC] |
-| 0x00,0x6D | TLS_DH_anon_WITH_AES_256_CBC_SHA256      | [ThisRFC] |
-| 0x00,0x89 | TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA    | [ThisRFC] |
-| 0x00,0x8E | TLS_DHE_PSK_WITH_RC4_128_SHA             | [ThisRFC] |
-| 0x00,0x92 | TLS_RSA_PSK_WITH_RC4_128_SHA             | [ThisRFC] |
-| 0x00,0xB4 | TLS_DHE_PSK_WITH_NULL_SHA256             | [ThisRFC] |
-| 0x00,0xB5 | TLS_DHE_PSK_WITH_NULL_SHA384             | [ThisRFC] |
-| 0x00,0xB8 | TLS_RSA_PSK_WITH_NULL_SHA256             | [ThisRFC] |
-| 0x00,0xB9 | TLS_RSA_PSK_WITH_NULL_SHA384             | [ThisRFC] |
-| 0x00,0x9B | TLS_DH_anon_WITH_SEED_CBC_SHA            | [ThisRFC] |
-| 0x00,0xA6 | TLS_DH_anon_WITH_AES_128_GCM_SHA256      | [ThisRFC] |
-| 0x00,0xA7 | TLS_DH_anon_WITH_AES_256_GCM_SHA384      | [ThisRFC] |
-| 0x00,0xBF | TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256 | [ThisRFC] |
-| 0x00,0xC5 | TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256 | [ThisRFC] |
-| 0xC0,0x01 | TLS_ECDH_ECDSA_WITH_NULL_SHA | [ThisRFC] |
-| 0xC0,0x02 | TLS_ECDH_ECDSA_WITH_RC4_128_SHA | [ThisRFC] |
-| 0xC0,0x0B | TLS_ECDH_RSA_WITH_NULL_SHA | [ThisRFC] |
-| 0xC0,0x0C | TLS_ECDH_RSA_WITH_RC4_128_SHA | [ThisRFC] |
-| 0xC0,0x15 | TLS_ECDH_anon_WITH_NULL_SHA | [ThisRFC] |
-| 0xC0,0x16 | TLS_ECDH_anon_WITH_RC4_128_SHA | [ThisRFC] |
-| 0xC0,0x17 | TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA | [ThisRFC] |
-| 0xC0,0x18 | TLS_ECDH_anon_WITH_AES_128_CBC_SHA | [ThisRFC] |
-| 0xC0,0x19 | TLS_ECDH_anon_WITH_AES_256_CBC_SHA | [ThisRFC] |
-| 0xC0,0x46 | TLS_DH_anon_WITH_ARIA_128_CBC_SHA256 | [ThisRFC] |
-| 0xC0,0x47 | TLS_DH_anon_WITH_ARIA_256_CBC_SHA384 | [ThisRFC] |
-| 0xC0,0x5A | TLS_DH_anon_WITH_ARIA_128_GCM_SHA256 | [ThisRFC] |
-| 0xC0,0x5B | TLS_DH_anon_WITH_ARIA_256_GCM_SHA384 | [ThisRFC] |
-| 0xC0,0x84 | TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256 | [ThisRFC] |
-| 0xC0,0x85 | TLS_DH_anon_WITH_CAMELLIA_256_GCM_SHA384 | [ThisRFC] |
 
 
 # TLS Supported Groups
