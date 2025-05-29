@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-05-25T02:13:52.488082+00:00",
+  "timestamp": "2025-05-29T02:03:38.967784+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -443,6 +443,38 @@
       "body": "This document updated the Reference column for ciphers deprecated by -obsolete-key. Those updates really belong in -obsolete-key; see [PR](https://github.com/tlswg/draft-deprecate-obsolete-kex/pull/23).",
       "createdAt": "2025-05-22T20:27:58Z",
       "updatedAt": "2025-05-22T20:27:58Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 81,
+      "id": "I_kwDOHFJBYs64n3Tq",
+      "title": "Address Deb's Comments",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/81",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "See [AD Ballot comment](https://mailarchive.ietf.org/arch/msg/tls/SYAVgjVhmc4AWMaeNdsIgHG0TXc/), copied here for convenience:\n\n- [ ] Section 4:  Is there a note to be added to 'connection_id'?  (just looks a\nlittle weird to have notes for the other three)\n\n- [ ] Section 9:  Why is 'none' recommended 'Y' (it seems like this should be D)? \nAnd what is the difference between 'none' and 'intrinsic'?",
+      "createdAt": "2025-05-28T13:45:10Z",
+      "updatedAt": "2025-05-28T13:45:10Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 85,
+      "id": "I_kwDOHFJBYs64qRJU",
+      "title": "Address Med's Comments",
+      "url": "https://github.com/tlswg/rfc8447bis/issues/85",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Original found [here](https://mailarchive.ietf.org/arch/msg/tls/yVsJmoAvfr5qnZzcM1i4M97vL-0/), but copied here for convenience:\n\n----------------------------------------------------------------------\nCOMMENT:\n----------------------------------------------------------------------\n\nHi Joe and Sean,\n\nThank you for the effort put into this specification. This maintenance effort\nis really important from an OPS standpoint. As rightfully discussed in the\nspec, the registry may \u201clag behind the most recent advances in cryptanalysis\u201d,\nbut that risk can\u2019t be nullified especially given the process time to\ntransition some values.\n\nThanks to Giuseppe Fioccola for the OPSDIR review and for the authors for\nengaging and converging.\n\nPlease find below some comments:\n\n- [x]  **Meta comment**\n\nI understand this is an update not a bis, but the discussion in the write-up\nconfuses me a bit.\n\n- [x]  **Updates Duplication/Updates Inheritance**\n\nWe have the following:\n\nCURRENT:\n Updates: 3749, 5077, 4680, 5246, 5705, 5878,                   S. Turner\n          6520, 7301, 8447 (if approved)                            sn3rd\n\n\u2026\n\n  This document updates the following RFCs: 3749, 5077, 4680, 5246,\n  5705, 5878, 6520, 7301, and 8447.\n\nExcept the mention of 8447 (which is justified), all other entries were already\nupdated by 8447. Unless there are new updates in this new iteration (which I\nfail to tag), the other updates are already anchored in 8447 and do not to be\nrepeated here. Did I miss something here?\n\n> spt: Makes sense to me.\n\n- [x]  **TLS registries**\n\nCURRENT:\n  This document instructs IANA to make changes to a number of the IANA\n  registries\n\nI suggest to add pointers to these registries. This is even important,\nespecially that the IANA registries are authoritative in this context.\n\nI had to search for those when reviewing the document. Having readily-available\npointers (not only here, but also when discussing individual registries) is\nconvenient for readers, especially that these are not in the same location,\ne.g.,\n\n* https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml\n\n* https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml\n\nBTW, we may explicit this is about TLS registries.\n\nOLD:\n  This document instructs IANA to make changes to a number of the IANA\n  registries\n\nNEW:\n  This document instructs IANA to make changes to a number of IANA TLS\n  registries ..\n\n> spt: Since the section headings include the names of the registries in most places, how about we make sure they all include registry and then people can use the ToC as the pointer. As for the specific change to add \u201cTLS\u201d, the remainder of the sentence qualifies which registries; I think this would be weird: This document instructs IANA to make changes to a number of IANA TLS registries related to Transport Layer Security (TLS) and Datagram\nTransport Layer Security (DTLS).\n\n- [x]  **Section 1: IANA Note**\n\nCURRENT:\n     |  NOTE for IANA: This document specifies changes to the registry\n     |  to update the changes made in [RFC8447].\n\nDo we expect this note to stay in the final RFC?\n\nI don\u2019t see how this is useful for readers once the doc is published as an RFC.\nConsider adding a note to the RFC editor to remove this.\n\n> spt: Sure.\n\n- [x]  **Section 1: List of changes**\n\nCURRENT:\n  This specification updates the \"Recommended\" column in TLS registries\n  to define a third value \"D\" for items that are discouraged.\n\nShould we also mention the other change about the comment column? At least the\nabstract/intro should be in sync on the list of changes.\n\n> spt: Sure.\n\n- [x]  **Section 3: Adding \"Recommended\" Column**\n\nThis update is not about adding a new column, but updating permitted values. I\nwould update the title to reflect the update. You may consider, for example:\n\nOLD: Adding \"Recommended\" Column\n\nNEW: Updating Permitted Value in \"Recommended\" Column\n\n> spt: Sure.\n\n- [x]  **Section 3: Check on \u201cY\u201d/\u201dN\u201d Value and applicability of a mechanism**\n\nRFC8447 used to have: \u201cThis table has been generated by marking Standards Track\nRFCs as \"Y\" and all others as \"N\".\u201d. That guidance seems \u201cmechanical\u201d to me.\n\nThis document seems to have a slightly modified guidance as it says:\n\nCURRENT:\n  Y:  Indicates that the IETF has consensus that the item is\n     RECOMMENDED.  This only means that the associated mechanism is fit\n     for the purpose for which it was defined.  Careful reading of the\n     documentation for the mechanism is necessary to understand the\n     applicability of that mechanism.  The IETF could recommend\n     mechanisms that have limited applicability, but will provide\n     applicability statements that describe any limitations of the\n     mechanism or necessary constraints on its use.\n\nDoes this mean that all \u201cY\u201d have been checked based on \u201cCareful reading ..\u201d and\ntheir applicability is called?\n\nI\u2019m asking this question, especially that we also have the following under \u201cN\u201d:\n\nCURRENT:\n     The IETF\n     might have consensus to leave an items marked as \"N\" on the basis\n     of its having limited applicability or usage constraints.\n\n> spt: We went through every one with the WG.\n\n- [x]  **Section 3: Why Implementers only? What about those who will make use of a mechanism?**\n\n     - [x]  **Consider mention users as well**\n\nCURRENT:\n Implementers SHOULD consult the \u2026\n\nAny reason why users are not listed here?\n\nThe wording in the Security Section is better IMO as it covers both:\n\n  \u201cImplementers and users need to check that\u2026\u201d\n\n> spt: Sure.\n\n  - [x]  **I see the intent here for the use of normative language \u201cSHOULD\u201d, but we can\u2019t actually enforce this.**\n\n> spt: Correct.\n\n   - [x]  **Explicit \u201cit\u201d + avoid confusion about the use of normative language**\n\nMaybe:\n\nOLD:\n     conditions under which it SHOULD NOT or MUST NOT be used.\n\nNEW:\n     conditions under which an item \u201cSHOULD NOT\u201d or \u201cMUST NOT\u201d be used.\n\n> spt: Eh, I can see the flip side where people like does that mean something different when it\u2019s quoted. But, we fixed the \"it\" problem.\n\n- [x]  **Section 3.1: picky**\n\nCURRENT:\n  For the registries discussed in the subsequent sections this\n  note is updated with a sentence describing the \"D\" value as follows:\n\nAgree. The wording of the first sentence is also tweaked, but the meaning is\nsame as in the registry, though. IANA registry has the following:\n\n If an item is not marked as \"Recommended\", it does not\n necessarily mean that it is flawed; rather, it indicates that\n the item either has not been through the IETF consensus process,\n has limited applicability, or is intended only for specific use\n cases.\n\n> spt: We want to keep the \u201cN\u201d in there and we\u2019d like to keep it parallel to the 2nd sentence.\n\n- [x]  **IESG Approval is also covered by 8126!**\n\nThere many occurrences in the doc where 8126 is systematically provided as\nreference to Standard action only. Please consider updating all these\noccurrences as follows:\n\nOLD:\n      Setting a value to \"Y\" or \"D\" or transitioning the value from\n      \"Y\" or \"D\" in the \"Recommended\" column requires\n      IETF Standards Action [RFC8126] or IESG Approval.\n\nNEW:\n      Setting a value to \"Y\" or \"D\" or transitioning the value from\n      \"Y\" or \"D\" in the \"Recommended\" column requires\n      IETF Standards Action (Section 4.9 of [RFC8126]) or IESG Approval\n      (Section 4.10 of [RFC8126]).\n\n> spt: We will move the reference to the end of the sentences.\n\n- [x]  **\u201cIANA SHALL \u2026\u201d constructs**\n\nLike other uses in an IANA consideration sections, the normative language is\nnot justified to request an action. Please consider making these changes (many\noccurrences)\n\nOLD: IANA SHALL\nNEW: IANA is requested\n\nOLD: A reference to this document SHALL be added to these entries.\nNEW: IANA is requested to add a reference to this document for these entries.\n\n> spt: Sure. I will note we did this in the pre-RFC 8447 specification and it was all fine.\n\n- [x]  **Section 5: nits**\n\nOLD:\n  Cipher suites marked as anon do not provide any authentication and\n  are vulnerable to man-in-the-middle attacks and are deprecated\n\nNEW:\n  Ciphersuites marked as anon do not provide any authentication and\n  are vulnerable to on-path attacks and are deprecated\n\n> spt: Sure.\n\n- [x]  **# Section 8: nit**\n\nOLD: the the TLS Certificate Types\nNEW: the TLS Certificate Types\n\n> spt: Sure.\n\n- [x]  **Section 9: use the IANA registry name**\n\nOLD: TLS HashAlgorithm Registry registry\nNEW: TLS HashAlgorithm registry\n\n> spt: Sure.\n\n- [x]  **Section 10: nit**\n\nOLD: SignatureAlgorithm registry registry\nNEW: SignatureAlgorithm registry\n\n> spt: Sure.\n\n- [x]  **Section 11: Use the IANA registry name (several occurrences to fix)**\n\nOLD: TLS ClientCertificateType Identifier registry\nNEW: TLS ClientCertificateType Identifiers registry\n\n> spt: Sure.\n\n- [x]  **Section 13: Lack of recommended note, intentional?**\n\nIs it OK that there is no note on the recommended column in this IANA registry,\nwhile a recommended column is present? is the new note in 3.1 apply here as\nwell?\n\n> spt: Whoops we need to add that.\n\n- [x]  **Section 15: standard**\n\nCURRENT:\n The intent of the Specification Required standard\n\nWhat does this mean? Do we meant registration policy? Please reword. Thanks.\n\n> spt: Will replace \u201cstandard\u201d with \u201cchoice\u201d.\n\n- [x]  **Section 16: WG**\n\nCURRENT:\n  The change to Specification Required from IETF Review lowers the\n  amount of review provided by the WG for cipher suites and supported\n  groups.  This change reflects reality in that the WG essentially\n  provided no cryptographic review of the cipher suites or supported\n  groups.  This was especially true of national cipher suites.\n\nWhich WG? I guess you mean \"TLS WG\". This is confusing especially that the\ndocument reflect an IETF consensus, not a specific WG.\n\n> spt\n>  We are providing the history of why the change was made.  Maybe we could do:\n> The change to Specification Required from IETF Review lowers the\n> amount of review provided for cipher suites and supported\n> groups.  This change reflects reality in that the TLS WG essentially\n> provided no cryptographic review of the cipher suites or supported\n> groups.  This was especially true of national cipher suites.",
+      "createdAt": "2025-05-28T17:39:58Z",
+      "updatedAt": "2025-05-28T18:19:37Z",
       "closedAt": null,
       "comments": []
     }
@@ -3729,6 +3761,172 @@
       "mergeCommit": null,
       "comments": [],
       "reviews": []
+    },
+    {
+      "number": 82,
+      "id": "PR_kwDOHFJBYs6X-Wi3",
+      "title": "Comment not Comments",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/82",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #77.",
+      "createdAt": "2025-05-28T14:12:33Z",
+      "updatedAt": "2025-05-28T14:12:34Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "2f7626ffa0655d3e2028eef259c78c3f05f494f1",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-comment-not-comments",
+      "headRefOid": "f966aa339b773454b2096d896f0641dff1401bc6",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 83,
+      "id": "PR_kwDOHFJBYs6X-b0j",
+      "title": "New Registration Request Section",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/83",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #78.",
+      "createdAt": "2025-05-28T14:20:20Z",
+      "updatedAt": "2025-05-28T14:32:26Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "2f7626ffa0655d3e2028eef259c78c3f05f494f1",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-reg-req",
+      "headRefOid": "841e158110de56843b8f8796c2833fb49233220f",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6rYcfB",
+          "commit": {
+            "abbreviatedOid": "4ef1f69"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-05-28T14:20:34Z",
+          "updatedAt": "2025-05-28T14:20:34Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "```suggestion\r\nRegistration requests MUST be submitted in one of two ways:\r\n```",
+              "createdAt": "2025-05-28T14:20:34Z",
+              "updatedAt": "2025-05-28T14:20:34Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 84,
+      "id": "PR_kwDOHFJBYs6X-qFi",
+      "title": "Fix Heading Title",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/84",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Consistently adds \"Registry\" to the headings.",
+      "createdAt": "2025-05-28T14:42:38Z",
+      "updatedAt": "2025-05-28T14:42:39Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "2f7626ffa0655d3e2028eef259c78c3f05f494f1",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-heading-registry",
+      "headRefOid": "3359877e143df60ade16287ad79254076d7283f0",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 86,
+      "id": "PR_kwDOHFJBYs6YAxG2",
+      "title": "Address Med's Comments",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/86",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #85.",
+      "createdAt": "2025-05-28T18:44:55Z",
+      "updatedAt": "2025-05-28T18:48:02Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "2f7626ffa0655d3e2028eef259c78c3f05f494f1",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-meds-comments",
+      "headRefOid": "8bd4a4b8348324d84aa8b88a913addc9b4648ea3",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6rbdTC",
+          "commit": {
+            "abbreviatedOid": "dc44e98"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-05-28T18:47:04Z",
+          "updatedAt": "2025-05-28T18:47:04Z",
+          "comments": [
+            {
+              "originalPosition": 218,
+              "body": "```suggestion\r\ncolumn allocation, IANA is requested to update the TLS ClientCertificateType Identifiers\r\n```",
+              "createdAt": "2025-05-28T18:47:04Z",
+              "updatedAt": "2025-05-28T18:47:05Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOHFJBYs6rbdxP",
+          "commit": {
+            "abbreviatedOid": "c53a029"
+          },
+          "author": "seanturner",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-05-28T18:47:51Z",
+          "updatedAt": "2025-05-28T18:47:52Z",
+          "comments": [
+            {
+              "originalPosition": 33,
+              "body": "```suggestion\r\n# Updating \"Recommended\" Column's Values\r\n```",
+              "createdAt": "2025-05-28T18:47:52Z",
+              "updatedAt": "2025-05-28T18:47:52Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
