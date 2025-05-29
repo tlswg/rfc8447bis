@@ -131,7 +131,7 @@ is set to "D" the item is discouraged and SHOULD NOT or MUST NOT be used,
 depending upon the situation; consult the item’s references for clarity.
 
 
-# TLS ExtensionType Values
+# TLS ExtensionType Values Registry
 
 In order to reflect the changes in the Recommended column allocation,
 IANA SHALL update the TLS ExtensionType Values registry as follows:
@@ -238,7 +238,7 @@ IANA SHALL update the TLS ExtensionType Values registry as follows:
 - Update note on the Recommended column with text in {{rec-note}}.
 
 
-# TLS Supported Groups
+# TLS Supported Groups Registry
 
 In order to reflect the changes in the Recommended column allocation,
 IANA SHALL update the TLS Supported Groups registry as follows:
@@ -324,7 +324,7 @@ also verify that one label is not a prefix of any other label.
 For example, labels "key" or "master secretary" are forbidden.
 
 
-# TLS Certificate Types
+# TLS Certificate Types Registry
 
 In order to reflect the changes in the Recommended column allocation,
 IANA SHALL update the the TLS Certificate Types registry as follows:
@@ -378,7 +378,7 @@ registry as follows:
 - Add note on the Recommended column with text in {{rec-note}}.
 
 
-# TLS SignatureAlgorithm registry
+# TLS SignatureAlgorithm Registry
 
 Though TLS 1.0 and TLS 1.1 were deprecated {{!RFC8996}}, TLS 1.2 will
 be in use for some time. In order to reflect the changes in the Recommended
@@ -411,7 +411,7 @@ registry as follows:
 
 - Add note on the Recommended column with text in {{rec-note}}.
 
-# TLS ClientCertificateType Identifiers registry
+# TLS ClientCertificateType Identifiers Registry
 
 Though TLS 1.0 and TLS 1.1 were deprecated {{!RFC8996}}, TLS 1.2 will
 be in use for some time. In order to refect the changes in the Recommended
@@ -448,7 +448,7 @@ column as follows:
 
 - Add note on the Recommended column with text in {{rec-note}}.
 
-# TLS PskKeyExchangeMode registry
+# TLS PskKeyExchangeMode Registry
 
 In order to reflect the changes in the Recommended column allocation,
 IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
@@ -467,7 +467,7 @@ IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
 
 - Update note on the Recommended column with text in {{rec-note}}.
 
-# TLS SignatureScheme registry
+# TLS SignatureScheme Registry
 
 IANA is requested to add a reference to this document under the reference heading.
 
