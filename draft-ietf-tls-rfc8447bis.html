@@ -12,7 +12,8 @@
 made in RFC 8447. It adds a new value "D" for discouraged
 to the Recommended column of the selected TLS registries and
 adds a "Comment" column to all active registries that do not
-already have a "Comment" column. 
+already have a "Comment" column. Finally, it updates the
+registration request instructions. 
        This document updates the following RFCs:
 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447. 
     ' name="description">
@@ -1097,7 +1098,8 @@ svg :is([fill="white"], [fill^="#fff"]) {
 made in RFC 8447. It adds a new value "D" for discouraged
 to the Recommended column of the selected TLS registries and
 adds a "Comment" column to all active registries that do not
-already have a "Comment" column.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+already have a "Comment" column. Finally, it updates the
+registration request instructions.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 <p id="section-abstract-2">This document updates the following RFCs:
 3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
 </section>
@@ -1215,16 +1217,19 @@ already have a "Comment" column.<a href="#section-abstract-1" class="pilcrow">¶
             <p id="section-toc.1-1.15.1"><a href="#section-15" class="auto internal xref">15</a>. <a href="#name-expert-review-of-current-an" class="internal xref">Expert Review of Current and Potential IETF and IRTF Documents</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.16">
-            <p id="section-toc.1-1.16.1"><a href="#section-16" class="auto internal xref">16</a>. <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
+            <p id="section-toc.1-1.16.1"><a href="#section-16" class="auto internal xref">16</a>. <a href="#name-registration-requests" class="internal xref">Registration Requests</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.17">
-            <p id="section-toc.1-1.17.1"><a href="#section-17" class="auto internal xref">17</a>. <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
+            <p id="section-toc.1-1.17.1"><a href="#section-17" class="auto internal xref">17</a>. <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.18">
-            <p id="section-toc.1-1.18.1"><a href="#section-18" class="auto internal xref">18</a>. <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+            <p id="section-toc.1-1.18.1"><a href="#section-18" class="auto internal xref">18</a>. <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.19">
-            <p id="section-toc.1-1.19.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+            <p id="section-toc.1-1.19.1"><a href="#section-19" class="auto internal xref">19</a>. <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.20">
+            <p id="section-toc.1-1.20.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -1245,6 +1250,7 @@ in <span>[<a href="#RFC8447" class="cite xref">RFC8447</a>]</span>.<a href="#sec
 </aside>
 <p id="section-1-3">This specification updates the "Recommended" column in TLS
 registries to define a third value "D" for items that are discouraged.<a href="#section-1-3" class="pilcrow">¶</a></p>
+<p id="section-1-4">This specication also updates the registration request instructions.<a href="#section-1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="terminology">
@@ -2226,40 +2232,64 @@ have already been adopted or are being proposed for adoption by IETF
 working groups or IRTF research groups.<a href="#section-15-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="security-considerations">
+<div id="registration-requests">
 <section id="section-16">
-      <h2 id="name-security-considerations">
-<a href="#section-16" class="section-number selfRef">16. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      <h2 id="name-registration-requests">
+<a href="#section-16" class="section-number selfRef">16. </a><a href="#name-registration-requests" class="section-name selfRef">Registration Requests</a>
       </h2>
-<p id="section-16-1">The change to Specification Required from IETF Review lowers the amount
+<p id="section-16-1">Registration requests <span class="bcp14">MUST</span> be submitted in one of two ways:<a href="#section-16-1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-16-2">
+<li id="section-16-2.1">
+          <p id="section-16-2.1.1">By sending email to iana-prot-param@iana.org; this email <span class="bcp14">SHOULD</span>
+use an appropriate subject (e.g., "Request to register value in TLS
+bar registry").<a href="#section-16-2.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li id="section-16-2.2">
+          <p id="section-16-2.2.1">Using the online form at
+https://www.iana.org/form/protocol-assignment.<a href="#section-16-2.2.1" class="pilcrow">¶</a></p>
+</li>
+      </ol>
+<p id="section-16-3">Specification Required <span>[<a href="#RFC8126" class="cite xref">RFC8126</a>]</span> registry requests are registered after
+a three-week review period on the advice of one or more designated
+experts. However, to allow for the allocation of values prior to
+publication, the designated experts may approve registration once they
+are satisfied that such a specification will be published.<a href="#section-16-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="security-considerations">
+<section id="section-17">
+      <h2 id="name-security-considerations">
+<a href="#section-17" class="section-number selfRef">17. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      </h2>
+<p id="section-17-1">The change to Specification Required from IETF Review lowers the amount
 of review provided by the WG for cipher suites and supported groups.
 This change reflects reality in that the WG essentially provided no
 cryptographic review of the cipher suites or supported groups.  This
-was especially true of national cipher suites.<a href="#section-16-1" class="pilcrow">¶</a></p>
-<p id="section-16-2">Recommended algorithms are regarded as secure for general use at the
+was especially true of national cipher suites.<a href="#section-17-1" class="pilcrow">¶</a></p>
+<p id="section-17-2">Recommended algorithms are regarded as secure for general use at the
 time of registration; however, cryptographic algorithms and parameters
 will be broken or weakened over time.  It is possible that the
 "Recommended" status in the registry lags behind the most recent advances
 in cryptanalysis.  Implementers and users need to check that the
 cryptographic algorithms listed continue to provide the expected level
-of security.<a href="#section-16-2" class="pilcrow">¶</a></p>
-<p id="section-16-3">Designated experts ensure the specification is publicly available.  They may
+of security.<a href="#section-17-2" class="pilcrow">¶</a></p>
+<p id="section-17-3">Designated experts ensure the specification is publicly available.  They may
 provide more in-depth reviews.  Their review should not be taken as an
-endorsement of the cipher suite, extension, supported group, etc.<a href="#section-16-3" class="pilcrow">¶</a></p>
+endorsement of the cipher suite, extension, supported group, etc.<a href="#section-17-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="iana-considerations">
-<section id="section-17">
+<section id="section-18">
       <h2 id="name-iana-considerations">
-<a href="#section-17" class="section-number selfRef">17. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+<a href="#section-18" class="section-number selfRef">18. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
       </h2>
-<p id="section-17-1">This document is entirely about changes to TLS-related IANA registries.<a href="#section-17-1" class="pilcrow">¶</a></p>
+<p id="section-18-1">This document is entirely about changes to TLS-related IANA registries.<a href="#section-18-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-normative-references">
-<section id="section-18">
+<section id="section-19">
       <h2 id="name-normative-references">
-<a href="#section-18" class="section-number selfRef">18. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+<a href="#section-19" class="section-number selfRef">19. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
       </h2>
 <dl class="references">
 <dt id="RFC2119">[RFC2119]</dt>

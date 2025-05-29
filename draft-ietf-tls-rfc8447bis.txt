@@ -19,7 +19,8 @@ Abstract
    made in RFC 8447.  It adds a new value "D" for discouraged to the
    Recommended column of the selected TLS registries and adds a
    "Comment" column to all active registries that do not already have a
-   "Comment" column.
+   "Comment" column.  Finally, it updates the registration request
+   instructions.
 
    This document updates the following RFCs: 3749, 5077, 4680, 5246,
    5705, 5878, 6520, 7301, and 8447.
@@ -88,9 +89,10 @@ Table of Contents
    13. TLS SignatureScheme registry
    14. Adding "Comment" Column
    15. Expert Review of Current and Potential IETF and IRTF Documents
-   16. Security Considerations
-   17. IANA Considerations
-   18. Normative References
+   16. Registration Requests
+   17. Security Considerations
+   18. IANA Considerations
+   19. Normative References
    Authors' Addresses
 
 1.  Introduction
@@ -105,6 +107,8 @@ Table of Contents
 
    This specification updates the "Recommended" column in TLS registries
    to define a third value "D" for items that are discouraged.
+
+   This specication also updates the registration request instructions.
 
 2.  Terminology
 
@@ -641,7 +645,24 @@ Table of Contents
    been adopted or are being proposed for adoption by IETF working
    groups or IRTF research groups.
 
-16.  Security Considerations
+16.  Registration Requests
+
+   Registration requests MUST be submitted in one of two ways:
+
+   1.  By sending email to iana-prot-param@iana.org; this email SHOULD
+       use an appropriate subject (e.g., "Request to register value in
+       TLS bar registry").
+
+   2.  Using the online form at https://www.iana.org/form/protocol-
+       assignment.
+
+   Specification Required [RFC8126] registry requests are registered
+   after a three-week review period on the advice of one or more
+   designated experts.  However, to allow for the allocation of values
+   prior to publication, the designated experts may approve registration
+   once they are satisfied that such a specification will be published.
+
+17.  Security Considerations
 
    The change to Specification Required from IETF Review lowers the
    amount of review provided by the WG for cipher suites and supported
@@ -662,12 +683,12 @@ Table of Contents
    taken as an endorsement of the cipher suite, extension, supported
    group, etc.
 
-17.  IANA Considerations
+18.  IANA Considerations
 
    This document is entirely about changes to TLS-related IANA
    registries.
 
-18.  Normative References
+19.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
