@@ -77,16 +77,16 @@ Table of Contents
    2.  Terminology
    3.  Adding "Recommended" Column
      3.1.  Recommended Note
-   4.  TLS ExtensionType Values
+   4.  TLS ExtensionType Values Registry
    5.  TLS Cipher Suites Registry
-   6.  TLS Supported Groups
+   6.  TLS Supported Groups Registry
    7.  TLS Exporter Labels Registry
-   8.  TLS Certificate Types
+   8.  TLS Certificate Types Registry
    9.  TLS HashAlgorithm Registry
-   10. TLS SignatureAlgorithm registry
-   11. TLS ClientCertificateType Identifiers registry
-   12. TLS PskKeyExchangeMode registry
-   13. TLS SignatureScheme registry
+   10. TLS SignatureAlgorithm Registry
+   11. TLS ClientCertificateType Identifiers Registry
+   12. TLS PskKeyExchangeMode Registry
+   13. TLS SignatureScheme Registry
    14. Adding "Comment" Column
    15. Expert Review of Current and Potential IETF and IRTF Documents
    16. Registration Requests
@@ -172,7 +172,7 @@ Table of Contents
       SHOULD NOT or MUST NOT be used, depending upon the situation;
       consult the item’s references for clarity.
 
-4.  TLS ExtensionType Values
+4.  TLS ExtensionType Values Registry
 
    In order to reflect the changes in the Recommended column allocation,
    IANA SHALL update the TLS ExtensionType Values registry as follows:
@@ -316,7 +316,7 @@ Table of Contents
 
    *  Update note on the Recommended column with text in Section 3.1.
 
-6.  TLS Supported Groups
+6.  TLS Supported Groups Registry
 
    In order to reflect the changes in the Recommended column allocation,
    IANA SHALL update the TLS Supported Groups registry as follows:
@@ -416,7 +416,7 @@ Table of Contents
       of any other label.  For example, labels "key" or "master
       secretary" are forbidden.
 
-8.  TLS Certificate Types
+8.  TLS Certificate Types Registry
 
    In order to reflect the changes in the Recommended column allocation,
    IANA SHALL update the the TLS Certificate Types registry as follows:
@@ -477,7 +477,7 @@ Table of Contents
 
    *  Add note on the Recommended column with text in Section 3.1.
 
-10.  TLS SignatureAlgorithm registry
+10.  TLS SignatureAlgorithm Registry
 
    Though TLS 1.0 and TLS 1.1 were deprecated [RFC8996], TLS 1.2 will be
    in use for some time.  In order to reflect the changes in the
@@ -519,7 +519,7 @@ Table of Contents
 
    *  Add note on the Recommended column with text in Section 3.1.
 
-11.  TLS ClientCertificateType Identifiers registry
+11.  TLS ClientCertificateType Identifiers Registry
 
    Though TLS 1.0 and TLS 1.1 were deprecated [RFC8996], TLS 1.2 will be
    in use for some time.  In order to refect the changes in the
@@ -569,7 +569,7 @@ Table of Contents
 
    *  Add note on the Recommended column with text in Section 3.1.
 
-12.  TLS PskKeyExchangeMode registry
+12.  TLS PskKeyExchangeMode Registry
 
    In order to reflect the changes in the Recommended column allocation,
    IANA SHALL update the TLS PskKeyExchangeMode registry as follows:
@@ -587,7 +587,7 @@ Table of Contents
 
    *  Update note on the Recommended column with text in Section 3.1.
 
-13.  TLS SignatureScheme registry
+13.  TLS SignatureScheme Registry
 
    IANA is requested to add a reference to this document under the
    reference heading.
