@@ -47,8 +47,7 @@ adds a "Comment" column to all active registries that do not
 already have a "Comment" column. Finally, it updates the
 registration request instructions.
 
-This document updates the following RFCs:
-3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447.
+This document updates RFC 8447.
 
 --- middle
 
