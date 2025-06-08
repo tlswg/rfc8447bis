@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-06-05T02:04:34.892675+00:00",
+  "timestamp": "2025-06-08T02:20:01.369456+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -3943,24 +3943,26 @@
       "id": "PR_kwDOHFJBYs6ZDbrE",
       "title": "Address Mike's comment",
       "url": "https://github.com/tlswg/rfc8447bis/pull/87",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2025-06-04T16:12:38Z",
-      "updatedAt": "2025-06-04T16:26:35Z",
+      "updatedAt": "2025-06-06T15:24:26Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "28b81b4bb22da2cb25fcbf61a4d7ee6966389b38",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-mike-comment",
       "headRefOid": "eee8caaf70786a08de49643e551992ee4479e2f3",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2025-06-06T15:24:26Z",
+      "mergedAt": "2025-06-06T15:24:26Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "14f050897bab3126200a499ed95cb90574fe1f6d"
+      },
       "comments": [],
       "reviews": [
         {
@@ -3977,6 +3979,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 88,
+      "id": "PR_kwDOHFJBYs6ZaK2x",
+      "title": "Address Amanda's comments",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/88",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-06-06T15:24:00Z",
+      "updatedAt": "2025-06-06T15:24:02Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "28b81b4bb22da2cb25fcbf61a4d7ee6966389b38",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-amanda-comments",
+      "headRefOid": "318d0ca055da0388666c18527e4a77d0a8b31255",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
