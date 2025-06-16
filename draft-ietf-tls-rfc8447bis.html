@@ -21,7 +21,7 @@ registration request instructions.
 <meta content="draft-ietf-tls-rfc8447bis-latest" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.28.1
-    Python 3.12.10
+    Python 3.12.11
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
@@ -30,7 +30,7 @@ registration request instructions.
     platformdirs 4.3.8
     pycountry 24.6.1
     PyYAML 6.0.2
-    requests 2.32.3
+    requests 2.32.4
     setuptools 80.9.0
     wcwidth 0.2.13
 -->
@@ -1055,7 +1055,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Salowey &amp; Turner</td>
-<td class="center">Expires 8 December 2025</td>
+<td class="center">Expires 18 December 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1071,12 +1071,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="https://www.rfc-editor.org/rfc/rfc8447" class="eref">8447</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-06-06" class="published">6 June 2025</time>
+<time datetime="2025-06-16" class="published">16 June 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-12-08">8 December 2025</time></dd>
+<dd class="expires"><time datetime="2025-12-18">18 December 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1135,7 +1135,7 @@ registration request instructions.<a href="#section-abstract-1" class="pilcrow">
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 8 December 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 18 December 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1313,7 +1313,7 @@ of the "Recommended" column are:<a href="#section-3-1" class="pilcrow">¶</a></p
       <dd class="break"></dd>
 </dl>
 <p id="section-3-3">Setting a value to "Y" or "D" or transitioning the value from "Y" or "D" in the "Recommended" column requires
-IETF Standards Action or IESG Approval <span>[<a href="#RFC8126" class="cite xref">RFC8126</a>]</span>. Not all items defined
+IETF Standards Action with Expert Review or IESG Approval <span>[<a href="#RFC8126" class="cite xref">RFC8126</a>]</span>. Not all items defined
 in Standards Track RFCs need to be set
 to "Y" or "D". Any item not otherwise specified is set to "N". The column is
 blank for values that are unassigned or reserved unless specifically set.<a href="#section-3-3" class="pilcrow">¶</a></p>
@@ -2266,7 +2266,7 @@ working groups or IRTF research groups.<a href="#section-15-1" class="pilcrow">�
 <p id="section-16-1">Registration requests <span class="bcp14">MUST</span> be submitted in one of two ways:<a href="#section-16-1" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-16-2">
 <li id="section-16-2.1">
-          <p id="section-16-2.1.1">By sending email to iana-prot-param@iana.org; this email <span class="bcp14">SHOULD</span>
+          <p id="section-16-2.1.1">By sending email to iana@iana.org; this email <span class="bcp14">SHOULD</span>
 use an appropriate subject (e.g., "Request to register value in TLS
 bar registry").<a href="#section-16-2.1.1" class="pilcrow">¶</a></p>
 </li>
@@ -2310,6 +2310,17 @@ endorsement of the cipher suite, extension, supported group, etc.<a href="#secti
 <a href="#section-18" class="section-number selfRef">18. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
       </h2>
 <p id="section-18-1">This document is entirely about changes to TLS-related IANA registries.<a href="#section-18-1" class="pilcrow">¶</a></p>
+<p id="section-18-2">IANA is requested to modify the note applied to all TLS Specification
+Required registries instructing where to send registration requests as
+follows:<a href="#section-18-2" class="pilcrow">¶</a></p>
+<aside id="section-18-3">
+        <p id="section-18-3.1">RFC EDITOR: Please replace "This RFC" in the following with the RFC number
+  assigned to this specification.<a href="#section-18-3.1" class="pilcrow">¶</a></p>
+</aside>
+<p id="section-18-4">Requests for assignments from the registry's Specification Required
+range should be sent to the mailing list described in [This RFC, Section 16].
+If approved, designated experts should notify IANA within three weeks. For
+assistance, please contact iana@iana.org.<a href="#section-18-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-normative-references">
