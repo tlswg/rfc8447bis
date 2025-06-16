@@ -114,7 +114,7 @@ D:
     determine the conditions under which the item SHOULD NOT or MUST NOT be used.
 
 Setting a value to "Y" or "D" or transitioning the value from "Y" or "D" in the "Recommended" column requires
-IETF Standards Action or IESG Approval {{!RFC8126}}. Not all items defined
+IETF Standards Action with Expert Review or IESG Approval {{!RFC8126}}. Not all items defined
 in Standards Track RFCs need to be set
 to "Y" or "D". Any item not otherwise specified is set to "N". The column is
 blank for values that are unassigned or reserved unless specifically set.
@@ -531,7 +531,7 @@ working groups or IRTF research groups.
 
 Registration requests MUST be submitted in one of two ways:
 
-1. By sending email to iana-prot-param@iana.org; this email SHOULD
+1. By sending email to iana@iana.org; this email SHOULD
 use an appropriate subject (e.g., "Request to register value in TLS
 bar registry").
 
@@ -569,5 +569,18 @@ endorsement of the cipher suite, extension, supported group, etc.
 
 This document is entirely about changes to TLS-related IANA registries.
 
+IANA is requested to modify the note applied to all TLS Specification
+Required registries instructing where to send registration requests as
+follows:
+
+<aside markdown="block">
+  RFC EDITOR: Please replace "This RFC" in the following with the RFC number
+  assigned to this specification.
+</aside>
+
+Requests for assignments from the registry's Specification Required
+range should be sent to the mailing list described in [This RFC, Section 16].
+If approved, designated experts should notify IANA within three weeks. For
+assistance, please contact iana@iana.org.
 
 --- back
