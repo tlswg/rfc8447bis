@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-06-08T02:20:01.369456+00:00",
+  "timestamp": "2025-06-17T02:06:55.419748+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -3985,24 +3985,26 @@
       "id": "PR_kwDOHFJBYs6ZaK2x",
       "title": "Address Amanda's comments",
       "url": "https://github.com/tlswg/rfc8447bis/pull/88",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2025-06-06T15:24:00Z",
-      "updatedAt": "2025-06-06T15:24:02Z",
+      "updatedAt": "2025-06-16T13:34:20Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "28b81b4bb22da2cb25fcbf61a4d7ee6966389b38",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-amanda-comments",
       "headRefOid": "318d0ca055da0388666c18527e4a77d0a8b31255",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2025-06-16T13:34:20Z",
+      "mergedAt": "2025-06-16T13:34:20Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "b0c4a3cf47e2ac7f4ee821c30b0d1b2d0f924f8b"
+      },
       "comments": [],
       "reviews": []
     }
