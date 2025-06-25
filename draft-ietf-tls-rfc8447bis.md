@@ -145,7 +145,7 @@ IANA is requested to update the TLS ExtensionType Values registry as follows:
 ~~~
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D" in the "Recommended" column requires
-    IETF Standards Action or IESG Approval [RFC8126].
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -200,7 +200,7 @@ IANA is requested to update the TLS ExtensionType Values registry as follows:
 ~~~
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D" in the "Recommended" column requires
-    IETF Standards Action or IESG Approval [RFC8126].
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -252,7 +252,7 @@ IANA is requested to update the TLS Supported Groups registry as follows:
 ~~~
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D" in the "Recommended" column requires
-    IETF Standards Action or IESG Approval [RFC8126].
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -301,7 +301,7 @@ IANA is requested to update the TLS Exporter Labels Registry as follows:
 ~~~
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D" in the "Recommended" column requires
-    IETF Standards Action or IESG Approval [RFC8126].
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -327,6 +327,7 @@ printable ASCII characters beginning with "EXPORTER".  IANA MUST
 also verify that one label is not a prefix of any other label.
 For example, labels "key" or "master secretary" are forbidden.
 
+- Rename the Note column to Comment column.
 
 # TLS Certificate Types Registry
 
@@ -338,7 +339,7 @@ IANA is requested to update the TLS Certificate Types registry as follows:
 ~~~
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D" in the "Recommended" column requires
-    IETF Standards Action or IESG Approval [RFC8126].
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -360,7 +361,7 @@ as follows:
 ~~~
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D"  in the "Recommended" column requires
-    IETF Standards Action or IESG Approval [RFC8126].
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -394,7 +395,7 @@ as follows:
 ~~~
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D"  in the "Recommended" column requires
-    IETF Standards Action or IESG Approval [RFC8126].
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -427,7 +428,7 @@ registry as follows:
 ~~~
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D"  in the "Recommended" column requires
-    IETF Standards Action or IESG Approval [RFC8126].
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -462,7 +463,7 @@ IANA is requested to update the TLS PskKeyExchangeMode registry as follows:
 ~~~
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D"  in the "Recommended" column requires
-    IETF Standards Action or IESG Approval [RFC8126].
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 ~~~
 
 - Add a reference to this document under the reference heading.
@@ -481,7 +482,7 @@ IANA is requested to update the TLS SignatureScheme registry as follows:
 ~~~
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D"  in the "Recommended" column requires
-    IETF Standards Action or IESG Approval [RFC8126].
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 ~~~
 
 - IANA is requested to add a reference to this document under the reference heading.
@@ -545,12 +546,6 @@ publication, the designated experts may approve registration once they
 are satisfied that such a specification will be published.
 
 # Security Considerations
-
-The change to Specification Required from IETF Review lowers the amount
-of review provided for cipher suites and supported groups.
-This change reflects reality in that the TLS WG essentially provided no
-cryptographic review of the cipher suites or supported groups.  This
-was especially true of national cipher suites.
 
 Recommended algorithms are regarded as secure for general use at the
 time of registration; however, cryptographic algorithms and parameters
