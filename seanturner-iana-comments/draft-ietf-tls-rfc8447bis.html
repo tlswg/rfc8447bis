@@ -11,27 +11,27 @@
        This document updates the changes to TLS and DTLS IANA registries
 made in RFC 8447. It adds a new value "D" for discouraged
 to the Recommended column of the selected TLS registries and
-adds a "Comments" column to all active registries that do not
-already have a "Comments" column. 
-       This document updates the following RFCs:
-3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447. 
+adds a "Comment" column to all active registries that do not
+already have a "Comment" column. Finally, it updates the
+registration request instructions. 
+       This document updates RFC 8447. 
     ' name="description">
-<meta content="xml2rfc 3.28.1" name="generator">
+<meta content="xml2rfc 3.29.0" name="generator">
 <meta content="Internet-Draft" name="keyword">
 <meta content="draft-ietf-tls-rfc8447bis-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.28.1
-    Python 3.12.10
+  xml2rfc 3.29.0
+    Python 3.12.11
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
     Jinja2 3.1.6
-    lxml 5.3.0
+    lxml 5.3.1
     platformdirs 4.3.8
     pycountry 24.6.1
     PyYAML 6.0.2
-    requests 2.32.3
-    setuptools 70.3.0
+    requests 2.32.4
+    setuptools 80.9.0
     wcwidth 0.2.13
 -->
 <link href="draft-ietf-tls-rfc8447bis.xml" rel="alternate" type="application/rfc+xml">
@@ -1051,11 +1051,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">(D)TLS IANA Registry Updates</td>
-<td class="right">May 2025</td>
+<td class="right">June 2025</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Salowey &amp; Turner</td>
-<td class="center">Expires 23 November 2025</td>
+<td class="center">Expires 27 December 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1068,15 +1068,15 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-ietf-tls-rfc8447bis-latest</dd>
 <dt class="label-updates">Updates:</dt>
 <dd class="updates">
-<a href="https://www.rfc-editor.org/rfc/rfc3749" class="eref">3749</a>, <a href="https://www.rfc-editor.org/rfc/rfc5077" class="eref">5077</a>, <a href="https://www.rfc-editor.org/rfc/rfc4680" class="eref">4680</a>, <a href="https://www.rfc-editor.org/rfc/rfc5246" class="eref">5246</a>, <a href="https://www.rfc-editor.org/rfc/rfc5705" class="eref">5705</a>, <a href="https://www.rfc-editor.org/rfc/rfc5878" class="eref">5878</a>, <a href="https://www.rfc-editor.org/rfc/rfc6520" class="eref">6520</a>, <a href="https://www.rfc-editor.org/rfc/rfc7301" class="eref">7301</a>, <a href="https://www.rfc-editor.org/rfc/rfc8447" class="eref">8447</a> (if approved)</dd>
+<a href="https://www.rfc-editor.org/rfc/rfc8447" class="eref">8447</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-05-22" class="published">22 May 2025</time>
+<time datetime="2025-06-25" class="published">25 June 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-11-23">23 November 2025</time></dd>
+<dd class="expires"><time datetime="2025-12-27">27 December 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1096,10 +1096,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="section-abstract-1">This document updates the changes to TLS and DTLS IANA registries
 made in RFC 8447. It adds a new value "D" for discouraged
 to the Recommended column of the selected TLS registries and
-adds a "Comments" column to all active registries that do not
-already have a "Comments" column.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
-<p id="section-abstract-2">This document updates the following RFCs:
-3749, 5077, 4680, 5246, 5705, 5878, 6520, 7301, and 8447.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
+adds a "Comment" column to all active registries that do not
+already have a "Comment" column. Finally, it updates the
+registration request instructions.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-2">This document updates RFC 8447.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-about-this-document">
@@ -1135,7 +1135,7 @@ already have a "Comments" column.<a href="#section-abstract-1" class="pilcrow">�
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 23 November 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 27 December 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1171,7 +1171,7 @@ already have a "Comments" column.<a href="#section-abstract-1" class="pilcrow">�
             <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-terminology" class="internal xref">Terminology</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
-            <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-adding-recommended-column" class="internal xref">Adding "Recommended" Column</a></p>
+            <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-updating-recommended-column" class="internal xref">Updating "Recommended" Column's Values</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1">
                 <p id="section-toc.1-1.3.2.1.1" class="keepWithNext"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-recommended-note" class="internal xref">Recommended Note</a></p>
@@ -1179,34 +1179,34 @@ already have a "Comments" column.<a href="#section-abstract-1" class="pilcrow">�
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-tls-extensiontype-values" class="internal xref">TLS ExtensionType Values</a></p>
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-tls-extensiontype-values-re" class="internal xref">TLS ExtensionType Values Registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
             <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-tls-cipher-suites-registry" class="internal xref">TLS Cipher Suites Registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-tls-supported-groups" class="internal xref">TLS Supported Groups</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-tls-supported-groups-regist" class="internal xref">TLS Supported Groups Registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
             <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-tls-exporter-labels-registr" class="internal xref">TLS Exporter Labels Registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#section-8" class="auto internal xref">8</a>.  <a href="#name-tls-certificate-types" class="internal xref">TLS Certificate Types</a></p>
+            <p id="section-toc.1-1.8.1"><a href="#section-8" class="auto internal xref">8</a>.  <a href="#name-tls-certificate-types-regis" class="internal xref">TLS Certificate Types Registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9">
             <p id="section-toc.1-1.9.1"><a href="#section-9" class="auto internal xref">9</a>.  <a href="#name-tls-hashalgorithm-registry" class="internal xref">TLS HashAlgorithm Registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10">
-            <p id="section-toc.1-1.10.1"><a href="#section-10" class="auto internal xref">10</a>. <a href="#name-tls-signaturealgorithm-regi" class="internal xref">TLS SignatureAlgorithm registry</a></p>
+            <p id="section-toc.1-1.10.1"><a href="#section-10" class="auto internal xref">10</a>. <a href="#name-tls-signaturealgorithm-regi" class="internal xref">TLS SignatureAlgorithm Registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11">
-            <p id="section-toc.1-1.11.1"><a href="#section-11" class="auto internal xref">11</a>. <a href="#name-tls-clientcertificatetype-i" class="internal xref">TLS ClientCertificateType Identifiers registry</a></p>
+            <p id="section-toc.1-1.11.1"><a href="#section-11" class="auto internal xref">11</a>. <a href="#name-tls-clientcertificatetype-i" class="internal xref">TLS ClientCertificateType Identifiers Registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12">
-            <p id="section-toc.1-1.12.1"><a href="#section-12" class="auto internal xref">12</a>. <a href="#name-tls-pskkeyexchangemode-regi" class="internal xref">TLS PskKeyExchangeMode registry</a></p>
+            <p id="section-toc.1-1.12.1"><a href="#section-12" class="auto internal xref">12</a>. <a href="#name-tls-pskkeyexchangemode-regi" class="internal xref">TLS PskKeyExchangeMode Registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.13">
-            <p id="section-toc.1-1.13.1"><a href="#section-13" class="auto internal xref">13</a>. <a href="#name-tls-signaturescheme-registr" class="internal xref">TLS SignatureScheme registry</a></p>
+            <p id="section-toc.1-1.13.1"><a href="#section-13" class="auto internal xref">13</a>. <a href="#name-tls-signaturescheme-registr" class="internal xref">TLS SignatureScheme Registry</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.14">
             <p id="section-toc.1-1.14.1"><a href="#section-14" class="auto internal xref">14</a>. <a href="#name-adding-comment-column" class="internal xref">Adding "Comment" Column</a></p>
@@ -1215,16 +1215,19 @@ already have a "Comments" column.<a href="#section-abstract-1" class="pilcrow">�
             <p id="section-toc.1-1.15.1"><a href="#section-15" class="auto internal xref">15</a>. <a href="#name-expert-review-of-current-an" class="internal xref">Expert Review of Current and Potential IETF and IRTF Documents</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.16">
-            <p id="section-toc.1-1.16.1"><a href="#section-16" class="auto internal xref">16</a>. <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
+            <p id="section-toc.1-1.16.1"><a href="#section-16" class="auto internal xref">16</a>. <a href="#name-registration-requests" class="internal xref">Registration Requests</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.17">
-            <p id="section-toc.1-1.17.1"><a href="#section-17" class="auto internal xref">17</a>. <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
+            <p id="section-toc.1-1.17.1"><a href="#section-17" class="auto internal xref">17</a>. <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.18">
-            <p id="section-toc.1-1.18.1"><a href="#section-18" class="auto internal xref">18</a>. <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+            <p id="section-toc.1-1.18.1"><a href="#section-18" class="auto internal xref">18</a>. <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.19">
-            <p id="section-toc.1-1.19.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+            <p id="section-toc.1-1.19.1"><a href="#section-19" class="auto internal xref">19</a>. <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.20">
+            <p id="section-toc.1-1.20.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -1240,11 +1243,16 @@ registries related to Transport Layer Security (TLS) and Datagram
 Transport Layer Security (DTLS). These changes update the changes made
 in <span>[<a href="#RFC8447" class="cite xref">RFC8447</a>]</span>.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <aside id="section-1-2">
-        <p id="section-1-2.1">NOTE for IANA: This document specifies changes to the registry to update
-  the changes made in <span>[<a href="#RFC8447" class="cite xref">RFC8447</a>]</span>.<a href="#section-1-2.1" class="pilcrow">¶</a></p>
+        <p id="section-1-2.1">RFC EDITOR NOTE: Please remove the note that follows.<a href="#section-1-2.1" class="pilcrow">¶</a></p>
 </aside>
-<p id="section-1-3">This specification updates the "Recommended" column in TLS
-registries to define a third value "D" for items that are discouraged.<a href="#section-1-3" class="pilcrow">¶</a></p>
+<aside id="section-1-3">
+        <p id="section-1-3.1">NOTE for IANA: This document specifies changes to the registry to update
+  the changes made in <span>[<a href="#RFC8447" class="cite xref">RFC8447</a>]</span>.<a href="#section-1-3.1" class="pilcrow">¶</a></p>
+</aside>
+<p id="section-1-4">This specification adds a new value "D" for discouraged to the Recommended
+column of the selected TLS registries and adds a "Comment" column to all
+active registries that do not already have a "Comment" column.<a href="#section-1-4" class="pilcrow">¶</a></p>
+<p id="section-1-5">This specication also updates the registration request instructions.<a href="#section-1-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="terminology">
@@ -1258,10 +1266,10 @@ described in BCP 14 <span>[<a href="#RFC2119" class="cite xref">RFC2119</a>]</s
 appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="adding-recommended-column">
+<div id="updating-recommended-columns-values">
 <section id="section-3">
-      <h2 id="name-adding-recommended-column">
-<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-adding-recommended-column" class="section-name selfRef">Adding "Recommended" Column</a>
+      <h2 id="name-updating-recommended-column">
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-updating-recommended-column" class="section-name selfRef">Updating "Recommended" Column's Values</a>
       </h2>
 <p id="section-3-1">The instructions in this document update the Recommended column,
 originally added in <span>[<a href="#RFC8447" class="cite xref">RFC8447</a>]</span> to add a third value, "D",
@@ -1298,14 +1306,14 @@ of the "Recommended" column are:<a href="#section-3-1" class="pilcrow">¶</a></p
   a weak cryptographic algorithm or a mechanism that might cause
   interoperability problems in deployment. When marking a registry entry as
   “D”, either the References or the Comments Column <span class="bcp14">MUST</span> include sufficient
-  information to determine why the marking has been applied. Implementers
-  <span class="bcp14">SHOULD</span> consult the linked references associated with the item to
-  determine the conditions under which it <span class="bcp14">SHOULD NOT</span> or <span class="bcp14">MUST NOT</span> be used.<a href="#section-3-2.6.1" class="pilcrow">¶</a></p>
+  information to determine why the marking has been applied. Implementers and
+  users <span class="bcp14">SHOULD</span> consult the linked references associated with the item to
+  determine the conditions under which the item <span class="bcp14">SHOULD NOT</span> or <span class="bcp14">MUST NOT</span> be used.<a href="#section-3-2.6.1" class="pilcrow">¶</a></p>
 </dd>
       <dd class="break"></dd>
 </dl>
 <p id="section-3-3">Setting a value to "Y" or "D" or transitioning the value from "Y" or "D" in the "Recommended" column requires
-IETF Standards Action <span>[<a href="#RFC8126" class="cite xref">RFC8126</a>]</span> or IESG Approval. Not all items defined
+IETF Standards Action with Expert Review or IESG Approval <span>[<a href="#RFC8126" class="cite xref">RFC8126</a>]</span>. Not all items defined
 in Standards Track RFCs need to be set
 to "Y" or "D". Any item not otherwise specified is set to "N". The column is
 blank for values that are unassigned or reserved unless specifically set.<a href="#section-3-3" class="pilcrow">¶</a></p>
@@ -1333,13 +1341,13 @@ depending upon the situation; consult the item’s references for clarity.<a hre
 </div>
 </section>
 </div>
-<div id="tls-extensiontype-values">
+<div id="tls-extensiontype-values-registry">
 <section id="section-4">
-      <h2 id="name-tls-extensiontype-values">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-tls-extensiontype-values" class="section-name selfRef">TLS ExtensionType Values</a>
+      <h2 id="name-tls-extensiontype-values-re">
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-tls-extensiontype-values-re" class="section-name selfRef">TLS ExtensionType Values Registry</a>
       </h2>
 <p id="section-4-1">In order to reflect the changes in the Recommended column allocation,
-IANA <span class="bcp14">SHALL</span> update the TLS ExtensionType Values registry as follows:<a href="#section-4-1" class="pilcrow">¶</a></p>
+IANA is requested to update the TLS ExtensionType Values registry as follows:<a href="#section-4-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-4-2.1">
           <p id="section-4-2.1.1">Adjust the registration procedure related to setting the “Recommended” column as follows:<a href="#section-4-2.1.1" class="pilcrow">¶</a></p>
@@ -1349,7 +1357,7 @@ IANA <span class="bcp14">SHALL</span> update the TLS ExtensionType Values regist
 <pre>
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D" in the "Recommended" column requires
-    IETF Standards Action [RFC8126] or IESG Approval.
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 </pre><a href="#section-4-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -1359,7 +1367,7 @@ IANA <span class="bcp14">SHALL</span> update the TLS ExtensionType Values regist
         <li class="normal" id="section-4-4.2">
           <p id="section-4-4.2.1">Update the "Recommended" column with the changes as listed below.  Entries
 keep their existing "Y" and "N" entries except for the entries in following table.
-A reference to this document <span class="bcp14">SHALL</span> be added to these entries.<a href="#section-4-4.2.1" class="pilcrow">¶</a></p>
+IANA is requested to add a reference to this document for these entries.<a href="#section-4-4.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <table class="center" id="table-1">
@@ -1423,13 +1431,13 @@ ciphersuites <span class="bcp14">MUST NOT</span> be used in those cases.<a href=
 <p id="section-5-3">Ciphersuites marked as EXPORT use weak ciphers and were deprecated in
 TLS 1.1 <span>[<a href="#RFC4346" class="cite xref">RFC4346</a>]</span>.<a href="#section-5-3" class="pilcrow">¶</a></p>
 <p id="section-5-4">Cipher suites marked as anon do not provide any authentication and are
-vulnerable to man-in-the-middle attacks and are deprecated in TLS 1.1
+vulnerable to on-path attacks and are deprecated in TLS 1.1
 <span>[<a href="#RFC4346" class="cite xref">RFC4346</a>]</span>.<a href="#section-5-4" class="pilcrow">¶</a></p>
 <p id="section-5-5">RC4 is a weak cipher and is deprecated in <span>[<a href="#RFC7465" class="cite xref">RFC7465</a>]</span>.<a href="#section-5-5" class="pilcrow">¶</a></p>
 <p id="section-5-6">DES and IDEA are not considered secure for general use and are deprecated
 in <span>[<a href="#RFC5469" class="cite xref">RFC5469</a>]</span>. Nor is MD5 or SHA-1 and these are deprecated in <span>[<a href="#RFC9155" class="cite xref">RFC9155</a>]</span>.<a href="#section-5-6" class="pilcrow">¶</a></p>
 <p id="section-5-7">In order to reflect the changes in the Recommended column allocation,
-IANA <span class="bcp14">SHALL</span> update the TLS ExtensionType Values registry as follows:<a href="#section-5-7" class="pilcrow">¶</a></p>
+IANA is requested to update the TLS ExtensionType Values registry as follows:<a href="#section-5-7" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-5-8.1">
           <p id="section-5-8.1.1">Adjust the registration procedure related to setting the “Recommended” column as follows:<a href="#section-5-8.1.1" class="pilcrow">¶</a></p>
@@ -1439,7 +1447,7 @@ IANA <span class="bcp14">SHALL</span> update the TLS ExtensionType Values regist
 <pre>
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D" in the "Recommended" column requires
-    IETF Standards Action [RFC8126] or IESG Approval.
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 </pre><a href="#section-5-9" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -1449,7 +1457,7 @@ IANA <span class="bcp14">SHALL</span> update the TLS ExtensionType Values regist
         <li class="normal" id="section-5-10.2">
           <p id="section-5-10.2.1">Update the "Recommended" column with the changes as listed below.  Entries
 keep their existing "Y" and "N" entries except for the entries in following table.
-A reference to this document <span class="bcp14">SHALL</span> be added to these entries. This document does not
+IANA is requested to add a reference to this document for these entries. This document does not
 make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
@@ -1602,13 +1610,13 @@ make any changes to the DTLS-OK column.<a href="#section-5-10.2.1" class="pilcro
       </ul>
 </section>
 </div>
-<div id="tls-supported-groups">
+<div id="tls-supported-groups-registry">
 <section id="section-6">
-      <h2 id="name-tls-supported-groups">
-<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-tls-supported-groups" class="section-name selfRef">TLS Supported Groups</a>
+      <h2 id="name-tls-supported-groups-regist">
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-tls-supported-groups-regist" class="section-name selfRef">TLS Supported Groups Registry</a>
       </h2>
 <p id="section-6-1">In order to reflect the changes in the Recommended column allocation,
-IANA <span class="bcp14">SHALL</span> update the TLS Supported Groups registry as follows:<a href="#section-6-1" class="pilcrow">¶</a></p>
+IANA is requested to update the TLS Supported Groups registry as follows:<a href="#section-6-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-6-2.1">
           <p id="section-6-2.1.1">Update the registration policy to include:<a href="#section-6-2.1.1" class="pilcrow">¶</a></p>
@@ -1618,7 +1626,7 @@ IANA <span class="bcp14">SHALL</span> update the TLS Supported Groups registry a
 <pre>
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D" in the "Recommended" column requires
-    IETF Standards Action [RFC8126] or IESG Approval
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 </pre><a href="#section-6-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -1628,7 +1636,7 @@ IANA <span class="bcp14">SHALL</span> update the TLS Supported Groups registry a
         <li class="normal" id="section-6-4.2">
           <p id="section-6-4.2.1">Update the "Recommended" column with the changes as listed below.  Entries
 keep their existing "Y" and "N" entries except for the entries in following table.
-A reference to this document <span class="bcp14">SHALL</span> be added to these entries.<a href="#section-6-4.2.1" class="pilcrow">¶</a></p>
+IANA is requested to add a reference to this document for these entries.<a href="#section-6-4.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <table class="center" id="table-3">
@@ -1740,8 +1748,8 @@ https://datatracker.ietf.org/meeting/118/materials/slides-118-tls-rfc8447bis-00<
 <a href="#section-7" class="section-number selfRef">7. </a><a href="#name-tls-exporter-labels-registr" class="section-name selfRef">TLS Exporter Labels Registry</a>
       </h2>
 <p id="section-7-1">This document updates the registration procedure for the TLS Exporter
-registry and updates the Recommended column allocation.
-IANA <span class="bcp14">SHALL</span> update the TLS Exporter Labels Registry as follows:<a href="#section-7-1" class="pilcrow">¶</a></p>
+Labels registry and updates the Recommended column allocation.
+IANA is requested to update the TLS Exporter Labels Registry as follows:<a href="#section-7-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-7-2.1">
           <p id="section-7-2.1.1">Change the registration procedure from Specification Required to
@@ -1752,7 +1760,7 @@ Expert Review and update it to include:<a href="#section-7-2.1.1" class="pilcrow
 <pre>
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D" in the "Recommended" column requires
-    IETF Standards Action [RFC8126] or IESG Approval.
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 </pre><a href="#section-7-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -1788,15 +1796,20 @@ For example, labels "key" or "master secretary" are forbidden.<a href="#section-
 </dd>
       <dd class="break"></dd>
 </dl>
+<ul class="normal">
+<li class="normal" id="section-7-6.1">
+          <p id="section-7-6.1.1">Rename the Note column to Comment column.<a href="#section-7-6.1.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
 </section>
 </div>
-<div id="tls-certificate-types">
+<div id="tls-certificate-types-registry">
 <section id="section-8">
-      <h2 id="name-tls-certificate-types">
-<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-tls-certificate-types" class="section-name selfRef">TLS Certificate Types</a>
+      <h2 id="name-tls-certificate-types-regis">
+<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-tls-certificate-types-regis" class="section-name selfRef">TLS Certificate Types Registry</a>
       </h2>
 <p id="section-8-1">In order to reflect the changes in the Recommended column allocation,
-IANA <span class="bcp14">SHALL</span> update the the TLS Certificate Types registry as follows:<a href="#section-8-1" class="pilcrow">¶</a></p>
+IANA is requested to update the TLS Certificate Types registry as follows:<a href="#section-8-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-8-2.1">
           <p id="section-8-2.1.1">Adjust the registration procedure related to setting the “Recommended” column as follows:<a href="#section-8-2.1.1" class="pilcrow">¶</a></p>
@@ -1806,7 +1819,7 @@ IANA <span class="bcp14">SHALL</span> update the the TLS Certificate Types regis
 <pre>
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D" in the "Recommended" column requires
-    IETF Standards Action [RFC8126] or IESG Approval.
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 </pre><a href="#section-8-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -1829,8 +1842,8 @@ IANA <span class="bcp14">SHALL</span> update the the TLS Certificate Types regis
       </h2>
 <p id="section-9-1">Though TLS 1.0 and TLS 1.1 were deprecated <span>[<a href="#RFC8996" class="cite xref">RFC8996</a>]</span>, TLS 1.2 will
 be in use for some time. In order to reflect the changes in the Recommended
-column allocation, IANA <span class="bcp14">SHALL</span> update the TLS HashAlgorithm Registry
-registry as follows:<a href="#section-9-1" class="pilcrow">¶</a></p>
+column allocation, IANA is requested to update the TLS HashAlgorithm Registry
+as follows:<a href="#section-9-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-9-2.1">
           <p id="section-9-2.1.1">Update the registration procedure to include:<a href="#section-9-2.1.1" class="pilcrow">¶</a></p>
@@ -1840,7 +1853,7 @@ registry as follows:<a href="#section-9-1" class="pilcrow">¶</a></p>
 <pre>
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D"  in the "Recommended" column requires
-    IETF Standards Action [RFC8126] or IESG Approval.
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 </pre><a href="#section-9-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -1914,12 +1927,12 @@ as follows:<a href="#section-9-4.2.1" class="pilcrow">¶</a></p>
 <div id="tls-signaturealgorithm-registry">
 <section id="section-10">
       <h2 id="name-tls-signaturealgorithm-regi">
-<a href="#section-10" class="section-number selfRef">10. </a><a href="#name-tls-signaturealgorithm-regi" class="section-name selfRef">TLS SignatureAlgorithm registry</a>
+<a href="#section-10" class="section-number selfRef">10. </a><a href="#name-tls-signaturealgorithm-regi" class="section-name selfRef">TLS SignatureAlgorithm Registry</a>
       </h2>
 <p id="section-10-1">Though TLS 1.0 and TLS 1.1 were deprecated <span>[<a href="#RFC8996" class="cite xref">RFC8996</a>]</span>, TLS 1.2 will
 be in use for some time. In order to reflect the changes in the Recommended
-column allocation, IANA <span class="bcp14">SHALL</span> update the TLS SignatureAlgorithm registry
-registry as follows:<a href="#section-10-1" class="pilcrow">¶</a></p>
+column allocation, IANA is requested to update the TLS SignatureAlgorithm registry
+as follows:<a href="#section-10-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-10-2.1">
           <p id="section-10-2.1.1">Update the registration procedure to include:<a href="#section-10-2.1.1" class="pilcrow">¶</a></p>
@@ -1929,7 +1942,7 @@ registry as follows:<a href="#section-10-1" class="pilcrow">¶</a></p>
 <pre>
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D"  in the "Recommended" column requires
-    IETF Standards Action [RFC8126] or IESG Approval.
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 </pre><a href="#section-10-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -2003,11 +2016,11 @@ column as follows:<a href="#section-10-4.2.1" class="pilcrow">¶</a></p>
 <div id="tls-clientcertificatetype-identifiers-registry">
 <section id="section-11">
       <h2 id="name-tls-clientcertificatetype-i">
-<a href="#section-11" class="section-number selfRef">11. </a><a href="#name-tls-clientcertificatetype-i" class="section-name selfRef">TLS ClientCertificateType Identifiers registry</a>
+<a href="#section-11" class="section-number selfRef">11. </a><a href="#name-tls-clientcertificatetype-i" class="section-name selfRef">TLS ClientCertificateType Identifiers Registry</a>
       </h2>
 <p id="section-11-1">Though TLS 1.0 and TLS 1.1 were deprecated <span>[<a href="#RFC8996" class="cite xref">RFC8996</a>]</span>, TLS 1.2 will
 be in use for some time. In order to refect the changes in the Recommended
-column allocation, IANA <span class="bcp14">SHALL</span> update the  TLS ClientCertificateType Identifier
+column allocation, IANA is requested to update the TLS ClientCertificateType Identifiers
 registry as follows:<a href="#section-11-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-11-2.1">
@@ -2018,7 +2031,7 @@ registry as follows:<a href="#section-11-1" class="pilcrow">¶</a></p>
 <pre>
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D"  in the "Recommended" column requires
-    IETF Standards Action [RFC8126] or IESG Approval.
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 </pre><a href="#section-11-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -2026,7 +2039,7 @@ registry as follows:<a href="#section-11-1" class="pilcrow">¶</a></p>
           <p id="section-11-4.1.1">Add a reference to this document under the reference heading.<a href="#section-11-4.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-11-4.2">
-          <p id="section-11-4.2.1">Update the TLS ClientCertificateType Identifier registry to add a "Recommended"
+          <p id="section-11-4.2.1">Update the TLS ClientCertificateType Identifiers registry to add a "Recommended"
 column as follows:<a href="#section-11-4.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
@@ -2112,10 +2125,10 @@ column as follows:<a href="#section-11-4.2.1" class="pilcrow">¶</a></p>
 <div id="tls-pskkeyexchangemode-registry">
 <section id="section-12">
       <h2 id="name-tls-pskkeyexchangemode-regi">
-<a href="#section-12" class="section-number selfRef">12. </a><a href="#name-tls-pskkeyexchangemode-regi" class="section-name selfRef">TLS PskKeyExchangeMode registry</a>
+<a href="#section-12" class="section-number selfRef">12. </a><a href="#name-tls-pskkeyexchangemode-regi" class="section-name selfRef">TLS PskKeyExchangeMode Registry</a>
       </h2>
 <p id="section-12-1">In order to reflect the changes in the Recommended column allocation,
-IANA <span class="bcp14">SHALL</span> update the TLS PskKeyExchangeMode registry as follows:<a href="#section-12-1" class="pilcrow">¶</a></p>
+IANA is requested to update the TLS PskKeyExchangeMode registry as follows:<a href="#section-12-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-12-2.1">
           <p id="section-12-2.1.1">Update the registration procedure to include:<a href="#section-12-2.1.1" class="pilcrow">¶</a></p>
@@ -2125,7 +2138,7 @@ IANA <span class="bcp14">SHALL</span> update the TLS PskKeyExchangeMode registry
 <pre>
     Setting a value to "Y" or "D" or transitioning the value from
     "Y" or "D"  in the "Recommended" column requires
-    IETF Standards Action [RFC8126] or IESG Approval.
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 </pre><a href="#section-12-3" class="pilcrow">¶</a>
 </div>
 <ul class="normal">
@@ -2144,9 +2157,33 @@ IANA <span class="bcp14">SHALL</span> update the TLS PskKeyExchangeMode registry
 <div id="tls-signaturescheme-registry">
 <section id="section-13">
       <h2 id="name-tls-signaturescheme-registr">
-<a href="#section-13" class="section-number selfRef">13. </a><a href="#name-tls-signaturescheme-registr" class="section-name selfRef">TLS SignatureScheme registry</a>
+<a href="#section-13" class="section-number selfRef">13. </a><a href="#name-tls-signaturescheme-registr" class="section-name selfRef">TLS SignatureScheme Registry</a>
       </h2>
-<p id="section-13-1">IANA is requested to add a reference to this document under the reference heading.<a href="#section-13-1" class="pilcrow">¶</a></p>
+<p id="section-13-1">In order to reflect the changes in the Recommended column allocation,
+IANA is requested to update the TLS SignatureScheme registry as follows:<a href="#section-13-1" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-13-2.1">
+          <p id="section-13-2.1.1">Update the registration procedure to include:<a href="#section-13-2.1.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
+<div class="alignLeft art-text artwork" id="section-13-3">
+<pre>
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
+</pre><a href="#section-13-3" class="pilcrow">¶</a>
+</div>
+<ul class="normal">
+<li class="normal" id="section-13-4.1">
+          <p id="section-13-4.1.1">IANA is requested to add a reference to this document under the reference heading.<a href="#section-13-4.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-13-4.2">
+          <p id="section-13-4.2.1">Entries keep their existing Recommended column "Y" and "N" entries.<a href="#section-13-4.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-13-4.3">
+          <p id="section-13-4.3.1">Update note on the Recommended column with text in <a href="#rec-note" class="auto internal xref">Section 3.1</a>.<a href="#section-13-4.3.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
 </section>
 </div>
 <div id="adding-comment-column">
@@ -2214,7 +2251,7 @@ IANA <span class="bcp14">SHALL</span> update the TLS PskKeyExchangeMode registry
       <h2 id="name-expert-review-of-current-an">
 <a href="#section-15" class="section-number selfRef">15. </a><a href="#name-expert-review-of-current-an" class="section-name selfRef">Expert Review of Current and Potential IETF and IRTF Documents</a>
       </h2>
-<p id="section-15-1">The intent of the Specification Required standard for TLS code points
+<p id="section-15-1">The intent of the Specification Required choice for TLS code points
 is to allow for easy registration for code points associated with
 protocols and algorithms that are not being actively developed inside
 IETF or IRTF. When TLS-based technologies are being developed inside
@@ -2226,40 +2263,70 @@ have already been adopted or are being proposed for adoption by IETF
 working groups or IRTF research groups.<a href="#section-15-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="security-considerations">
+<div id="registration-requests">
 <section id="section-16">
-      <h2 id="name-security-considerations">
-<a href="#section-16" class="section-number selfRef">16. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      <h2 id="name-registration-requests">
+<a href="#section-16" class="section-number selfRef">16. </a><a href="#name-registration-requests" class="section-name selfRef">Registration Requests</a>
       </h2>
-<p id="section-16-1">The change to Specification Required from IETF Review lowers the amount
-of review provided by the WG for cipher suites and supported groups.
-This change reflects reality in that the WG essentially provided no
-cryptographic review of the cipher suites or supported groups.  This
-was especially true of national cipher suites.<a href="#section-16-1" class="pilcrow">¶</a></p>
-<p id="section-16-2">Recommended algorithms are regarded as secure for general use at the
+<p id="section-16-1">Registration requests <span class="bcp14">MUST</span> be submitted in one of two ways:<a href="#section-16-1" class="pilcrow">¶</a></p>
+<ol start="1" type="1" class="normal type-1" id="section-16-2">
+<li id="section-16-2.1">
+          <p id="section-16-2.1.1">By sending email to iana@iana.org; this email <span class="bcp14">SHOULD</span>
+use an appropriate subject (e.g., "Request to register value in TLS
+bar registry").<a href="#section-16-2.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li id="section-16-2.2">
+          <p id="section-16-2.2.1">Using the online form at
+https://www.iana.org/form/protocol-assignment.<a href="#section-16-2.2.1" class="pilcrow">¶</a></p>
+</li>
+      </ol>
+<p id="section-16-3">Specification Required <span>[<a href="#RFC8126" class="cite xref">RFC8126</a>]</span> registry requests are registered after
+a three-week review period on the advice of one or more designated
+experts. However, to allow for the allocation of values prior to
+publication, the designated experts may approve registration once they
+are satisfied that such a specification will be published.<a href="#section-16-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="security-considerations">
+<section id="section-17">
+      <h2 id="name-security-considerations">
+<a href="#section-17" class="section-number selfRef">17. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      </h2>
+<p id="section-17-1">Recommended algorithms are regarded as secure for general use at the
 time of registration; however, cryptographic algorithms and parameters
 will be broken or weakened over time.  It is possible that the
 "Recommended" status in the registry lags behind the most recent advances
 in cryptanalysis.  Implementers and users need to check that the
 cryptographic algorithms listed continue to provide the expected level
-of security.<a href="#section-16-2" class="pilcrow">¶</a></p>
-<p id="section-16-3">Designated experts ensure the specification is publicly available.  They may
+of security.<a href="#section-17-1" class="pilcrow">¶</a></p>
+<p id="section-17-2">Designated experts ensure the specification is publicly available.  They may
 provide more in-depth reviews.  Their review should not be taken as an
-endorsement of the cipher suite, extension, supported group, etc.<a href="#section-16-3" class="pilcrow">¶</a></p>
+endorsement of the cipher suite, extension, supported group, etc.<a href="#section-17-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="iana-considerations">
-<section id="section-17">
+<section id="section-18">
       <h2 id="name-iana-considerations">
-<a href="#section-17" class="section-number selfRef">17. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+<a href="#section-18" class="section-number selfRef">18. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
       </h2>
-<p id="section-17-1">This document is entirely about changes to TLS-related IANA registries.<a href="#section-17-1" class="pilcrow">¶</a></p>
+<p id="section-18-1">This document is entirely about changes to TLS-related IANA registries.<a href="#section-18-1" class="pilcrow">¶</a></p>
+<p id="section-18-2">IANA is requested to modify the note applied to all TLS Specification
+Required registries instructing where to send registration requests as
+follows:<a href="#section-18-2" class="pilcrow">¶</a></p>
+<aside id="section-18-3">
+        <p id="section-18-3.1">RFC EDITOR: Please replace "This RFC" in the following with the RFC number
+  assigned to this specification.<a href="#section-18-3.1" class="pilcrow">¶</a></p>
+</aside>
+<p id="section-18-4">Requests for assignments from the registry's Specification Required
+range should be sent to the mailing list described in [This RFC, Section 16].
+If approved, designated experts should notify IANA within three weeks. For
+assistance, please contact iana@iana.org.<a href="#section-18-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-normative-references">
-<section id="section-18">
+<section id="section-19">
       <h2 id="name-normative-references">
-<a href="#section-18" class="section-number selfRef">18. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+<a href="#section-19" class="section-number selfRef">19. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
       </h2>
 <dl class="references">
 <dt id="RFC2119">[RFC2119]</dt>
