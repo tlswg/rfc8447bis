@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-06-26T02:06:59.568694+00:00",
+  "timestamp": "2025-06-29T02:24:14.304864+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -4020,7 +4020,7 @@
       "labels": [],
       "body": "",
       "createdAt": "2025-06-25T20:24:32Z",
-      "updatedAt": "2025-06-25T20:24:33Z",
+      "updatedAt": "2025-06-27T15:12:23Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "b0c4a3cf47e2ac7f4ee821c30b0d1b2d0f924f8b",
@@ -4032,7 +4032,21 @@
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6w2DM8",
+          "commit": {
+            "abbreviatedOid": "6818ebb"
+          },
+          "author": "paulwouters",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2025-06-27T15:12:23Z",
+          "updatedAt": "2025-06-27T15:12:23Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
