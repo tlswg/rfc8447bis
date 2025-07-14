@@ -660,8 +660,13 @@ Table of Contents
 
    *  TLS KDF Identifiers
 
+   *  TLS SSLKEYLOGFILE Labels
+
    This list of registries is all registries that do not already have a
    "Comment" or "Notes" column or that were not orphaned by TLS 1.3.
+
+   IANA is requested to rename the "Note" column to "Comment" column in
+   TLS Exporter Labels registry.
 
 15.  Expert Review of Current and Potential IETF and IRTF Documents
 
