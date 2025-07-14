@@ -499,12 +499,15 @@ IANA is requested to add a "Comment" column to the following registries:
 - TLS Application-Layer Protocol Negotiation (ALPN) Protocol IDs
 - TLS CachedInformationType Values
 - TLS Certificate Compression Algorithm IDs
+- TLS ClientCertificateType Identifiers
 - TLS Cipher Suites
 - TLS ContentType
 - TLS EC Point Formats
 - TLS EC Curve Types
 - TLS Supplemental Data Formats (SupplementalDataType)
 - TLS UserMappingType Values
+- TLS Signature Algorithm
+- TLS Hash Algorithm
 - TLS Authorization Data Formats
 - TLS Heartbeat Message Types
 - TLS Heartbeat Modes
