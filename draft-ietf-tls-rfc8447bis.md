@@ -514,9 +514,13 @@ IANA is requested to add a "Comment" column to the following registries:
 - TLS SignatureScheme
 - TLS PskKeyExchangeMode
 - TLS KDF Identifiers
+- TLS SSLKEYLOGFILE Labels
 
 This list of registries is all registries that do not already have a
 "Comment" or "Notes" column or that were not orphaned by TLS 1.3.
+
+IANA is requested to rename the "Note" column to "Comment" column in
+TLS Exporter Labels registry.
 
 # Expert Review of Current and Potential IETF and IRTF Documents
 
