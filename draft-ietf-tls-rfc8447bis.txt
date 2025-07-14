@@ -6,7 +6,7 @@ Transport Layer Security                                      J. Salowey
 Internet-Draft                                                    Venafi
 Updates: 8447 (if approved)                                    S. Turner
 Intended status: Standards Track                                   sn3rd
-Expires: 18 December 2025                                   16 June 2025
+Expires: 15 January 2026                                    14 July 2025
 
 
                  IANA Registry Updates for TLS and DTLS
@@ -53,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 18 December 2025.
+   This Internet-Draft will expire on 15 January 2026.
 
 Copyright Notice
 
@@ -184,9 +184,9 @@ Table of Contents
    *  Adjust the registration procedure related to setting the
       “Recommended” column as follows:
 
-       Setting a value to "Y" or "D" or transitioning the value from
-       "Y" or "D" in the "Recommended" column requires
-       IETF Standards Action or IESG Approval [RFC8126].
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D" in the "Recommended" column requires
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 
    *  Add a reference to this document under the reference heading.
 
@@ -249,9 +249,9 @@ Table of Contents
    *  Adjust the registration procedure related to setting the
       “Recommended” column as follows:
 
-       Setting a value to "Y" or "D" or transitioning the value from
-       "Y" or "D" in the "Recommended" column requires
-       IETF Standards Action or IESG Approval [RFC8126].
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D" in the "Recommended" column requires
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 
    *  Add a reference to this document under the reference heading.
 
@@ -329,9 +329,9 @@ Table of Contents
 
    *  Update the registration policy to include:
 
-       Setting a value to "Y" or "D" or transitioning the value from
-       "Y" or "D" in the "Recommended" column requires
-       IETF Standards Action or IESG Approval [RFC8126].
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D" in the "Recommended" column requires
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 
    *  Add a reference to this document under the reference heading.
 
@@ -395,9 +395,9 @@ Table of Contents
    *  Change the registration procedure from Specification Required to
       Expert Review and update it to include:
 
-       Setting a value to "Y" or "D" or transitioning the value from
-       "Y" or "D" in the "Recommended" column requires
-       IETF Standards Action or IESG Approval [RFC8126].
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D" in the "Recommended" column requires
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 
    *  Add a reference to this document under the reference heading.
 
@@ -422,6 +422,8 @@ Table of Contents
       of any other label.  For example, labels "key" or "master
       secretary" are forbidden.
 
+   *  Rename the Note column to Comment column.
+
 8.  TLS Certificate Types Registry
 
    In order to reflect the changes in the Recommended column allocation,
@@ -431,9 +433,9 @@ Table of Contents
    *  Adjust the registration procedure related to setting the
       “Recommended” column as follows:
 
-       Setting a value to "Y" or "D" or transitioning the value from
-       "Y" or "D" in the "Recommended" column requires
-       IETF Standards Action or IESG Approval [RFC8126].
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D" in the "Recommended" column requires
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 
    *  Add a reference to this document under the reference heading.
 
@@ -451,9 +453,9 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-       Setting a value to "Y" or "D" or transitioning the value from
-       "Y" or "D"  in the "Recommended" column requires
-       IETF Standards Action or IESG Approval [RFC8126].
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 
    *  Add a reference to this document under the reference heading.
 
@@ -493,9 +495,9 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-       Setting a value to "Y" or "D" or transitioning the value from
-       "Y" or "D"  in the "Recommended" column requires
-       IETF Standards Action or IESG Approval [RFC8126].
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 
    *  Add a reference to this document under the reference heading.
 
@@ -535,9 +537,9 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-       Setting a value to "Y" or "D" or transitioning the value from
-       "Y" or "D"  in the "Recommended" column requires
-       IETF Standards Action or IESG Approval [RFC8126].
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 
    *  Add a reference to this document under the reference heading.
 
@@ -584,9 +586,9 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-       Setting a value to "Y" or "D" or transitioning the value from
-       "Y" or "D"  in the "Recommended" column requires
-       IETF Standards Action or IESG Approval [RFC8126].
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 
    *  Add a reference to this document under the reference heading.
 
@@ -603,9 +605,9 @@ Table of Contents
 
    *  Update the registration procedure to include:
 
-       Setting a value to "Y" or "D" or transitioning the value from
-       "Y" or "D"  in the "Recommended" column requires
-       IETF Standards Action or IESG Approval [RFC8126].
+    Setting a value to "Y" or "D" or transitioning the value from
+    "Y" or "D"  in the "Recommended" column requires
+    IETF Standards Action with Expert Review or IESG Approval [RFC8126].
 
    *  IANA is requested to add a reference to this document under the
       reference heading.
@@ -686,12 +688,6 @@ Table of Contents
    once they are satisfied that such a specification will be published.
 
 17.  Security Considerations
-
-   The change to Specification Required from IETF Review lowers the
-   amount of review provided for cipher suites and supported groups.
-   This change reflects reality in that the TLS WG essentially provided
-   no cryptographic review of the cipher suites or supported groups.
-   This was especially true of national cipher suites.
 
    Recommended algorithms are regarded as secure for general use at the
    time of registration; however, cryptographic algorithms and
