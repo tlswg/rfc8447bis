@@ -499,21 +499,28 @@ IANA is requested to add a "Comment" column to the following registries:
 - TLS Application-Layer Protocol Negotiation (ALPN) Protocol IDs
 - TLS CachedInformationType Values
 - TLS Certificate Compression Algorithm IDs
+- TLS ClientCertificateType Identifiers
 - TLS Cipher Suites
 - TLS ContentType
 - TLS EC Point Formats
 - TLS EC Curve Types
 - TLS Supplemental Data Formats (SupplementalDataType)
 - TLS UserMappingType Values
+- TLS Signature Algorithm
+- TLS Hash Algorithm
 - TLS Authorization Data Formats
 - TLS Heartbeat Message Types
 - TLS Heartbeat Modes
 - TLS SignatureScheme
 - TLS PskKeyExchangeMode
 - TLS KDF Identifiers
+- TLS SSLKEYLOGFILE Labels
 
 This list of registries is all registries that do not already have a
 "Comment" or "Notes" column or that were not orphaned by TLS 1.3.
+
+IANA is requested to rename the "Note" column to "Comment" column in
+TLS Exporter Labels registry.
 
 # Expert Review of Current and Potential IETF and IRTF Documents
 
