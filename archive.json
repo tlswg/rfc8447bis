@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-06-29T02:24:14.304864+00:00",
+  "timestamp": "2025-07-15T02:22:40.824268+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -4013,24 +4013,26 @@
       "id": "PR_kwDOHFJBYs6cHv8A",
       "title": "IANA comments",
       "url": "https://github.com/tlswg/rfc8447bis/pull/89",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2025-06-25T20:24:32Z",
-      "updatedAt": "2025-06-27T15:12:23Z",
+      "updatedAt": "2025-07-14T12:50:46Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "b0c4a3cf47e2ac7f4ee821c30b0d1b2d0f924f8b",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-iana-comments",
       "headRefOid": "6818ebb5a5c138c90995687723ed874249291548",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2025-07-14T12:50:46Z",
+      "mergedAt": "2025-07-14T12:50:45Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "d20b578141319986fe96701f1e39883891bdaf41"
+      },
       "comments": [],
       "reviews": [
         {
@@ -4044,6 +4046,46 @@
           "body": "",
           "createdAt": "2025-06-27T15:12:23Z",
           "updatedAt": "2025-06-27T15:12:23Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 90,
+      "id": "PR_kwDOHFJBYs6eza-N",
+      "title": "IANA: Add comment column",
+      "url": "https://github.com/tlswg/rfc8447bis/pull/90",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "IANA noted that the Comment column was missing from these registries:\r\n- TLS ClientCertificateType Identifiers\r\n- TLS SignatureAlgorithm\r\n- TLS HashAlgorithm",
+      "createdAt": "2025-07-14T13:24:22Z",
+      "updatedAt": "2025-07-14T15:36:34Z",
+      "baseRepository": "tlswg/rfc8447bis",
+      "baseRefName": "main",
+      "baseRefOid": "d20b578141319986fe96701f1e39883891bdaf41",
+      "headRepository": "tlswg/rfc8447bis",
+      "headRefName": "seanturner-iana-comment-column",
+      "headRefOid": "00c1530c45208c8c25b7728aef38f021ac60bb9d",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOHFJBYs6z0T4Y",
+          "commit": {
+            "abbreviatedOid": "00c1530"
+          },
+          "author": "jsalowey",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2025-07-14T15:36:34Z",
+          "updatedAt": "2025-07-14T15:36:34Z",
           "comments": []
         }
       ]
