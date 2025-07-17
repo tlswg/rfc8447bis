@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-07-15T02:22:40.824268+00:00",
+  "timestamp": "2025-07-17T02:20:09.679132+00:00",
   "repo": "tlswg/rfc8447bis",
   "labels": [
     {
@@ -4055,24 +4055,26 @@
       "id": "PR_kwDOHFJBYs6eza-N",
       "title": "IANA: Add comment column",
       "url": "https://github.com/tlswg/rfc8447bis/pull/90",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "seanturner",
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "IANA noted that the Comment column was missing from these registries:\r\n- TLS ClientCertificateType Identifiers\r\n- TLS SignatureAlgorithm\r\n- TLS HashAlgorithm",
       "createdAt": "2025-07-14T13:24:22Z",
-      "updatedAt": "2025-07-14T15:36:34Z",
+      "updatedAt": "2025-07-15T15:58:44Z",
       "baseRepository": "tlswg/rfc8447bis",
       "baseRefName": "main",
       "baseRefOid": "d20b578141319986fe96701f1e39883891bdaf41",
       "headRepository": "tlswg/rfc8447bis",
       "headRefName": "seanturner-iana-comment-column",
       "headRefOid": "00c1530c45208c8c25b7728aef38f021ac60bb9d",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2025-07-15T15:58:44Z",
+      "mergedAt": "2025-07-15T15:58:44Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "4400135ac71670e6e59db5fc35ce3779747db01c"
+      },
       "comments": [],
       "reviews": [
         {
